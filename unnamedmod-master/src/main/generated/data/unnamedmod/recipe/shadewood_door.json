@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "shadewood",
+  "key": {
+    "#": "unnamedmod:shadewood_plank"
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "unnamedmod:shadewood_door"
+  }
+}

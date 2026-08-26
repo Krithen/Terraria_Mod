@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_demonite_plating": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:demonite_plating"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "unnamedmod:the_breaker"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_demonite_plating"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "unnamedmod:the_breaker"
+    ]
+  }
+}

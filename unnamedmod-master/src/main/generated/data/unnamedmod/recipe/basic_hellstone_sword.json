@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "H": "unnamedmod:hellstone_bar",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "H",
+    "H",
+    "S"
+  ],
+  "result": {
+    "id": "unnamedmod:basic_hellstone_sword"
+  }
+}

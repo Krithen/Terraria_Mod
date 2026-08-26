@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_shadewood_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:shadewood_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "unnamedmod:shadewood_plank"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_shadewood_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "unnamedmod:shadewood_plank"
+    ]
+  }
+}

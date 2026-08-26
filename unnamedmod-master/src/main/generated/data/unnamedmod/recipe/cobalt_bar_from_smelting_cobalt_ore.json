@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.25,
+  "group": "cobalt",
+  "ingredient": "unnamedmod:cobalt_ore",
+  "result": {
+    "id": "unnamedmod:cobalt_bar"
+  }
+}

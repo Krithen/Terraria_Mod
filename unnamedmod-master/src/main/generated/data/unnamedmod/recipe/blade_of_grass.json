@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": "minecraft:diamond_sword",
+    "J": "unnamedmod:jungle_spores",
+    "S": "unnamedmod:stinger",
+    "V": "minecraft:vine"
+  },
+  "pattern": [
+    "JSJ",
+    "VDV",
+    "JSJ"
+  ],
+  "result": {
+    "id": "unnamedmod:blade_of_grass"
+  }
+}

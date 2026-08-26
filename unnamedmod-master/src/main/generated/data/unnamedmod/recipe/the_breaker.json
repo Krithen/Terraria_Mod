@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": "unnamedmod:demonite_bar",
+    "D": "unnamedmod:demonite_plating",
+    "S": "unnamedmod:corrupted_stick"
+  },
+  "pattern": [
+    "DBD",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "id": "unnamedmod:the_breaker"
+  }
+}

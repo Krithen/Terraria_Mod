@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "hallowed",
+  "key": {
+    "H": "unnamedmod:hallowed_bar",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "HHH",
+    "HHH",
+    "HSH"
+  ],
+  "result": {
+    "id": "unnamedmod:gungnir"
+  }
+}

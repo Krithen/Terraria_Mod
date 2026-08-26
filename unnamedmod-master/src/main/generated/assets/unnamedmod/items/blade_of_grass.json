@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/blade_of_grass",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

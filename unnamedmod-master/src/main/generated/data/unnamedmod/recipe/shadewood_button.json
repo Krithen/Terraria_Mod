@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "shadewood",
+  "ingredients": [
+    "unnamedmod:shadewood_plank"
+  ],
+  "result": {
+    "id": "unnamedmod:shadewood_button"
+  }
+}

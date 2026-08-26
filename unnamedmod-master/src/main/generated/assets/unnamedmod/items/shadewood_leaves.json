@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "unnamedmod:block/shadewood_leaves",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -15996610
+      }
+    ]
+  }
+}

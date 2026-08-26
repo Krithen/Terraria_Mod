@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "ebonstone",
+  "key": {
+    "#": "unnamedmod:ebonstone"
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "unnamedmod:ebonstone_wall"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "experience": 0.25,
+  "group": "crimtane",
+  "ingredient": "unnamedmod:raw_crimtane",
+  "result": {
+    "id": "unnamedmod:crimtane_bar"
+  }
+}

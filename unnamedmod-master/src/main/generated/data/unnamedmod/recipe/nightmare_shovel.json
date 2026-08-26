@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "demonite",
+  "key": {
+    "D": "unnamedmod:demonite_bar",
+    "S": "unnamedmod:corrupted_stick"
+  },
+  "pattern": [
+    "D",
+    "S",
+    "S"
+  ],
+  "result": {
+    "id": "unnamedmod:nightmare_shovel"
+  }
+}

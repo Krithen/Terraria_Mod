@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/muramasa",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

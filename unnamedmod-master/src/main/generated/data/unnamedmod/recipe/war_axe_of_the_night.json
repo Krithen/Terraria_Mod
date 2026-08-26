@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "demonite",
+  "key": {
+    "D": "unnamedmod:demonite_bar",
+    "S": "unnamedmod:corrupted_stick"
+  },
+  "pattern": [
+    "DDD",
+    "DSD",
+    " S "
+  ],
+  "result": {
+    "id": "unnamedmod:war_axe_of_the_night"
+  }
+}

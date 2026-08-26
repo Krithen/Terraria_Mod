@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/gold_shortsword",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

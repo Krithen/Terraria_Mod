@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shadewood",
+  "ingredients": [
+    "unnamedmod:shadewood_log"
+  ],
+  "result": {
+    "count": 4,
+    "id": "unnamedmod:shadewood_plank"
+  }
+}

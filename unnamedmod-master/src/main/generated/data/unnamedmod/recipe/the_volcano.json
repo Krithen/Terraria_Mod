@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "H": "unnamedmod:hellstone_bar",
+    "S": "unnamedmod:advanced_hellstone_sword"
+  },
+  "pattern": [
+    "HHH",
+    " H ",
+    " S "
+  ],
+  "result": {
+    "id": "unnamedmod:the_volcano"
+  }
+}

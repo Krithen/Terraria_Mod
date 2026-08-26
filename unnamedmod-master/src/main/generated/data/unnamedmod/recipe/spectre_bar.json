@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chlorophyte",
+  "key": {
+    "C": "unnamedmod:chlorophyte_bar",
+    "E": "unnamedmod:ectoplasm"
+  },
+  "pattern": [
+    "CEC"
+  ],
+  "result": {
+    "id": "unnamedmod:spectre_bar"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blade_of_grass": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:blade_of_grass"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "unnamedmod:blade_of_grass"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blade_of_grass"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "unnamedmod:blade_of_grass"
+    ]
+  }
+}

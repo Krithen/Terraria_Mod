@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "unnamedmod:block/boreal_slab"
+    },
+    "type=double": {
+      "model": "unnamedmod:block/boreal_planks"
+    },
+    "type=top": {
+      "model": "unnamedmod:block/boreal_slab_top"
+    }
+  }
+}

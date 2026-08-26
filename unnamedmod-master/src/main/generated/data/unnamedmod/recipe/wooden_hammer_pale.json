@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "hammers",
+  "key": {
+    "S": "minecraft:stick",
+    "W": "minecraft:pale_oak_planks"
+  },
+  "pattern": [
+    "WWW",
+    "WWW",
+    " S "
+  ],
+  "result": {
+    "id": "unnamedmod:wooden_hammer"
+  }
+}

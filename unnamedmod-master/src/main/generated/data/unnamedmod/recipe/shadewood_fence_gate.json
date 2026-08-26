@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "shadewood",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "unnamedmod:shadewood_plank"
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "id": "unnamedmod:shadewood_fence_gate"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "crimtane",
+  "key": {
+    "C": "unnamedmod:crimtane_bar",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "CCC",
+    "CSC",
+    "CCC"
+  ],
+  "result": {
+    "id": "unnamedmod:bleeding_stick"
+  }
+}

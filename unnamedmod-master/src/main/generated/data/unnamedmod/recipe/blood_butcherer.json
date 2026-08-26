@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "crimtane",
+  "key": {
+    "C": "unnamedmod:crimtane_bar",
+    "S": "unnamedmod:bleeding_stick"
+  },
+  "pattern": [
+    "CC",
+    "C ",
+    "S "
+  ],
+  "result": {
+    "id": "unnamedmod:blood_butcherer"
+  }
+}

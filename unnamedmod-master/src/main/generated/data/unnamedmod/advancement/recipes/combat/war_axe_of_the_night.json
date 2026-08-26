@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_demonite_bar": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:demonite_bar"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "unnamedmod:war_axe_of_the_night"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_demonite_bar"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "unnamedmod:war_axe_of_the_night"
+    ]
+  }
+}

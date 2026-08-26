@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": "minecraft:iron_ingot",
+    "I": "minecraft:iron_sword",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "B",
+    "I",
+    "S"
+  ],
+  "result": {
+    "id": "unnamedmod:iron_broadsword"
+  }
+}

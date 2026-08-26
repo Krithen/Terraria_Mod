@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.25,
+  "group": "chlorophyte",
+  "ingredient": "unnamedmod:raw_chlorophyte",
+  "result": {
+    "id": "unnamedmod:chlorophyte_bar"
+  }
+}

@@ -1,0 +1,246 @@
+package com.krithenmc.unnamedmod.item;
+
+import com.krithenmc.unnamedmod.Unnamedmod;
+import com.krithenmc.unnamedmod.consumables.ModConsumables;
+import com.krithenmc.unnamedmod.food.ModFoods;
+
+import com.krithenmc.unnamedmod.item.custom.HammerItem;
+import com.krithenmc.unnamedmod.item.custom.ShortSwordItem;
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
+import net.fabricmc.fabric.api.item.v1.FabricItem;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.core.Registry;
+import net.minecraft.core.component.DataComponentType;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.TooltipDisplay;
+import net.minecraft.world.item.equipment.ArmorMaterial;
+import net.minecraft.world.item.equipment.ArmorMaterials;
+import net.minecraft.world.item.equipment.ArmorType;
+import org.apache.commons.lang3.function.TriFunction;
+
+import java.util.function.Consumer;
+import java.util.function.Function;
+
+
+
+public class ModItems extends Item.Properties {
+    public static class Properties implements FabricItem
+
+            .Properties {
+
+    }
+
+
+
+    public static final Item ADAMANTITE_BAR = registerItem("adamantite_bar", properties -> new
+            Item(properties.fireResistant().rarity(Rarity.RARE)));
+    public static final Item RAW_ADAMANTITE = registerItem("raw_adamantite", properties -> new
+            Item(properties.fireResistant().rarity(Rarity.RARE)));
+    public static final Item AMBER = registerItem("amber", Item::new);
+    public static final Item CHLOROPHYTE_BAR = registerItem("chlorophyte_bar", properties -> new
+            Item(properties.rarity(Rarity.EPIC).fireResistant()));
+    public static final Item COBALT_BAR = registerItem("cobalt_bar", properties -> new
+            Item(properties.fireResistant().rarity(Rarity.RARE)));
+    public static final Item CRIMTANE_BAR = registerItem("crimtane_bar", properties -> new
+            Item(properties.rarity(Rarity.UNCOMMON)));
+    public static final Item DEMONITE_BAR = registerItem("demonite_bar", properties -> new
+            Item(properties.rarity(Rarity.UNCOMMON)));
+    public static final Item HALLOWED_BAR = registerItem("hallowed_bar", properties -> new
+            Item(properties.rarity(Rarity.RARE).fireResistant()));
+    public static final Item HELLSTONE = registerItem("hellstone", properties -> new
+            Item(properties.rarity(Rarity.UNCOMMON).fireResistant()));
+    public static final Item HELLSTONE_BAR = registerItem("hellstone_bar", properties -> new
+            Item(properties.rarity(Rarity.UNCOMMON).fireResistant()));
+    public static final Item LEAD_BAR = registerItem("lead_bar", properties -> new
+            Item(properties.rarity(Rarity.COMMON).fireResistant()));
+    public static final Item LUMINITE_BAR = registerItem("luminite_bar", properties -> new
+            Item(properties.fireResistant().rarity(Rarity.EPIC)));
+    public static final Item METEORITE = registerItem("meteorite", Item::new);
+    public static final Item METEORITE_BAR = registerItem("meteorite_bar", Item::new);
+    public static final Item MYTHRIL_BAR = registerItem("mythril_bar", properties -> new
+            Item(properties.rarity(Rarity.RARE).fireResistant()));
+    public static final Item ORICHALCUM_BAR = registerItem("orichalcum_bar", properties -> new
+            Item(properties.fireResistant().rarity(Rarity.RARE).enchantable(100)));
+    public static final Item PALLADIUM_BAR = registerItem("palladium_bar", properties -> new
+            Item(properties.fireResistant().rarity(Rarity.RARE)));
+    public static final Item PLATINUM_BAR = registerItem("platinum_bar", Item::new);
+    public static final Item RAW_CHLOROPHYTE = registerItem("raw_chlorophyte", properties -> new
+            Item(properties.rarity(Rarity.EPIC).fireResistant()));
+    public static final Item RAW_COBALT = registerItem("raw_cobalt", properties -> new
+            Item(properties.rarity(Rarity.RARE).fireResistant()));
+    public static final Item RAW_CRIMTANE = registerItem("raw_crimtane", Item::new);
+    public static final Item RAW_DEMONITE = registerItem("raw_demonite", Item::new);
+    public static final Item RAW_LEAD = registerItem("raw_lead", Item::new);
+    public static final Item RAW_LUMINITE = registerItem("raw_luminite", properties -> new
+            Item(properties.rarity(Rarity.EPIC).fireResistant()));
+    public static final Item RAW_MYTHRIL = registerItem("raw_mythril", properties -> new
+            Item(properties.rarity(Rarity.RARE).fireResistant()));
+    public static final Item RAW_ORICHALCUM = registerItem("raw_orichalcum", properties -> new
+            Item(properties.rarity(Rarity.RARE).fireResistant()));
+    public static final Item RAW_PALLADIUM = registerItem("raw_palladium", properties -> new
+            Item(properties.rarity(Rarity.RARE).fireResistant()));
+    public static final Item RAW_SILVER = registerItem("raw_silver", Item::new);
+    public static final Item RUBY = registerItem("ruby", Item::new);
+    public static final Item SAPPHIRE = registerItem("sapphire", Item::new);
+    public static final Item SHROOMITE_BAR = registerItem("shroomite_bar", properties -> new Item(properties.rarity(Rarity.EPIC).fireResistant())) ;
+    public static final Item SILVER_BAR = registerItem("silver_bar", Item::new);
+    public static final Item SPECTRE_BAR = registerItem("spectre_bar", properties -> new
+            Item(properties.rarity(Rarity.EPIC).fireResistant()));
+    public static final Item TIN_BAR = registerItem("tin_bar", Item::new);
+    public static final Item TITANIUM_BAR = registerItem("titanium_bar", properties -> new
+            Item(properties.rarity(Rarity.RARE).fireResistant()));
+    public static final Item TOPAZ = registerItem("topaz", Item::new);
+    public static final Item TUNGSTEN_BAR = registerItem("tungsten_bar", Item::new);
+    public static final Item ECTOPLASM = registerItem("ectoplasm", Item::new);
+    public static final Item GLOWING_MUSHROOM = registerItem("glowing_mushroom", Item::new);
+    public static final Item WOODEN_HAMMER = registerItem("wooden_hammer", properties -> new
+            HammerItem(ToolMaterial.WOOD, 0, -3.5f, properties));
+    public static final Item APRICOT = registerItem("apricot", properties -> new
+            Item(properties.food(ModFoods.APRICOT, ModConsumables.APRICOT_CONSUMABLE)));
+    public static final Item BANANUH = registerItem("banana", properties -> new
+            Item(properties.food(ModFoods.BANANUH, ModConsumables.BANANUH_CONSUMABLE)) {
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder.accept(Component.translatable("tooltip.unnamedmod.bananuh"));
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
+    public static final Item GEL = registerItem("gel", Item::new);
+    public static final Item JOJA_COLA = registerItem("joja_cola", properties -> new
+            Item(properties.food(ModFoods.JOJA_COLA, ModConsumables.JOJA_COLA_CONSUMABLE)) {
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder.accept(Component.translatable("tooltip.unnamedmod.joja_cola"));
+
+
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
+    public static final Item BLACKCURRANT = registerItem("blackcurrant", properties -> new
+            Item(properties.food(ModFoods.BLACKCURRANT, ModConsumables.BLACKCURRANT_CONSUMABLE)));
+    public static final Item BLOOD_ORANGE = registerItem("blood_orange", properties -> new
+            Item(properties.food(ModFoods.BLOOD_ORANGE, ModConsumables.BLOOD_ORANGE_CONSUMABLE)));
+    public static final Item ACORN = registerItem("acorn", Item::new);
+    public static final Item UMBRAL_CRYSTAL = registerItem("umbral_crystal", Item::new);
+    public static final Item UMBRAL_PLATE = registerItem("umbral_plate", Item::new);
+    public static final Item LIGHTS_BANE = registerItem("lights_bane", properties -> new
+            Item(properties.sword(ModToolMaterials.DEMONITE, 12, -0.4f)));
+    public static final Item NIGHTMARE_PICKAXE = registerItem("nightmare_pickaxe", properties -> new
+            Item(properties.pickaxe(ModToolMaterials.DEMONITE, 5, -1.4f)){
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder.accept(Component.translatable("tooltip.unnamedmod.nightmare_pickaxe"));
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
+    public static final Item NIGHTMARE_SHOVEL = registerItem("nightmare_shovel", properties -> new
+            ShovelItem(ModToolMaterials.DEMONITE, 1, -1.4f, properties));
+    public static final Item WAR_AXE_OF_THE_NIGHT = registerItem("war_axe_of_the_night", properties -> new
+            AxeItem(ModToolMaterials.DEMONITE, 16, -3.0f, properties));
+    public static final Item GUNGNIR = registerItem("gungnir", properties -> new
+            Item(properties.spear(ModToolMaterials.HALLOWED, 0.95f, 5f, 0.1f, 1.5f, 20f, 7f, 6f, 20f, 2f)));
+    public static final Item CORRUPTED_STICK = registerItem("corrupted_stick", Item::new);
+    public static final Item SOUL_OF_NIGHT = registerItem("soul_of_night", properties -> new
+            Item(properties) {
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder .accept(Component.translatable("tooltip.unnamedmod.soul_of_night"));
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
+
+    public static final Item BLOOD_BUTCHERER = registerItem("blood_butcherer", properties -> new
+            Item(properties.sword(ModToolMaterials.CRIMTANE, 18, -0.8f)));
+    public static final Item BLEEDING_STICK = registerItem("bleeding_stick", Item::new);
+    public static final Item NIGHTS_EDGE = registerItem("nights_edge", properties -> new
+            Item(properties.sword(ModToolMaterials.NIGHTS_EDGE, 40, -0.8f)) );
+    public static final Item THE_VOLCANO = registerItem("the_volcano", properties -> new
+            Item(properties.sword(ModToolMaterials.HELLSTONE, 40, -3)) {
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder.accept(Component.translatable("tooltip.unnamedmod.the_volcano"));
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
+    public static final Item ADVANCED_HELLSTONE_SWORD = registerItem("advanced_hellstone_sword", properties -> new
+            Item(properties.sword(ModToolMaterials.HELLSTONE, 12, -3)) {
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder.accept(Component.translatable("tooltip.unnamedmod.advanced_hellstone_sword"));
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
+    public static final Item BASIC_HELLSTONE_SWORD = registerItem("basic_hellstone_sword", properties -> new
+            Item(properties.sword(ModToolMaterials.HELLSTONE, 8, -3)) {
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder.accept(Component.translatable("tooltip.unnamedmod.basic_hellstone_sword"));
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
+    public static final Item STINGER = registerItem("stinger", Item::new);
+    public static final Item JUNGLE_SPORES = registerItem("jungle_spores", properties -> new
+            Item(properties.food(ModFoods.JUNGLE_SPORES, ModConsumables.JUNGLE_SPORES_CONSUMABLE)));
+
+    public static final Item THE_BREAKER = registerItem("the_breaker", properties -> new
+            HammerItem(ModToolMaterials.DEMONITE, 20, -3.5f, properties));
+    public static final Item SHADOW_SCALE = registerItem("shadow_scale", Item::new);
+    public static final Item DEMONITE_PLATING = registerItem("demonite_plating", Item::new);
+    public static final Item GOLD_SHORTSWORD = registerItem("gold_shortsword", properties -> new
+            ShortSwordItem(properties.sword(ToolMaterial.GOLD, 12, 0)));
+    public static final Item SOUL_OF_MIGHT = registerItem("soul_of_might", properties -> new
+            Item(properties) {
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder.accept(Component.translatable("tooltip.unnamedmod.soul_of_might"));
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
+    public static final Item SHADOW_SCALEMAIL = registerItem("shadow_scalemail", properties -> new
+            Item(properties.humanoidArmor(ArmorMaterials.DIAMOND, ArmorType.CHESTPLATE)));
+    public static final Item SOUL_OF_SIGHT = registerItem("soul_of_sight", properties -> new
+            Item(properties) {
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder.accept(Component.translatable("tooltip.unnamedmod.soul_of_sight"));
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
+    public static final Item BLADE_OF_GRASS = registerItem("blade_of_grass", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 17, -0.5f)));
+    public static final Item MURAMASA = registerItem("muramasa", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 24, 0.4f)));
+    public static final Item IRON_BROADSWORD = registerItem("iron_broadsword", properties -> new
+            ShortSwordItem(properties.sword(ToolMaterial.IRON, 10, -2.4f)));
+
+
+
+
+    private static Item registerItem(String name, Function<Item.Properties, Item> function) {
+        return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(Unnamedmod.MOD_ID, name),
+                function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Unnamedmod.MOD_ID, name)))));
+
+
+    }
+
+
+    public static ResourceKey<Item> getRK(Item item) {
+        return BuiltInRegistries.ITEM.getResourceKey(item).get();
+    }
+
+    public static void registerModItems() {
+        Unnamedmod.LOGGER.info("Registering mod items for" + Unnamedmod.MOD_ID);
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
+                });
+
+
+
+    }
+
+}

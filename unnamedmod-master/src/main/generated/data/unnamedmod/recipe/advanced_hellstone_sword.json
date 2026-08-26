@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "H": "unnamedmod:hellstone_bar",
+    "O": "minecraft:crying_obsidian",
+    "S": "unnamedmod:basic_hellstone_sword"
+  },
+  "pattern": [
+    "HHH",
+    "HSH",
+    "OOO"
+  ],
+  "result": {
+    "id": "unnamedmod:advanced_hellstone_sword"
+  }
+}

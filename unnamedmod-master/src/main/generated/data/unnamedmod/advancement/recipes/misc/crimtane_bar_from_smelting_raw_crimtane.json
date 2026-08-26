@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_crimtane": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:raw_crimtane"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "unnamedmod:crimtane_bar_from_smelting_raw_crimtane"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_crimtane"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "unnamedmod:crimtane_bar_from_smelting_raw_crimtane"
+    ]
+  }
+}

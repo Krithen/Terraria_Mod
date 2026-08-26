@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chlorophyte",
+  "key": {
+    "C": "unnamedmod:chlorophyte_bar",
+    "G": "unnamedmod:glowing_mushroom"
+  },
+  "pattern": [
+    "GGG",
+    "GCG",
+    "GGG"
+  ],
+  "result": {
+    "id": "unnamedmod:shroomite_bar"
+  }
+}

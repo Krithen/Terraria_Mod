@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "shadewood",
+  "key": {
+    "#": "unnamedmod:shadewood_plank"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "unnamedmod:shadewood_stairs"
+  }
+}

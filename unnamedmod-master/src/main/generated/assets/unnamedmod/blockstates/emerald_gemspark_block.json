@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "unnamedmod:block/emerald_gemspark_block"
+    },
+    "clicked=true": {
+      "model": "unnamedmod:block/emerald_gemspark_block_on"
+    }
+  }
+}

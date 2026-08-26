@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "D": "unnamedmod:demonite_bar",
+    "S": "unnamedmod:shadow_scale"
+  },
+  "pattern": [
+    "SDS",
+    "DSD",
+    "SDS"
+  ],
+  "result": {
+    "id": "unnamedmod:demonite_plating"
+  }
+}
