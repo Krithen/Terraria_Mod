@@ -217,6 +217,44 @@ public class ModItems extends Item.Properties {
             ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 24, 0.4f)));
     public static final Item IRON_BROADSWORD = registerItem("iron_broadsword", properties -> new
             ShortSwordItem(properties.sword(ToolMaterial.IRON, 10, -2.4f)));
+    public static final Item AREADBHAR = registerItem("areadbhar", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 35, -1.4f)));
+    public static final Item BEE_KEEPER = registerItem("bee_keeper", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.BEE, 29, -0.4f)));
+    public static final Item CANDY_CANE_SWORD = registerItem("candy_cane_sword", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.CANDYCANE, 18, -2.0f)));
+    public static final Item RAW_TUNGSTEN = registerItem("raw_tungsten", Item::new);
+    public static final Item EXOTIC_SCIMITAR = registerItem("exotic_scimitar", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 19, -0.4f)));
+    public static final Item ICE_BLADE = registerItem("ice_blade", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.ICE, 17, 0.6f)));
+    public static final Item TERRARIA_KATANA = registerItem("terraria_katana", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 17, -1)));
+    public static final Item PURPLE_CLUBBERFISH = registerItem("purple_clubberfish", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 34, -2)));
+    public static final Item TENTACLE_SPIKE = registerItem("tentacle_spike", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 19, -1)));
+    public static final Item IRON_SHORTSWORD = registerItem("iron_shortsword", properties -> new
+            ShortSwordItem(properties.sword(ToolMaterial.IRON, 6, -1.4f)));
+    public static final Item LEAD_SHORTSWORD = registerItem("lead_shortsword", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.LEAD, 7, -1.4f)));
+    public static final Item SILVER_SHORTSWORD = registerItem("silver_shortsword", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.SILVER, 7, -1.4f)));
+    public static final Item TIN_SHORTSWORD = registerItem("tin_shortsword", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.TIN, 5, -1.4f)));
+    public static final Item TUNGSTEN_SHORTSWORD = registerItem("tungsten_shortsword", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.TUNGSTEN, 9, -1.4f)));
+    public static final Item STARFURY = registerItem("starfury", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 24, -2)));
+    public static final Item CORRUPT_SEEDS = registerItem("corrupt_seeds", Item::new);
+    public static final Item COCONUT = registerItem("coconut", properties -> new
+            Item(properties.food(ModFoods.COCONUT, ModConsumables.COCONUT)));
+    public static final Item CRIMSON_TIGERFISH = registerItem("crimson_tigerfish", properties -> new
+            Item(properties.food(ModFoods.CRIMSON_TIGERFISH, ModConsumables.CRIMSON_TIGERFISH)));
+
+
+
+
 
 
 

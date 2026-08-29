@@ -55,6 +55,9 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.BOREAL_FENCE_GATE);
         dropSelf(ModBlocks.BOREAL_TRAPDOOR);
         dropSelf(ModBlocks.BOREAL_WOOD_LOG);
+        dropSelf(ModBlocks.LEAD_ANVIL);
+        dropSelf(ModBlocks.ANCIENT_FOSSIL);
+        dropSelf(ModBlocks.CLOUD);
 
 
         add(ModBlocks.ADAMANTITE_ORE, createOreDrop(ModBlocks.ADAMANTITE_ORE, ModItems.RAW_ADAMANTITE));
@@ -84,6 +87,9 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         add(ModBlocks.SHADEWOOD_DOOR, this::createDoorTable);
         add(ModBlocks.BOREAL_SLAB, this::createSlabItemTable);
         add(ModBlocks.BOREAL_DOOR, this::createDoorTable);
+        add(ModBlocks.BLUE_MUSHROOM_STEM, createSilkTouchOnlyTable(ModBlocks.BLUE_MUSHROOM_STEM));
+        add(ModBlocks.BLUE_MUSHROOM_BLOCK, createMushroomBlockDrop(ModBlocks.BLUE_MUSHROOM_BLOCK, ModItems.GLOWING_MUSHROOM));
+        add(ModBlocks.DEEPSLATE_TUNGSTEN_ORE, createOreDrop(ModBlocks.DEEPSLATE_TUNGSTEN_ORE, ModItems.RAW_TUNGSTEN));
         ;
 
 

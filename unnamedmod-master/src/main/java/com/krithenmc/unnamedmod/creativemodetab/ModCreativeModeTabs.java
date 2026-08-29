@@ -69,6 +69,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DEMONITE_PLATING);
                         output.accept(ModItems.SOUL_OF_MIGHT);
                         output.accept(ModItems.SOUL_OF_SIGHT);
+                        output.accept(ModItems.RAW_TUNGSTEN);
+                        output.accept(ModItems.CORRUPT_SEEDS);
 
 
                     }).build());
@@ -133,6 +135,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BOREAL_FENCE_GATE);
                         output.accept(ModBlocks.BOREAL_DOOR);
                         output.accept(ModBlocks.BOREAL_TRAPDOOR);
+                        output.accept(ModBlocks.LEAD_ANVIL);
+                        output.accept(ModBlocks.ANCIENT_FOSSIL);
+                        output.accept(ModBlocks.BLUE_MUSHROOM_STEM);
+                        output.accept(ModBlocks.BLUE_MUSHROOM_BLOCK);
+                        output.accept(ModBlocks.CLOUD);
+                        output.accept(ModBlocks.CRISPY_HONEY_BLOCK);
+                        output.accept(ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
 
 
 
@@ -162,6 +171,20 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BLADE_OF_GRASS);
                         output.accept(ModItems.MURAMASA);
                         output.accept(ModItems.IRON_BROADSWORD);
+                        output.accept(ModItems.AREADBHAR);
+                        output.accept(ModItems.BEE_KEEPER);
+                        output.accept(ModItems.CANDY_CANE_SWORD);
+                        output.accept(ModItems.EXOTIC_SCIMITAR);
+                        output.accept(ModItems.ICE_BLADE);
+                        output.accept(ModItems.TERRARIA_KATANA);
+                        output.accept(ModItems.PURPLE_CLUBBERFISH);
+                        output.accept(ModItems.TENTACLE_SPIKE);
+                        output.accept(ModItems.IRON_SHORTSWORD);
+                        output.accept(ModItems.LEAD_SHORTSWORD);
+                        output.accept(ModItems.SILVER_SHORTSWORD);
+                        output.accept(ModItems.TIN_SHORTSWORD);
+                        output.accept(ModItems.TUNGSTEN_SHORTSWORD);
+                        output.accept(ModItems.STARFURY);
                         ;
 
 
@@ -177,6 +200,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.JOJA_COLA);
                         output.accept(ModItems.BLOOD_ORANGE);
                         output.accept(ModItems.BLACKCURRANT);
+                        output.accept(ModItems.CRIMSON_TIGERFISH);
+                        output.accept(ModItems.COCONUT);
+
 
 
                     }).build());

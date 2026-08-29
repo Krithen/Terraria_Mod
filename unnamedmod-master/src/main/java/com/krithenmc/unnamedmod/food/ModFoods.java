@@ -15,6 +15,8 @@ public class ModFoods {
     public static final FoodProperties APRICOT = new FoodProperties.Builder().nutrition(2).saturationModifier(2).build();
     public static final FoodProperties BLOOD_ORANGE = new FoodProperties.Builder().nutrition(2).saturationModifier(2).build();
     public static final FoodProperties JUNGLE_SPORES = new FoodProperties.Builder().nutrition(1).saturationModifier(0).build();
+    public static final FoodProperties COCONUT = new FoodProperties.Builder().nutrition(4).saturationModifier(2).build();
+    public static final FoodProperties CRIMSON_TIGERFISH = new FoodProperties.Builder().nutrition(4).saturationModifier(4).build();
 
 
 

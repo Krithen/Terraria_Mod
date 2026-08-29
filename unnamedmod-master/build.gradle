@@ -16,6 +16,17 @@ repositories {
 		}
 		filter { includeGroupAndSubgroups('com.geckolib') }
 	}
+
+	mavenCentral()
+	maven {
+		name = "RedlanceMinecraft"
+		url = uri("https://repo.redlance.org/public")
+	}
+
+	maven { url "https://maven.shedaniel.me/" }
+	maven { url "https://maven.terraformersmc.com/releases/" }
+
+	maven { url 'https://api.modrinth.com/maven' }
 }
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
@@ -36,6 +47,11 @@ dependencies {
 	minecraft "com.mojang:minecraft:26.2"
 	implementation "net.fabricmc:fabric-loader:0.19.3"
 	implementation("com.geckolib:geckolib-fabric-26.2:5.5.3")
+	implementation("com.zigythebird.playeranim:PlayerAnimationLibFabric:1.2.6+mc.26.2")
+	implementation "maven.modrinth:better-combat:3.2.2+26.2-fabric"
+	api("me.shedaniel.cloth:cloth-config-fabric:26.2.155")
+
+
 
 
 

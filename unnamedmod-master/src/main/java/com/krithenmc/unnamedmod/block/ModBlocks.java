@@ -160,6 +160,22 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.DARK_OAK, properties.strength(1f)));
     public static final Block BOREAL_TRAPDOOR = registerBlock("boreal_trapdoor", properties ->
             new TrapDoorBlock(BlockSetType.DARK_OAK, properties.strength(1f).noOcclusion()));
+    public static final Block LEAD_ANVIL = registerBlock("lead_anvil", properties ->
+            new AnvilBlock(properties.strength(2f)));
+    public static final Block ANCIENT_FOSSIL = registerBlock("ancient_fossil", properties ->
+            new Block(properties.strength(2f, 1).requiresCorrectToolForDrops()));
+    public static final Block BLUE_MUSHROOM_STEM = registerBlock("blue_mushroom_stem", properties ->
+            new HugeMushroomBlock(properties.strength(0.2f).sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block BLUE_MUSHROOM_BLOCK = registerBlock("blue_mushroom_block", properties ->
+            new HugeMushroomBlock(properties.strength(0.2f).sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block CLOUD = registerBlock("cloud", properties ->
+            new ScaffoldingBlock(properties.strength(0.2f).bounceRestitution(0.5f)));
+    public static final Block CRIMSON_BAMBOO_STALK = registerBlock("crimson_bamboo_stalk", properties ->
+            new BambooStalkBlock(properties.strength(1f)));
+    public static final Block CRISPY_HONEY_BLOCK = registerBlock("crispy_honey_block", properties ->
+            new HoneyBlock(properties.strength(0.5f).jumpFactor(0.5f)));
+    public static final Block DEEPSLATE_TUNGSTEN_ORE = registerBlock("deepslate_tungsten_ore", properties ->
+            new DropExperienceBlock(UniformInt.of(3, 6), properties.strength(4f).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()));
 
 
 

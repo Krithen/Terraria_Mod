@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -31,7 +32,22 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.getRK(ModItems.ADVANCED_HELLSTONE_SWORD))
                 .add(ModItems.getRK(ModItems.BLADE_OF_GRASS))
                 .add(ModItems.getRK(ModItems.MURAMASA))
-                .add(ModItems.getRK(ModItems.IRON_BROADSWORD));
+                .add(ModItems.getRK(ModItems.IRON_BROADSWORD))
+                .add(ModItems.getRK(ModItems.AREADBHAR))
+                .add(ModItems.getRK(ModItems.BEE_KEEPER))
+                .add(ModItems.getRK(ModItems.CANDY_CANE_SWORD))
+                .add(ModItems.getRK(ModItems.EXOTIC_SCIMITAR))
+                .add(ModItems.getRK(ModItems.ICE_BLADE))
+                .add(ModItems.getRK(ModItems.TERRARIA_KATANA))
+                .add(ModItems.getRK(ModItems.PURPLE_CLUBBERFISH))
+                .add(ModItems.getRK(ModItems.TENTACLE_SPIKE))
+                .add(ModItems.getRK(ModItems.IRON_SHORTSWORD))
+                .add(ModItems.getRK(ModItems.LEAD_SHORTSWORD))
+                .add(ModItems.getRK(ModItems.SILVER_SHORTSWORD))
+                .add(ModItems.getRK(ModItems.TIN_SHORTSWORD))
+                .add(ModItems.getRK(ModItems.TUNGSTEN_SHORTSWORD))
+                .add(ModItems.getRK(ModItems.STARFURY))
+        ;
         tag(ItemTags.PICKAXES).add(ModItems.getRK(ModItems.NIGHTMARE_PICKAXE));
         tag(ItemTags.SHOVELS).add(ModItems.getRK(ModItems.NIGHTMARE_SHOVEL));
         tag(ItemTags.SPEARS).add(ModItems.getRK(ModItems.GUNGNIR));
@@ -49,6 +65,24 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
         tag(ModTags.Items.HELLSTONE_REPAIR)
                 .add(ModItems.getRK(ModItems.HELLSTONE_BAR));
+
+        tag(ModTags.Items.CANDYCANE_REPAIR);
+                //CandyCane once its added)
+
+        tag(ModTags.Items.ICE_REPAIR);
+                //add ice, blue ice, and packed ice
+
+        tag(ModTags.Items.LEAD_REPAIR)
+                .add(ModItems.getRK(ModItems.LEAD_BAR));
+
+        tag(ModTags.Items.SILVER_REPAIR)
+                .add(ModItems.getRK(ModItems.SILVER_BAR));
+
+        tag(ModTags.Items.TIN_REPAIR)
+                .add(ModItems.getRK(ModItems.TIN_BAR));
+
+        tag(ModTags.Items.TUNGSTEN_REPAIR)
+                .add(ModItems.getRK(ModItems.TUNGSTEN_BAR));
 
 
     }

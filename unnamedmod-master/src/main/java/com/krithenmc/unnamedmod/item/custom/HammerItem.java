@@ -3,6 +3,7 @@ package com.krithenmc.unnamedmod.item.custom;
 import com.krithenmc.unnamedmod.block.ModBlocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -26,7 +27,11 @@ public class HammerItem extends Item {
                     Blocks.ANDESITE_SLAB, Blocks.ANDESITE,
                     Blocks.POLISHED_ANDESITE, Blocks.POLISHED_ANDESITE_STAIRS,
                     Blocks.POLISHED_ANDESITE_STAIRS, Blocks.POLISHED_ANDESITE_SLAB,
-                    Blocks.POLISHED_ANDESITE_SLAB, Blocks.POLISHED_ANDESITE
+                    Blocks.POLISHED_ANDESITE_SLAB, Blocks.POLISHED_ANDESITE,
+                    ModBlocks.SHADEWOOD_PLANK, ModBlocks.SHADEWOOD_STAIRS,
+                    ModBlocks.SHADEWOOD_STAIRS, ModBlocks.SHADEWOOD_SLAB,
+                    ModBlocks.SHADEWOOD_SLAB, ModBlocks.SHADEWOOD_PLANK
+
 
 
             );

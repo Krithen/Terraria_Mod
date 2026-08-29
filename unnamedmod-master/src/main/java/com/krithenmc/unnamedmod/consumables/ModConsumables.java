@@ -23,4 +23,9 @@ public class ModConsumables {
             .consumeSeconds(1f).build();
     public static final Consumable JUNGLE_SPORES_CONSUMABLE = Consumables.defaultFood()
             .onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.NAUSEA, 20, 10), 1.0F)).build();
+    public static final Consumable COCONUT = Consumables.defaultFood()
+            .consumeSeconds(1f).build();
+    public static final Consumable CRIMSON_TIGERFISH = Consumables.defaultFood()
+            .consumeSeconds(1f).build();
+
 }

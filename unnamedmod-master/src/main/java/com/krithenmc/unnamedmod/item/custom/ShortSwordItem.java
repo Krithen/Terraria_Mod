@@ -63,4 +63,6 @@ public class ShortSwordItem extends Item implements GeoItem {
             }
         });
     }
+
+    //there are a bunch of items that are ShortSwordItem that will need to have their own classes made, really just the ones with their own projectiles and such
 }

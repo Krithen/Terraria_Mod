@@ -3,8 +3,14 @@ de678f7a312efc8a67088d9a301fb7f7db109a96 data/minecraft/tags/item/axes.json
 9dba0c9b302d8048f6283d1d86b0077eeb786857 data/minecraft/tags/item/pickaxes.json
 e056deda3a9718818e5781d935f18c1a9179c324 data/minecraft/tags/item/shovels.json
 d49115cf9666f6ebf7fc8104547ade379581e212 data/minecraft/tags/item/spears.json
-cfec7f5d163a7d2a06a13daebac866e82f3ce38a data/minecraft/tags/item/swords.json
+425764d8c96af99367ae1400125f867207bc6912 data/minecraft/tags/item/swords.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/unnamedmod/tags/item/candycane_repair.json
 3fb7426c7336b5928da7863f78a0a76d0f50fbec data/unnamedmod/tags/item/crimtane_repair.json
 c3b24e6ed9e6f3eb5a69ac6e55ae77f76c8fe6c7 data/unnamedmod/tags/item/demonite_repair.json
 a73ddf7d78f71456a582367e06194d5c50af4ce4 data/unnamedmod/tags/item/hallowed_repair.json
 945fd48b1a346c2be25446b8f039d9e132aaf454 data/unnamedmod/tags/item/hellstone_repair.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/unnamedmod/tags/item/ice_repair.json
+3cf593084df70d87d02e73caebf6bf69ff07c250 data/unnamedmod/tags/item/lead_repair.json
+db0913dfd60b1981997fa676de378be1d7aefd94 data/unnamedmod/tags/item/silver_repair.json
+58b96b342547b55ad15d4b8cf9b800030cdde95d data/unnamedmod/tags/item/tin_repair.json
+40ada73b3810f042ea46c4ee9f0b57cfa18a4d77 data/unnamedmod/tags/item/tungsten_repair.json

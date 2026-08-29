@@ -94,6 +94,13 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrapdoor(ModBlocks.BOREAL_TRAPDOOR);
         blockModelGenerators.createRotatedPillarWithHorizontalVariant(ModBlocks.SHADEWOOD_LOG, TexturedModel.COLUMN_ALT, TexturedModel.COLUMN_HORIZONTAL );
         blockModelGenerators.createRotatedPillarWithHorizontalVariant(ModBlocks.BOREAL_WOOD_LOG, TexturedModel.COLUMN_ALT, TexturedModel.COLUMN_HORIZONTAL );
+        blockModelGenerators.createAnvil(ModBlocks.LEAD_ANVIL);
+        blockModelGenerators.createTrivialCube(ModBlocks.ANCIENT_FOSSIL);
+        blockModelGenerators.createTrivialCube(ModBlocks.BLUE_MUSHROOM_STEM);
+        blockModelGenerators.createMushroomBlock(ModBlocks.BLUE_MUSHROOM_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.CLOUD);
+        blockModelGenerators.createTrivialCube(ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.CRISPY_HONEY_BLOCK);
 
 
 
@@ -177,6 +184,24 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.declareCustomModelItem(ModItems.BLADE_OF_GRASS);
         itemModelGenerators.declareCustomModelItem(ModItems.MURAMASA);
         itemModelGenerators.declareCustomModelItem(ModItems.IRON_BROADSWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.AREADBHAR);
+        itemModelGenerators.declareCustomModelItem(ModItems.BEE_KEEPER);
+        itemModelGenerators.declareCustomModelItem(ModItems.CANDY_CANE_SWORD);
+        itemModelGenerators.generateFlatItem(ModItems.RAW_TUNGSTEN, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.declareCustomModelItem(ModItems.EXOTIC_SCIMITAR);
+        itemModelGenerators.declareCustomModelItem(ModItems.ICE_BLADE);
+        itemModelGenerators.declareCustomModelItem(ModItems.TERRARIA_KATANA);
+        itemModelGenerators.declareCustomModelItem(ModItems.PURPLE_CLUBBERFISH);
+        itemModelGenerators.declareCustomModelItem(ModItems.TENTACLE_SPIKE);
+        itemModelGenerators.declareCustomModelItem(ModItems.IRON_SHORTSWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.LEAD_SHORTSWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.SILVER_SHORTSWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.TIN_SHORTSWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.TUNGSTEN_SHORTSWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.STARFURY);
+        itemModelGenerators.generateFlatItem(ModItems.CORRUPT_SEEDS, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.COCONUT, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.CRIMSON_TIGERFISH, ModelTemplates.FLAT_ITEM);
 
 
 

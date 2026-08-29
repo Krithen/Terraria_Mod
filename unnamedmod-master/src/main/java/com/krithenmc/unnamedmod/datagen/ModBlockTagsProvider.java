@@ -45,7 +45,10 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.MARBLE))
                 .add(ModBlocks.getRK(ModBlocks.PALLADIUM_DEEPSLATE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.PALLADIUM_ORE))
-                .add(ModBlocks.getRK(ModBlocks.EBONSTONE_WALL));
+                .add(ModBlocks.getRK(ModBlocks.EBONSTONE_WALL))
+                .add(ModBlocks.getRK(ModBlocks.LEAD_ANVIL))
+                .add(ModBlocks.getRK(ModBlocks.ANCIENT_FOSSIL))
+                .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_TUNGSTEN_ORE));
 
 
         tag(BlockTags.SLABS)
@@ -124,7 +127,10 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.BOREAL_FENCE_GATE))
                 .add(ModBlocks.getRK(ModBlocks.BOREAL_DOOR))
                 .add(ModBlocks.getRK(ModBlocks.BOREAL_TRAPDOOR))
-                .add(ModBlocks.getRK(ModBlocks.BOREAL_WOOD_LOG));
+                .add(ModBlocks.getRK(ModBlocks.BOREAL_WOOD_LOG))
+                .add(ModBlocks.getRK(ModBlocks.BLUE_MUSHROOM_STEM))
+                .add(ModBlocks.getRK(ModBlocks.BLUE_MUSHROOM_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.CRIMSON_BAMBOO_STALK));
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL);
 
@@ -135,6 +141,14 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.DEMONITE_EBONSTONE_ORE))
                 ;
         tag(ModTags.Blocks.NEEDS_HALLOWED_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_LEAD_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_SILVER_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_TIN_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_TUNGSTEN_TOOL);
 
 
         tag(ModTags.Blocks.INCORRECT_FOR_DEMONITE_TOOL)
