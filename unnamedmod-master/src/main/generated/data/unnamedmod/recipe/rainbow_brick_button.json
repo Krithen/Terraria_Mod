@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "rainbow",
+  "ingredients": [
+    "unnamedmod:rainbow_bricks"
+  ],
+  "result": {
+    "id": "unnamedmod:rainbow_brick_button"
+  }
+}

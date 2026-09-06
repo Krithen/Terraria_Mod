@@ -6,10 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.level.block.Block;
-import org.spongepowered.asm.service.modlauncher.MixinServiceModLauncherBootstrap;
+
 
 import java.util.concurrent.CompletableFuture;
 
@@ -48,16 +45,36 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.EBONSTONE_WALL))
                 .add(ModBlocks.getRK(ModBlocks.LEAD_ANVIL))
                 .add(ModBlocks.getRK(ModBlocks.ANCIENT_FOSSIL))
-                .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_TUNGSTEN_ORE));
+                .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_TUNGSTEN_ORE))
+                .add(ModBlocks.getRK(ModBlocks.ASTRA_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.COBALT_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.COSMIC_EMBER_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.CRIMTANE_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.CRIMSTONE_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.CRYOCORE_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.DEMONITE_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.EBONSTONE_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.DARK_CELESTIAL_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.HALLOWED_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.RAINBOW_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.RAINBOW_BRICK_SLABS))
+                .add(ModBlocks.getRK(ModBlocks.RAINBOW_BRICK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.RAINBOW_BRICK_WALLS))
+                .add(ModBlocks.getRK(ModBlocks.RAINBOW_BRICK_BUTTON))
+
+        ;
 
 
         tag(BlockTags.SLABS)
                 .add(ModBlocks.getRK(ModBlocks.SHADEWOOD_SLAB))
-                .add(ModBlocks.getRK(ModBlocks.BOREAL_SLAB));
+                .add(ModBlocks.getRK(ModBlocks.BOREAL_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.RAINBOW_BRICK_SLABS));
 
         tag(BlockTags.STAIRS)
                 .add(ModBlocks.getRK(ModBlocks.SHADEWOOD_STAIRS))
-                .add(ModBlocks.getRK(ModBlocks.BOREAL_STAIRS));
+                .add(ModBlocks.getRK(ModBlocks.BOREAL_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.RAINBOW_BRICK_STAIRS));
 
         tag(BlockTags.WOODEN_BUTTONS)
                 .add(ModBlocks.getRK(ModBlocks.SHADEWOOD_BUTTON))
@@ -77,7 +94,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
 
         tag(BlockTags.WALLS)
-                .add(ModBlocks.getRK(ModBlocks.EBONSTONE_WALL));
+                .add(ModBlocks.getRK(ModBlocks.EBONSTONE_WALL))
+                .add(ModBlocks.getRK(ModBlocks.RAINBOW_BRICK_WALLS));
 
         tag(BlockTags.DOORS)
                 .add(ModBlocks.getRK(ModBlocks.SHADEWOOD_DOOR))
@@ -86,6 +104,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
         tag(BlockTags.WOODEN_TRAPDOORS)
                 .add(ModBlocks.getRK(ModBlocks.SHADEWOOD_TRAPDOOR))
                 .add(ModBlocks.getRK(ModBlocks.BOREAL_TRAPDOOR));
+
+
 
 
 
@@ -105,7 +125,10 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.EBONSAND))
                 .add(ModBlocks.getRK(ModBlocks.CRIMSAND))
-                .add(ModBlocks.getRK(ModBlocks.SHIMMER_BLOCK));
+                .add(ModBlocks.getRK(ModBlocks.SHIMMER_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.HARDENED_EBONSAND))
+                .add(ModBlocks.getRK(ModBlocks.HARDENED_SAND))
+                .add(ModBlocks.getRK(ModBlocks.HARDENED_CRIMSAND));
 
         tag(BlockTags.SHEARS_EXTREME_BREAKING_SPEED)
                 .add(ModBlocks.getRK(ModBlocks.SHADEWOOD_LEAVES));
@@ -134,6 +157,13 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL);
 
+        tag(ModTags.Blocks.NEEDS_HELLSTONE_TOOL)
+                .addTag(ModTags.Blocks.NEEDS_DEMONITE_TOOL)
+                .add(ModBlocks.getRK(ModBlocks.COBALT_ORE))
+                .add(ModBlocks.getRK(ModBlocks.COBALT_DEEPSLATE_ORE))
+                .add(ModBlocks.getRK(ModBlocks.PALLADIUM_ORE))
+                .add(ModBlocks.getRK(ModBlocks.PALLADIUM_DEEPSLATE_ORE));
+
         tag(ModTags.Blocks.NEEDS_DEMONITE_TOOL)
                 .add(ModBlocks.getRK(ModBlocks.EBONSTONE))
                 .add(ModBlocks.getRK(ModBlocks.CRIMSTONE))
@@ -150,15 +180,24 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(ModTags.Blocks.INCORRECT_FOR_TUNGSTEN_TOOL);
 
+        tag(ModTags.Blocks.INCORRECT_FOR_BONE_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_COBALT_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_MYTHRIL_TOOL);
+
 
         tag(ModTags.Blocks.INCORRECT_FOR_DEMONITE_TOOL)
-                .addTag(ModTags.Blocks.NEEDS_HALLOWED_TOOL);
+                .addTag(ModTags.Blocks.NEEDS_HALLOWED_TOOL)
+                .addTag(ModTags.Blocks.NEEDS_HELLSTONE_TOOL);
 
         tag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
                 .addTag(ModTags.Blocks.NEEDS_DEMONITE_TOOL)
-                .addTag(ModTags.Blocks.NEEDS_HALLOWED_TOOL);
+                .addTag(ModTags.Blocks.NEEDS_HALLOWED_TOOL)
+                .addTag(ModTags.Blocks.NEEDS_HELLSTONE_TOOL);
 
-        tag(ModTags.Blocks.INCORRECT_FOR_HELLSTONE_TOOL);
+        tag(ModTags.Blocks.INCORRECT_FOR_HELLSTONE_TOOL)
+                .addTag(ModTags.Blocks.NEEDS_HALLOWED_TOOL);
 
         tag(ModTags.Blocks.CRIMSON_BLOCK)
                 .add(ModBlocks.getRK(ModBlocks.CRIMSTONE))

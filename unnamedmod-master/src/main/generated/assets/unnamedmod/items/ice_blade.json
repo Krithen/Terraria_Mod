@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/ice_blade",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_anvil",
+  "textures": {
+    "side": "unnamedmod:block/lead_anvil",
+    "top": "unnamedmod:block/lead_anvil_top"
+  }
+}

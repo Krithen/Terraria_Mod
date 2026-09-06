@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/brand_of_the_inferno",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

@@ -8,7 +8,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.resources.Identifier;
+
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -325,6 +325,89 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .define('B', Items.IRON_INGOT )
                         .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
                         .save(output);
+
+
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHLOROPHYTE_BRICKS)
+                        .pattern("CC")
+                        .pattern("CC")
+                        .define('C', ModItems.CHLOROPHYTE_BAR)
+                        .unlockedBy(getHasName(ModItems.CHLOROPHYTE_BAR), has(ModItems.CHLOROPHYTE_BAR))
+                        .save(output);
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBALT_BRICKS)
+                        .pattern("CC")
+                        .pattern("CC")
+                        .define('C', ModItems.COBALT_BAR)
+                        .unlockedBy(getHasName(ModItems.COBALT_BAR), has(ModItems.COBALT_BAR))
+                        .save(output);
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSTONE_BRICKS)
+                        .pattern("CC")
+                        .pattern("CC")
+                        .define('C', ModBlocks.CRIMSTONE)
+                        .unlockedBy(getHasName(ModBlocks.CRIMSTONE), has(ModBlocks.CRIMSTONE))
+                        .save(output);
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMTANE_BRICKS)
+                        .pattern("CC")
+                        .pattern("CC")
+                        .define('C', ModItems.CRIMTANE_BAR)
+                        .unlockedBy(getHasName(ModItems.CRIMTANE_BAR), has(ModItems.CRIMTANE_BAR))
+                        .save(output);
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEMONITE_BRICKS)
+                        .pattern("CC")
+                        .pattern("CC")
+                        .define('C', ModItems.DEMONITE_BAR)
+                        .unlockedBy(getHasName(ModItems.DEMONITE_BAR), has(ModItems.DEMONITE_BAR))
+                        .save(output);
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EBONSTONE_BRICKS)
+                        .pattern("CC")
+                        .pattern("CC")
+                        .define('C', ModBlocks.EBONSTONE)
+                        .unlockedBy(getHasName(ModBlocks.EBONSTONE), has(ModBlocks.EBONSTONE))
+                        .save(output);
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.HALLOWED_BRICKS)
+                        .pattern("CC")
+                        .pattern("CC")
+                        .define('C', ModItems.HALLOWED_BAR)
+                        .unlockedBy(getHasName(ModItems.HALLOWED_BAR), has(ModItems.HALLOWED_BAR))
+                        .save(output);
+
+
+                wallBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAINBOW_BRICK_WALLS, Ingredient.of(ModBlocks.RAINBOW_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.RAINBOW_BRICKS), has(ModBlocks.RAINBOW_BRICKS))
+                        .group("rainbow")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAINBOW_BRICK_SLABS, ModBlocks.RAINBOW_BRICKS);
+
+                stairBuilder(ModBlocks.RAINBOW_BRICK_STAIRS, Ingredient.of(ModBlocks.RAINBOW_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.RAINBOW_BRICKS), has(ModBlocks.RAINBOW_BRICKS))
+                        .group("rainbow")
+                        .save(output);
+
+
+                buttonBuilder(ModBlocks.RAINBOW_BRICK_BUTTON, Ingredient.of(ModBlocks.RAINBOW_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.RAINBOW_BRICKS), has(ModBlocks.RAINBOW_BRICKS))
+                        .group("rainbow")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.COBALT_SWORD)
+                        .pattern("C")
+                        .pattern("C")
+                        .pattern("S")
+                        .define('C', ModBlocks.COBALT_BRICKS)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.COBALT_BAR), has(ModItems.COBALT_BAR))
+                        .group("cobalt")
+                        .save(output);
+
+
+
+
+
 
 
 

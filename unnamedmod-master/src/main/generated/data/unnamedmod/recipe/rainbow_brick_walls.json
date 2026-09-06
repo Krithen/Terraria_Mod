@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "rainbow",
+  "key": {
+    "#": "unnamedmod:rainbow_bricks"
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "unnamedmod:rainbow_brick_walls"
+  }
+}

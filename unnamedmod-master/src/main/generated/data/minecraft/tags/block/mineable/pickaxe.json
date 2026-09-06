@@ -27,6 +27,22 @@
     "unnamedmod:ebonstone_wall",
     "unnamedmod:lead_anvil",
     "unnamedmod:ancient_fossil",
-    "unnamedmod:deepslate_tungsten_ore"
+    "unnamedmod:deepslate_tungsten_ore",
+    "unnamedmod:astra_bricks",
+    "unnamedmod:chlorophyte_bricks",
+    "unnamedmod:cobalt_bricks",
+    "unnamedmod:cosmic_ember_bricks",
+    "unnamedmod:crimtane_bricks",
+    "unnamedmod:crimstone_bricks",
+    "unnamedmod:cryocore_bricks",
+    "unnamedmod:demonite_bricks",
+    "unnamedmod:ebonstone_bricks",
+    "unnamedmod:dark_celestial_bricks",
+    "unnamedmod:hallowed_bricks",
+    "unnamedmod:rainbow_bricks",
+    "unnamedmod:rainbow_brick_slabs",
+    "unnamedmod:rainbow_brick_stairs",
+    "unnamedmod:rainbow_brick_walls",
+    "unnamedmod:rainbow_brick_button"
   ]
 }

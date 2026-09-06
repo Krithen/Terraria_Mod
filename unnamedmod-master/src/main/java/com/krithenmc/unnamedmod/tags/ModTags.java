@@ -7,11 +7,10 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
-import javax.swing.text.html.HTML;
+
 
 public class ModTags {
     public static class Blocks {
-        public static final TagKey<Block> MINEABLE_WITH_DEMONITE_OR_CRIMTANE = createTag("mineable_with_demonite_or_crimtane");
         private static TagKey<Block> createTag(String name) {
             return TagKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Unnamedmod.MOD_ID, name));
         }
@@ -26,6 +25,11 @@ public class ModTags {
         public static final TagKey<Block> INCORRECT_FOR_SILVER_TOOL = createTag("incorrect_for_silver_tool");
         public static final TagKey<Block> INCORRECT_FOR_TIN_TOOL = createTag("incorrect_for_tin_tool");
         public static final TagKey<Block> INCORRECT_FOR_TUNGSTEN_TOOL = createTag("incorrect_for_tungsten_tool");
+        public static final TagKey<Block> INCORRECT_FOR_PALLADIUM_TOOL = createTag("incorrect_for_palladium_tool");
+        public static final TagKey<Block> INCORRECT_FOR_BONE_TOOL = createTag("incorrect_for_bone_tool");
+        public static final TagKey<Block> INCORRECT_FOR_COBALT_TOOL = createTag("incorrect_for_cobalt_tool");
+        public static final TagKey<Block> INCORRECT_FOR_MYTHRIL_TOOL = createTag("incorrect_for_mythril_tool");
+        public static final TagKey<Block> NEEDS_HELLSTONE_TOOL = createTag("needs_hellstone_tool");
 
 
     }
@@ -49,6 +53,10 @@ public class ModTags {
         public static final TagKey<Item> SILVER_REPAIR = createTag("silver_repair");
         public static final TagKey<Item> TIN_REPAIR = createTag("tin_repair");
         public static final TagKey<Item> TUNGSTEN_REPAIR = createTag("tungsten_repair");
+        public static final TagKey<Item> PALLADIUM_REPAIR = createTag("palladium_repair");
+        public static final TagKey<Item> BONE_REPAIR = createTag("bone_repair");
+        public static final TagKey<Item> COBALT_REPAIR = createTag("cobalt_repair");
+        public static final TagKey<Item> MYTHRIL_REPAIR = createTag("mythril_repair");
 
     }
 

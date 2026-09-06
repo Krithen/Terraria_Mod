@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/candy_cane_sword",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/terraria_katana",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

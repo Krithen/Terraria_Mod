@@ -142,6 +142,25 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CLOUD);
                         output.accept(ModBlocks.CRISPY_HONEY_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
+                        output.accept(ModBlocks.ASTRA_BRICKS);
+                        output.accept(ModBlocks.CHLOROPHYTE_BRICKS);
+                        output.accept(ModBlocks.COBALT_BRICKS);
+                        output.accept(ModBlocks.COSMIC_EMBER_BRICKS);
+                        output.accept(ModBlocks.CRIMSTONE_BRICKS);
+                        output.accept(ModBlocks.CRIMTANE_BRICKS);
+                        output.accept(ModBlocks.CRYOCORE_BRICKS);
+                        output.accept(ModBlocks.DARK_CELESTIAL_BRICKS);
+                        output.accept(ModBlocks.DEMONITE_BRICKS);
+                        output.accept(ModBlocks.EBONSTONE_BRICKS);
+                        output.accept(ModBlocks.HALLOWED_BRICKS);
+                        output.accept(ModBlocks.RAINBOW_BRICKS);
+                        output.accept(ModBlocks.RAINBOW_BRICK_SLABS);
+                        output.accept(ModBlocks.RAINBOW_BRICK_STAIRS);
+                        output.accept(ModBlocks.RAINBOW_BRICK_WALLS);
+                        output.accept(ModBlocks.RAINBOW_BRICK_BUTTON);
+                        output.accept(ModBlocks.HARDENED_SAND);
+                        output.accept(ModBlocks.HARDENED_CRIMSAND);
+                        output.accept(ModBlocks.HARDENED_EBONSAND);
 
 
 
@@ -185,7 +204,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TIN_SHORTSWORD);
                         output.accept(ModItems.TUNGSTEN_SHORTSWORD);
                         output.accept(ModItems.STARFURY);
-                        ;
+                        output.accept(ModItems.PALLADIUM_SWORD);
+                        output.accept(ModItems.ICE_SICKLE);
+                        output.accept(ModItems.BONE_SWORD);
+                        output.accept(ModItems.BRAND_OF_THE_INFERNO);
+                        output.accept(ModItems.COBALT_SWORD);
+                        output.accept(ModItems.FROSTBRAND);
+
 
 
                     }).build());

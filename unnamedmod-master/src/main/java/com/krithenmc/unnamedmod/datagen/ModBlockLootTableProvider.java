@@ -7,7 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootSubProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
+
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
@@ -58,6 +58,25 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.LEAD_ANVIL);
         dropSelf(ModBlocks.ANCIENT_FOSSIL);
         dropSelf(ModBlocks.CLOUD);
+        dropSelf(ModBlocks.ASTRA_BRICKS);
+        dropSelf(ModBlocks.CHLOROPHYTE_BRICKS);
+        dropSelf(ModBlocks.COBALT_BRICKS);
+        dropSelf(ModBlocks.COSMIC_EMBER_BRICKS);
+        dropSelf(ModBlocks.CRIMSTONE_BRICKS);
+        dropSelf(ModBlocks.CRIMTANE_BRICKS);
+        dropSelf(ModBlocks.CRYOCORE_BRICKS);
+        dropSelf(ModBlocks.EBONSTONE_BRICKS);
+        dropSelf(ModBlocks.DEMONITE_BRICKS);
+        dropSelf(ModBlocks.HALLOWED_BRICKS);
+        dropSelf(ModBlocks.DARK_CELESTIAL_BRICKS);
+        dropSelf(ModBlocks.RAINBOW_BRICKS);
+        dropSelf(ModBlocks.RAINBOW_BRICK_WALLS);
+        dropSelf(ModBlocks.RAINBOW_BRICK_STAIRS);
+        dropSelf(ModBlocks.RAINBOW_BRICK_SLABS);
+        dropSelf(ModBlocks.RAINBOW_BRICK_BUTTON);
+        dropSelf(ModBlocks.HARDENED_CRIMSAND);
+        dropSelf(ModBlocks.HARDENED_SAND);
+        dropSelf(ModBlocks.HARDENED_EBONSAND);
 
 
         add(ModBlocks.ADAMANTITE_ORE, createOreDrop(ModBlocks.ADAMANTITE_ORE, ModItems.RAW_ADAMANTITE));
@@ -90,7 +109,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         add(ModBlocks.BLUE_MUSHROOM_STEM, createSilkTouchOnlyTable(ModBlocks.BLUE_MUSHROOM_STEM));
         add(ModBlocks.BLUE_MUSHROOM_BLOCK, createMushroomBlockDrop(ModBlocks.BLUE_MUSHROOM_BLOCK, ModItems.GLOWING_MUSHROOM));
         add(ModBlocks.DEEPSLATE_TUNGSTEN_ORE, createOreDrop(ModBlocks.DEEPSLATE_TUNGSTEN_ORE, ModItems.RAW_TUNGSTEN));
-        ;
+
 
 
     }

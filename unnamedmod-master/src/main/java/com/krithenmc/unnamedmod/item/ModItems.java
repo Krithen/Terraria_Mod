@@ -8,9 +8,9 @@ import com.krithenmc.unnamedmod.item.custom.HammerItem;
 import com.krithenmc.unnamedmod.item.custom.ShortSwordItem;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.fabricmc.fabric.api.item.v1.FabricItem;
-import net.minecraft.core.HolderLookup;
+
 import net.minecraft.core.Registry;
-import net.minecraft.core.component.DataComponentType;
+
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -18,10 +18,10 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.TooltipDisplay;
-import net.minecraft.world.item.equipment.ArmorMaterial;
+
 import net.minecraft.world.item.equipment.ArmorMaterials;
 import net.minecraft.world.item.equipment.ArmorType;
-import org.apache.commons.lang3.function.TriFunction;
+
 
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -251,6 +251,18 @@ public class ModItems extends Item.Properties {
             Item(properties.food(ModFoods.COCONUT, ModConsumables.COCONUT)));
     public static final Item CRIMSON_TIGERFISH = registerItem("crimson_tigerfish", properties -> new
             Item(properties.food(ModFoods.CRIMSON_TIGERFISH, ModConsumables.CRIMSON_TIGERFISH)));
+    public static final Item PALLADIUM_SWORD = registerItem("palladium_sword", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.PALLADIUM, 48, -1.4f)));
+    public static final Item ICE_SICKLE = registerItem("ice_sickle", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.ICE, 49, -1.4f)));
+    public static final Item BONE_SWORD = registerItem("bone_sword", properties -> new
+            ShortSwordItem(properties.sword(ModToolMaterials.BONE, 18, -1.4f)));
+    public static final Item BRAND_OF_THE_INFERNO = registerItem("brand_of_the_inferno", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 94, -1.4f)));
+    public static final Item COBALT_SWORD = registerItem("cobalt_sword", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.COBALT, 39, -1.4f)));
+    public static final Item FROSTBRAND = registerItem("frostbrand", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.ICE, 48, -1.4f)));
 
 
 
@@ -273,12 +285,6 @@ public class ModItems extends Item.Properties {
 
     public static void registerModItems() {
         Unnamedmod.LOGGER.info("Registering mod items for" + Unnamedmod.MOD_ID);
-
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
-                });
-
-
-
     }
 
 }

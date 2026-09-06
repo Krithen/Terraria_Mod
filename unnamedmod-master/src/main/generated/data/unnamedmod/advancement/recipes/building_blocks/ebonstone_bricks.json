@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ebonstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:ebonstone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "unnamedmod:ebonstone_bricks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ebonstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "unnamedmod:ebonstone_bricks"
+    ]
+  }
+}

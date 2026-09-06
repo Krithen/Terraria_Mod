@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/ice_sickle",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

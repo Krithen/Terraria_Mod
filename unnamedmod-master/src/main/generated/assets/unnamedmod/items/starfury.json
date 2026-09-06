@@ -1,0 +1,10 @@
+
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/starfury",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

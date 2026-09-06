@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/exotic_scimitar",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

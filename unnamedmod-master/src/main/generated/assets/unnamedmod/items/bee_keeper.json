@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/bee_keeper",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "unnamedmod:block/lead_anvil",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "unnamedmod:block/lead_anvil",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "unnamedmod:block/lead_anvil"
+    },
+    "facing=west": {
+      "model": "unnamedmod:block/lead_anvil",
+      "y": 90
+    }
+  }
+}

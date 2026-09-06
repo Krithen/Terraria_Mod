@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "cobalt",
+  "key": {
+    "C": "unnamedmod:cobalt_bricks",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "C",
+    "C",
+    "S"
+  ],
+  "result": {
+    "id": "unnamedmod:cobalt_sword"
+  }
+}

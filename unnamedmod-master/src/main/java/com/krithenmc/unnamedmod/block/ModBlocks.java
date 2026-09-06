@@ -5,16 +5,16 @@ import com.krithenmc.unnamedmod.block.custom.CrimsonBlock;
 import com.krithenmc.unnamedmod.block.custom.EmeraldGemSparkBlock;
 import com.krithenmc.unnamedmod.block.custom.MagicBlock;
 import com.mojang.serialization.MapCodec;
-import net.fabricmc.fabric.impl.datagen.client.SoundTypeBuilderImpl;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.references.BlockItemIds;
+
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.server.packs.resources.Resource;
+
 import net.minecraft.util.ColorRGBA;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -29,7 +29,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
-import net.minecraft.world.level.material.MapColor;
+
 import net.minecraft.world.level.material.PushReaction;
 
 import java.util.function.Consumer;
@@ -176,6 +176,46 @@ public class ModBlocks {
             new HoneyBlock(properties.strength(0.5f).jumpFactor(0.5f)));
     public static final Block DEEPSLATE_TUNGSTEN_ORE = registerBlock("deepslate_tungsten_ore", properties ->
             new DropExperienceBlock(UniformInt.of(3, 6), properties.strength(4f).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()));
+    public static final Block ASTRA_BRICKS = registerBlock("astra_bricks", properties ->
+            new Block(properties.strength(3f).requiresCorrectToolForDrops()));
+    public static final Block CHLOROPHYTE_BRICKS = registerBlock("chlorophyte_bricks", properties ->
+            new Block(properties.strength(2f).requiresCorrectToolForDrops()));
+    public static final Block COBALT_BRICKS = registerBlock("cobalt_bricks", properties ->
+            new Block(properties.strength(2f).requiresCorrectToolForDrops()));
+    public static final Block COSMIC_EMBER_BRICKS = registerBlock("cosmic_ember_bricks", properties ->
+            new Block(properties.strength(3f).requiresCorrectToolForDrops()));
+    public static final Block CRIMSTONE_BRICKS = registerBlock("crimstone_bricks", properties ->
+            new CrimsonBlock(properties.strength(2f).requiresCorrectToolForDrops()));
+    public static final Block CRIMTANE_BRICKS = registerBlock("crimtane_bricks", properties ->
+            new Block(properties.strength(2f).requiresCorrectToolForDrops()));
+    public static final Block CRYOCORE_BRICKS = registerBlock("cryocore_bricks", properties ->
+            new Block(properties.strength(3f).requiresCorrectToolForDrops()));
+    public static final Block DARK_CELESTIAL_BRICKS = registerBlock("dark_celestial_bricks", properties ->
+            new Block(properties.strength(3f).requiresCorrectToolForDrops()));
+    public static final Block DEMONITE_BRICKS = registerBlock("demonite_bricks", properties ->
+            new Block(properties.strength(3f).requiresCorrectToolForDrops()));
+    public static final Block EBONSTONE_BRICKS = registerBlock("ebonstone_bricks", properties ->
+            new Block(properties.strength(3f).requiresCorrectToolForDrops()));
+    public static final Block HALLOWED_BRICKS = registerBlock("hallowed_bricks", properties ->
+            new Block(properties.strength(2f).requiresCorrectToolForDrops()));
+    public static final Block RAINBOW_BRICKS = registerBlock("rainbow_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block RAINBOW_BRICK_WALLS = registerBlock("rainbow_brick_walls", properties ->
+            new WallBlock(properties.strength(2f)));
+    public static final Block RAINBOW_BRICK_SLABS = registerBlock("rainbow_brick_slabs", properties ->
+            new SlabBlock(properties.strength(2f)));
+    public static final Block RAINBOW_BRICK_STAIRS = registerBlock("rainbow_brick_stairs", properties ->
+            new StairBlock(ModBlocks.RAINBOW_BRICKS.defaultBlockState(), properties.strength(2f)));
+    public static final Block RAINBOW_BRICK_BUTTON = registerBlock("rainbow_brick_button", properties ->
+            new ButtonBlock(BlockSetType.STONE, 40, properties.strength(2f).noCollision()));
+    public static final Block HARDENED_SAND = registerBlock("hardened_sand", properties ->
+            new Block(properties.strength(1f)));
+    public static final Block HARDENED_CRIMSAND = registerBlock("hardened_crimsand", properties ->
+            new Block(properties.strength(1f)));
+    public static final Block HARDENED_EBONSAND = registerBlock("hardened_ebonsand", properties ->
+            new Block(properties.strength(1f)));
+
+
 
 
 
@@ -194,12 +234,6 @@ public class ModBlocks {
         Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(Unnamedmod.MOD_ID, name),
                 new BlockItem(block, new Item.Properties().useBlockDescriptionPrefix()
                         .setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Unnamedmod.MOD_ID, name)))));
-    }
-    private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function, Component... tooltips) {
-        Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Unnamedmod.MOD_ID, name))));
-        registerBlockItem(name, toRegister, tooltips);
-        return Registry.register(BuiltInRegistries.BLOCK, Identifier.fromNamespaceAndPath(Unnamedmod.MOD_ID, name), toRegister);
-
     }
 
 

@@ -1,12 +1,12 @@
 package com.krithenmc.unnamedmod.datagen;
 
-import com.ibm.icu.text.Normalizer2;
+
 import com.krithenmc.unnamedmod.block.ModBlocks;
 import com.krithenmc.unnamedmod.block.custom.EmeraldGemSparkBlock;
 import com.krithenmc.unnamedmod.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
-import net.fabricmc.fabric.mixin.datagen.client.ModelProviderItemInfoCollectorMixin;
+
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.MultiVariant;
@@ -14,7 +14,7 @@ import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TexturedModel;
-import net.minecraft.client.model.Model;
+
 import net.minecraft.client.renderer.block.dispatch.Variant;
 import net.minecraft.resources.Identifier;
 import net.minecraft.util.random.WeightedList;
@@ -101,6 +101,26 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.CLOUD);
         blockModelGenerators.createTrivialCube(ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.CRISPY_HONEY_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.ASTRA_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.CHLOROPHYTE_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.COBALT_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.COSMIC_EMBER_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.CRIMTANE_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.CRIMSTONE_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.CRYOCORE_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.EBONSTONE_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.DEMONITE_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.DARK_CELESTIAL_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.HALLOWED_BRICKS);
+        blockModelGenerators.family(ModBlocks.RAINBOW_BRICKS)
+                .stairs(ModBlocks.RAINBOW_BRICK_STAIRS)
+                .slab(ModBlocks.RAINBOW_BRICK_SLABS)
+                .wall(ModBlocks.RAINBOW_BRICK_WALLS)
+                .button(ModBlocks.RAINBOW_BRICK_BUTTON);
+        blockModelGenerators.createTrivialCube(ModBlocks.HARDENED_SAND);
+        blockModelGenerators.createTrivialCube(ModBlocks.HARDENED_CRIMSAND);
+        blockModelGenerators.createTrivialCube(ModBlocks.HARDENED_EBONSAND);
+
 
 
 
@@ -202,6 +222,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.CORRUPT_SEEDS, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.COCONUT, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.CRIMSON_TIGERFISH, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.declareCustomModelItem(ModItems.PALLADIUM_SWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.ICE_SICKLE);
+        itemModelGenerators.declareCustomModelItem(ModItems.BONE_SWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.BRAND_OF_THE_INFERNO);
+        itemModelGenerators.declareCustomModelItem(ModItems.COBALT_SWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.FROSTBRAND);
+
 
 
 

@@ -6,8 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
+
 
 import java.util.concurrent.CompletableFuture;
 
@@ -47,6 +46,12 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.getRK(ModItems.TIN_SHORTSWORD))
                 .add(ModItems.getRK(ModItems.TUNGSTEN_SHORTSWORD))
                 .add(ModItems.getRK(ModItems.STARFURY))
+                .add(ModItems.getRK(ModItems.PALLADIUM_SWORD))
+                .add(ModItems.getRK(ModItems.ICE_SICKLE))
+                .add(ModItems.getRK(ModItems.BONE_SWORD))
+                .add(ModItems.getRK(ModItems.BRAND_OF_THE_INFERNO))
+                .add(ModItems.getRK(ModItems.COBALT_SWORD))
+
         ;
         tag(ItemTags.PICKAXES).add(ModItems.getRK(ModItems.NIGHTMARE_PICKAXE));
         tag(ItemTags.SHOVELS).add(ModItems.getRK(ModItems.NIGHTMARE_SHOVEL));
@@ -83,6 +88,18 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
         tag(ModTags.Items.TUNGSTEN_REPAIR)
                 .add(ModItems.getRK(ModItems.TUNGSTEN_BAR));
+
+        tag(ModTags.Items.PALLADIUM_REPAIR)
+                .add(ModItems.getRK(ModItems.PALLADIUM_BAR));
+
+        tag(ModTags.Items.COBALT_REPAIR)
+                .add(ModItems.getRK(ModItems.COBALT_BAR));
+
+        tag(ModTags.Items.BONE_REPAIR);
+        //add bones
+
+        tag(ModTags.Items.MYTHRIL_REPAIR)
+                .add(ModItems.getRK(ModItems.MYTHRIL_BAR));
 
 
     }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "unnamedmod:block/rainbow_brick_slabs"
+    },
+    "type=double": {
+      "model": "unnamedmod:block/rainbow_bricks"
+    },
+    "type=top": {
+      "model": "unnamedmod:block/rainbow_brick_slabs_top"
+    }
+  }
+}
