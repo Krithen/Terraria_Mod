@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/orichalcum_sword",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

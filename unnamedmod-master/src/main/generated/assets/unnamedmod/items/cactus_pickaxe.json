@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/cactus_pickaxe",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

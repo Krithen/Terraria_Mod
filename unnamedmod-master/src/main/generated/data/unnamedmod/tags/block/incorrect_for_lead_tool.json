@@ -1,3 +1,12 @@
 {
-  "values": []
+  "values": [
+    "#unnamedmod:needs_demonite_tool",
+    "#unnamedmod:needs_hellstone_tool",
+    "#unnamedmod:needs_palladium_tool",
+    "#unnamedmod:needs_cobalt_tool",
+    "#unnamedmod:needs_hallowed_tool",
+    "#unnamedmod:needs_mythril_tool",
+    "#unnamedmod:needs_bone_tool",
+    "#unnamedmod:needs_hallowed_tool"
+  ]
 }

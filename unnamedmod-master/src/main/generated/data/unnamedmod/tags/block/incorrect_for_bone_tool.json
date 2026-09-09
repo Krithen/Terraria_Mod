@@ -1,3 +1,6 @@
 {
-  "values": []
+  "values": [
+    "#unnamedmod:needs_hallowed_tool",
+    "#unnamedmod:needs_hellstone_tool"
+  ]
 }

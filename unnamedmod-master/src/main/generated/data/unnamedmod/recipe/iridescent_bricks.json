@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bricks",
+  "key": {
+    "A": "unnamedmod:ash",
+    "C": "minecraft:cobblestone"
+  },
+  "pattern": [
+    "CA",
+    "AC"
+  ],
+  "result": {
+    "id": "unnamedmod:iridescent_bricks"
+  }
+}

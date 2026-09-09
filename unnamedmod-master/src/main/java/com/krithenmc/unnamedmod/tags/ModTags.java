@@ -20,16 +20,33 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_HALLOWED_TOOL = createTag("needs_hallowed_tool");
         public static final TagKey<Block> INCORRECT_FOR_HALLOWED_TOOL = createTag("incorrect_for_hallowed_tool");
         public static final TagKey<Block> INCORRECT_FOR_HELLSTONE_TOOL = createTag("incorrect_for_hellstone_tool");
+        public static final TagKey<Block> NEEDS_HELLSTONE_TOOL = createTag("needs_hellstone_tool");
         public static final TagKey<Block> CRIMSON_BLOCK = createTag("crimson_block");
         public static final TagKey<Block> INCORRECT_FOR_LEAD_TOOL = createTag("incorrect_for_lead_tool");
+        public static final TagKey<Block> NEEDS_LEAD_TOOL = createTag("needs_lead_tool");
         public static final TagKey<Block> INCORRECT_FOR_SILVER_TOOL = createTag("incorrect_for_silver_tool");
+        public static final TagKey<Block> NEEDS_SILVER_TOOL = createTag("needs_silver_tool");
         public static final TagKey<Block> INCORRECT_FOR_TIN_TOOL = createTag("incorrect_for_tin_tool");
+        public static final TagKey<Block> NEEDS_TIN_TOOL = createTag("needs_lead_tool");
         public static final TagKey<Block> INCORRECT_FOR_TUNGSTEN_TOOL = createTag("incorrect_for_tungsten_tool");
+        public static final TagKey<Block> NEEDS_TUNGSTEN_TOOL = createTag("needs_lead_tool");
         public static final TagKey<Block> INCORRECT_FOR_PALLADIUM_TOOL = createTag("incorrect_for_palladium_tool");
+        public static final TagKey<Block> NEEDS_PALLADIUM_TOOL = createTag("needs_palladium_tool");
         public static final TagKey<Block> INCORRECT_FOR_BONE_TOOL = createTag("incorrect_for_bone_tool");
+        public static final  TagKey<Block> NEEDS_BONE_TOOL = createTag("needs_bone_tool");
         public static final TagKey<Block> INCORRECT_FOR_COBALT_TOOL = createTag("incorrect_for_cobalt_tool");
+        public static final TagKey<Block> NEEDS_COBALT_TOOL = createTag("needs_cobalt_tool");
         public static final TagKey<Block> INCORRECT_FOR_MYTHRIL_TOOL = createTag("incorrect_for_mythril_tool");
-        public static final TagKey<Block> NEEDS_HELLSTONE_TOOL = createTag("needs_hellstone_tool");
+        public static final TagKey<Block> NEEDS_MYTHRIL_TOOL = createTag("needs_mythril_tool");
+        public static final TagKey<Block> INCORRECT_FOR_CACTUS_TOOL = createTag("incorrect_for_cactus_tool");
+        public static final TagKey<Block> NEEDS_CACTUS_TOOL = createTag("needs_cactus_tool");
+        public static final TagKey<Block> INCORRECT_FOR_FOSSIL_TOOL = createTag("incorrect_for_fossil_tool");
+        public static final TagKey<Block> NEEDS_FOSSIL_TOOL = createTag("needs_fossil_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ORICHALCUM_TOOL = createTag("incorrect_for_orichalcum_tool");
+        public static final TagKey<Block> NEEDS_ORICHALCUM_TOOL = createTag("needs_orichalcum_tool");
+
+
+
 
 
     }
@@ -57,6 +74,9 @@ public class ModTags {
         public static final TagKey<Item> BONE_REPAIR = createTag("bone_repair");
         public static final TagKey<Item> COBALT_REPAIR = createTag("cobalt_repair");
         public static final TagKey<Item> MYTHRIL_REPAIR = createTag("mythril_repair");
+        public static final TagKey<Item> CACTUS_REPAIR = createTag("cactus_repair");
+        public static final TagKey<Item> FOSSIL_REPAIR = createTag("fossile_repair");
+        public static final TagKey<Item> ORICHALCUM_REPAIR = createTag("orichalcum_repair");
 
     }
 

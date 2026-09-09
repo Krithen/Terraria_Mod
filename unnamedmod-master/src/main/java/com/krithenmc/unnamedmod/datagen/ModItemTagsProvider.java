@@ -1,5 +1,6 @@
 package com.krithenmc.unnamedmod.datagen;
 
+import com.krithenmc.unnamedmod.block.ModBlocks;
 import com.krithenmc.unnamedmod.item.ModItems;
 import com.krithenmc.unnamedmod.tags.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -51,9 +52,17 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.getRK(ModItems.BONE_SWORD))
                 .add(ModItems.getRK(ModItems.BRAND_OF_THE_INFERNO))
                 .add(ModItems.getRK(ModItems.COBALT_SWORD))
+                .add(ModItems.getRK(ModItems.MYTHRIL_SWORD))
+                .add(ModItems.getRK(ModItems.ORICHALCUM_SWORD))
 
         ;
-        tag(ItemTags.PICKAXES).add(ModItems.getRK(ModItems.NIGHTMARE_PICKAXE));
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.getRK(ModItems.NIGHTMARE_PICKAXE))
+                .add(ModItems.getRK(ModItems.BONE_PICKAXE))
+                .add(ModItems.getRK(ModItems.CACTUS_PICKAXE))
+                .add(ModItems.getRK(ModItems.FOSSIL_PICKAXE))
+                .add(ModItems.getRK(ModItems.LEAD_PICKAXE))
+                .add(ModItems.getRK(ModItems.COBALT_PICKAXE));
         tag(ItemTags.SHOVELS).add(ModItems.getRK(ModItems.NIGHTMARE_SHOVEL));
         tag(ItemTags.SPEARS).add(ModItems.getRK(ModItems.GUNGNIR));
         tag(ItemTags.AXES).add(ModItems.getRK(ModItems.WAR_AXE_OF_THE_NIGHT));
@@ -100,6 +109,15 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
         tag(ModTags.Items.MYTHRIL_REPAIR)
                 .add(ModItems.getRK(ModItems.MYTHRIL_BAR));
+
+        tag(ModTags.Items.CACTUS_REPAIR)    ;
+
+        tag(ModTags.Items.FOSSIL_REPAIR)
+                //sturdy fossil
+        ;
+
+        tag(ModTags.Items.ORICHALCUM_REPAIR)
+                .add(ModItems.getRK(ModItems.ORICHALCUM_BAR));
 
 
     }

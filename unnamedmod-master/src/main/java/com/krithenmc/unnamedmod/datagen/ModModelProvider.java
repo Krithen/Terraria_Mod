@@ -120,6 +120,21 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.HARDENED_SAND);
         blockModelGenerators.createTrivialCube(ModBlocks.HARDENED_CRIMSAND);
         blockModelGenerators.createTrivialCube(ModBlocks.HARDENED_EBONSAND);
+        blockModelGenerators.createTrivialCube(ModBlocks.TUNGSTEN_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.TITANIUM_DEEPSLATE_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.TITANIUM_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.TIN_DEEPSLATE_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.TIN_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.HIVE);
+        blockModelGenerators.createTrivialCube(ModBlocks.ICE_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.IRIDESCENT_BRICKS);
+        blockModelGenerators.createNonTemplateModelBlock(ModBlocks.LIFE_CRYSTAL);
+        blockModelGenerators.createTrivialCube(ModBlocks.LIVING_LEAF_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.LIVING_MAHOGANY);
+        blockModelGenerators.createTrivialCube(ModBlocks.LIVING_MAHOGANY_LEAVES);
+        blockModelGenerators.createTrivialCube(ModBlocks.LIVING_WOOD);
+        blockModelGenerators.createTrivialCube(ModBlocks.ASH);
+        blockModelGenerators.createNonTemplateModelBlock(ModBlocks.BOTTLE_TERRARIA);
 
 
 
@@ -228,6 +243,18 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.declareCustomModelItem(ModItems.BRAND_OF_THE_INFERNO);
         itemModelGenerators.declareCustomModelItem(ModItems.COBALT_SWORD);
         itemModelGenerators.declareCustomModelItem(ModItems.FROSTBRAND);
+        itemModelGenerators.declareCustomModelItem(ModItems.BONE_PICKAXE);
+        itemModelGenerators.generateFlatItem(ModItems.RAW_TITANUM, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.RAW_TIN, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.declareCustomModelItem(ModItems.CACTUS_PICKAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.FOSSIL_PICKAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.LEAD_PICKAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.MYTHRIL_SWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.ORICHALCUM_SWORD);
+        itemModelGenerators.generateFlatItem(ModItems.MAGIC_MIRROR, ModelTemplates.FLAT_HANDHELD_ROD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.CHERRY, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.declareCustomModelItem(ModItems.COBALT_PICKAXE);
+
 
 
 

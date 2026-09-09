@@ -1,5 +1,10 @@
 {
   "values": [
-    "unnamedmod:nightmare_pickaxe"
+    "unnamedmod:nightmare_pickaxe",
+    "unnamedmod:bone_pickaxe",
+    "unnamedmod:cactus_pickaxe",
+    "unnamedmod:fossil_pickaxe",
+    "unnamedmod:lead_pickaxe",
+    "unnamedmod:cobalt_pickaxe"
   ]
 }

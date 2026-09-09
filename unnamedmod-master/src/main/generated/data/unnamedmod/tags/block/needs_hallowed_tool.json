@@ -1,3 +1,17 @@
 {
-  "values": []
+  "values": [
+    "#unnamedmod:needs_mythril_tool",
+    "#unnamedmod:needs_cobalt_tool",
+    "#unnamedmod:needs_lead_tool",
+    "#unnamedmod:needs_silver_tool",
+    "#unnamedmod:needs_demonite_tool",
+    "#unnamedmod:needs_bone_tool",
+    "#unnamedmod:needs_hellstone_tool",
+    "#minecraft:needs_iron_tool",
+    "#minecraft:needs_diamond_tool",
+    "#unnamedmod:needs_palladium_tool",
+    "#minecraft:needs_stone_tool",
+    "unnamedmod:chlorophyte_ore",
+    "unnamedmod:chlorophyte_deepslate_ore"
+  ]
 }

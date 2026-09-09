@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/lead_pickaxe",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

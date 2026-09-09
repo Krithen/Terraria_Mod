@@ -13,6 +13,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -398,6 +399,35 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("C")
                         .pattern("C")
                         .pattern("S")
+                        .define('C', ModBlocks.COBALT_BRICKS)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.COBALT_BAR), has(ModItems.COBALT_BAR))
+                        .group("cobalt")
+                        .save(output);
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_BRICKS)
+                        .pattern("II")
+                        .pattern("II")
+                        .define('I', Blocks.BLUE_ICE)
+                        .unlockedBy(getHasName(Blocks.BLUE_ICE), has(Blocks.BLUE_ICE))
+                        .group("ice")
+                        .save(output);
+
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRIDESCENT_BRICKS)
+                        .pattern("CA")
+                        .pattern("AC")
+                        .define('C', Blocks.COBBLESTONE)
+                        .define('A', ModBlocks.ASH)
+                        .unlockedBy(getHasName(ModBlocks.ASH), has(ModBlocks.ASH))
+                        .group("bricks")
+                        .save(output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.COBALT_PICKAXE)
+                        .pattern("BCB")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .define('B', ModItems.COBALT_BAR)
                         .define('C', ModBlocks.COBALT_BRICKS)
                         .define('S', Items.STICK)
                         .unlockedBy(getHasName(ModItems.COBALT_BAR), has(ModItems.COBALT_BAR))

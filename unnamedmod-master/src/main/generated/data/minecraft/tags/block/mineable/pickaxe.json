@@ -43,6 +43,15 @@
     "unnamedmod:rainbow_brick_slabs",
     "unnamedmod:rainbow_brick_stairs",
     "unnamedmod:rainbow_brick_walls",
-    "unnamedmod:rainbow_brick_button"
+    "unnamedmod:rainbow_brick_button",
+    "unnamedmod:tungsten_ore",
+    "unnamedmod:titanium_deepslate_ore",
+    "unnamedmod:titanium_ore",
+    "unnamedmod:tin_deepslate_ore",
+    "unnamedmod:tin_ore",
+    "unnamedmod:hive",
+    "unnamedmod:ice_bricks",
+    "unnamedmod:iridescent_bricks",
+    "unnamedmod:ash"
   ]
 }

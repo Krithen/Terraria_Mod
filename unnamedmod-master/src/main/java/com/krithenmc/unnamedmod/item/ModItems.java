@@ -1,10 +1,12 @@
 package com.krithenmc.unnamedmod.item;
 
+import com.geckolib.event.GeoRenderEvent;
 import com.krithenmc.unnamedmod.Unnamedmod;
 import com.krithenmc.unnamedmod.consumables.ModConsumables;
 import com.krithenmc.unnamedmod.food.ModFoods;
 
 import com.krithenmc.unnamedmod.item.custom.HammerItem;
+import com.krithenmc.unnamedmod.item.custom.MirrorItem;
 import com.krithenmc.unnamedmod.item.custom.ShortSwordItem;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.fabricmc.fabric.api.item.v1.FabricItem;
@@ -263,6 +265,31 @@ public class ModItems extends Item.Properties {
             new ShortSwordItem(properties.sword(ModToolMaterials.COBALT, 39, -1.4f)));
     public static final Item FROSTBRAND = registerItem("frostbrand", properties ->
             new ShortSwordItem(properties.sword(ModToolMaterials.ICE, 48, -1.4f)));
+    public static final Item BONE_PICKAXE = registerItem("bone_pickaxe", properties ->
+            new ShortSwordItem(properties.pickaxe(ModToolMaterials.BONE, 7, -1.4f)) {
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder.accept(Component.translatable("tooltip.unnamedmod.bone_pickaxe"));
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
+    public static final Item RAW_TITANUM = registerItem("raw_titanium", Item::new);
+    public static final Item RAW_TIN = registerItem("raw_tin", Item::new);
+    public static final Item CACTUS_PICKAXE = registerItem("cactus_pickaxe", properties ->
+            new ShortSwordItem(properties.pickaxe(ModToolMaterials.CACTUS, 3, -1.4f)));
+    public static final Item FOSSIL_PICKAXE = registerItem("fossil_pickaxe", properties ->
+            new ShortSwordItem(properties.pickaxe(ModToolMaterials.FOSSIL, 7, -1.4f)));
+    public static final Item LEAD_PICKAXE = registerItem("lead_pickaxe", properties ->
+            new ShortSwordItem(properties.pickaxe(ModToolMaterials.LEAD, 5, -1.4f)));
+    public static final Item MYTHRIL_SWORD = registerItem("mythril_sword", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.MYTHRIL, 49, -1.4f)));
+    public static final Item ORICHALCUM_SWORD = registerItem("orichalcum_sword", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.ORICHALCUM, 58, -1.4f)));
+    public static final Item MAGIC_MIRROR = registerItem("magic_mirror", MirrorItem::new);
+    public static final Item CHERRY = registerItem("cherry", properties ->
+            new Item(properties.food(ModFoods.CHERRY, ModConsumables.CHERRY)));
+    public static final Item COBALT_PICKAXE = registerItem("cobalt_pickaxe", properties ->
+            new Item(properties.pickaxe(ModToolMaterials.COBALT, 9, -1.4f)));
 
 
 

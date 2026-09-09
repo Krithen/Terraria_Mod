@@ -27,5 +27,7 @@ public class ModConsumables {
             .consumeSeconds(1f).build();
     public static final Consumable CRIMSON_TIGERFISH = Consumables.defaultFood()
             .consumeSeconds(1f).build();
+    public static final Consumable CHERRY = Consumables.defaultFood()
+            .consumeSeconds(2f).build();
 
 }

@@ -71,6 +71,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SOUL_OF_SIGHT);
                         output.accept(ModItems.RAW_TUNGSTEN);
                         output.accept(ModItems.CORRUPT_SEEDS);
+                        output.accept(ModItems.RAW_TITANUM);
+                        output.accept(ModItems.RAW_TIN);
+                        output.accept(ModItems.MAGIC_MIRROR);
 
 
                     }).build());
@@ -161,6 +164,21 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.HARDENED_SAND);
                         output.accept(ModBlocks.HARDENED_CRIMSAND);
                         output.accept(ModBlocks.HARDENED_EBONSAND);
+                        output.accept(ModBlocks.TUNGSTEN_ORE);
+                        output.accept(ModBlocks.TITANIUM_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.TITANIUM_ORE);
+                        output.accept(ModBlocks.TIN_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.TIN_ORE);
+                        output.accept(ModBlocks.HIVE);
+                        output.accept(ModBlocks.ICE_BRICKS);
+                        output.accept(ModBlocks.IRIDESCENT_BRICKS);
+                        output.accept(ModBlocks.LIFE_CRYSTAL);
+                        output.accept(ModBlocks.LIVING_LEAF_BLOCK);
+                        output.accept(ModBlocks.LIVING_MAHOGANY);
+                        output.accept(ModBlocks.LIVING_MAHOGANY_LEAVES);
+                        output.accept(ModBlocks.LIVING_WOOD);
+                        output.accept(ModBlocks.ASH);
+                        output.accept(ModBlocks.BOTTLE_TERRARIA);
 
 
 
@@ -210,6 +228,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BRAND_OF_THE_INFERNO);
                         output.accept(ModItems.COBALT_SWORD);
                         output.accept(ModItems.FROSTBRAND);
+                        output.accept(ModItems.BONE_PICKAXE);
+                        output.accept(ModItems.CACTUS_PICKAXE);
+                        output.accept(ModItems.FOSSIL_PICKAXE);
+                        output.accept(ModItems.LEAD_PICKAXE);
+                        output.accept(ModItems.MYTHRIL_SWORD);
+                        output.accept(ModItems.ORICHALCUM_SWORD);
+                        output.accept(ModItems.COBALT_PICKAXE);
 
 
 
@@ -227,6 +252,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BLACKCURRANT);
                         output.accept(ModItems.CRIMSON_TIGERFISH);
                         output.accept(ModItems.COCONUT);
+                        output.accept(ModItems.CHERRY);
 
 
 

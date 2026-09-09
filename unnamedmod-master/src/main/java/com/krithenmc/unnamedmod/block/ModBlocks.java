@@ -1,9 +1,7 @@
 package com.krithenmc.unnamedmod.block;
 
 import com.krithenmc.unnamedmod.Unnamedmod;
-import com.krithenmc.unnamedmod.block.custom.CrimsonBlock;
-import com.krithenmc.unnamedmod.block.custom.EmeraldGemSparkBlock;
-import com.krithenmc.unnamedmod.block.custom.MagicBlock;
+import com.krithenmc.unnamedmod.block.custom.*;
 import com.mojang.serialization.MapCodec;
 
 import net.minecraft.core.BlockPos;
@@ -120,7 +118,7 @@ public class ModBlocks {
     public static final Block SHADEWOOD_FENCE_GATE = registerBlock("shadewood_fence_gate", properties ->
             new FenceGateBlock(WoodType.DARK_OAK, properties.strength(1f).noOcclusion()));
     public static final Block SHADEWOOD_DOOR = registerBlock("shadewood_door", properties ->
-            new DoorBlock(BlockSetType.DARK_OAK, properties.strength(1f)));
+            new DoorBlock(BlockSetType.DARK_OAK, properties.strength(1f).noOcclusion()));
     public static final Block SHADEWOOD_TRAPDOOR = registerBlock("shadewood_trapdoor", properties ->
             new TrapDoorBlock(BlockSetType.DARK_OAK, properties.strength(1f).noOcclusion()));
 
@@ -157,7 +155,7 @@ public class ModBlocks {
     public static final Block BOREAL_FENCE_GATE = registerBlock("boreal_fence_gate", properties ->
             new FenceGateBlock(WoodType.DARK_OAK, properties.strength(1f).noOcclusion()));
     public static final Block BOREAL_DOOR = registerBlock("boreal_door", properties ->
-            new DoorBlock(BlockSetType.DARK_OAK, properties.strength(1f)));
+            new DoorBlock(BlockSetType.DARK_OAK, properties.strength(1f).noOcclusion()));
     public static final Block BOREAL_TRAPDOOR = registerBlock("boreal_trapdoor", properties ->
             new TrapDoorBlock(BlockSetType.DARK_OAK, properties.strength(1f).noOcclusion()));
     public static final Block LEAD_ANVIL = registerBlock("lead_anvil", properties ->
@@ -214,6 +212,36 @@ public class ModBlocks {
             new Block(properties.strength(1f)));
     public static final Block HARDENED_EBONSAND = registerBlock("hardened_ebonsand", properties ->
             new Block(properties.strength(1f)));
+    public static final Block TUNGSTEN_ORE = registerBlock("tungsten_ore", properties ->
+            new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(2f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final Block TITANIUM_DEEPSLATE_ORE = registerBlock("titanium_deepslate_ore", properties ->
+            new DropExperienceBlock(UniformInt.of(3, 6), properties.strength(4f).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()));
+    public static final Block TITANIUM_ORE = registerBlock("titanium_ore", properties ->
+            new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(2f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final Block TIN_DEEPSLATE_ORE = registerBlock("tin_deepslate_ore", properties ->
+            new DropExperienceBlock(UniformInt.of(3, 6), properties.strength(4f).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()));
+    public static final Block TIN_ORE = registerBlock("tin_ore", properties ->
+            new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(2f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final Block HIVE = registerBlock("hive", properties ->
+            new HiveBlock(properties.strength(1f)));
+    public static final Block ICE_BRICKS = registerBlock("ice_bricks", properties ->
+            new IceBlock(properties.strength(2f)));
+    public static final Block IRIDESCENT_BRICKS = registerBlock("iridescent_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block LIFE_CRYSTAL = registerBlock("life_crystal", properties ->
+            new LifeCrystalBlock(properties.strength(2f).noOcclusion()));
+    public static final Block LIVING_LEAF_BLOCK = registerBlock("living_leaf_block", properties ->
+            new Block(properties.strength(1f).requiresCorrectToolForDrops()));
+    public static final Block LIVING_MAHOGANY = registerBlock("living_mahogany", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block LIVING_MAHOGANY_LEAVES = registerBlock("living_mahogany_leaves", properties ->
+            new Block(properties.strength(1f).requiresCorrectToolForDrops()));
+    public static final Block LIVING_WOOD = registerBlock("living_wood", properties ->
+            new Block(properties.strength(3f)));
+    public static final Block ASH = registerBlock("ash", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block BOTTLE_TERRARIA = registerBlock("bottle_terraria", properties ->
+            new Block(properties.strength(1f).noOcclusion()));
 
 
 

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "cobalt",
+  "key": {
+    "B": "unnamedmod:cobalt_bar",
+    "C": "unnamedmod:cobalt_bricks",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "BCB",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "id": "unnamedmod:cobalt_pickaxe"
+  }
+}

@@ -77,6 +77,14 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.HARDENED_CRIMSAND);
         dropSelf(ModBlocks.HARDENED_SAND);
         dropSelf(ModBlocks.HARDENED_EBONSAND);
+        dropSelf(ModBlocks.HIVE);
+        dropSelf(ModBlocks.ICE_BRICKS);
+        dropSelf(ModBlocks.IRIDESCENT_BRICKS);
+        dropSelf(ModBlocks.LIFE_CRYSTAL);
+        dropSelf(ModBlocks.LIVING_MAHOGANY);
+        dropSelf(ModBlocks.LIVING_WOOD);
+        dropSelf(ModBlocks.ASH);
+        dropSelf(ModBlocks.BOTTLE_TERRARIA);
 
 
         add(ModBlocks.ADAMANTITE_ORE, createOreDrop(ModBlocks.ADAMANTITE_ORE, ModItems.RAW_ADAMANTITE));
@@ -109,6 +117,13 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         add(ModBlocks.BLUE_MUSHROOM_STEM, createSilkTouchOnlyTable(ModBlocks.BLUE_MUSHROOM_STEM));
         add(ModBlocks.BLUE_MUSHROOM_BLOCK, createMushroomBlockDrop(ModBlocks.BLUE_MUSHROOM_BLOCK, ModItems.GLOWING_MUSHROOM));
         add(ModBlocks.DEEPSLATE_TUNGSTEN_ORE, createOreDrop(ModBlocks.DEEPSLATE_TUNGSTEN_ORE, ModItems.RAW_TUNGSTEN));
+        add(ModBlocks.TUNGSTEN_ORE, createOreDrop(ModBlocks.TUNGSTEN_ORE, ModItems.RAW_TUNGSTEN));
+        add(ModBlocks.TITANIUM_DEEPSLATE_ORE, createOreDrop(ModBlocks.TITANIUM_DEEPSLATE_ORE, ModItems.RAW_TITANUM));
+        add(ModBlocks.TITANIUM_ORE, createOreDrop(ModBlocks.TITANIUM_ORE, ModItems.RAW_TITANUM));
+        add(ModBlocks.TIN_DEEPSLATE_ORE, createOreDrop(ModBlocks.TIN_DEEPSLATE_ORE, ModItems.RAW_TIN));
+        add(ModBlocks.TIN_ORE, createOreDrop(ModBlocks.TIN_ORE, ModItems.RAW_TIN));
+        add(ModBlocks.LIVING_LEAF_BLOCK, createSilkTouchOnlyTable(ModBlocks.LIVING_LEAF_BLOCK));
+        add(ModBlocks.LIVING_MAHOGANY_LEAVES, createSilkTouchOnlyTable(ModBlocks.LIVING_MAHOGANY_LEAVES));
 
 
 
