@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/adamantite_sword",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

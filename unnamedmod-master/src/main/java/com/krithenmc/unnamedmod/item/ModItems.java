@@ -1,14 +1,13 @@
 package com.krithenmc.unnamedmod.item;
 
-import com.geckolib.event.GeoRenderEvent;
+
 import com.krithenmc.unnamedmod.Unnamedmod;
+import com.krithenmc.unnamedmod.block.ModBlocks;
 import com.krithenmc.unnamedmod.consumables.ModConsumables;
 import com.krithenmc.unnamedmod.food.ModFoods;
 
-import com.krithenmc.unnamedmod.item.custom.HammerItem;
-import com.krithenmc.unnamedmod.item.custom.MirrorItem;
-import com.krithenmc.unnamedmod.item.custom.ShortSwordItem;
-import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
+import com.krithenmc.unnamedmod.item.custom.*;
+
 import net.fabricmc.fabric.api.item.v1.FabricItem;
 
 import net.minecraft.core.Registry;
@@ -21,7 +20,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.TooltipDisplay;
 
-import net.minecraft.world.item.equipment.ArmorMaterials;
+
 import net.minecraft.world.item.equipment.ArmorType;
 
 
@@ -126,7 +125,7 @@ public class ModItems extends Item.Properties {
     public static final Item BLACKCURRANT = registerItem("blackcurrant", properties -> new
             Item(properties.food(ModFoods.BLACKCURRANT, ModConsumables.BLACKCURRANT_CONSUMABLE)));
     public static final Item BLOOD_ORANGE = registerItem("blood_orange", properties -> new
-            Item(properties.food(ModFoods.BLOOD_ORANGE, ModConsumables.BLOOD_ORANGE_CONSUMABLE)));
+            BlockItem(ModBlocks.BLOOD_ORANGE_BUSH, properties.food(ModFoods.BLOOD_ORANGE, ModConsumables.BLOOD_ORANGE_CONSUMABLE).useItemDescriptionPrefix()));
     public static final Item ACORN = registerItem("acorn", Item::new);
     public static final Item UMBRAL_CRYSTAL = registerItem("umbral_crystal", Item::new);
     public static final Item UMBRAL_PLATE = registerItem("umbral_plate", Item::new);
@@ -203,8 +202,6 @@ public class ModItems extends Item.Properties {
                     super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
                 }
             });
-    public static final Item SHADOW_SCALEMAIL = registerItem("shadow_scalemail", properties -> new
-            Item(properties.humanoidArmor(ArmorMaterials.DIAMOND, ArmorType.CHESTPLATE)));
     public static final Item SOUL_OF_SIGHT = registerItem("soul_of_sight", properties -> new
             Item(properties) {
                 @Override
@@ -289,7 +286,53 @@ public class ModItems extends Item.Properties {
     public static final Item CHERRY = registerItem("cherry", properties ->
             new Item(properties.food(ModFoods.CHERRY, ModConsumables.CHERRY)));
     public static final Item COBALT_PICKAXE = registerItem("cobalt_pickaxe", properties ->
-            new Item(properties.pickaxe(ModToolMaterials.COBALT, 9, -1.4f)));
+            new ShortSwordItem(properties.pickaxe(ModToolMaterials.COBALT, 9, -1.4f)));
+    public static final Item DEATHBRINGER_PICKAXE = registerItem("deathbringer_pickaxe", properties ->
+            new ShortSwordItem(properties.pickaxe(ModToolMaterials.CRIMTANE, 11, -1.4f)));
+    public static final Item ELDERBERRY = registerItem("elderberry", properties ->
+            new Item(properties.food(ModFoods.ELDERBERRY, ModConsumables.ELDERBERRY)));
+    public static final Item FUSED_VERTEBRA = registerItem("fused_vertebra", Item::new);
+    public static final Item GLADIUS = registerItem("gladius", properties ->
+            new Item(properties.sword(ModToolMaterials.NOTCRAFTED, 14, -1.2f)) {
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder.accept(Component.translatable("tooltip.unnamedmod.gladius"));
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
+    public static final Item GRAPEFRUIT = registerItem("grapefruit", properties ->
+            new Item(properties.food(ModFoods.GRAPEFRUIT, ModConsumables.GRAPEFRUIT)));
+    public static final Item HAMBURGER = registerItem("hamburger", properties ->
+            new Item(properties.food(ModFoods.HAMBURGER, ModConsumables.HAMBURGER)));
+    public static final Item LEMON = registerItem("lemon", properties ->
+            new Item(properties.food(ModFoods.LEMON, ModConsumables.LEMON)));
+    public static final Item LENS = registerItem("lens", Item::new);
+    public static final Item MANGO = registerItem("mango", properties ->
+            new Item(properties.food(ModFoods.MANGO, ModConsumables.MANGO)));
+    public static final Item MARSHMALLOW = registerItem("marshmallow", properties ->
+            new Item(properties.food(ModFoods.MARSHMALLOW, ModConsumables.MARSHMALLOW)));
+    public static final Item MOLTEN_PICKAXE = registerItem("molten_pickaxe", properties ->
+            new ShortSwordItem(properties.pickaxe(ModToolMaterials.HELLSTONE, 11, -1.4f)));
+    public static final Item MUSHROOM = registerItem("mushroom", Item::new);
+    public static final Item SHADOW_HELMET = registerItem("shadow_helmet", properties ->
+            new TerrariaArmorItems(properties.humanoidArmor(ModArmorMaterials.DEMONITE_ARMOR_MATERIAL, ArmorType.HELMET)));
+    public static final Item SHADOW_SCALEMAIL = registerItem("shadow_scalemail", properties ->
+            new TerrariaArmorItems(properties.humanoidArmor(ModArmorMaterials.DEMONITE_ARMOR_MATERIAL, ArmorType.CHESTPLATE)));
+    public static final Item SHADOW_GREAVES = registerItem("shadow_greaves", properties ->
+            new TerrariaArmorItems(properties.humanoidArmor(ModArmorMaterials.DEMONITE_ARMOR_MATERIAL, ArmorType.LEGGINGS)));
+    public static final Item SHADOW_SABATONS = registerItem("shadow_sabatons", properties ->
+            new TerrariaArmorItems(properties.humanoidArmor(ModArmorMaterials.DEMONITE_ARMOR_MATERIAL, ArmorType.BOOTS)));
+    public static final Item DEMON_BOW = registerItem("demon_bow", properties ->
+            new TerrariaBowItem(properties.durability(5000)));
+    public static final Item ADAMANTITE_SWORD = registerItem("adamantite_sword", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.ADAMANTITE, 60, -1.4f)));
+    public static final Item DEATHWEED_SEEDS = registerItem("deathweed_seeds", properties ->
+            new BlockItem(ModBlocks.DEATHWEED_CROP, properties.useItemDescriptionPrefix()));
+    public static final Item DEATHWEED = registerItem("deathweed", Item::new);
+    public static final Item BEAM_SWORD = registerItem("beam_sword", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 51, -1.4f)));
+
+
 
 
 

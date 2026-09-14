@@ -12,7 +12,7 @@
         "upswing": 0.5,
         "animation": "bettercombat:two_handed_slash_horizontal_right",
         "swing_sound": {
-          "id": "bettercombat:claymore_swing"
+          "id": "unnamedmod:nightsedge"
         }
       },
       {
@@ -22,7 +22,7 @@
         "upswing": 0.5,
         "animation": "bettercombat:one_handed_slash_horizontal_left",
         "swing_sound": {
-          "id": "bettercombat:claymore_swing"
+          "id": "unnamedmod:nightsedge"
         }
       },
       {
@@ -32,7 +32,7 @@
         "upswing": 0.5,
         "animation": "bettercombat:two_handed_spin",
         "swing_sound": {
-          "id": "bettercombat:claymore_slam",
+          "id": "unnamedmod:nightsedge",
           "randomness": 0
         }
       }

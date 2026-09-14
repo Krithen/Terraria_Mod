@@ -434,6 +434,71 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("cobalt")
                         .save(output);
 
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MUDSTONE_BRICKS)
+                        .pattern("SM")
+                        .define('S', Blocks.COBBLESTONE)
+                        .define('M', Blocks.MUD)
+                        .unlockedBy(getHasName(Blocks.MUD), has(Blocks.MUD))
+                        .save(output);
+
+
+                bricksBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MYTHRIL_BRICKS, Ingredient.of(ModItems.MYTHRIL_BAR))
+                        .unlockedBy(getHasName(ModItems.MYTHRIL_BAR), has(ModItems.MYTHRIL_BAR))
+                        .group("mythril")
+                        .save(output);
+
+                bricksBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_BRICKS, Ingredient.of(Blocks.OBSIDIAN))
+                        .unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN))
+                        .save(output);
+
+                stairBuilder(ModBlocks.PALMWOOD_STAIRS, Ingredient.of(ModBlocks.PALMWOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.PALMWOOD_PLANKS), has(ModBlocks.PALMWOOD_PLANKS))
+                        .group("palmwood")
+                        .save(output);
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALMWOOD_SLABS, Ingredient.of(ModBlocks.PALMWOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.PALMWOOD_PLANKS), has(ModBlocks.PALMWOOD_PLANKS))
+                        .group("palmwood")
+                        .save(output);
+
+                trapdoorBuilder(ModBlocks.PALMWOOD_TRAPDOOR, Ingredient.of(ModBlocks.PALMWOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.PALMWOOD_PLANKS), has(ModBlocks.PALMWOOD_PLANKS))
+                        .group("palmwood")
+                        .save(output);
+
+                doorBuilder(ModBlocks.PALMWOOD_DOOR, Ingredient.of(ModBlocks.PALMWOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.PALMWOOD_PLANKS), has(ModBlocks.PALMWOOD_PLANKS))
+                        .group("palmwood")
+                        .save(output);
+
+                buttonBuilder(ModBlocks.PALMWOOD_BUTTON, Ingredient.of(ModBlocks.PALMWOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.PALMWOOD_PLANKS), has(ModBlocks.PALMWOOD_PLANKS))
+                        .group("palmwood")
+                        .save(output);
+
+                pressurePlateBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALMWOOD_PRESSURE_PLATE, Ingredient.of(ModBlocks.PALMWOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.PALMWOOD_PLANKS), has(ModBlocks.PALMWOOD_PLANKS))
+                        .group("palmwood")
+                        .save(output);
+
+                fenceBuilder(ModBlocks.PALMWOOD_FENCE, Ingredient.of(ModBlocks.PALMWOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.PALMWOOD_PLANKS), has(ModBlocks.PALMWOOD_PLANKS))
+                        .group("palmwood")
+                        .save(output);
+
+                fenceGateBuilder(ModBlocks.PALMWOOD_FENCE_GATE, Ingredient.of(ModBlocks.PALMWOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.PALMWOOD_PLANKS), has(ModBlocks.PALMWOOD_PLANKS))
+                        .group("palmwood")
+                        .save(output);
+
+                woodFromLogs(ModBlocks.PALMWOOD, ModBlocks.PALMWOOD_LOG);
+                woodFromLogs(ModBlocks.SHADEWOOD, ModBlocks.SHADEWOOD_LOG);
+                woodFromLogs(ModBlocks.BOREAL_WOOD, ModBlocks.BOREAL_WOOD_LOG);
+
+
+
+
+
 
 
 

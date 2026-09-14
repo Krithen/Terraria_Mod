@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/shadow_armor",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

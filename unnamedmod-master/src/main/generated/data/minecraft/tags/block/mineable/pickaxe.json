@@ -52,6 +52,10 @@
     "unnamedmod:hive",
     "unnamedmod:ice_bricks",
     "unnamedmod:iridescent_bricks",
-    "unnamedmod:ash"
+    "unnamedmod:ash",
+    "unnamedmod:meteorite_bricks",
+    "unnamedmod:mudstone_bricks",
+    "unnamedmod:mythril_bricks",
+    "unnamedmod:obsidian_bricks"
   ]
 }

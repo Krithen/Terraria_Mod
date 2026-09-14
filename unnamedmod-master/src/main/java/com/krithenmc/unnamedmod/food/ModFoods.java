@@ -1,8 +1,6 @@
 package com.krithenmc.unnamedmod.food;
 
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.component.Consumable;
-import net.minecraft.world.item.component.Consumables;
 
 public class ModFoods {
     public static final FoodProperties BLACKCURRANT = new FoodProperties.Builder().nutrition(2).saturationModifier(2).build();
@@ -18,6 +16,12 @@ public class ModFoods {
     public static final FoodProperties COCONUT = new FoodProperties.Builder().nutrition(4).saturationModifier(2).build();
     public static final FoodProperties CRIMSON_TIGERFISH = new FoodProperties.Builder().nutrition(4).saturationModifier(4).build();
     public static final FoodProperties CHERRY = new FoodProperties.Builder().nutrition(2).saturationModifier(2).build();
+    public static final FoodProperties ELDERBERRY = new FoodProperties.Builder().nutrition(2).saturationModifier(2).build();
+    public static final FoodProperties GRAPEFRUIT = new FoodProperties.Builder().nutrition(2).saturationModifier(2).build();
+    public static final FoodProperties HAMBURGER = new FoodProperties.Builder().nutrition(5).saturationModifier(5).build();
+    public static final FoodProperties LEMON = new FoodProperties.Builder().nutrition(2).saturationModifier(2).build();
+    public static final FoodProperties MANGO = new FoodProperties.Builder().nutrition(2).saturationModifier(2).build();
+    public static final FoodProperties MARSHMALLOW = new FoodProperties.Builder().nutrition(5).saturationModifier(1).build();
 
 
 

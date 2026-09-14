@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mythril",
+  "key": {
+    "#": "unnamedmod:mythril_bar"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 4,
+    "id": "unnamedmod:mythril_bricks"
+  }
+}

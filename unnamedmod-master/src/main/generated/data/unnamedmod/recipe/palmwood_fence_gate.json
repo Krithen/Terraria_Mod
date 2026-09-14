@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "palmwood",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "unnamedmod:palmwood_planks"
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "id": "unnamedmod:palmwood_fence_gate"
+  }
+}

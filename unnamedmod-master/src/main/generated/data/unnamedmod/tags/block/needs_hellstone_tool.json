@@ -1,9 +1,5 @@
 {
   "values": [
-    "#unnamedmod:needs_demonite_tool",
-    "unnamedmod:cobalt_ore",
-    "unnamedmod:cobalt_deepslate_ore",
-    "unnamedmod:palladium_ore",
-    "unnamedmod:palladium_deepslate_ore"
+    "#unnamedmod:needs_tier5_tool"
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "unnamedmod:block/palmwood_slabs"
+    },
+    "type=double": {
+      "model": "unnamedmod:block/palmwood_planks"
+    },
+    "type=top": {
+      "model": "unnamedmod:block/palmwood_slabs_top"
+    }
+  }
+}

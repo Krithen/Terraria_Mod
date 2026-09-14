@@ -20,10 +20,13 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.component.SuspiciousStewEffects;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.entity.HangingSignBlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
@@ -241,7 +244,56 @@ public class ModBlocks {
     public static final Block ASH = registerBlock("ash", properties ->
             new Block(properties.strength(2f)));
     public static final Block BOTTLE_TERRARIA = registerBlock("bottle_terraria", properties ->
-            new Block(properties.strength(1f).noOcclusion()));
+            new BottleBlock(properties.strength(1f).noOcclusion()));
+    public static final Block METEORITE_BRICKS = registerBlock("meteorite_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block MUDSTONE_BRICKS = registerBlock("mudstone_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block MYTHRIL_BRICKS = registerBlock("mythril_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block OBSIDIAN_BRICKS = registerBlock("obsidian_bricks", properties ->
+            new Block(properties.strength(4f)));
+    public static final Block PALMWOOD_LOG = registerBlock("palmwood_log", properties -> new
+            RotatedPillarBlock(properties.strength(1f).sound(SoundType.WOOD)));
+    public static final Block PALMWOOD_PLANKS = registerBlock("palmwood_planks", properties ->
+            new Block(properties.strength(1f).sound(SoundType.WOOD)));
+    public static final Block PALMWOOD_SLABS = registerBlock("palmwood_slabs", properties ->
+            new SlabBlock(properties.strength(1f).sound(SoundType.WOOD)));
+    public static final Block PALMWOOD_STAIRS = registerBlock("palmwood_stairs", properties ->
+            new StairBlock(ModBlocks.PALMWOOD_PLANKS.defaultBlockState(), properties.strength(1f).sound(SoundType.WOOD)));
+    public static final Block PALMWOOD_TRAPDOOR = registerBlock("palmwood_trapdoor", properties ->
+            new TrapDoorBlock(BlockSetType.DARK_OAK, properties.strength(1f).noOcclusion().sound(SoundType.WOOD)));
+    public static final Block PALMWOOD_DOOR = registerBlock("palmwood_door", properties ->
+            new DoorBlock(BlockSetType.DARK_OAK, properties.strength(1f).noOcclusion().sound(SoundType.WOOD)));
+    public static final Block PALMWOOD_BUTTON = registerBlock("palmwood_button", properties ->
+            new ButtonBlock(BlockSetType.DARK_OAK, 20, properties.sound(SoundType.WOOD).strength(1f).noCollision()));
+    public static final Block PALMWOOD_PRESSURE_PLATE = registerBlock("palmwood_pressure_plate", properties ->
+            new PressurePlateBlock(BlockSetType.DARK_OAK, properties.sound(SoundType.WOOD).strength(1f).noCollision()));
+    public static final Block PALMWOOD_FENCE = registerBlock("palmwood_fence", properties ->
+            new FenceBlock(properties.sound(SoundType.WOOD).strength(1f)));
+    public static final Block PALMWOOD_FENCE_GATE = registerBlock("palmwood_fence_gate", properties ->
+            new FenceGateBlock(WoodType.DARK_OAK, properties.sound(SoundType.WOOD).strength(1f)));
+    public static final Block PALMWOOD = registerBlock("palmwood", properties ->
+            new Block(properties.sound(SoundType.WOOD).strength(1f)));
+    public static final Block SHADEWOOD = registerBlock("shadewood", properties ->
+            new Block(properties.strength(1f).sound(SoundType.WOOD)));
+    public static final Block BOREAL_WOOD = registerBlock("boreal_wood", properties ->
+            new Block(properties.strength(1f).sound(SoundType.WOOD)));
+    public static final Block HELIUM_MOSS = registerBlock("helium_moss", properties ->
+            new Block(properties.strength(1f).sound(SoundType.MOSS)));
+    public static final Block HELIUM_MOSS_CARPET = registerBlock("helium_moss_carpet", properties ->
+            new MossyCarpetBlock(properties.strength(1f).sound(SoundType.MOSS)));
+    public static final Block ARGON_MOSS = registerBlock("argon_moss", properties ->
+            new Block(properties.strength(1f).sound(SoundType.MOSS)));
+    public static final Block ARGON_MOSS_CARPET = registerBlock("argon_moss_carpet", properties ->
+            new MossyCarpetBlock(properties.strength(1f).sound(SoundType.MOSS)));
+    public static final Block DEATHWEED_CROP = registerBlockWithoutBlockitem("deathweed_crop", properties ->
+            new DeathweedCropBlock(properties.noCollision().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
+    public static final Block BLOOD_ORANGE_BUSH = registerBlockWithoutBlockitem("blood_orange_bush", properties ->
+            new BloodOrangeBushBlock(properties.randomTicks().noCollision().noOcclusion().sound(SoundType.SWEET_BERRY_BUSH)));
+
+
+
 
 
 
@@ -286,4 +338,14 @@ public class ModBlocks {
         Unnamedmod.LOGGER.info("Registering Mod Blocks for" + Unnamedmod.MOD_ID);
 
     }
+
+    private static Block registerBlockWithoutBlockitem(String name, Function<BlockBehaviour.Properties, Block> function) {
+        Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Unnamedmod.MOD_ID, name))));
+        return Registry.register(BuiltInRegistries.BLOCK, Identifier.fromNamespaceAndPath(Unnamedmod.MOD_ID, name), toRegister);
+
+    }
+
+
+
+
 }

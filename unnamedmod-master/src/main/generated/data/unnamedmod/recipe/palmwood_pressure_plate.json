@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "palmwood",
+  "key": {
+    "#": "unnamedmod:palmwood_planks"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "unnamedmod:palmwood_pressure_plate"
+  }
+}

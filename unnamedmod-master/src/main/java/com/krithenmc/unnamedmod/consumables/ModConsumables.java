@@ -2,7 +2,7 @@ package com.krithenmc.unnamedmod.consumables;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Mob;
+
 import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.component.Consumables;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
@@ -29,5 +29,11 @@ public class ModConsumables {
             .consumeSeconds(1f).build();
     public static final Consumable CHERRY = Consumables.defaultFood()
             .consumeSeconds(2f).build();
+    public static final Consumable ELDERBERRY = Consumables.defaultFood().build();
+    public static final Consumable GRAPEFRUIT = Consumables.defaultFood().build();
+    public static final Consumable HAMBURGER = Consumables.defaultFood().build();
+    public static final Consumable LEMON = Consumables.defaultFood().build();
+    public static final Consumable MANGO = Consumables.defaultFood().build();
+    public static final Consumable MARSHMALLOW = Consumables.defaultFood().build();
 
 }

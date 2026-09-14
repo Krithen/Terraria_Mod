@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_palmwood_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:palmwood_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "unnamedmod:palmwood_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_palmwood_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "unnamedmod:palmwood_door"
+    ]
+  }
+}

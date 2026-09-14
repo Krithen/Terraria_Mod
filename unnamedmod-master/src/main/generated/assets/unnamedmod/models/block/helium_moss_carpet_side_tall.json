@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/mossy_carpet_side",
+  "textures": {
+    "side": "unnamedmod:block/helium_moss_side_tall"
+  }
+}

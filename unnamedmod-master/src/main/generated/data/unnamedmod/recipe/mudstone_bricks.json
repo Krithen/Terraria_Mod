@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "M": "minecraft:mud",
+    "S": "minecraft:cobblestone"
+  },
+  "pattern": [
+    "SM"
+  ],
+  "result": {
+    "id": "unnamedmod:mudstone_bricks"
+  }
+}

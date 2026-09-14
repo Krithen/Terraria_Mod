@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/molten_pickaxe",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "unnamedmod:block/palmwood_planks",
+    "side": "unnamedmod:block/palmwood_planks",
+    "top": "unnamedmod:block/palmwood_planks"
+  }
+}

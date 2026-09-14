@@ -74,6 +74,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_TITANUM);
                         output.accept(ModItems.RAW_TIN);
                         output.accept(ModItems.MAGIC_MIRROR);
+                        output.accept(ModItems.FUSED_VERTEBRA);
+                        output.accept(ModItems.LENS);
+                        output.accept(ModItems.MUSHROOM);
+                        output.accept(ModItems.DEATHWEED_SEEDS);
+                        output.accept(ModItems.DEATHWEED);
+
 
 
                     }).build());
@@ -179,6 +185,29 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LIVING_WOOD);
                         output.accept(ModBlocks.ASH);
                         output.accept(ModBlocks.BOTTLE_TERRARIA);
+                        output.accept(ModBlocks.METEORITE_BRICKS);
+                        output.accept(ModBlocks.MUDSTONE_BRICKS);
+                        output.accept(ModBlocks.MYTHRIL_BRICKS);
+                        output.accept(ModBlocks.OBSIDIAN_BRICKS);
+                        output.accept(ModBlocks.PALMWOOD_LOG);
+                        output.accept(ModBlocks.PALMWOOD_PLANKS);
+                        output.accept(ModBlocks.PALMWOOD_STAIRS);
+                        output.accept(ModBlocks.PALMWOOD_SLABS);
+                        output.accept(ModBlocks.PALMWOOD_TRAPDOOR);
+                        output.accept(ModBlocks.PALMWOOD_DOOR);
+                        output.accept(ModBlocks.PALMWOOD_BUTTON);
+                        output.accept(ModBlocks.PALMWOOD_PRESSURE_PLATE);
+                        output.accept(ModBlocks.PALMWOOD_FENCE);
+                        output.accept(ModBlocks.PALMWOOD_FENCE_GATE);
+                        output.accept(ModBlocks.PALMWOOD);
+                        output.accept(ModBlocks.SHADEWOOD);
+                        output.accept(ModBlocks.BOREAL_WOOD);
+                        output.accept(ModBlocks.HELIUM_MOSS);
+                        output.accept(ModBlocks.HELIUM_MOSS_CARPET);
+                        output.accept(ModBlocks.ARGON_MOSS);
+                        output.accept(ModBlocks.ARGON_MOSS_CARPET);
+
+
 
 
 
@@ -235,6 +264,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MYTHRIL_SWORD);
                         output.accept(ModItems.ORICHALCUM_SWORD);
                         output.accept(ModItems.COBALT_PICKAXE);
+                        output.accept(ModItems.DEATHBRINGER_PICKAXE);
+                        output.accept(ModItems.GLADIUS);
+                        output.accept(ModItems.MOLTEN_PICKAXE);
+                        output.accept(ModItems.DEMON_BOW);
+                        output.accept(ModItems.ADAMANTITE_SWORD);
+                        output.accept(ModItems.BEAM_SWORD);
 
 
 
@@ -253,6 +288,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CRIMSON_TIGERFISH);
                         output.accept(ModItems.COCONUT);
                         output.accept(ModItems.CHERRY);
+                        output.accept(ModItems.ELDERBERRY);
+                        output.accept(ModItems.GRAPEFRUIT);
+                        output.accept(ModItems.HAMBURGER);
+                        output.accept(ModItems.LEMON);
+                        output.accept(ModItems.MANGO);
+                        output.accept(ModItems.MARSHMALLOW);
 
 
 
@@ -263,6 +304,10 @@ public class ModCreativeModeTabs {
             FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModItems.APRICOT))
                     .title(Component.translatable("creativemodetab.unnamedmod.terraria_armor"))
                     .displayItems((parameters, output) -> {
+                        output.accept(ModItems.SHADOW_GREAVES);
+                        output.accept(ModItems.SHADOW_HELMET);
+                        output.accept(ModItems.SHADOW_SCALEMAIL);
+                        output.accept(ModItems.SHADOW_SABATONS);
 
                     }).build());
 

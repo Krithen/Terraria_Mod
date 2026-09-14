@@ -1,0 +1,25 @@
+{
+  "values": [
+    "unnamedmod:meteorite_ore",
+    "unnamedmod:demonite_ore",
+    "unnamedmod:demonite_deepslate_ore",
+    "unnamedmod:crimtane_deepslate_ore",
+    "unnamedmod:crimtane_ore",
+    "unnamedmod:crimstone",
+    "unnamedmod:ebonstone",
+    "unnamedmod:cobalt_ore",
+    "unnamedmod:cobalt_deepslate_ore",
+    "unnamedmod:palladium_ore",
+    "unnamedmod:palladium_deepslate_ore",
+    "unnamedmod:mythril_ore",
+    "unnamedmod:mythril_deepslate_ore",
+    "unnamedmod:orichalcum_deepslate_ore",
+    "unnamedmod:orichalcum_ore",
+    "unnamedmod:adamantite_deepslate_ore",
+    "unnamedmod:adamantite_ore",
+    "unnamedmod:titanium_ore",
+    "unnamedmod:titanium_deepslate_ore",
+    "unnamedmod:chlorophyte_ore",
+    "unnamedmod:chlorophyte_deepslate_ore"
+  ]
+}

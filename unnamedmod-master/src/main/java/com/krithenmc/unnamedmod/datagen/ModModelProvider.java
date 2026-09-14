@@ -2,6 +2,8 @@ package com.krithenmc.unnamedmod.datagen;
 
 
 import com.krithenmc.unnamedmod.block.ModBlocks;
+import com.krithenmc.unnamedmod.block.custom.BloodOrangeBushBlock;
+import com.krithenmc.unnamedmod.block.custom.DeathweedCropBlock;
 import com.krithenmc.unnamedmod.block.custom.EmeraldGemSparkBlock;
 import com.krithenmc.unnamedmod.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
@@ -15,9 +17,12 @@ import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TexturedModel;
 
+import net.minecraft.client.model.Model;
 import net.minecraft.client.renderer.block.dispatch.Variant;
+import net.minecraft.client.renderer.item.ItemModel;
 import net.minecraft.resources.Identifier;
 import net.minecraft.util.random.WeightedList;
+import net.minecraft.world.item.Items;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricPackOutput output) {
@@ -94,6 +99,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrapdoor(ModBlocks.BOREAL_TRAPDOOR);
         blockModelGenerators.createRotatedPillarWithHorizontalVariant(ModBlocks.SHADEWOOD_LOG, TexturedModel.COLUMN_ALT, TexturedModel.COLUMN_HORIZONTAL );
         blockModelGenerators.createRotatedPillarWithHorizontalVariant(ModBlocks.BOREAL_WOOD_LOG, TexturedModel.COLUMN_ALT, TexturedModel.COLUMN_HORIZONTAL );
+        blockModelGenerators.createRotatedPillarWithHorizontalVariant(ModBlocks.PALMWOOD_LOG, TexturedModel.COLUMN_ALT, TexturedModel.COLUMN_HORIZONTAL);
         blockModelGenerators.createAnvil(ModBlocks.LEAD_ANVIL);
         blockModelGenerators.createTrivialCube(ModBlocks.ANCIENT_FOSSIL);
         blockModelGenerators.createTrivialCube(ModBlocks.BLUE_MUSHROOM_STEM);
@@ -135,6 +141,32 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.LIVING_WOOD);
         blockModelGenerators.createTrivialCube(ModBlocks.ASH);
         blockModelGenerators.createNonTemplateModelBlock(ModBlocks.BOTTLE_TERRARIA);
+        blockModelGenerators.createTrivialCube(ModBlocks.METEORITE_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.MUDSTONE_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.MYTHRIL_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.OBSIDIAN_BRICKS);
+        blockModelGenerators.family(ModBlocks.PALMWOOD_PLANKS)
+                .stairs(ModBlocks.PALMWOOD_STAIRS)
+                .slab(ModBlocks.PALMWOOD_SLABS)
+                .button(ModBlocks.PALMWOOD_BUTTON)
+                .pressurePlate(ModBlocks.PALMWOOD_PRESSURE_PLATE)
+                .fence(ModBlocks.PALMWOOD_FENCE)
+                .fenceGate(ModBlocks.PALMWOOD_FENCE_GATE)
+               ;
+        blockModelGenerators.createTrapdoor(ModBlocks.PALMWOOD_TRAPDOOR);
+        blockModelGenerators.createDoor(ModBlocks.PALMWOOD_DOOR);
+        blockModelGenerators.createTrivialCube(ModBlocks.PALMWOOD);
+        blockModelGenerators.createTrivialCube(ModBlocks.SHADEWOOD);
+        blockModelGenerators.createTrivialCube(ModBlocks.BOREAL_WOOD);
+        blockModelGenerators.createTrivialCube(ModBlocks.HELIUM_MOSS);
+        blockModelGenerators.createMossyCarpet(ModBlocks.HELIUM_MOSS_CARPET);
+        blockModelGenerators.createTrivialCube(ModBlocks.ARGON_MOSS);
+        blockModelGenerators.createMossyCarpet(ModBlocks.ARGON_MOSS_CARPET);
+        blockModelGenerators.createCropBlock(ModBlocks.DEATHWEED_CROP, DeathweedCropBlock.AGE, 0, 1, 2);
+        blockModelGenerators.createCrossBlock(ModBlocks.BLOOD_ORANGE_BUSH, BlockModelGenerators.PlantType.NOT_TINTED, BloodOrangeBushBlock.AGE
+                , 0, 1, 2, 3);
+
+
 
 
 
@@ -191,7 +223,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.GEL, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.JOJA_COLA, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.BLACKCURRANT, ModelTemplates.FLAT_ITEM);
-        itemModelGenerators.generateFlatItem(ModItems.BLOOD_ORANGE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.ACORN, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.UMBRAL_CRYSTAL, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.UMBRAL_PLATE, ModelTemplates.FLAT_ITEM);
@@ -254,6 +285,27 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.MAGIC_MIRROR, ModelTemplates.FLAT_HANDHELD_ROD_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.CHERRY, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.declareCustomModelItem(ModItems.COBALT_PICKAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.DEATHBRINGER_PICKAXE);
+        itemModelGenerators.generateFlatItem(ModItems.ELDERBERRY, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.FUSED_VERTEBRA, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.declareCustomModelItem(ModItems.GLADIUS);
+        itemModelGenerators.declareCustomModelItem(Items.GOLDEN_PICKAXE);
+        itemModelGenerators.generateFlatItem(ModItems.GRAPEFRUIT, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.HAMBURGER, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.LEMON, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.LENS, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.MANGO, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.MARSHMALLOW, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.declareCustomModelItem(ModItems.MOLTEN_PICKAXE);
+        itemModelGenerators.createFlatItemModel(ModItems.MUSHROOM, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.declareCustomModelItem(ModItems.SHADOW_SABATONS);
+        itemModelGenerators.declareCustomModelItem(ModItems.SHADOW_GREAVES);
+        itemModelGenerators.declareCustomModelItem(ModItems.SHADOW_SCALEMAIL);
+        itemModelGenerators.declareCustomModelItem(ModItems.SHADOW_HELMET);
+        itemModelGenerators.declareCustomModelItem(ModItems.ADAMANTITE_SWORD);
+        itemModelGenerators.createFlatItemModel(ModItems.DEATHWEED, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.declareCustomModelItem(ModItems.BEAM_SWORD);
+
 
 
 

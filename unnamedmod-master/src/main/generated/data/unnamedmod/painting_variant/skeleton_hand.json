@@ -1,0 +1,13 @@
+{
+  "asset_id": "unnamedmod:skeleton_hand",
+  "author": {
+    "color": "dark_green",
+    "translate": "painting.unnamedmod.skeleton_hand.author"
+  },
+  "height": 1,
+  "title": {
+    "color": "dark_green",
+    "translate": "painting.unnamedmod.skeleton_hand.title"
+  },
+  "width": 1
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "palmwood",
+  "ingredients": [
+    "unnamedmod:palmwood_planks"
+  ],
+  "result": {
+    "id": "unnamedmod:palmwood_button"
+  }
+}

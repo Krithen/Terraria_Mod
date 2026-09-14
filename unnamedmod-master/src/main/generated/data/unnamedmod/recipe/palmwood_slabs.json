@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "palmwood",
+  "key": {
+    "#": "unnamedmod:palmwood_planks"
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "unnamedmod:palmwood_slabs"
+  }
+}

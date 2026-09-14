@@ -1,21 +1,29 @@
 package com.krithenmc.unnamedmod.datagen;
 
 import com.krithenmc.unnamedmod.block.ModBlocks;
+import com.krithenmc.unnamedmod.block.custom.BloodOrangeBushBlock;
+import com.krithenmc.unnamedmod.block.custom.DeathweedCropBlock;
 import com.krithenmc.unnamedmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootSubProvider;
+import net.minecraft.advancements.predicates.StatePropertiesPredicate;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.Item;
 
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
+import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
 import java.util.concurrent.CompletableFuture;
@@ -27,6 +35,8 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
 
     @Override
     public void generate() {
+        var enchantments = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+
         dropSelf(ModBlocks.BLUE_MOSS);
         dropSelf(ModBlocks.RED_MOSS);
         dropSelf(ModBlocks.PURPLE_MOSS);
@@ -85,6 +95,27 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.LIVING_WOOD);
         dropSelf(ModBlocks.ASH);
         dropSelf(ModBlocks.BOTTLE_TERRARIA);
+        dropSelf(ModBlocks.METEORITE_BRICKS);
+        dropSelf(ModBlocks.MUDSTONE_BRICKS);
+        dropSelf(ModBlocks.MYTHRIL_BRICKS);
+        dropSelf(ModBlocks.OBSIDIAN_BRICKS);
+        dropSelf(ModBlocks.PALMWOOD_LOG);
+        dropSelf(ModBlocks.PALMWOOD_PLANKS);
+        dropSelf(ModBlocks.PALMWOOD_STAIRS);
+        dropSelf(ModBlocks.PALMWOOD_TRAPDOOR);
+        dropSelf(ModBlocks.PALMWOOD_BUTTON);
+        dropSelf(ModBlocks.PALMWOOD_PRESSURE_PLATE);
+        dropSelf(ModBlocks.PALMWOOD_FENCE);
+        dropSelf(ModBlocks.PALMWOOD_FENCE_GATE);
+        dropSelf(ModBlocks.PALMWOOD);
+        dropSelf(ModBlocks.SHADEWOOD);
+        dropSelf(ModBlocks.BOREAL_WOOD);
+        dropSelf(ModBlocks.HELIUM_MOSS);
+        dropSelf(ModBlocks.HELIUM_MOSS_CARPET);
+        dropSelf(ModBlocks.ARGON_MOSS);
+        dropSelf(ModBlocks.ARGON_MOSS_CARPET);
+
+
 
 
         add(ModBlocks.ADAMANTITE_ORE, createOreDrop(ModBlocks.ADAMANTITE_ORE, ModItems.RAW_ADAMANTITE));
@@ -114,6 +145,8 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         add(ModBlocks.SHADEWOOD_DOOR, this::createDoorTable);
         add(ModBlocks.BOREAL_SLAB, this::createSlabItemTable);
         add(ModBlocks.BOREAL_DOOR, this::createDoorTable);
+        add(ModBlocks.PALMWOOD_SLABS, this::createSlabItemTable);
+        add(ModBlocks.PALMWOOD_DOOR, this::createDoorTable);
         add(ModBlocks.BLUE_MUSHROOM_STEM, createSilkTouchOnlyTable(ModBlocks.BLUE_MUSHROOM_STEM));
         add(ModBlocks.BLUE_MUSHROOM_BLOCK, createMushroomBlockDrop(ModBlocks.BLUE_MUSHROOM_BLOCK, ModItems.GLOWING_MUSHROOM));
         add(ModBlocks.DEEPSLATE_TUNGSTEN_ORE, createOreDrop(ModBlocks.DEEPSLATE_TUNGSTEN_ORE, ModItems.RAW_TUNGSTEN));
@@ -124,6 +157,14 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         add(ModBlocks.TIN_ORE, createOreDrop(ModBlocks.TIN_ORE, ModItems.RAW_TIN));
         add(ModBlocks.LIVING_LEAF_BLOCK, createSilkTouchOnlyTable(ModBlocks.LIVING_LEAF_BLOCK));
         add(ModBlocks.LIVING_MAHOGANY_LEAVES, createSilkTouchOnlyTable(ModBlocks.LIVING_MAHOGANY_LEAVES));
+        this.add(ModBlocks.DEATHWEED_CROP, this.createCropDrops(ModBlocks.DEATHWEED_CROP, ModItems.DEATHWEED, ModItems.DEATHWEED_SEEDS,
+                LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.DEATHWEED_CROP)
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(DeathweedCropBlock.AGE, DeathweedCropBlock.MAX_AGE))));
+        this.add(ModBlocks.BLOOD_ORANGE_BUSH, block -> this.applyExplosionDecay(block, LootTable.lootTable().withPool(LootPool.lootPool().when(LootItemBlockStatePropertyCondition.
+                hasBlockStateProperties(ModBlocks.BLOOD_ORANGE_BUSH).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BloodOrangeBushBlock.AGE, 3))).add(LootItem.lootTableItem(ModItems.BLOOD_ORANGE))
+                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F))).apply(ApplyBonusCount.addUniformBonusCount(enchantments.getOrThrow(Enchantments.FORTUNE)))).withPool(LootPool.lootPool()
+                .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.BLOOD_ORANGE_BUSH).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BloodOrangeBushBlock.AGE, 2)))
+                .add(LootItem.lootTableItem(ModItems.BLOOD_ORANGE)).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F))).apply(ApplyBonusCount.addUniformBonusCount(enchantments.getOrThrow(Enchantments.FORTUNE))))));
 
 
 

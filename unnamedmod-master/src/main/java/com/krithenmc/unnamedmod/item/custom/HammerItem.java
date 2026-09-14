@@ -1,10 +1,13 @@
 package com.krithenmc.unnamedmod.item.custom;
 
 import com.krithenmc.unnamedmod.block.ModBlocks;
+import com.krithenmc.unnamedmod.data.ModDataComponents;
+import com.krithenmc.unnamedmod.stat.ModStats;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
-import net.minecraft.tags.ItemTags;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ToolMaterial;
@@ -42,6 +45,15 @@ public class HammerItem extends Item {
     }
 
     @Override
+    public InteractionResult use(Level level, Player player, InteractionHand hand) {
+        if (player.isCrouching()) {
+            player.getMainHandItem().remove(ModDataComponents.COORDINATES);
+            return InteractionResult.SUCCESS;
+        }
+        return super.use(level, player, hand);
+    }
+
+    @Override
     public InteractionResult useOn(UseOnContext context) {
 
         Level level = context.getLevel();
@@ -51,6 +63,9 @@ public class HammerItem extends Item {
             level.setBlockAndUpdate(context.getClickedPos(), HAMMER_MAP.get(clickedBlock).defaultBlockState());
 
             context.getItemInHand().hurtAndBreak(1, context.getPlayer(), context.getHand());
+
+            context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
+            context.getPlayer().awardStat(ModStats.HAMMER_USED_STAT, 1);
         }
 
 
@@ -66,6 +81,10 @@ public class HammerItem extends Item {
         } else {
             builder.accept(Component.translatable("tooltip.unnamedmod.hammer"));
 
+        }
+
+        if (itemStack.has(ModDataComponents.COORDINATES)) {
+            builder.accept(Component.literal("Last Block Hammered At" + itemStack.get(ModDataComponents.COORDINATES)));
         }
 
 
