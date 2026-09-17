@@ -86,10 +86,20 @@ public class ModBlocks {
             });
     public static final Block CRIMSTONE = registerBlock("crimstone", properties ->
             new Block(properties.requiresCorrectToolForDrops().strength(2).sound(SoundType.STONE)    ));
+    public static final Block CRIMSTONE_STAIRS = registerBlock("crimstone_stairs", properties ->
+            new StairBlock(ModBlocks.CRIMSTONE.defaultBlockState(), properties.strength(2f).sound(SoundType.STONE)));
+    public static final Block CRIMSTONE_SLAB = registerBlock("crimstone_slab", properties ->
+            new SlabBlock(properties.strength(2f).sound(SoundType.STONE)));
+    public static final Block CRIMSTONE_WALL = registerBlock("crimstone_wall", properties ->
+            new WallBlock(properties.strength(2f).sound(SoundType.STONE)));
     public static final Block EBONSTONE = registerBlock("ebonstone", properties ->
             new Block(properties.strength(2f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
     public static final Block EBONSTONE_WALL = registerBlock("ebonstone_wall", properties ->
             new WallBlock(properties.strength(2f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final Block EBONSTONE_STAIRS = registerBlock("ebonstone_stairs", properties ->
+            new StairBlock(ModBlocks.EBONSTONE.defaultBlockState(), properties.strength(2f).sound(SoundType.STONE)));
+    public static final Block EBONSTONE_SLAB = registerBlock("ebonstone_slab", properties ->
+            new SlabBlock(properties.strength(2f).sound(SoundType.STONE)));
     public static final Block MYTHRIL_ORE = registerBlock("mythril_ore", properties ->
             new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(2f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
     public static final Block MYTHRIL_DEEPSLATE_ORE = registerBlock("mythril_deepslate_ore", properties ->
@@ -128,6 +138,12 @@ public class ModBlocks {
 
     public static final Block BLUE_GRANITE = registerBlock("blue_granite", properties ->
             new Block(properties.strength(2f, 2f).requiresCorrectToolForDrops()));
+    public static final Block BLUE_GRANITE_STAIRS = registerBlock("blue_granite_stairs", properties ->
+            new StairBlock(ModBlocks.BLUE_GRANITE.defaultBlockState(), properties.strength(2f).explosionResistance(2f)));
+    public static final Block BLUE_GRANITE_SLAB = registerBlock("blue_granite_slab", properties ->
+            new SlabBlock(properties.strength(2f).explosionResistance(2f)));
+    public static final Block BLUE_GRANITE_WALL = registerBlock("blue_granite_wall", properties ->
+            new WallBlock(properties.strength(2f).explosionResistance(2f)));
     public static final Block EBONSAND = registerBlock("ebonsand", properties ->
             new SandBlock(new ColorRGBA(14406560), properties.strength(0.6f).sound(SoundType.SAND).instrument(NoteBlockInstrument.SNARE)));
     public static final Block CRIMSAND = registerBlock("crimsand", properties ->
@@ -136,6 +152,12 @@ public class ModBlocks {
             new MagicBlock(properties.strength(1f)));
     public static final Block MARBLE = registerBlock("marble", properties ->
             new Block(properties.strength(2f)));
+    public static final Block MARBLE_STAIRS = registerBlock("marble_stairs", properties ->
+            new StairBlock(ModBlocks.MARBLE.defaultBlockState(), properties.strength(2f)));
+    public static final Block MARBLE_SLAB = registerBlock("marble_slab", properties ->
+            new SlabBlock(properties.strength(2f)));
+    public static final Block MARBLE_WALL = registerBlock("marble_wall", properties ->
+            new WallBlock(properties.strength(2f)));
     public static final Block PALLADIUM_ORE = registerBlock("palladium_ore", properties ->
             new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(2f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
     public static final Block PALLADIUM_DEEPSLATE_ORE = registerBlock("palladium_deepslate_ore", properties ->
@@ -181,14 +203,38 @@ public class ModBlocks {
             new Block(properties.strength(3f).requiresCorrectToolForDrops()));
     public static final Block CHLOROPHYTE_BRICKS = registerBlock("chlorophyte_bricks", properties ->
             new Block(properties.strength(2f).requiresCorrectToolForDrops()));
+    public static final Block CHLOROPHYTE_BRICK_WALL = registerBlock("chlorophyte_brick_wall", properties ->
+            new WallBlock(properties.strength(2f)));
+    public static final Block CHLOROPHYTE_BRICK_STAIRS = registerBlock("chlorophyte_brick_stairs", properties ->
+            new StairBlock(ModBlocks.CHLOROPHYTE_BRICKS.defaultBlockState(), properties.strength(2f)));
+    public static final Block CHLOROPHYTE_BRICK_SLAB = registerBlock("chlorophyte_brick_slab", properties ->
+            new SlabBlock(properties.strength(2f)));
     public static final Block COBALT_BRICKS = registerBlock("cobalt_bricks", properties ->
             new Block(properties.strength(2f).requiresCorrectToolForDrops()));
+    public static final Block COBALT_BRICK_WALL = registerBlock("cobalt_brick_wall", properties ->
+            new WallBlock(properties.strength(2f)));
+    public static final Block COBALT_BRICK_STAIRS = registerBlock("cobalt_brick_stairs", properties ->
+            new StairBlock(ModBlocks.COBALT_BRICKS.defaultBlockState(), properties.strength(2f)));
+    public static final Block COBALT_BRICK_SLAB = registerBlock("cobalt_brick_slab", properties ->
+            new SlabBlock(properties.strength(2f)));
     public static final Block COSMIC_EMBER_BRICKS = registerBlock("cosmic_ember_bricks", properties ->
             new Block(properties.strength(3f).requiresCorrectToolForDrops()));
     public static final Block CRIMSTONE_BRICKS = registerBlock("crimstone_bricks", properties ->
             new CrimsonBlock(properties.strength(2f).requiresCorrectToolForDrops()));
+    public static final Block CRIMSTONE_BRICK_STAIRS = registerBlock("crimstone_brick_stairs", properties ->
+            new StairBlock(ModBlocks.CRIMSTONE_BRICKS.defaultBlockState(), properties.strength(2f)));
+    public static final Block CRIMSTONE_BRICK_SLAB = registerBlock("crimstone_brick_slab", properties ->
+            new SlabBlock(properties.strength(2f)));
+    public static final Block CRIMSTONE_BRICK_WALL = registerBlock("crimstone_brick_wall", properties ->
+            new WallBlock(properties.strength(2f)));
     public static final Block CRIMTANE_BRICKS = registerBlock("crimtane_bricks", properties ->
             new Block(properties.strength(2f).requiresCorrectToolForDrops()));
+    public static final Block CRIMTANE_BRICK_STAIRS = registerBlock("crimtane_brick_stairs", properties ->
+            new StairBlock(ModBlocks.CRIMSTONE_BRICKS.defaultBlockState(), properties.strength(2f)));
+    public static final Block CRIMTANE_BRICK_SLAB = registerBlock("crimtane_brick_slab", properties ->
+            new SlabBlock(properties.strength(2f)));
+    public static final Block CRIMTANE_BRICK_WALL = registerBlock("crimtane_brick_wall", properties ->
+            new WallBlock(properties.strength(2f)));
     public static final Block CRYOCORE_BRICKS = registerBlock("cryocore_bricks", properties ->
             new Block(properties.strength(3f).requiresCorrectToolForDrops()));
     public static final Block DARK_CELESTIAL_BRICKS = registerBlock("dark_celestial_bricks", properties ->
@@ -287,10 +333,26 @@ public class ModBlocks {
             new Block(properties.strength(1f).sound(SoundType.MOSS)));
     public static final Block ARGON_MOSS_CARPET = registerBlock("argon_moss_carpet", properties ->
             new MossyCarpetBlock(properties.strength(1f).sound(SoundType.MOSS)));
+    public static final Block KRYPTON_MOSS = registerBlock("krypton_moss", properties ->
+            new Block(properties.strength(1f).sound(SoundType.MOSS)));
+    public static final Block KRYPTON_MOSS_CARPET = registerBlock("krypton_moss_carpet", properties ->
+            new MossyCarpetBlock(properties.strength(1f).sound(SoundType.MOSS)));
+    public static final Block LAVA_MOSS = registerBlock("lava_moss", properties ->
+            new Block(properties.strength(1f).sound(SoundType.MOSS)));
+    public static final Block LAVA_MOSS_CARPET = registerBlock("lava_moss_carpet", properties ->
+            new MossyCarpetBlock(properties.strength(1f).sound(SoundType.MOSS)));
     public static final Block DEATHWEED_CROP = registerBlockWithoutBlockitem("deathweed_crop", properties ->
             new DeathweedCropBlock(properties.noCollision().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
     public static final Block BLOOD_ORANGE_BUSH = registerBlockWithoutBlockitem("blood_orange_bush", properties ->
             new BloodOrangeBushBlock(properties.randomTicks().noCollision().noOcclusion().sound(SoundType.SWEET_BERRY_BUSH)));
+    public static final Block BLUE_DUNGEON_BRICKS = registerBlock("blue_dungeon_bricks", properties ->
+            new Block(properties.strength(5f).sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()));
+    public static final Block PINK_DUNGEON_BRICKS = registerBlock("pink_dungeon_bricks", properties ->
+            new Block(properties.strength(5f).sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()));
+    public static final Block GREEN_DUNGEON_BRICKS = registerBlock("green_dungeon_bricks", properties ->
+            new Block(properties.strength(5f).sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()));
+    public static final Block HELLSTONE_ORE = registerBlock("hellstone_ore", properties ->
+            new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(2f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
 
 

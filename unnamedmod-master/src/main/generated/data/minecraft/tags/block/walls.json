@@ -1,6 +1,11 @@
 {
   "values": [
     "unnamedmod:ebonstone_wall",
-    "unnamedmod:rainbow_brick_walls"
+    "unnamedmod:rainbow_brick_walls",
+    "unnamedmod:crimstone_wall",
+    "unnamedmod:blue_granite_wall",
+    "unnamedmod:marble_wall",
+    "unnamedmod:chlorophyte_brick_wall",
+    "unnamedmod:cobalt_brick_wall"
   ]
 }

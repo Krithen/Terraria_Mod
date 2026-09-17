@@ -214,8 +214,6 @@ public class ModItems extends Item.Properties {
             ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 17, -0.5f)));
     public static final Item MURAMASA = registerItem("muramasa", properties -> new
             ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 24, 0.4f)));
-    public static final Item IRON_BROADSWORD = registerItem("iron_broadsword", properties -> new
-            ShortSwordItem(properties.sword(ToolMaterial.IRON, 10, -2.4f)));
     public static final Item AREADBHAR = registerItem("areadbhar", properties -> new
             ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 35, -1.4f)));
     public static final Item BEE_KEEPER = registerItem("bee_keeper", properties -> new
@@ -331,6 +329,16 @@ public class ModItems extends Item.Properties {
     public static final Item DEATHWEED = registerItem("deathweed", Item::new);
     public static final Item BEAM_SWORD = registerItem("beam_sword", properties ->
             new ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 51, -1.4f)));
+    public static final Item CACTUS_BROADSWORD = registerItem("cactus_broadsword", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.CACTUS, 9, -1.4f)));
+    public static final Item COPPER_BROADSWORD = registerItem("copper_broadsword", properties ->
+            new ShortSwordItem(properties.sword(ToolMaterial.COPPER, 5, -1.4f)));
+    public static final Item CUTLASS = registerItem("cutlass", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 52, -1.4f)));
+    public static final Item GOLD_BROADSWORD = registerItem("gold_broadsword", properties ->
+            new ShortSwordItem(properties.sword(ToolMaterial.GOLD, 11, -1.4f)));
+    public static final Item IRON_BROADSWORD = registerItem("iron_broadsword", properties ->
+            new ShortSwordItem(properties.sword(ToolMaterial.IRON, 8, -1.4f)));
 
 
 

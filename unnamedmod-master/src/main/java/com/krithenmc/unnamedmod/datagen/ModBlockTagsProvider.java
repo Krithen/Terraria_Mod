@@ -75,6 +75,27 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.MUDSTONE_BRICKS))
                 .add(ModBlocks.getRK(ModBlocks.MYTHRIL_BRICKS))
                 .add(ModBlocks.getRK(ModBlocks.OBSIDIAN_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.BLUE_DUNGEON_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.GREEN_DUNGEON_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.PINK_DUNGEON_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.BLUE_GRANITE_WALL))
+                .add(ModBlocks.getRK(ModBlocks.BLUE_GRANITE_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.BLUE_GRANITE_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.CRIMSTONE_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.CRIMSTONE_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.CRIMSTONE_WALL))
+                .add(ModBlocks.getRK(ModBlocks.EBONSTONE_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.EBONSTONE_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.MARBLE_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.MARBLE_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.MARBLE_WALL))
+                .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_BRICK_WALL))
+                .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_BRICK_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_BRICK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.COBALT_BRICK_WALL))
+                .add(ModBlocks.getRK(ModBlocks.COBALT_BRICK_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.COBALT_BRICK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.HELLSTONE_ORE))
 
         ;
 
@@ -88,13 +109,26 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.SHADEWOOD_SLAB))
                 .add(ModBlocks.getRK(ModBlocks.BOREAL_SLAB))
                 .add(ModBlocks.getRK(ModBlocks.RAINBOW_BRICK_SLABS))
-                .add(ModBlocks.getRK(ModBlocks.PALMWOOD_SLABS));
+                .add(ModBlocks.getRK(ModBlocks.PALMWOOD_SLABS))
+                .add(ModBlocks.getRK(ModBlocks.EBONSTONE_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.CRIMSTONE_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.BLUE_GRANITE_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.MARBLE_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_BRICK_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.COBALT_BRICK_SLAB))
+        ;
 
         tag(BlockTags.STAIRS)
                 .add(ModBlocks.getRK(ModBlocks.SHADEWOOD_STAIRS))
                 .add(ModBlocks.getRK(ModBlocks.BOREAL_STAIRS))
                 .add(ModBlocks.getRK(ModBlocks.RAINBOW_BRICK_STAIRS))
-                .add(ModBlocks.getRK(ModBlocks.PALMWOOD_STAIRS));
+                .add(ModBlocks.getRK(ModBlocks.PALMWOOD_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.CRIMSTONE_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.EBONSTONE_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.MARBLE_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.BLUE_GRANITE_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_BRICK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.COBALT_BRICK_STAIRS));
 
         tag(BlockTags.WOODEN_BUTTONS)
                 .add(ModBlocks.getRK(ModBlocks.SHADEWOOD_BUTTON))
@@ -119,7 +153,12 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.WALLS)
                 .add(ModBlocks.getRK(ModBlocks.EBONSTONE_WALL))
-                .add(ModBlocks.getRK(ModBlocks.RAINBOW_BRICK_WALLS));
+                .add(ModBlocks.getRK(ModBlocks.RAINBOW_BRICK_WALLS))
+                .add(ModBlocks.getRK(ModBlocks.CRIMSTONE_WALL))
+                .add(ModBlocks.getRK(ModBlocks.BLUE_GRANITE_WALL))
+                .add(ModBlocks.getRK(ModBlocks.MARBLE_WALL))
+                .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_BRICK_WALL))
+                .add(ModBlocks.getRK(ModBlocks.COBALT_BRICK_WALL));
 
         tag(BlockTags.DOORS)
                 .add(ModBlocks.getRK(ModBlocks.SHADEWOOD_DOOR))
@@ -142,7 +181,11 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.PURPLE_MOSS))
                 .add(ModBlocks.getRK(ModBlocks.BLUE_MOSS))
                 .add(ModBlocks.getRK(ModBlocks.ARGON_MOSS))
-                .add(ModBlocks.getRK(ModBlocks.ARGON_MOSS_CARPET));
+                .add(ModBlocks.getRK(ModBlocks.ARGON_MOSS_CARPET))
+                .add(ModBlocks.getRK(ModBlocks.KRYPTON_MOSS_CARPET))
+                .add(ModBlocks.getRK(ModBlocks.KRYPTON_MOSS))
+                .add(ModBlocks.getRK(ModBlocks.LAVA_MOSS_CARPET))
+                .add(ModBlocks.getRK(ModBlocks.LAVA_MOSS));
 
 
 
@@ -240,6 +283,10 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.TITANIUM_DEEPSLATE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_DEEPSLATE_ORE))
+                .add(ModBlocks.getRK(ModBlocks.BLUE_DUNGEON_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.GREEN_DUNGEON_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.PINK_DUNGEON_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.HELLSTONE_ORE))
         //hellstone
         ;
 
@@ -303,6 +350,10 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.TITANIUM_DEEPSLATE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_DEEPSLATE_ORE))
+                .add(ModBlocks.getRK(ModBlocks.BLUE_DUNGEON_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.GREEN_DUNGEON_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.PINK_DUNGEON_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.HELLSTONE_ORE))
 ;
 
         tag(ModTags.Blocks.NEEDS_TIER2_TOOL)
@@ -333,7 +384,11 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.TITANIUM_ORE))
                 .add(ModBlocks.getRK(ModBlocks.TITANIUM_DEEPSLATE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_ORE))
-                .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_DEEPSLATE_ORE));
+                .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_DEEPSLATE_ORE))
+                .add(ModBlocks.getRK(ModBlocks.BLUE_DUNGEON_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.GREEN_DUNGEON_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.PINK_DUNGEON_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.HELLSTONE_ORE));
 
         tag(ModTags.Blocks.NEEDS_TIER3_TOOL)
                 .addTag(ModTags.Blocks.NEEDS_TIER2_TOOL)
@@ -384,13 +439,17 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.TITANIUM_ORE))
                 .add(ModBlocks.getRK(ModBlocks.TITANIUM_DEEPSLATE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_ORE))
-                .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_DEEPSLATE_ORE));
+                .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_DEEPSLATE_ORE))
+                .add(ModBlocks.getRK(ModBlocks.BLUE_DUNGEON_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.GREEN_DUNGEON_BRICKS))
+                .add(ModBlocks.getRK(ModBlocks.PINK_DUNGEON_BRICKS));
 
         tag(ModTags.Blocks.NEEDS_TIER4_TOOL)
                 .addTag(ModTags.Blocks.NEEDS_TIER3_TOOL)
                 .add(ModBlocks.getRK(ModBlocks.CRIMSTONE))
                 .add(ModBlocks.getRK(ModBlocks.CRIMSTONE_BRICKS))
                 .add(ModBlocks.getRK(ModBlocks.EBONSTONE))
+                .add(ModBlocks.getRK(ModBlocks.HELLSTONE_ORE))
         //hellstone
         ;
 
@@ -418,7 +477,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.TITANIUM_ORE))
                 .add(ModBlocks.getRK(ModBlocks.TITANIUM_DEEPSLATE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_ORE))
-                .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_DEEPSLATE_ORE));
+                .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_DEEPSLATE_ORE))
+        ;
 
         tag(ModTags.Blocks.NEEDS_TIER5_TOOL)
                 .addTag(ModTags.Blocks.NEEDS_TIER4_TOOL)

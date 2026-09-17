@@ -15,6 +15,10 @@
     "unnamedmod:titanium_ore",
     "unnamedmod:titanium_deepslate_ore",
     "unnamedmod:chlorophyte_ore",
-    "unnamedmod:chlorophyte_deepslate_ore"
+    "unnamedmod:chlorophyte_deepslate_ore",
+    "unnamedmod:blue_dungeon_bricks",
+    "unnamedmod:green_dungeon_bricks",
+    "unnamedmod:pink_dungeon_bricks",
+    "unnamedmod:hellstone_ore"
   ]
 }

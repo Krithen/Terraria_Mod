@@ -30,6 +30,11 @@
     "unnamedmod:orichalcum_sword",
     "unnamedmod:gladius",
     "unnamedmod:adamantite_sword",
-    "unnamedmod:beam_sword"
+    "unnamedmod:beam_sword",
+    "unnamedmod:cactus_broadsword",
+    "unnamedmod:gold_broadsword",
+    "unnamedmod:copper_broadsword",
+    "unnamedmod:cutlass",
+    "unnamedmod:iron_broadsword"
   ]
 }

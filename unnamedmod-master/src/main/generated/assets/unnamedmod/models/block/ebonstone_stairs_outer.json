@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "unnamedmod:block/ebonstone",
+    "side": "unnamedmod:block/ebonstone",
+    "top": "unnamedmod:block/ebonstone"
+  }
+}

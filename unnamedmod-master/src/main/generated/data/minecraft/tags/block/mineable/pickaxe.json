@@ -56,6 +56,27 @@
     "unnamedmod:meteorite_bricks",
     "unnamedmod:mudstone_bricks",
     "unnamedmod:mythril_bricks",
-    "unnamedmod:obsidian_bricks"
+    "unnamedmod:obsidian_bricks",
+    "unnamedmod:blue_dungeon_bricks",
+    "unnamedmod:green_dungeon_bricks",
+    "unnamedmod:pink_dungeon_bricks",
+    "unnamedmod:blue_granite_wall",
+    "unnamedmod:blue_granite_stairs",
+    "unnamedmod:blue_granite_slab",
+    "unnamedmod:crimstone_slab",
+    "unnamedmod:crimstone_stairs",
+    "unnamedmod:crimstone_wall",
+    "unnamedmod:ebonstone_slab",
+    "unnamedmod:ebonstone_stairs",
+    "unnamedmod:marble_stairs",
+    "unnamedmod:marble_slab",
+    "unnamedmod:marble_wall",
+    "unnamedmod:chlorophyte_brick_wall",
+    "unnamedmod:chlorophyte_brick_slab",
+    "unnamedmod:chlorophyte_brick_stairs",
+    "unnamedmod:cobalt_brick_wall",
+    "unnamedmod:cobalt_brick_slab",
+    "unnamedmod:cobalt_brick_stairs",
+    "unnamedmod:hellstone_ore"
   ]
 }

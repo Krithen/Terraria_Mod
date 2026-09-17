@@ -56,6 +56,11 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.getRK(ModItems.GLADIUS))
                 .add(ModItems.getRK(ModItems.ADAMANTITE_SWORD))
                 .add(ModItems.getRK(ModItems.BEAM_SWORD))
+                .add(ModItems.getRK(ModItems.CACTUS_BROADSWORD))
+                .add(ModItems.getRK(ModItems.GOLD_BROADSWORD))
+                .add(ModItems.getRK(ModItems.COPPER_BROADSWORD))
+                .add(ModItems.getRK(ModItems.CUTLASS))
+                .add(ModItems.getRK(ModItems.IRON_BROADSWORD))
 
         ;
         tag(ItemTags.PICKAXES)

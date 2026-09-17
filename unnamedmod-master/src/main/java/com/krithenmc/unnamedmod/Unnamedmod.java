@@ -3,9 +3,12 @@ package com.krithenmc.unnamedmod;
 import com.krithenmc.unnamedmod.block.ModBlocks;
 import com.krithenmc.unnamedmod.creativemodetab.ModCreativeModeTabs;
 import com.krithenmc.unnamedmod.data.ModDataComponents;
+import com.krithenmc.unnamedmod.effect.ModEffects;
 import com.krithenmc.unnamedmod.item.ModItems;
+import com.krithenmc.unnamedmod.potion.ModPotions;
 import com.krithenmc.unnamedmod.registries.ModCompostables;
 import com.krithenmc.unnamedmod.registries.ModFuels;
+import com.krithenmc.unnamedmod.registries.ModPotionRecipes;
 import com.krithenmc.unnamedmod.sounds.ModSounds;
 import com.krithenmc.unnamedmod.stat.ModStats;
 import net.fabricmc.api.ModInitializer;
@@ -27,6 +30,9 @@ public class Unnamedmod implements ModInitializer {
 		ModFuels.registerFuels();
 		ModCompostables.registerCompostables();
 		ModSounds.registerSounds();
+		ModEffects.registerEffects();
+		ModPotions.registerPotions();
+		ModPotionRecipes.registerPotionRecipes();
 
 
 	}

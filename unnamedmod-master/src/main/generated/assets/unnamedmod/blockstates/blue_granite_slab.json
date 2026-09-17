@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "unnamedmod:block/blue_granite_slab"
+    },
+    "type=double": {
+      "model": "unnamedmod:block/blue_granite"
+    },
+    "type=top": {
+      "model": "unnamedmod:block/blue_granite_slab_top"
+    }
+  }
+}

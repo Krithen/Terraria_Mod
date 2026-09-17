@@ -114,6 +114,24 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.HELIUM_MOSS_CARPET);
         dropSelf(ModBlocks.ARGON_MOSS);
         dropSelf(ModBlocks.ARGON_MOSS_CARPET);
+        dropSelf(ModBlocks.BLUE_DUNGEON_BRICKS);
+        dropSelf(ModBlocks.GREEN_DUNGEON_BRICKS);
+        dropSelf(ModBlocks.PINK_DUNGEON_BRICKS);
+        dropSelf(ModBlocks.CRIMSTONE_STAIRS);
+        dropSelf(ModBlocks.CRIMSTONE_WALL);
+        dropSelf(ModBlocks.EBONSTONE_STAIRS);
+        dropSelf(ModBlocks.BLUE_GRANITE_SLAB);
+        dropSelf(ModBlocks.BLUE_GRANITE_STAIRS);
+        dropSelf(ModBlocks.MARBLE_STAIRS);
+        dropSelf(ModBlocks.MARBLE_SLAB);
+        dropSelf(ModBlocks.CHLOROPHYTE_BRICK_STAIRS);
+        dropSelf(ModBlocks.CHLOROPHYTE_BRICK_WALL);
+        dropSelf(ModBlocks.COBALT_BRICK_STAIRS);
+        dropSelf(ModBlocks.COBALT_BRICK_WALL);
+        dropSelf(ModBlocks.KRYPTON_MOSS);
+        dropSelf(ModBlocks.KRYPTON_MOSS_CARPET);
+        dropSelf(ModBlocks.LAVA_MOSS);
+        dropSelf(ModBlocks.LAVA_MOSS_CARPET);
 
 
 
@@ -157,6 +175,13 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         add(ModBlocks.TIN_ORE, createOreDrop(ModBlocks.TIN_ORE, ModItems.RAW_TIN));
         add(ModBlocks.LIVING_LEAF_BLOCK, createSilkTouchOnlyTable(ModBlocks.LIVING_LEAF_BLOCK));
         add(ModBlocks.LIVING_MAHOGANY_LEAVES, createSilkTouchOnlyTable(ModBlocks.LIVING_MAHOGANY_LEAVES));
+        add(ModBlocks.CRIMSTONE_SLAB, this::createSlabItemTable);
+        add(ModBlocks.EBONSTONE_SLAB, this::createSlabItemTable);
+        add(ModBlocks.BLUE_GRANITE_SLAB, this::createSlabItemTable);
+        add(ModBlocks.MARBLE_SLAB, this::createSlabItemTable);
+        add(ModBlocks.CHLOROPHYTE_BRICK_SLAB, this::createSlabItemTable);
+        add(ModBlocks.COBALT_BRICK_SLAB, this::createSlabItemTable);
+        add(ModBlocks.HELLSTONE_ORE, createOreDrop(ModBlocks.HELLSTONE_ORE, ModItems.HELLSTONE));
         this.add(ModBlocks.DEATHWEED_CROP, this.createCropDrops(ModBlocks.DEATHWEED_CROP, ModItems.DEATHWEED, ModItems.DEATHWEED_SEEDS,
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.DEATHWEED_CROP)
                         .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(DeathweedCropBlock.AGE, DeathweedCropBlock.MAX_AGE))));

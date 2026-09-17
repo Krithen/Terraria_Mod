@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "unnamedmod:block/ebonstone_slab"
+    },
+    "type=double": {
+      "model": "unnamedmod:block/ebonstone"
+    },
+    "type=top": {
+      "model": "unnamedmod:block/ebonstone_slab_top"
+    }
+  }
+}

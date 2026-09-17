@@ -108,7 +108,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LEAD_DEEPSLATE_ORE);
                         output.accept(ModBlocks.SHADEWOOD_LEAVES);
                         output.accept(ModBlocks.CRIMSTONE);
+                        output.accept(ModBlocks.CRIMSTONE_SLAB);
+                        output.accept(ModBlocks.CRIMSTONE_STAIRS);
+                        output.accept(ModBlocks.CRIMSTONE_WALL);
                         output.accept(ModBlocks.EBONSTONE);
+                        output.accept(ModBlocks.EBONSTONE_STAIRS);
+                        output.accept(ModBlocks.EBONSTONE_SLAB);
+                        output.accept(ModBlocks.EBONSTONE_WALL);
                         output.accept(ModBlocks.MYTHRIL_ORE);
                         output.accept(ModBlocks.MYTHRIL_DEEPSLATE_ORE);
                         output.accept(ModBlocks.METEORITE_ORE);
@@ -118,10 +124,16 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LUMINITE_ORE);
                         output.accept(ModBlocks.SHADEWOOD_PLANK);
                         output.accept(ModBlocks.BLUE_GRANITE);
+                        output.accept(ModBlocks.BLUE_GRANITE_SLAB);
+                        output.accept(ModBlocks.BLUE_GRANITE_WALL);
+                        output.accept(ModBlocks.BLUE_GRANITE_STAIRS);
                         output.accept(ModBlocks.EBONSAND);
                         output.accept(ModBlocks.CRIMSAND);
                         output.accept(ModBlocks.SHIMMER_BLOCK);
                         output.accept(ModBlocks.MARBLE);
+                        output.accept(ModBlocks.MARBLE_STAIRS);
+                        output.accept(ModBlocks.MARBLE_SLAB);
+                        output.accept(ModBlocks.MARBLE_WALL);
                         output.accept(ModBlocks.PALLADIUM_DEEPSLATE_ORE);
                         output.accept(ModBlocks.PALLADIUM_ORE);
                         output.accept(ModBlocks.SHADEWOOD_STAIRS);
@@ -130,7 +142,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SHADEWOOD_PRESSURE_PLATE);
                         output.accept(ModBlocks.SHADEWOOD_FENCE);
                         output.accept(ModBlocks.SHADEWOOD_FENCE_GATE);
-                        output.accept(ModBlocks.EBONSTONE_WALL);
                         output.accept(ModBlocks.SHADEWOOD_DOOR);
                         output.accept(ModBlocks.SHADEWOOD_TRAPDOOR);
                         output.accept(ModBlocks.EMERALD_GEMSPARK_BLOCK);
@@ -153,7 +164,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
                         output.accept(ModBlocks.ASTRA_BRICKS);
                         output.accept(ModBlocks.CHLOROPHYTE_BRICKS);
+                        output.accept(ModBlocks.CHLOROPHYTE_BRICK_STAIRS);
+                        output.accept(ModBlocks.CHLOROPHYTE_BRICK_SLAB);
+                        output.accept(ModBlocks.CHLOROPHYTE_BRICK_WALL);
                         output.accept(ModBlocks.COBALT_BRICKS);
+                        output.accept(ModBlocks.COBALT_BRICK_SLAB);
+                        output.accept(ModBlocks.COBALT_BRICK_STAIRS);
+                        output.accept(ModBlocks.COBALT_BRICK_WALL);
                         output.accept(ModBlocks.COSMIC_EMBER_BRICKS);
                         output.accept(ModBlocks.CRIMSTONE_BRICKS);
                         output.accept(ModBlocks.CRIMTANE_BRICKS);
@@ -206,6 +223,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.HELIUM_MOSS_CARPET);
                         output.accept(ModBlocks.ARGON_MOSS);
                         output.accept(ModBlocks.ARGON_MOSS_CARPET);
+                        output.accept(ModBlocks.BLUE_DUNGEON_BRICKS);
+                        output.accept(ModBlocks.GREEN_DUNGEON_BRICKS);
+                        output.accept(ModBlocks.PINK_DUNGEON_BRICKS);
+                        output.accept(ModBlocks.HELLSTONE_ORE);
+                        output.accept(ModBlocks.KRYPTON_MOSS);
+                        output.accept(ModBlocks.KRYPTON_MOSS_CARPET);
+                        output.accept(ModBlocks.LAVA_MOSS);
+                        output.accept(ModBlocks.LAVA_MOSS_CARPET);
 
 
 
@@ -236,7 +261,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.GOLD_SHORTSWORD);
                         output.accept(ModItems.BLADE_OF_GRASS);
                         output.accept(ModItems.MURAMASA);
-                        output.accept(ModItems.IRON_BROADSWORD);
                         output.accept(ModItems.AREADBHAR);
                         output.accept(ModItems.BEE_KEEPER);
                         output.accept(ModItems.CANDY_CANE_SWORD);
@@ -270,6 +294,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DEMON_BOW);
                         output.accept(ModItems.ADAMANTITE_SWORD);
                         output.accept(ModItems.BEAM_SWORD);
+                        output.accept(ModItems.CACTUS_BROADSWORD);
+                        output.accept(ModItems.GOLD_BROADSWORD);
+                        output.accept(ModItems.COPPER_BROADSWORD);
+                        output.accept(ModItems.CUTLASS);
+                        output.accept(ModItems.IRON_BROADSWORD);
 
 
 

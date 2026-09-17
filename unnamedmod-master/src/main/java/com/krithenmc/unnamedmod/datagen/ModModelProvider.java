@@ -51,7 +51,10 @@ public class ModModelProvider extends FabricModelProvider {
 
 
         blockModelGenerators.createTintedLeaves(ModBlocks.SHADEWOOD_LEAVES, TexturedModel.LEAVES, 780606);
-        blockModelGenerators.createTrivialCube(ModBlocks.CRIMSTONE);
+        blockModelGenerators.family(ModBlocks.CRIMSTONE)
+                .stairs(ModBlocks.CRIMSTONE_STAIRS)
+                .slab(ModBlocks.CRIMSTONE_SLAB)
+                .wall(ModBlocks.CRIMSTONE_WALL);
         //blockModelGenerators.createTrivialCube(ModBlocks.EBONSTONE);
         blockModelGenerators.createTrivialCube(ModBlocks.MYTHRIL_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.MYTHRIL_DEEPSLATE_ORE);
@@ -60,7 +63,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.ORICHALCUM_DEEPSLATE_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.LUMINITE_ORE);
         //blockModelGenerators.createTrivialCube(ModBlocks.SHADEWOOD_PLANK);
-        blockModelGenerators.createTrivialCube(ModBlocks.BLUE_GRANITE);
+        blockModelGenerators.family(ModBlocks.BLUE_GRANITE)
+                .stairs(ModBlocks.BLUE_GRANITE_STAIRS)
+                .slab(ModBlocks.BLUE_GRANITE_SLAB)
+                .wall(ModBlocks.BLUE_GRANITE_WALL);
         blockModelGenerators.createTrivialCube(ModBlocks.EBONSAND);
         blockModelGenerators.createTrivialCube(ModBlocks.CRIMSAND);
         blockModelGenerators.createTrivialCube(ModBlocks.SHIMMER_BLOCK);
@@ -74,8 +80,13 @@ public class ModModelProvider extends FabricModelProvider {
                 .fence(ModBlocks.SHADEWOOD_FENCE)
                 .fenceGate(ModBlocks.SHADEWOOD_FENCE_GATE);
         blockModelGenerators.family(ModBlocks.EBONSTONE)
-                .wall(ModBlocks.EBONSTONE_WALL);
-        blockModelGenerators.createTrivialCube(ModBlocks.MARBLE);
+                .wall(ModBlocks.EBONSTONE_WALL)
+                .stairs(ModBlocks.EBONSTONE_STAIRS)
+                .slab(ModBlocks.EBONSTONE_SLAB);
+        blockModelGenerators.family(ModBlocks.MARBLE)
+                .stairs(ModBlocks.MARBLE_STAIRS)
+                .slab(ModBlocks.MARBLE_SLAB)
+                .wall(ModBlocks.MARBLE_WALL);
 
 
         blockModelGenerators.createDoor(ModBlocks.SHADEWOOD_DOOR);
@@ -108,8 +119,14 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.CRISPY_HONEY_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.ASTRA_BRICKS);
-        blockModelGenerators.createTrivialCube(ModBlocks.CHLOROPHYTE_BRICKS);
-        blockModelGenerators.createTrivialCube(ModBlocks.COBALT_BRICKS);
+        blockModelGenerators.family(ModBlocks.CHLOROPHYTE_BRICKS)
+                .stairs(ModBlocks.CHLOROPHYTE_BRICK_STAIRS)
+                .slab(ModBlocks.CHLOROPHYTE_BRICK_SLAB)
+                .wall(ModBlocks.CHLOROPHYTE_BRICK_WALL);
+        blockModelGenerators.family(ModBlocks.COBALT_BRICKS)
+                .stairs(ModBlocks.COBALT_BRICK_STAIRS)
+                .slab(ModBlocks.COBALT_BRICK_SLAB)
+                .wall(ModBlocks.COBALT_BRICK_WALL);
         blockModelGenerators.createTrivialCube(ModBlocks.COSMIC_EMBER_BRICKS);
         blockModelGenerators.createTrivialCube(ModBlocks.CRIMTANE_BRICKS);
         blockModelGenerators.createTrivialCube(ModBlocks.CRIMSTONE_BRICKS);
@@ -165,6 +182,14 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createCropBlock(ModBlocks.DEATHWEED_CROP, DeathweedCropBlock.AGE, 0, 1, 2);
         blockModelGenerators.createCrossBlock(ModBlocks.BLOOD_ORANGE_BUSH, BlockModelGenerators.PlantType.NOT_TINTED, BloodOrangeBushBlock.AGE
                 , 0, 1, 2, 3);
+        blockModelGenerators.createTrivialCube(ModBlocks.GREEN_DUNGEON_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.BLUE_DUNGEON_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.PINK_DUNGEON_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.HELLSTONE_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.KRYPTON_MOSS);
+        blockModelGenerators.createMossyCarpet(ModBlocks.KRYPTON_MOSS_CARPET);
+        blockModelGenerators.createMossyCarpet(ModBlocks.LAVA_MOSS_CARPET);
+        blockModelGenerators.createTrivialCube(ModBlocks.LAVA_MOSS);
 
 
 
@@ -249,7 +274,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.SOUL_OF_SIGHT, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.declareCustomModelItem(ModItems.BLADE_OF_GRASS);
         itemModelGenerators.declareCustomModelItem(ModItems.MURAMASA);
-        itemModelGenerators.declareCustomModelItem(ModItems.IRON_BROADSWORD);
         itemModelGenerators.declareCustomModelItem(ModItems.AREADBHAR);
         itemModelGenerators.declareCustomModelItem(ModItems.BEE_KEEPER);
         itemModelGenerators.declareCustomModelItem(ModItems.CANDY_CANE_SWORD);
@@ -305,6 +329,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.declareCustomModelItem(ModItems.ADAMANTITE_SWORD);
         itemModelGenerators.createFlatItemModel(ModItems.DEATHWEED, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.declareCustomModelItem(ModItems.BEAM_SWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.CACTUS_BROADSWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.GOLD_BROADSWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.COPPER_BROADSWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.CUTLASS);
+        itemModelGenerators.declareCustomModelItem(ModItems.IRON_BROADSWORD);
 
 
 
