@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "unnamedmod:block/rich_mahogany_log_top",
+    "side": "unnamedmod:block/rich_mahogany_log_side"
+  }
+}

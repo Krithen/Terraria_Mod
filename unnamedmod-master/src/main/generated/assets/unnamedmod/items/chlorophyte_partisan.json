@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/chlorophyte_partisan",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

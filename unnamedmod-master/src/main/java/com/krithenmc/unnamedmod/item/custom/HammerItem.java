@@ -1,5 +1,15 @@
 package com.krithenmc.unnamedmod.item.custom;
 
+import com.geckolib.animatable.GeoItem;
+import com.geckolib.animatable.client.GeoRenderProvider;
+import com.geckolib.animatable.instance.AnimatableInstanceCache;
+import com.geckolib.animatable.manager.AnimatableManager;
+import com.geckolib.animation.AnimationController;
+import com.geckolib.animation.object.PlayState;
+import com.geckolib.constant.DefaultAnimations;
+import com.geckolib.renderer.GeoItemRenderer;
+import com.geckolib.util.GeckoLibUtil;
+import com.google.common.base.Suppliers;
 import com.krithenmc.unnamedmod.block.ModBlocks;
 import com.krithenmc.unnamedmod.data.ModDataComponents;
 import com.krithenmc.unnamedmod.stat.ModStats;
@@ -17,11 +27,14 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import org.jspecify.annotations.Nullable;
 
 import java.util.Map;
 import java.util.function.Consumer;
+import java.util.function.Supplier;
 
-public class HammerItem extends Item {
+public class HammerItem extends Item implements GeoItem {
+    private final AnimatableInstanceCache geoCache = GeckoLibUtil.createInstanceCache(this);
 
     private static final Map<Block, Block> HAMMER_MAP =
             Map.of(
@@ -39,8 +52,10 @@ public class HammerItem extends Item {
 
             );
 
-    public HammerItem(final ToolMaterial material, final float attackDamageBaseline, final float attackSpeedBaseline, final Item.Properties properties) {
-        super(properties.sword(material, attackDamageBaseline, attackSpeedBaseline));
+    public HammerItem(Properties properties) {
+        super(properties);
+
+        GeoItem.registerSyncedAnimatable(this);
 
     }
 
@@ -91,6 +106,38 @@ public class HammerItem extends Item {
 
         super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
     }
+
+    @Override
+    public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
+        controllers.add(new AnimationController<>(test -> {
+            if (test.isMoving())
+                return test.setAndContinue(DefaultAnimations.ATTACK_STRIKE);
+
+            return PlayState.STOP;
+        }));
+
+
+    }
+
+    @Override
+    public AnimatableInstanceCache getAnimatableInstanceCache() {
+        return this.geoCache;
+    }
+
+    @Override
+    public void createGeoRenderer(Consumer<GeoRenderProvider> consumer) {
+        consumer.accept(new GeoRenderProvider() {
+            private final Supplier<GeoItemRenderer<HammerItem>> renderer = Suppliers.memoize(() -> new GeoItemRenderer<>(HammerItem.this));
+
+            @Override
+            public @Nullable GeoItemRenderer<?> getGeoItemRenderer() {
+                return this.renderer.get();
+            }
+        });
+    }
+
+
+
 
 
 }

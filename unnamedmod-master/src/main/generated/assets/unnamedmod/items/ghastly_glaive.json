@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/ghastly_glaive",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

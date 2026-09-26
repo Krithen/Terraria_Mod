@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/lead_axe",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

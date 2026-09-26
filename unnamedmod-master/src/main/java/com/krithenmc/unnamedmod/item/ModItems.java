@@ -100,7 +100,7 @@ public class ModItems extends Item.Properties {
     public static final Item ECTOPLASM = registerItem("ectoplasm", Item::new);
     public static final Item GLOWING_MUSHROOM = registerItem("glowing_mushroom", Item::new);
     public static final Item WOODEN_HAMMER = registerItem("wooden_hammer", properties -> new
-            HammerItem(ToolMaterial.WOOD, 0, -3.5f, properties));
+            HammerItem(properties.sword(ToolMaterial.WOOD, 0, -1.4f)));
     public static final Item APRICOT = registerItem("apricot", properties -> new
             Item(properties.food(ModFoods.APRICOT, ModConsumables.APRICOT_CONSUMABLE)));
     public static final Item BANANUH = registerItem("banana", properties -> new
@@ -144,7 +144,7 @@ public class ModItems extends Item.Properties {
     public static final Item WAR_AXE_OF_THE_NIGHT = registerItem("war_axe_of_the_night", properties -> new
             AxeItem(ModToolMaterials.DEMONITE, 16, -3.0f, properties));
     public static final Item GUNGNIR = registerItem("gungnir", properties -> new
-            Item(properties.spear(ModToolMaterials.HALLOWED, 0.95f, 5f, 0.1f, 1.5f, 20f, 7f, 6f, 20f, 2f)));
+            ShortSwordItem(properties.sword(ModToolMaterials.HALLOWED, 60, -1.4f)));
     public static final Item CORRUPTED_STICK = registerItem("corrupted_stick", Item::new);
     public static final Item SOUL_OF_NIGHT = registerItem("soul_of_night", properties -> new
             Item(properties) {
@@ -189,7 +189,7 @@ public class ModItems extends Item.Properties {
             Item(properties.food(ModFoods.JUNGLE_SPORES, ModConsumables.JUNGLE_SPORES_CONSUMABLE)));
 
     public static final Item THE_BREAKER = registerItem("the_breaker", properties -> new
-            HammerItem(ModToolMaterials.DEMONITE, 20, -3.5f, properties));
+            HammerItem(properties.sword(ModToolMaterials.DEMONITE, 20, -1.4f)));
     public static final Item SHADOW_SCALE = registerItem("shadow_scale", Item::new);
     public static final Item DEMONITE_PLATING = registerItem("demonite_plating", Item::new);
     public static final Item GOLD_SHORTSWORD = registerItem("gold_shortsword", properties -> new
@@ -339,6 +339,62 @@ public class ModItems extends Item.Properties {
             new ShortSwordItem(properties.sword(ToolMaterial.GOLD, 11, -1.4f)));
     public static final Item IRON_BROADSWORD = registerItem("iron_broadsword", properties ->
             new ShortSwordItem(properties.sword(ToolMaterial.IRON, 8, -1.4f)));
+    public static final Item LEAD_BROADSWORD = registerItem("lead_broadsword", properties ->
+            new ShortSwordItem(properties.sword(ToolMaterial.IRON, 12, -1.4f)));
+    public static final Item PLATINUM_BROADSWORD = registerItem("platinum_broadsword", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.PLATINUM, 15, -1.4f)));
+    public static final Item PLATINUM_PICKAXE = registerItem("platinum_pickaxe", properties ->
+            new ShortSwordItem(properties.pickaxe(ModToolMaterials.PLATINUM, 6, -1.4f)));
+    public static final Item RULER = registerItem("ruler", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 11, -1.4f)));
+    public static final Item SILVER_BROADSWORD = registerItem("silver_broadsword", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.SILVER, 13, -1.4f)));
+    public static final Item SILVER_PICKAXE = registerItem("silver_pickaxe", properties ->
+            new ShortSwordItem(properties.pickaxe(ModToolMaterials.SILVER, 5, -1.4f)));
+    public static final Item SUSPICIOUS_LOOKING_EYE = registerItem("suspicious_looking_eye", SuspiciousEyeItem::new);
+    public static final Item TIN_BROADSWORD = registerItem("tin_broadsword", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.TIN, 9, 1.4f)));
+    public static final Item TIN_PICKAXE = registerItem("tin_pickaxe", properties ->
+            new ShortSwordItem(properties.pickaxe(ModToolMaterials.TIN, 4, -1.4f)));
+    public static final Item TISSUE_SAMPLE = registerItem("tissue_sample", Item::new);
+    public static final Item TITANIUM_SWORD = registerItem("titanium_sword", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.TITANIUM, 60, -1.4f)));
+    public static final Item TUNGSTEN_BROADSWORD = registerItem("tungsten_broadsword", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.TUNGSTEN, 13, -1.4f)));
+    public static final Item TUNGSTEN_PICKAXE = registerItem("tungsten_pickaxe", properties ->
+            new ShortSwordItem(properties.pickaxe(ModToolMaterials.TUNGSTEN, 5, -1.4f)));
+    public static final Item TRUE_EXCALIBUR = registerItem("true_excalibur", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.HALLOWED, 71, -1.4f)));
+    public static final Item TRUE_NIGHTS_EDGE = registerItem("true_nights_edge", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.NIGHTS_EDGE, 69, -1.4f)));
+    public static final Item TIN_AXE = registerItem("tin_axe", properties ->
+            new ShortSwordItem(properties.axe(ModToolMaterials.TIN, 3, -2f)));
+    public static final Item LEAD_AXE = registerItem("lead_axe", properties ->
+            new ShortSwordItem(properties.axe(ModToolMaterials.LEAD, 5, -2f)));
+    public static final Item SILVER_AXE = registerItem("silver_axe", properties ->
+            new ShortSwordItem(properties.axe(ModToolMaterials.SILVER, 5, -2f)));
+    public static final Item TUNGSTEN_AXE = registerItem("tungsten_axe", properties ->
+            new ShortSwordItem(properties.axe(ModToolMaterials.TUNGSTEN, 6, -2f)));
+    public static final Item PLATINUM_AXE = registerItem("platinum_axe", properties ->
+            new ShortSwordItem(properties.axe(ModToolMaterials.PLATINUM, 6, -2f)));
+    public static final Item STARDUST_HAMAXE = registerItem("stardust_hamaxe", properties ->
+            new HammerItem(properties.axe(ModToolMaterials.STARDUST, 59, -2f)));
+    public static final Item VORTEX_HAMAXE = registerItem("vortex_hamaxe", properties ->
+            new HammerItem(properties.axe(ModToolMaterials.VORTEX, 59, -2f)));
+    public static final Item NEBULA_HAMAXE = registerItem("nebula_hamaxe", properties ->
+            new HammerItem(properties.axe(ModToolMaterials.NEBULA, 59, -2f)));
+    public static final Item SOLAR_HAMAXE = registerItem("solar_hamaxe", properties ->
+            new HammerItem(properties.axe(ModToolMaterials.SOLAR, 59, -2f)));
+    public static final Item ADAMANTITE_GLAIVE = registerItem("adamantite_glaive", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.ADAMANTITE, 48, -1.4f)));
+    public static final Item CHLOROPHYTE_PARTISAN = registerItem("chlorophyte_partisan", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.CHLOROPHYTE, 48 , -1.4f)));
+    public static final Item COBALT_NAGINATA = registerItem("cobalt_naginata", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.COBALT, 43, -1.4f)));
+    public static final Item DARK_LANCE = registerItem("dark_lance", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 33, -1.4f)));
+    public static final Item GHASTLY_GLAIVE = registerItem("ghastly_glaive", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 44, -1.4f)));
 
 
 

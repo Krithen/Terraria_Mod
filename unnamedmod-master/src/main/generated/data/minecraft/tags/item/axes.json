@@ -1,5 +1,14 @@
 {
   "values": [
-    "unnamedmod:war_axe_of_the_night"
+    "unnamedmod:war_axe_of_the_night",
+    "unnamedmod:tin_axe",
+    "unnamedmod:lead_axe",
+    "unnamedmod:silver_axe",
+    "unnamedmod:tungsten_axe",
+    "unnamedmod:platinum_axe",
+    "unnamedmod:stardust_hamaxe",
+    "unnamedmod:nebula_hamaxe",
+    "unnamedmod:vortex_hamaxe",
+    "unnamedmod:solar_hamaxe"
   ]
 }

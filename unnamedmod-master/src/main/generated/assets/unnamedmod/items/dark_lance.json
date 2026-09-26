@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/dark_lance",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

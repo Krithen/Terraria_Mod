@@ -132,6 +132,20 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.KRYPTON_MOSS_CARPET);
         dropSelf(ModBlocks.LAVA_MOSS);
         dropSelf(ModBlocks.LAVA_MOSS_CARPET);
+        dropSelf(ModBlocks.LIZAHARD_BRICKS);
+        dropSelf(ModBlocks.PEARLSAND);
+        dropSelf(ModBlocks.PEARLSTONE_BRICKS);
+        dropSelf(ModBlocks.RAINCLOUD);
+        dropSelf(ModBlocks.RED_BRICK);
+        dropSelf(ModBlocks.RICH_MAHOGANY_LOG);
+        dropSelf(ModBlocks.RICH_MAHOGANY_PLANKS);
+        dropSelf(ModBlocks.RICH_MAHOGANY_STAIRS);
+        dropSelf(ModBlocks.RICH_MAHOGANY_FENCE);
+        dropSelf(ModBlocks.RICH_MAHOGANY_PRESSURE_PLATE);
+        dropSelf(ModBlocks.RICH_MAHOGANY_FENCE_GATE);
+        dropSelf(ModBlocks.RICH_MAHOGANY_BUTTON);
+        dropSelf(ModBlocks.SNOW_BRICKS);
+        dropSelf(ModBlocks.SUNPLATE_BLOCK);
 
 
 
@@ -165,6 +179,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         add(ModBlocks.BOREAL_DOOR, this::createDoorTable);
         add(ModBlocks.PALMWOOD_SLABS, this::createSlabItemTable);
         add(ModBlocks.PALMWOOD_DOOR, this::createDoorTable);
+        add(ModBlocks.RICH_MAHOGANY_DOOR, this::createDoorTable);
         add(ModBlocks.BLUE_MUSHROOM_STEM, createSilkTouchOnlyTable(ModBlocks.BLUE_MUSHROOM_STEM));
         add(ModBlocks.BLUE_MUSHROOM_BLOCK, createMushroomBlockDrop(ModBlocks.BLUE_MUSHROOM_BLOCK, ModItems.GLOWING_MUSHROOM));
         add(ModBlocks.DEEPSLATE_TUNGSTEN_ORE, createOreDrop(ModBlocks.DEEPSLATE_TUNGSTEN_ORE, ModItems.RAW_TUNGSTEN));
@@ -175,13 +190,17 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         add(ModBlocks.TIN_ORE, createOreDrop(ModBlocks.TIN_ORE, ModItems.RAW_TIN));
         add(ModBlocks.LIVING_LEAF_BLOCK, createSilkTouchOnlyTable(ModBlocks.LIVING_LEAF_BLOCK));
         add(ModBlocks.LIVING_MAHOGANY_LEAVES, createSilkTouchOnlyTable(ModBlocks.LIVING_MAHOGANY_LEAVES));
+        add(ModBlocks.RED_ICE, createSilkTouchOnlyTable(ModBlocks.RED_ICE));
         add(ModBlocks.CRIMSTONE_SLAB, this::createSlabItemTable);
         add(ModBlocks.EBONSTONE_SLAB, this::createSlabItemTable);
         add(ModBlocks.BLUE_GRANITE_SLAB, this::createSlabItemTable);
         add(ModBlocks.MARBLE_SLAB, this::createSlabItemTable);
         add(ModBlocks.CHLOROPHYTE_BRICK_SLAB, this::createSlabItemTable);
         add(ModBlocks.COBALT_BRICK_SLAB, this::createSlabItemTable);
+        add(ModBlocks.RICH_MAHOGANY_SLAB, this::createSlabItemTable);
         add(ModBlocks.HELLSTONE_ORE, createOreDrop(ModBlocks.HELLSTONE_ORE, ModItems.HELLSTONE));
+        add(ModBlocks.SILVER_DEEPSLATE_ORE, createOreDrop(ModBlocks.SILVER_DEEPSLATE_ORE, ModItems.RAW_SILVER));
+        add(ModBlocks.SILVER_ORE, createOreDrop(ModBlocks.SILVER_ORE, ModItems.RAW_SILVER));
         this.add(ModBlocks.DEATHWEED_CROP, this.createCropDrops(ModBlocks.DEATHWEED_CROP, ModItems.DEATHWEED, ModItems.DEATHWEED_SEEDS,
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.DEATHWEED_CROP)
                         .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(DeathweedCropBlock.AGE, DeathweedCropBlock.MAX_AGE))));

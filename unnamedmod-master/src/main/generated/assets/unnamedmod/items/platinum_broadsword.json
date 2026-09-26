@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/platinum_broadsword",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

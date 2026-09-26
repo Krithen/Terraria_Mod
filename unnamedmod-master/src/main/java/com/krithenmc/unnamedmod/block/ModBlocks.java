@@ -353,6 +353,44 @@ public class ModBlocks {
             new Block(properties.strength(5f).sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()));
     public static final Block HELLSTONE_ORE = registerBlock("hellstone_ore", properties ->
             new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(2f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final Block LIZAHARD_BRICKS = registerBlock("lizahard_bricks", properties ->
+            new Block(properties.strength(3f).sound(SoundType.CINNABAR).requiresCorrectToolForDrops()));
+    public static final Block PEARLSAND = registerBlock("pearlsand", properties ->
+            new SandBlock(new ColorRGBA(14406560), properties.strength(1f).sound(SoundType.SAND)));
+    public static final Block PEARLSTONE_BRICKS = registerBlock("pearlstone_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block RAINCLOUD = registerBlock("raincloud", properties ->
+            new Block(properties.strength(1f)));
+    public static final Block RED_BRICK = registerBlock("red_brick", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block RED_ICE = registerBlock("red_ice", properties ->
+            new IceBlock(properties.strength(1f).friction(50)));
+    public static final Block RICH_MAHOGANY_DOOR = registerBlock("rich_mahogany_door", properties ->
+            new DoorBlock(BlockSetType.DARK_OAK, properties.sound(SoundType.WOOD).noOcclusion()));
+    public static final Block RICH_MAHOGANY_LOG = registerBlock("rich_mahogany_log", properties ->
+            new RotatedPillarBlock(properties.strength(2f).sound(SoundType.WOOD)));
+    public static final Block RICH_MAHOGANY_PLANKS = registerBlock("rich_mahogany_planks", properties ->
+            new Block(properties.strength(1f).sound(SoundType.WOOD)));
+    public static final Block RICH_MAHOGANY_SLAB = registerBlock("rich_mahogany_slab", properties ->
+            new SlabBlock(properties.strength(1f).sound(SoundType.WOOD)));
+    public static final Block RICH_MAHOGANY_STAIRS = registerBlock("rich_mahogany_stairs", properties ->
+            new StairBlock(ModBlocks.RICH_MAHOGANY_PLANKS.defaultBlockState(), properties.sound(SoundType.WOOD).strength(1f)));
+    public static final Block RICH_MAHOGANY_FENCE = registerBlock("rich_mahogany_fence", properties ->
+            new FenceBlock(properties.strength(1f).sound(SoundType.WOOD)));
+    public static final Block RICH_MAHOGANY_FENCE_GATE = registerBlock("rich_mahogany_fence_gate", properties ->
+            new FenceGateBlock(WoodType.OAK, properties.strength(1f).sound(SoundType.WOOD)));
+    public static final Block RICH_MAHOGANY_BUTTON = registerBlock("rich_mahogany_button", properties ->
+            new ButtonBlock(BlockSetType.DARK_OAK, 20, properties.strength(1f).sound(SoundType.WOOD).noOcclusion().noCollision()));
+    public static final Block RICH_MAHOGANY_PRESSURE_PLATE = registerBlock("rich_mahogany_pressure_plate", properties ->
+            new PressurePlateBlock(BlockSetType.DARK_OAK, properties.sound(SoundType.WOOD).strength(1f).noCollision().noOcclusion()));
+    public static final Block SILVER_DEEPSLATE_ORE = registerBlock("silver_deepslate_ore", properties ->
+            new DropExperienceBlock(UniformInt.of(3, 6), properties.strength(4f).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()));
+    public static final Block SILVER_ORE = registerBlock("silver_ore", properties ->
+            new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(2f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final Block SNOW_BRICKS = registerBlock("snow_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block SUNPLATE_BLOCK = registerBlock("sunplate_block", properties ->
+            new Block(properties.strength(2f)));
 
 
 

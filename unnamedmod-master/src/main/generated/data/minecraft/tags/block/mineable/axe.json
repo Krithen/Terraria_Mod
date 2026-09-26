@@ -29,6 +29,15 @@
     "unnamedmod:palmwood",
     "unnamedmod:shadewood",
     "unnamedmod:boreal_wood",
-    "unnamedmod:palmwood_trapdoor"
+    "unnamedmod:palmwood_trapdoor",
+    "unnamedmod:rich_mahogany_log",
+    "unnamedmod:rich_mahogany_door",
+    "unnamedmod:rich_mahogany_planks",
+    "unnamedmod:rich_mahogany_slab",
+    "unnamedmod:rich_mahogany_stairs",
+    "unnamedmod:rich_mahogany_fence",
+    "unnamedmod:rich_mahogany_button",
+    "unnamedmod:rich_mahogany_fence_gate",
+    "unnamedmod:rich_mahogany_pressure_plate"
   ]
 }

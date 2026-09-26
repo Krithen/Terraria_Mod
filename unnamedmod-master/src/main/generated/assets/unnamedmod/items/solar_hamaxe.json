@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/solar_hamaxe",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

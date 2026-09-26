@@ -17,9 +17,7 @@ import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TexturedModel;
 
-import net.minecraft.client.model.Model;
 import net.minecraft.client.renderer.block.dispatch.Variant;
-import net.minecraft.client.renderer.item.ItemModel;
 import net.minecraft.resources.Identifier;
 import net.minecraft.util.random.WeightedList;
 import net.minecraft.world.item.Items;
@@ -128,7 +126,7 @@ public class ModModelProvider extends FabricModelProvider {
                 .slab(ModBlocks.COBALT_BRICK_SLAB)
                 .wall(ModBlocks.COBALT_BRICK_WALL);
         blockModelGenerators.createTrivialCube(ModBlocks.COSMIC_EMBER_BRICKS);
-        blockModelGenerators.createTrivialCube(ModBlocks.CRIMTANE_BRICKS);
+        blockModelGenerators.family(ModBlocks.CRIMTANE_BRICKS);
         blockModelGenerators.createTrivialCube(ModBlocks.CRIMSTONE_BRICKS);
         blockModelGenerators.createTrivialCube(ModBlocks.CRYOCORE_BRICKS);
         blockModelGenerators.createTrivialCube(ModBlocks.EBONSTONE_BRICKS);
@@ -190,6 +188,25 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createMossyCarpet(ModBlocks.KRYPTON_MOSS_CARPET);
         blockModelGenerators.createMossyCarpet(ModBlocks.LAVA_MOSS_CARPET);
         blockModelGenerators.createTrivialCube(ModBlocks.LAVA_MOSS);
+        blockModelGenerators.createTrivialCube(ModBlocks.LIZAHARD_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.PEARLSAND);
+        blockModelGenerators.createTrivialCube(ModBlocks.PEARLSTONE_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.RAINCLOUD);
+        blockModelGenerators.createTrivialCube(ModBlocks.RED_BRICK);
+        blockModelGenerators.createTrivialCube(ModBlocks.RED_ICE);
+        blockModelGenerators.createDoor(ModBlocks.RICH_MAHOGANY_DOOR);
+        blockModelGenerators.createRotatedPillarWithHorizontalVariant(ModBlocks.RICH_MAHOGANY_LOG, TexturedModel.COLUMN_ALT, TexturedModel.COLUMN_HORIZONTAL);
+        blockModelGenerators.family(ModBlocks.RICH_MAHOGANY_PLANKS)
+                .slab(ModBlocks.RICH_MAHOGANY_SLAB)
+                .stairs(ModBlocks.RICH_MAHOGANY_STAIRS)
+                .fence(ModBlocks.RICH_MAHOGANY_FENCE)
+                .fenceGate(ModBlocks.RICH_MAHOGANY_FENCE_GATE)
+                .pressurePlate(ModBlocks.RICH_MAHOGANY_PRESSURE_PLATE)
+                .button(ModBlocks.RICH_MAHOGANY_BUTTON);
+        blockModelGenerators.createTrivialCube(ModBlocks.SILVER_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.SILVER_DEEPSLATE_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.SNOW_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.SUNPLATE_BLOCK);
 
 
 
@@ -321,19 +338,52 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.MANGO, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.MARSHMALLOW, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.declareCustomModelItem(ModItems.MOLTEN_PICKAXE);
-        itemModelGenerators.createFlatItemModel(ModItems.MUSHROOM, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.MUSHROOM, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.declareCustomModelItem(ModItems.SHADOW_SABATONS);
         itemModelGenerators.declareCustomModelItem(ModItems.SHADOW_GREAVES);
         itemModelGenerators.declareCustomModelItem(ModItems.SHADOW_SCALEMAIL);
         itemModelGenerators.declareCustomModelItem(ModItems.SHADOW_HELMET);
         itemModelGenerators.declareCustomModelItem(ModItems.ADAMANTITE_SWORD);
-        itemModelGenerators.createFlatItemModel(ModItems.DEATHWEED, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.DEATHWEED, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.declareCustomModelItem(ModItems.BEAM_SWORD);
         itemModelGenerators.declareCustomModelItem(ModItems.CACTUS_BROADSWORD);
         itemModelGenerators.declareCustomModelItem(ModItems.GOLD_BROADSWORD);
         itemModelGenerators.declareCustomModelItem(ModItems.COPPER_BROADSWORD);
         itemModelGenerators.declareCustomModelItem(ModItems.CUTLASS);
         itemModelGenerators.declareCustomModelItem(ModItems.IRON_BROADSWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.LEAD_BROADSWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.PLATINUM_BROADSWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.PLATINUM_PICKAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.RULER);
+        itemModelGenerators.declareCustomModelItem(ModItems.SILVER_BROADSWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.SILVER_PICKAXE);
+        itemModelGenerators.generateFlatItem(ModItems.SUSPICIOUS_LOOKING_EYE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.declareCustomModelItem(ModItems.TIN_BROADSWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.TIN_PICKAXE);
+        itemModelGenerators.generateFlatItem(ModItems.TISSUE_SAMPLE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.declareCustomModelItem(ModItems.TITANIUM_SWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.TUNGSTEN_BROADSWORD);
+        itemModelGenerators.declareCustomModelItem(ModItems.TUNGSTEN_PICKAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.TRUE_EXCALIBUR);
+        itemModelGenerators.declareCustomModelItem(ModItems.TRUE_NIGHTS_EDGE);
+        itemModelGenerators.declareCustomModelItem(ModItems.TIN_AXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.LEAD_AXE);
+        itemModelGenerators.declareCustomModelItem(Items.GOLDEN_AXE);
+        itemModelGenerators.declareCustomModelItem(Items.COPPER_AXE);
+        itemModelGenerators.declareCustomModelItem(Items.IRON_AXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.SILVER_AXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.TUNGSTEN_AXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.PLATINUM_AXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.STARDUST_HAMAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.VORTEX_HAMAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.NEBULA_HAMAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.SOLAR_HAMAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.ADAMANTITE_GLAIVE);
+        itemModelGenerators.declareCustomModelItem(ModItems.CHLOROPHYTE_PARTISAN);
+        itemModelGenerators.declareCustomModelItem(ModItems.COBALT_NAGINATA);
+        itemModelGenerators.declareCustomModelItem(ModItems.DARK_LANCE);
+        itemModelGenerators.declareCustomModelItem(ModItems.GHASTLY_GLAIVE);
+
 
 
 

@@ -1,14 +1,14 @@
 // 26.2	-999999999-01-01T00:00:00	unnamedmod/Tags for minecraft:item
-de678f7a312efc8a67088d9a301fb7f7db109a96 data/minecraft/tags/item/axes.json
+a8abe520316845ac81da847a39562680d3d0296e data/minecraft/tags/item/axes.json
 a2be46c079e4ab6fd4eb0d5d5431bb5add9f0101 data/minecraft/tags/item/chest_armor.json
 ba38e9712514018e4e174fec45d2f379c59dd1df data/minecraft/tags/item/enchantable/bow.json
 b4a4e0ea3585065c460e1229a8443f46b4845ccc data/minecraft/tags/item/foot_armor.json
 4a9b1d456bc88651075175245162f5654c32b6ff data/minecraft/tags/item/head_armor.json
 cd9c3a839a877c85a0f8c608ebb66bf512a0b984 data/minecraft/tags/item/leg_armor.json
-82f2595fcabfeb35bf29876b4f078d89da93e7de data/minecraft/tags/item/pickaxes.json
+f1ea69f063c538a40668335dfed7f831b72d8664 data/minecraft/tags/item/pickaxes.json
 e056deda3a9718818e5781d935f18c1a9179c324 data/minecraft/tags/item/shovels.json
 d49115cf9666f6ebf7fc8104547ade379581e212 data/minecraft/tags/item/spears.json
-7b6f1832501901cbb9970708c993572fd6d60b29 data/minecraft/tags/item/swords.json
+6945dfc5fc767e77a31b4af6033b071591695e04 data/minecraft/tags/item/swords.json
 b913882b23bbe63a8c845c560152a9b6bd17f1ef data/unnamedmod/tags/item/adamantite_repair.json
 243f2dab6ef46a493d12775f6f28baf7b72922cf data/unnamedmod/tags/item/bone_repair.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/unnamedmod/tags/item/cactus_repair.json

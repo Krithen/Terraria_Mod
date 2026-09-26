@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/ruler",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

@@ -61,6 +61,20 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.getRK(ModItems.COPPER_BROADSWORD))
                 .add(ModItems.getRK(ModItems.CUTLASS))
                 .add(ModItems.getRK(ModItems.IRON_BROADSWORD))
+                .add(ModItems.getRK(ModItems.LEAD_BROADSWORD))
+                .add(ModItems.getRK(ModItems.PLATINUM_BROADSWORD))
+                .add(ModItems.getRK(ModItems.RULER))
+                .add(ModItems.getRK(ModItems.SILVER_BROADSWORD))
+                .add(ModItems.getRK(ModItems.TIN_BROADSWORD))
+                .add(ModItems.getRK(ModItems.TITANIUM_SWORD))
+                .add(ModItems.getRK(ModItems.TUNGSTEN_BROADSWORD))
+                .add(ModItems.getRK(ModItems.TRUE_EXCALIBUR))
+                .add(ModItems.getRK(ModItems.TRUE_NIGHTS_EDGE))
+                .add(ModItems.getRK(ModItems.ADAMANTITE_GLAIVE))
+                .add(ModItems.getRK(ModItems.CHLOROPHYTE_PARTISAN))
+                .add(ModItems.getRK(ModItems.COBALT_NAGINATA))
+                .add(ModItems.getRK(ModItems.DARK_LANCE))
+                .add(ModItems.getRK(ModItems.GHASTLY_GLAIVE))
 
         ;
         tag(ItemTags.PICKAXES)
@@ -71,10 +85,26 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.getRK(ModItems.LEAD_PICKAXE))
                 .add(ModItems.getRK(ModItems.COBALT_PICKAXE))
                 .add(ModItems.getRK(ModItems.DEATHBRINGER_PICKAXE))
-                .add(ModItems.getRK(ModItems.MOLTEN_PICKAXE));
+                .add(ModItems.getRK(ModItems.MOLTEN_PICKAXE))
+                .add(ModItems.getRK(ModItems.SILVER_PICKAXE))
+                .add(ModItems.getRK(ModItems.TIN_PICKAXE))
+                .add(ModItems.getRK(ModItems.TUNGSTEN_PICKAXE));
         tag(ItemTags.SHOVELS).add(ModItems.getRK(ModItems.NIGHTMARE_SHOVEL));
-        tag(ItemTags.SPEARS).add(ModItems.getRK(ModItems.GUNGNIR));
-        tag(ItemTags.AXES).add(ModItems.getRK(ModItems.WAR_AXE_OF_THE_NIGHT));
+        tag(ItemTags.SPEARS)
+                .add(ModItems.getRK(ModItems.GUNGNIR));
+        tag(ItemTags.AXES)
+                .add(ModItems.getRK(ModItems.WAR_AXE_OF_THE_NIGHT))
+                .add(ModItems.getRK(ModItems.TIN_AXE))
+                .add(ModItems.getRK(ModItems.LEAD_AXE))
+                .add(ModItems.getRK(ModItems.SILVER_AXE))
+                .add(ModItems.getRK(ModItems.TUNGSTEN_AXE))
+                .add(ModItems.getRK(ModItems.PLATINUM_AXE))
+                .add(ModItems.getRK(ModItems.STARDUST_HAMAXE))
+                .add(ModItems.getRK(ModItems.NEBULA_HAMAXE))
+                .add(ModItems.getRK(ModItems.VORTEX_HAMAXE))
+                .add(ModItems.getRK(ModItems.SOLAR_HAMAXE))
+
+        ;
 
         tag(ModTags.Items.DEMONITE_REPAIR)
                 .add(ModItems.getRK(ModItems.DEMONITE_BAR))

@@ -13,6 +13,9 @@ import com.krithenmc.unnamedmod.sounds.ModSounds;
 import com.krithenmc.unnamedmod.stat.ModStats;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.resources.Identifier;
+import net.rpg_foundation.armor_api.client.ArmorRenderers;
+import net.rpg_foundation.armor_api.client.GeoArmorRenderer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -33,6 +36,7 @@ public class Unnamedmod implements ModInitializer {
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
 		ModPotionRecipes.registerPotionRecipes();
+
 
 
 	}
