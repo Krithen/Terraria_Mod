@@ -4,6 +4,7 @@ package com.krithenmc.unnamedmod.item;
 import com.krithenmc.unnamedmod.Unnamedmod;
 import com.krithenmc.unnamedmod.block.ModBlocks;
 import com.krithenmc.unnamedmod.consumables.ModConsumables;
+import com.krithenmc.unnamedmod.entities.ModEntities;
 import com.krithenmc.unnamedmod.food.ModFoods;
 
 import com.krithenmc.unnamedmod.item.custom.*;
@@ -22,6 +23,7 @@ import net.minecraft.world.item.component.TooltipDisplay;
 
 
 import net.minecraft.world.item.equipment.ArmorType;
+import net.minecraft.world.level.levelgen.structure.templatesystem.loader.DirectoryTemplateSource;
 
 
 import java.util.function.Consumer;
@@ -395,6 +397,95 @@ public class ModItems extends Item.Properties {
             new ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 33, -1.4f)));
     public static final Item GHASTLY_GLAIVE = registerItem("ghastly_glaive", properties ->
             new ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 44, -1.4f)));
+    public static final Item BOTANICAL_PIERCER = registerItem("botanical_piercer", properties ->
+    new ShortSwordItem(properties.sword(ModToolMaterials.NOTCRAFTED, 79, -1.4f))    );
+    public static final Item COPPER_HAMMER = registerItem("copper_hammer", properties ->
+            new HammerItem(properties.sword(ToolMaterial.COPPER, 3, -2.4f)));
+    public static final Item CHLOROPHYTE_GREATHAMMER = registerItem("chlorophyte_greathammer", properties ->
+            new HammerItem(properties.sword(ModToolMaterials.CHLOROPHYTE, 79, -2.4f)));
+    public static final Item FLESH_GRINDER = registerItem("flesh_grinder", properties ->
+            new HammerItem(properties.sword(ModToolMaterials.CRIMTANE, 22, -2.4f)));
+    public static final Item GOLDEN_HAMMER = registerItem("golden_hammer", properties ->
+            new HammerItem(properties.sword(ToolMaterial.GOLD, 8, -2.4f)));
+    public static final Item HAEMORRHAXE = registerItem("haemorrhaxe", properties ->
+            new HammerItem(properties.axe(ModToolMaterials.NOTCRAFTED, 29, -2.4f)));
+    public static final Item HAMMUSH = registerItem("hammush", properties ->
+            new HammerItem(properties.sword(ModToolMaterials.NOTCRAFTED, 25, -2.4f)));
+    public static final Item IRON_HAMMER = registerItem("iron_hammer", properties ->
+            new HammerItem(properties.sword(ToolMaterial.IRON, 6, -2.4f)));
+    public static final Item LEAD_HAMMER = registerItem("lead_hammer", properties ->
+            new HammerItem(properties.sword(ModToolMaterials.LEAD, 7, -2.4f)));
+    public static final Item METEOR_HAMAXE = registerItem("meteor_hamaxe", properties ->
+            new HammerItem(properties.axe(ModToolMaterials.NOTCRAFTED, 19, -2.4f)));
+    public static final Item MOLTEN_HAMAXE = registerItem("molten_hamaxe", properties ->
+            new HammerItem(properties.axe(ModToolMaterials.HELLSTONE, 19, -2.4f)));
+    public static final Item PLATINUM_HAMMER = registerItem("platinum_hammer", properties ->
+            new HammerItem(properties.sword(ModToolMaterials.PLATINUM, 9, -2.4f)));
+    public static final Item PWNHAMMER = registerItem("pwnhammer", properties ->
+            new HammerItem(properties.sword(ModToolMaterials.HALLOWED, 25, -2.4f)));
+    public static final Item SILVER_HAMMER = registerItem("silver_hammer", properties ->
+            new HammerItem(properties.sword(ModToolMaterials.SILVER, 8, -2.4f)));
+    public static final Item TIN_HAMMER = registerItem("tin_hammer", properties ->
+            new HammerItem(properties.sword(ModToolMaterials.TIN, 5, -2.4f)));
+    public static final Item TUNGSTEN_HAMMER = registerItem("tungsten_hammer", properties ->
+            new HammerItem(properties.sword(ModToolMaterials.TUNGSTEN, 8, -2.4f)));
+    public static final Item ADAMANTITE_WARAXE = registerItem("adamantite_waraxe", properties ->
+            new ShortSwordItem(properties.axe(ModToolMaterials.ADAMANTITE, 42, -1.4f)));
+    public static final Item CHLOROPHYTE_GREATAXE = registerItem("chlorophyte_greataxe", properties ->
+            new ShortSwordItem(properties.axe(ModToolMaterials.CHLOROPHYTE, 69, -1.4f)));
+    public static final Item ANCIENT_CLOTH = registerItem("ancient_cloth", Item::new);
+    public static final Item APPLE_PIE = registerItem("apple_pie", properties ->
+            new Item(properties.food(ModFoods.APPLE_PIE, ModConsumables.APPLE_PIE)));
+    public static final Item BACON = registerItem("bacon", properties ->
+            new Item(properties.food(ModFoods.BACON, ModConsumables.BACON)));
+    public static final Item BARBEQUE_RIBS = registerItem("barbeque_ribs", properties ->
+            new Item(properties.food(ModFoods.BARBEQUE_RIBS, ModConsumables.BARBEQUE_RIBS)));
+    public static final Item BLACK_LENS = registerItem("black_lens", Item::new);
+    public static final Item BUCKET_OF_MILKSHAKE = registerItem("bucket_of_milkshake", properties ->
+            new Item(properties.food(ModFoods.BUCKET_OF_MILKSHAKE, ModConsumables.BUCKET_OF_MILKSHAKE)));
+    public static final Item CREAM_SODA = registerItem("cream_soda", properties ->
+            new Item(properties.food(ModFoods.CREAM_SODA, ModConsumables.CREAM_SODA)));
+    public static final Item CRIMSON_CRATE = registerItem("crimson_crate", Item::new);
+    public static final Item CRYSTAL_SHARD = registerItem("crystal_shard", Item::new);
+    public static final Item CURSED_FLAMES = registerItem("cursed_flames", properties ->
+            new Item(properties.fireResistant()));
+    public static final Item DIVINE_CRATE = registerItem("divine_crate", properties ->
+            new DivineCrateItem(properties.stacksTo(1)));
+    public static final Item ANTLION_SPAWN_EGG = registerItem("antlion_spawn_egg", properties ->
+            new SpawnEggItem(properties.spawnEgg(ModEntities.ANTLION)));
+    public static final Item SWARMER_SPAWN_EGG = registerItem("swarmer_spawn_egg", properties ->
+            new SpawnEggItem(properties.spawnEgg(ModEntities.SWARMER)));
+    public static final Item ANTLION_MANDIBLE = registerItem("antlion_mandible", Item::new);
+    public static final Item DEMON_EYE_SPAWN_EGG = registerItem("demon_eye_spawn_egg", properties ->
+            new SpawnEggItem(properties.spawnEgg(ModEntities.DEMON_EYE)));
+    public static final Item ORICHALCUM_WARAXE = registerItem("orichalcum_waraxe", properties ->
+            new ShortSwordItem(properties.axe(ModToolMaterials.ORICHALCUM, 41, -2f)));
+    public static final Item GREEN_EYE_SPAWN_EGG = registerItem("green_eye_spawn_egg", properties ->
+            new SpawnEggItem(properties.spawnEgg(ModEntities.GREEN_EYE)));
+    public static final Item MYTHRIL_WARAXE = registerItem("mythril_waraxe", properties ->
+            new ShortSwordItem(properties.axe(ModToolMaterials.MYTHRIL, 39, -2)));
+    public static final Item PALLADIUM_WARAXE = registerItem("palladium_waraxe", properties ->
+            new ShortSwordItem(properties.axe(ModToolMaterials.PALLADIUM, 35, -2)));
+    public static final Item PICKAXE_AXE = registerItem("pickaxe_axe", properties ->
+            new ShortSwordItem(properties.pickaxe(ModToolMaterials.HALLOWED, 34, -2).axe(ModToolMaterials.HALLOWED, 34, -2)));
+    public static final Item PICKSAW = registerItem("picksaw", properties ->
+            new ShortSwordItem(properties.pickaxe(ModToolMaterials.PICKSAW, 33, -2).axe(ModToolMaterials.PICKSAW, 33, -2)));
+    public static final Item TITANIUM_WARAXE = registerItem("titanium_waraxe", properties ->
+            new ShortSwordItem(properties.axe(ModToolMaterials.TITANIUM, 43, -2)));
+    public static final Item ADAMANTITE_PICKAXE = registerItem("adamantite_pickaxe", properties ->
+            new ShortSwordItem(properties.pickaxe(ModToolMaterials.ADAMANTITE, 20, -2)));
+    public static final Item CHLOROPHYTE_CLAYMORE = registerItem("chlorophyte_claymore", properties ->
+            new ShortSwordItem(properties.sword(ModToolMaterials.CHLOROPHYTE, 95, -2)));
+    public static final Item NEBULA_PICKAXE = registerItem("nebula_pickaxe", properties ->
+            new ShortSwordItem(properties.pickaxe(ModToolMaterials.NEBULA, 79, -2)));
+    public static final Item ORICHALCUM_PICKAXE = registerItem("orichalcum_pickaxe", properties ->
+            new ShortSwordItem(properties.pickaxe(ModToolMaterials.ORICHALCUM, 16, -2)));
+    public static final Item PALLADIUM_PICKAXE = registerItem("palladium_pickaxe", properties ->
+            new ShortSwordItem(properties.pickaxe(ModToolMaterials.PALLADIUM, 11, -2)));
+
+
+
+
 
 
 

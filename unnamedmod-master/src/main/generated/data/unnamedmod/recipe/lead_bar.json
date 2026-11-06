@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "lead",
+  "key": {
+    "I": "unnamedmod:lead_bricks"
+  },
+  "pattern": [
+    " I "
+  ],
+  "result": {
+    "id": "unnamedmod:lead_bar"
+  }
+}

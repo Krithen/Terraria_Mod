@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "ebonwood",
+  "ingredients": [
+    "unnamedmod:ebonwood_planks"
+  ],
+  "result": {
+    "id": "unnamedmod:ebonwood_button"
+  }
+}

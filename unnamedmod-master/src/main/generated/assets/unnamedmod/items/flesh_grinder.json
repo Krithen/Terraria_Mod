@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/flesh_grinder",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

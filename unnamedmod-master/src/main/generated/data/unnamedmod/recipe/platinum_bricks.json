@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "platinum",
+  "key": {
+    "#": "unnamedmod:platinum_bar"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 4,
+    "id": "unnamedmod:platinum_bricks"
+  }
+}

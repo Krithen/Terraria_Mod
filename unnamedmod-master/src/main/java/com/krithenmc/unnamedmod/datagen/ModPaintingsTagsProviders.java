@@ -20,7 +20,10 @@ public class ModPaintingsTagsProviders extends FabricTagsProvider<PaintingVarian
     @Override
     protected void addTags(HolderLookup.Provider registries) {
         getOrCreateRawBuilder(PaintingVariantTags.PLACEABLE)
-                .add(TagEntry.element(ModPaintings.SKELETON_HAND_KEY.identifier()));
+                .add(TagEntry.element(ModPaintings.SKELETON_HAND_KEY.identifier()))
+                .add(TagEntry.element(ModPaintings.LAND_OF_DECEIVING_LOOKS.identifier()))
+                .add(TagEntry.element(ModPaintings.DEADLAND_COMES_ALIVE.identifier()))
+                .add(TagEntry.element(ModPaintings.CRYSTALLIZE.identifier()));
 
     }
 }

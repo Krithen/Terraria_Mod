@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "deepcrimstone",
+  "key": {
+    "#": "unnamedmod:deepcrimstone"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "unnamedmod:deepcrimstone_stairs"
+  }
+}

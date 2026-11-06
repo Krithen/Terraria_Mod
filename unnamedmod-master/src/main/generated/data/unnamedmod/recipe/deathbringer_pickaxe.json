@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "crimtane",
+  "key": {
+    "A": "unnamedmod:bleeding_stick",
+    "T": "unnamedmod:crimtane_bar"
+  },
+  "pattern": [
+    "TTT",
+    " A ",
+    " A "
+  ],
+  "result": {
+    "id": "unnamedmod:deathbringer_pickaxe"
+  }
+}

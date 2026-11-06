@@ -12,6 +12,8 @@ public class ModEffects {
 
     public static final Holder<MobEffect> WELLFED = registerMobEffect("wellfed",
             new WellFedEffect(MobEffectCategory.BENEFICIAL, 264863866));
+    public static final Holder<MobEffect> PLENTYSATISFIED = registerMobEffect("plentysatisfied",
+            new PlentySatisfiedEffect(MobEffectCategory.BENEFICIAL, 264863866));
 
     private static Holder<MobEffect> registerMobEffect(String name, MobEffect effect) {
         return Registry.registerForHolder(BuiltInRegistries.MOB_EFFECT, Identifier.fromNamespaceAndPath(Unnamedmod.MOD_ID, name), effect);

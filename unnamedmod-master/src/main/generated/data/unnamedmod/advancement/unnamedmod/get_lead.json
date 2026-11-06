@@ -1,0 +1,32 @@
+{
+  "parent": "unnamedmod:unnamedmod/root",
+  "criteria": {
+    "has_lead": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:lead_bar"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.unnamedmod.get_lead.description"
+    },
+    "icon": {
+      "id": "unnamedmod:lead_bar"
+    },
+    "title": {
+      "translate": "advancements.unnamedmod.get_lead.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_lead"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

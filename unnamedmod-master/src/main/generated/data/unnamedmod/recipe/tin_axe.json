@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "tin",
+  "key": {
+    "A": "minecraft:stick",
+    "T": "unnamedmod:tin_bricks"
+  },
+  "pattern": [
+    " TT",
+    " AT",
+    " A "
+  ],
+  "result": {
+    "id": "unnamedmod:tin_axe"
+  }
+}

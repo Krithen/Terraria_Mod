@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepcrimstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:deepcrimstone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "unnamedmod:deepcrimstone_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_deepcrimstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "unnamedmod:deepcrimstone_stairs"
+    ]
+  }
+}

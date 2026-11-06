@@ -1,0 +1,12 @@
+{
+  "gives": {
+    "id": "unnamedmod:coconut"
+  },
+  "max_uses": 30.0,
+  "reputation_discount": 0.05,
+  "wants": {
+    "count": 3.0,
+    "id": "minecraft:sand"
+  },
+  "xp": 8.0
+}

@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/botanical_piercer",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

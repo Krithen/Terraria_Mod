@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "unnamedmod:ash_wood_planks"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "unnamedmod:ash_pressure_plate"
+  }
+}

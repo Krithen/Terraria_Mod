@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "silver",
+  "key": {
+    "I": "unnamedmod:silver_bricks"
+  },
+  "pattern": [
+    " I "
+  ],
+  "result": {
+    "id": "unnamedmod:silver_bar"
+  }
+}

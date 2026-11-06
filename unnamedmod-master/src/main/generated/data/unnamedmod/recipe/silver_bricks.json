@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "silver",
+  "key": {
+    "#": "unnamedmod:silver_bar"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 4,
+    "id": "unnamedmod:silver_bricks"
+  }
+}

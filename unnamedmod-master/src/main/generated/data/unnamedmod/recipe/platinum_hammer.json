@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "platinum",
+  "key": {
+    "A": "minecraft:stick",
+    "T": "unnamedmod:platinum_bricks",
+    "t": "unnamedmod:platinum_bar"
+  },
+  "pattern": [
+    "TTT",
+    "tAt",
+    " A "
+  ],
+  "result": {
+    "id": "unnamedmod:platinum_hammer"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/mythril_waraxe",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

@@ -1,14 +1,18 @@
 // 26.2	-999999999-01-01T00:00:00	unnamedmod/Tags for minecraft:item
-a8abe520316845ac81da847a39562680d3d0296e data/minecraft/tags/item/axes.json
+943b813cc88420d0e49d46d5570aa2849a55d533 data/minecraft/tags/item/axes.json
 a2be46c079e4ab6fd4eb0d5d5431bb5add9f0101 data/minecraft/tags/item/chest_armor.json
 ba38e9712514018e4e174fec45d2f379c59dd1df data/minecraft/tags/item/enchantable/bow.json
 b4a4e0ea3585065c460e1229a8443f46b4845ccc data/minecraft/tags/item/foot_armor.json
 4a9b1d456bc88651075175245162f5654c32b6ff data/minecraft/tags/item/head_armor.json
+17bdca25f3fa93455c73903079f719242fb57028 data/minecraft/tags/item/leaves.json
 cd9c3a839a877c85a0f8c608ebb66bf512a0b984 data/minecraft/tags/item/leg_armor.json
-f1ea69f063c538a40668335dfed7f831b72d8664 data/minecraft/tags/item/pickaxes.json
+62762a2034ccd313b0cac3599d90ddefb737e945 data/minecraft/tags/item/logs_that_burn.json
+dc038eabfd68b384396b1ee5ce0030af3e7a7688 data/minecraft/tags/item/pickaxes.json
+c65b2af002c460c28ff1d595350b06f6a97d65c7 data/minecraft/tags/item/planks.json
+e12f25f39e7177725190b1a0e9917ef0bc00d3da data/minecraft/tags/item/saplings.json
 e056deda3a9718818e5781d935f18c1a9179c324 data/minecraft/tags/item/shovels.json
 d49115cf9666f6ebf7fc8104547ade379581e212 data/minecraft/tags/item/spears.json
-6945dfc5fc767e77a31b4af6033b071591695e04 data/minecraft/tags/item/swords.json
+f97e5cb0a7ea0a9a4b8dee5fb5b2095771d360cc data/minecraft/tags/item/swords.json
 b913882b23bbe63a8c845c560152a9b6bd17f1ef data/unnamedmod/tags/item/adamantite_repair.json
 243f2dab6ef46a493d12775f6f28baf7b72922cf data/unnamedmod/tags/item/bone_repair.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/unnamedmod/tags/item/cactus_repair.json
@@ -19,6 +23,7 @@ f6ce9b59e3f85a63d7ac092564ba998b995499ca data/unnamedmod/tags/item/cobalt_repair
 c3b24e6ed9e6f3eb5a69ac6e55ae77f76c8fe6c7 data/unnamedmod/tags/item/demonite_repair.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/unnamedmod/tags/item/fossile_repair.json
 a73ddf7d78f71456a582367e06194d5c50af4ce4 data/unnamedmod/tags/item/hallowed_repair.json
+c0570c906e3eedf2cb829c6e3cc25651d7fab49f data/unnamedmod/tags/item/hammer.json
 945fd48b1a346c2be25446b8f039d9e132aaf454 data/unnamedmod/tags/item/hellstone_repair.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/unnamedmod/tags/item/ice_repair.json
 3cf593084df70d87d02e73caebf6bf69ff07c250 data/unnamedmod/tags/item/lead_repair.json
@@ -27,6 +32,7 @@ a73ddf7d78f71456a582367e06194d5c50af4ce4 data/unnamedmod/tags/item/hallowed_repa
 77d84b402cfe953f8b74a243dd3afc5c10a65f00 data/unnamedmod/tags/item/orichalcum_repair.json
 a34a39df24d3890ba50aa065132d18bb32d4314c data/unnamedmod/tags/item/palladium_repair.json
 6f022b57a999d7c7bd93b58689a41f7d4a75b15b data/unnamedmod/tags/item/platinum_repair.json
+5dbad8a8d31e5b10f9d6c460e9a7d44aab97c722 data/unnamedmod/tags/item/shadewood_logs.json
 0e33354dc78c1a2be58c94ce93451261c83224b7 data/unnamedmod/tags/item/shroomite_repair.json
 db0913dfd60b1981997fa676de378be1d7aefd94 data/unnamedmod/tags/item/silver_repair.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/unnamedmod/tags/item/solar_repair.json

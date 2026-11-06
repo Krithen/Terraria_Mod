@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "unnamedmod:block/crimson_tall_grass_bottom"
+    },
+    "half=upper": {
+      "model": "unnamedmod:block/crimson_tall_grass_top"
+    }
+  }
+}

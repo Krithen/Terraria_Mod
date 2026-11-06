@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "tungsten",
+  "key": {
+    "A": "minecraft:stick",
+    "S": "unnamedmod:tungsten_bricks"
+  },
+  "pattern": [
+    "S",
+    "S",
+    "A"
+  ],
+  "result": {
+    "id": "unnamedmod:tungsten_broadsword"
+  }
+}

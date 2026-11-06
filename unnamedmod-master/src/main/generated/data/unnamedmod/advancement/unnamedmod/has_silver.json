@@ -1,0 +1,32 @@
+{
+  "parent": "unnamedmod:unnamedmod/get_lead",
+  "criteria": {
+    "has_silver": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:silver_bar"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.unnamedmod.get_silver.description"
+    },
+    "icon": {
+      "id": "unnamedmod:silver_bar"
+    },
+    "title": {
+      "translate": "advancements.unnamedmod.get_silver.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_silver"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

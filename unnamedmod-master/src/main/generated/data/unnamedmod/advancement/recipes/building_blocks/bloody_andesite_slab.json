@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bloody_andesite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:bloody_andesite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "unnamedmod:bloody_andesite_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bloody_andesite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "unnamedmod:bloody_andesite_slab"
+    ]
+  }
+}

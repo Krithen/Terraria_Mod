@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "ebonwood",
+  "key": {
+    "#": "unnamedmod:ebonwood_planks"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "unnamedmod:ebonwood_stairs"
+  }
+}

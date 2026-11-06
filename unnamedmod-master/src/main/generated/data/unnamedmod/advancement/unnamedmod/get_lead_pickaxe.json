@@ -1,0 +1,32 @@
+{
+  "parent": "unnamedmod:unnamedmod/get_lead",
+  "criteria": {
+    "has_lead_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:lead_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.unnamedmod.get_lead_pickaxe.description"
+    },
+    "icon": {
+      "id": "unnamedmod:lead_pickaxe"
+    },
+    "title": {
+      "translate": "advancements.unnamedmod.get_lead_pickaxe.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_lead_pickaxe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

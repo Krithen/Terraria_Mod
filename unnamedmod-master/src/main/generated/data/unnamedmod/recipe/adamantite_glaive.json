@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "adamantite",
+  "key": {
+    "A": "unnamedmod:adamantite_beam",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "AA ",
+    " S ",
+    "  S"
+  ],
+  "result": {
+    "id": "unnamedmod:adamantite_glaive"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "has_tin": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:tin_bar"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:gui/advancements/backgrounds/adventure",
+    "description": {
+      "translate": "advancements.unnamedmod.root.description"
+    },
+    "icon": {
+      "id": "unnamedmod:tin_bar"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.unnamedmod.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_tin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

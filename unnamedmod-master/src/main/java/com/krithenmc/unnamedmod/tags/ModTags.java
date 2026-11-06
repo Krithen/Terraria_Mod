@@ -126,6 +126,12 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_NEBULA_TOOL = createTag("needs_nebula_tool");
         public static final TagKey<Block> INCORRECT_FOR_NEBULA_TOOL = createTag("incorrect_for_nebula_tool");
 
+        public static final TagKey<Block> SHADEWOOD_LOGS = createTag("shadewood_log");
+        public static final TagKey<Block> ASH_WOOD_LOGS = createTag("ash_wood_log");
+
+        public static final TagKey<Block> UNDERWORLD_ORE_REPLACEABLES = createTag("underworld_ore_replaceables");
+        public static final TagKey<Block> JUNGLE_ORE_REPLACEABLES = createTag("jungle_ore_replaceables");
+
 
 
 
@@ -168,6 +174,10 @@ public class ModTags {
         public static final TagKey<Item> SOLAR_REPAIR = createTag("solar_repair");
         public static final TagKey<Item> STARDUST_REPAIR = createTag("stardust_repair");
         public static final TagKey<Item> NEBULA_REPAIR = createTag("nebula_repair");
+        public static final TagKey<Item> HAMMER = createTag("hammer");
+
+        public static final TagKey<Item> SHADEWOOD_LOGS = createTag("shadewood_logs");
+        public static final TagKey<Item> ASH_WOOD_LOGS = createTag("ash_wood_logs");
 
 
 

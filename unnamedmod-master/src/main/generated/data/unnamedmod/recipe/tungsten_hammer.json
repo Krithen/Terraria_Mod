@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "tungsten",
+  "key": {
+    "A": "minecraft:stick",
+    "T": "unnamedmod:tungsten_bricks",
+    "t": "unnamedmod:tungsten_bar"
+  },
+  "pattern": [
+    "TTT",
+    "tAt",
+    " A "
+  ],
+  "result": {
+    "id": "unnamedmod:tungsten_hammer"
+  }
+}

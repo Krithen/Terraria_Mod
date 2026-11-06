@@ -13,6 +13,8 @@ public class ModPotions {
 
     public static final Holder<Potion> WELLFED_POTION = registerPotion("wellfed_potion",
             new Potion("wellfed_potion", new MobEffectInstance(ModEffects.WELLFED, 1200, 0, false, false)));
+    public static final Holder<Potion> PLENTY_SATISFIED_POTION = registerPotion("plenty_satisfied_potion",
+            new Potion("plenty_satisfied_potion", new MobEffectInstance(ModEffects.PLENTYSATISFIED, 1200, 0, false, false)));
 
     private static Holder<net.minecraft.world.item.alchemy.Potion> registerPotion(String name, Potion potion) {
         return Registry.registerForHolder(BuiltInRegistries.POTION, Identifier.fromNamespaceAndPath(Unnamedmod.MOD_ID, name),potion);

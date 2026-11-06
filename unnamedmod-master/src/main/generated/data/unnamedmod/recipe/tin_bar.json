@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "tin",
+  "key": {
+    "I": "unnamedmod:tin_bricks"
+  },
+  "pattern": [
+    " I "
+  ],
+  "result": {
+    "id": "unnamedmod:tin_bar"
+  }
+}

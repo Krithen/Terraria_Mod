@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "experience": 0.25,
+  "group": "silver",
+  "ingredient": "unnamedmod:silver_ore",
+  "result": {
+    "id": "unnamedmod:silver_bar"
+  }
+}

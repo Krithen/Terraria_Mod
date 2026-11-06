@@ -2,10 +2,13 @@ package com.krithenmc.unnamedmod.block;
 
 import com.krithenmc.unnamedmod.Unnamedmod;
 import com.krithenmc.unnamedmod.block.custom.*;
+import com.krithenmc.unnamedmod.effect.ModEffects;
+import com.krithenmc.unnamedmod.worldgen.tree.ModTreeGrowers;
 import com.mojang.serialization.MapCodec;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -16,6 +19,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.ColorRGBA;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -24,13 +28,13 @@ import net.minecraft.world.item.component.SuspiciousStewEffects;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.entity.HangingSignBlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 
 import java.util.function.Consumer;
@@ -73,17 +77,16 @@ public class ModBlocks {
     public static final Block LEAD_DEEPSLATE_ORE = registerBlock("lead_deepslate_ore", properties ->
             new DropExperienceBlock(UniformInt.of(3, 6), properties.strength(4f).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()));
     public static final Block SHADEWOOD_LEAVES = registerBlock("shadewood_leaves", properties ->
-            new LeavesBlock(2f, properties.sound(SoundType.AZALEA_LEAVES).strength(0.2f).noOcclusion()) {
-                @Override
-                public MapCodec<? extends LeavesBlock> codec() {
-                    return null;
-                }
-
-                @Override
-                protected void spawnFallingLeavesParticle(Level level, BlockPos pos, RandomSource random) {
-
-                }
-            });
+            new UntintedParticleLeavesBlock(0.01f, ParticleTypes.PALE_OAK_LEAVES, properties
+                    .ignitedByLava()
+                    .randomTicks()
+                    .sound(SoundType.AZALEA_LEAVES)
+                    .noOcclusion()
+                    .isValidSpawn(Blocks::ocelotOrParrot)
+                    .isSuffocating(Blocks::never)
+                    .isViewBlocking(Blocks::never)
+                    .pushReaction(PushReaction.DESTROY)
+                    .isRedstoneConductor(Blocks::never)));
     public static final Block CRIMSTONE = registerBlock("crimstone", properties ->
             new Block(properties.requiresCorrectToolForDrops().strength(2).sound(SoundType.STONE)    ));
     public static final Block CRIMSTONE_STAIRS = registerBlock("crimstone_stairs", properties ->
@@ -111,7 +114,11 @@ public class ModBlocks {
     public static final Block ORICHALCUM_DEEPSLATE_ORE = registerBlock("orichalcum_deepslate_ore", properties ->
             new DropExperienceBlock(UniformInt.of(3, 6), properties.strength(4f).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()));
     public static final Block SHADEWOOD_LOG = registerBlock("shadewood_log", properties -> new
-            RotatedPillarBlock(properties.strength(1f).sound(SoundType.WOOD)));
+            RotatedPillarBlock(properties.strength(2f).instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block STRIPPED_SHADEWOOD_LOG = registerBlock("stripped_shadewood_log", properties -> new
+            RotatedPillarBlock(properties.strength(2f).instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block STRIPPED_SHADEWOOD = registerBlock("stripped_shadewood", properties -> new
+            RotatedPillarBlock(properties.strength(2f).instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).ignitedByLava()));
     public static final Block BOREAL_WOOD_LOG = registerBlock("boreal_wood_log", properties -> new
             RotatedPillarBlock(properties.strength(1f).sound(SoundType.WOOD)));
     public static final Block LUMINITE_ORE = registerBlock("luminite_ore", properties ->
@@ -163,7 +170,7 @@ public class ModBlocks {
     public static final Block PALLADIUM_DEEPSLATE_ORE = registerBlock("palladium_deepslate_ore", properties ->
             new DropExperienceBlock(UniformInt.of(3, 6), properties.strength(4f).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()));
     public static final Block EMERALD_GEMSPARK_BLOCK = registerBlock("emerald_gemspark_block", properties -> new
-            EmeraldGemSparkBlock(properties.strength(2f).requiresCorrectToolForDrops().lightLevel(state -> state.getValue(EmeraldGemSparkBlock.CLICKED) ? 10 : 0)));
+            GemSparkBlock(properties.strength(2f).requiresCorrectToolForDrops().lightLevel(state -> state.getValue(GemSparkBlock.CLICKED) ? 10 : 0)));
     public static final Block Boreal_Planks = registerBlock("boreal_planks", properties -> new
             Block(properties.strength(1f)));
 
@@ -322,7 +329,7 @@ public class ModBlocks {
     public static final Block PALMWOOD = registerBlock("palmwood", properties ->
             new Block(properties.sound(SoundType.WOOD).strength(1f)));
     public static final Block SHADEWOOD = registerBlock("shadewood", properties ->
-            new Block(properties.strength(1f).sound(SoundType.WOOD)));
+            new RotatedPillarBlock(properties.strength(1f).sound(SoundType.WOOD)));
     public static final Block BOREAL_WOOD = registerBlock("boreal_wood", properties ->
             new Block(properties.strength(1f).sound(SoundType.WOOD)));
     public static final Block HELIUM_MOSS = registerBlock("helium_moss", properties ->
@@ -391,8 +398,178 @@ public class ModBlocks {
             new Block(properties.strength(2f)));
     public static final Block SUNPLATE_BLOCK = registerBlock("sunplate_block", properties ->
             new Block(properties.strength(2f)));
+    public static final Block ADAMANTITE_BEAM = registerBlock("adamantite_beam", properties ->
+            new GlazedTerracottaBlock(properties.strength(1f)));
+    public static final Block AMBER_GEMSPARK_BLOCK = registerBlock("amber_gemspark_block", properties -> new
+            GemSparkBlock(properties.strength(2f).requiresCorrectToolForDrops().lightLevel(state -> state.getValue(GemSparkBlock.CLICKED) ? 10 : 0)));
+    public static final Block AMBER_STONE = registerBlock("amber_stone", properties ->
+            new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(2f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final Block AMETHYST_GEMSPARK_BLOCK = registerBlock("amethyst_gemspark_block", properties -> new
+            GemSparkBlock(properties.strength(2f).requiresCorrectToolForDrops().lightLevel(state -> state.getValue(GemSparkBlock.CLICKED) ? 10 : 0)));
+    public static final Block ANCIENT_BLUE_BRICKS = registerBlock("ancient_blue_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block ANCIENT_COBALT_BRICKS = registerBlock("ancient_cobalt_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block ANCIENT_COPPER_BRICKS = registerBlock("ancient_copper_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block ANCIENT_GOLD_BRICKS = registerBlock("ancient_gold_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block ANCIENT_GREEN_BRICKS = registerBlock("ancient_green_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block ANCIENT_HELLSTONE_BRICKS = registerBlock("ancient_hellstone_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block ANCIENT_MYTHRIL_BRICKS = registerBlock("ancient_mythril_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block ANCIENT_OBSIDIAN_BRICKS = registerBlock("ancient_obsidian_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block ANCIENT_PINK_BRICKS = registerBlock("ancient_pink_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block ARGON_MOSS_BRICK = registerBlock("argon_moss_brick", properties ->
+            new Block(properties.strength(2f).sound(SoundType.MOSS)));
+    public static final Block ASH_WOOD = registerBlock("ash_wood", properties ->
+            new RotatedPillarBlock(properties.strength(2f).sound(SoundType.WOOD)));
+    public static final Block ASPHALT = registerBlock("asphalt", properties ->
+            new AsphaltBlock(properties.strength(2f)));
+    public static final Block COPPER_BRICKS = registerBlock("copper_bricks", properties ->
+            new RotatedPillarBlock(properties.strength(2f)));
+    public static final Block CRACKED_BLUE_DUNGEON_BRICKS = registerBlock("cracked_blue_dungeon_bricks", properties ->
+            new Block(properties.strength(0.1f).pushReaction(PushReaction.DESTROY).sound(SoundType.CALCITE).instabreak()));
+    public static final Block CRACKED_GREEN_DUNGEON_BRICKS = registerBlock("cracked_green_dungeon_bricks", properties ->
+            new Block(properties.strength(0.1f).pushReaction(PushReaction.DESTROY).sound(SoundType.CALCITE).instabreak()));
+    public static final Block CRACKED_PINK_DUNGEON_BRICKS = registerBlock("cracked_pink_dungeon_bricks", properties ->
+            new Block(properties.strength(0.1f).pushReaction(PushReaction.DESTROY).sound(SoundType.CALCITE).instabreak()));
+    public static final Block EBONWOOD_LOG = registerBlock("ebonwood_log", properties ->
+            new RotatedPillarBlock(properties.strength(2f).sound(SoundType.WOOD)));
+    public static final Block EBONWOOD_PLANKS = registerBlock("ebonwood_planks", properties ->
+            new Block(properties.strength(2f).sound(SoundType.WOOD)));
+    public static final Block EBONWOOD_STAIRS = registerBlock("ebonwood_stairs", properties ->
+            new StairBlock(ModBlocks.EBONWOOD_PLANKS.defaultBlockState(), properties.strength(2f).sound(SoundType.WOOD))    );
+    public static final Block EBONWOOD_SLAB = registerBlock("ebonwood_slab", properties ->
+            new SlabBlock(properties.strength(2f).sound(SoundType.WOOD)));
+    public static final Block EBONWOOD_BUTTON = registerBlock("ebonwood_button", properties ->
+            new ButtonBlock(BlockSetType.DARK_OAK, 20, properties.strength(2f).noCollision().noOcclusion().sound(SoundType.WOOD)));
+    public static final Block EBONWOOD_PRESSURE_PLATE = registerBlock("ebonwood_pressure_plate", properties ->
+            new PressurePlateBlock(BlockSetType.DARK_OAK,properties.strength(2f).noCollision().noOcclusion().sound(SoundType.WOOD)));
+    public static final Block EBONWOOD_FENCE = registerBlock("ebonwood_fence", properties ->
+            new FenceBlock(properties.strength(2f).sound(SoundType.WOOD)));
+    public static final Block EBONWOOD_FENCE_GATE = registerBlock("ebonwood_fence_gate", properties ->
+            new FenceGateBlock(WoodType.DARK_OAK ,properties.strength(2f).sound(SoundType.WOOD)));
+    public static final Block EBONWOOD_DOOR = registerBlock("ebonwood_door", properties ->
+            new DoorBlock(BlockSetType.DARK_OAK, properties.strength(2f).sound(SoundType.WOOD).noOcclusion()));
+    public static final Block EBONWOOD_TRAPDOOR = registerBlock("ebonwood_trapdoor", properties ->
+            new TrapDoorBlock(BlockSetType.DARK_OAK, properties.strength(2f).sound(SoundType.WOOD).noOcclusion()))  ;
+    public static final Block GOLD_BRICKS = registerBlock("gold_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block GOTHIC_BRICKS = registerBlock("gothic_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block HELIUM_MOSS_BRICK = registerBlock("helium_moss_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block IRON_BRICKS = registerBlock("iron_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block KRYPTON_MOSS_BRICK = registerBlock("krypton_moss_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block LAVA_MOSS_BRICK = registerBlock("lava_moss_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block LEAD_BRICKS = registerBlock("lead_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block MIDNIGHT_CONFETTI_BLOCK = registerBlock("midnight_confetti_block", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block PALM_LEAVES = registerBlock("palm_leaves", properties ->
+            new LeavesBlock(0.5f, properties.strength(1f).noOcclusion()) {
+                @Override
+                public MapCodec<? extends LeavesBlock> codec() {
+                    return null;
+                }
 
+                @Override
+                protected void spawnFallingLeavesParticle(Level level, BlockPos pos, RandomSource random) {
 
+                }
+            });
+    public static final Block PLATINUM_BRICKS = registerBlock("platinum_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block RICH_MAHOGANY_TRAPDOOR = registerBlock("rich_mahogany_trapdoor", properties ->
+            new TrapDoorBlock(BlockSetType.DARK_OAK, properties.strength(2f).sound(SoundType.WOOD).noOcclusion()))  ;
+    public static final Block SILVER_BRICKS = registerBlock("silver_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block TIN_BRICKS = registerBlock("tin_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block HELLSTONE_FORGE = registerBlock("hellstone_forge", properties ->
+            new HellstoneForgeBlock(properties.strength(2f).noOcclusion()));
+    public static final Block BLINKROOT = registerBlock("blinkroot", properties ->
+            new FlowerBlock(MobEffects.GLOWING, 70.f, properties.sound(SoundType.GRASS).noOcclusion().noCollision().instabreak().pushReaction(PushReaction.DESTROY).mapColor(MapColor.PLANT)));
+    public static final Block CRIMSON_CACTUS = registerBlock("crimson_cactus", properties ->
+            new CactusBlock(properties.strength(0.5f).sound(SoundType.CACTUS_FLOWER)));
+    public static final Block CRIMSANDSTONE = registerBlock("crimsandstone", properties ->
+            new Block(properties.strength(1f).sound(SoundType.SAND)));
+    public static final Block CRIMSON_GRASS = registerBlock("crimson_grass", properties ->
+            new GrassBlock(properties.strength(1f).sound(SoundType.GRASS)));
+    public static final Block CRIMSON_DIRT = registerBlock("crimson_dirt", properties ->
+            new Block(properties.strength(1f)));
+    public static final Block CRYSTAL_SHARD = registerBlockWithoutBlockitem("crystal_shard", properties ->
+            new Block(properties.strength(1f).sound(SoundType.LARGE_AMETHYST_BUD)) );
+    public static final Block SHADEWOOD_SAPLING = registerBlock("shadewood_sapling", properties ->
+            new SaplingBlock(ModTreeGrowers.SHADEWOOD, properties.instabreak().noCollision().randomTicks().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY)));
+    public static final Block POTTED_SHADEWOOD_SAPLING = registerBlockWithoutBlockitem("potted_shadewood_sapling", properties ->
+            new FlowerPotBlock(SHADEWOOD_SAPLING, properties.instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final Block ASH_WOOD_PLANKS = registerBlock("ash_wood_planks", properties ->
+            new Block(properties.instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final Block BOREAL_SAPLING = registerBlock("boreal_sapling", properties ->
+            new SaplingBlock(ModTreeGrowers.BOREAL, properties.instabreak().noCollision().randomTicks().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY)));
+    public static final Block POTTED_BOREAL_SAPLING = registerBlockWithoutBlockitem("potted_boreal_sapling", properties ->
+            new FlowerPotBlock(BOREAL_SAPLING, properties.instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final Block XENON_MOSS_BRICKS = registerBlock("xenon_moss_bricks", properties ->
+            new PortalBlock(properties.strength(2f).sound(SoundType.MOSS)));
+    public static final Block TUNGSTEN_BRICKS = registerBlock("tungsten_bricks", properties ->
+            new Block(properties.strength(2f)));
+    public static final Block ASH_STAIRS = registerBlock("ash_stairs", properties ->
+            new StairBlock(ModBlocks.ASH_WOOD_PLANKS.defaultBlockState(), properties.strength(2f).sound(SoundType.WOOD))    );
+    public static final Block ASH_SLAB = registerBlock("ash_slab", properties ->
+            new SlabBlock(properties.strength(2f).sound(SoundType.WOOD)));
+    public static final Block ASH_BUTTON = registerBlock("ash_button", properties ->
+            new ButtonBlock(BlockSetType.DARK_OAK, 20, properties.strength(2f).noCollision().noOcclusion().sound(SoundType.WOOD)));
+    public static final Block ASH_PRESSURE_PLATE = registerBlock("ash_pressure_plate", properties ->
+            new PressurePlateBlock(BlockSetType.DARK_OAK,properties.strength(2f).noCollision().noOcclusion().sound(SoundType.WOOD)));
+    public static final Block ASH_FENCE = registerBlock("ash_fence", properties ->
+            new FenceBlock(properties.strength(2f).sound(SoundType.WOOD)));
+    public static final Block ASH_FENCE_GATE = registerBlock("ash_fence_gate", properties ->
+            new FenceGateBlock(WoodType.DARK_OAK ,properties.strength(2f).sound(SoundType.WOOD)));
+    public static final Block ASH_DOOR = registerBlock("ash_door", properties ->
+            new DoorBlock(BlockSetType.DARK_OAK, properties.strength(2f).sound(SoundType.WOOD).noOcclusion()));
+    public static final Block ASH_TRAPDOOR = registerBlock("ash_trapdoor", properties ->
+            new TrapDoorBlock(BlockSetType.DARK_OAK, properties.strength(2f).sound(SoundType.WOOD).noOcclusion()))  ;
+    public static final Block BLOODY_ANDESITE  =registerBlock("bloody_andesite", properties ->
+            new Block(properties.mapColor(MapColor.FIRE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+    public static final Block BLOODY_ANDESITE_STAIRS = registerBlock("bloody_andesite_stairs", properties ->
+            new StairBlock(ModBlocks.BLOODY_ANDESITE.defaultBlockState(), properties.mapColor(MapColor.FIRE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+    public static final Block BLOODY_ANDESITE_SLAB = registerBlock("bloody_andesite_slab", properties ->
+            new SlabBlock(properties.mapColor(MapColor.FIRE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+    public static final Block BLOODY_ANDESITE_WALL = registerBlock("bloody_andesite_wall", properties ->
+            new WallBlock(properties.mapColor(MapColor.FIRE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+    public static final Block CRIMSON_GRANITE  =registerBlock("crimson_granite", properties ->
+            new Block(properties.mapColor(MapColor.FIRE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+    public static final Block CRIMSON_GRANITE_STAIRS = registerBlock("crimson_granite_stairs", properties ->
+            new StairBlock(ModBlocks.CRIMSON_GRANITE.defaultBlockState(), properties.mapColor(MapColor.FIRE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+    public static final Block CRIMSON_GRANITE_SLAB = registerBlock("crimson_granite_slab", properties ->
+            new SlabBlock(properties.mapColor(MapColor.FIRE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+    public static final Block CRIMSON_GRANITE_WALL = registerBlock("crimson_granite_wall", properties ->
+            new WallBlock(properties.mapColor(MapColor.FIRE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+    public static final Block CRIMSON_TALL_GRASS = registerBlock("crimson_tall_grass", properties ->
+            new DoublePlantBlock(properties.mapColor(MapColor.PLANT).replaceable().noCollision().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+    public static final Block DEEPCRIMSTONE = registerBlock("deepcrimstone", properties ->
+            new Block(properties.mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
+    public static final Block DEEPCRIMSTONE_STAIRS = registerBlock("deepcrimstone_stairs", properties ->
+            new StairBlock(ModBlocks.DEEPCRIMSTONE.defaultBlockState(), properties.mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
+    public static final Block DEEPCRIMSTONE_SLAB = registerBlock("deepcrimstone_slab", properties ->
+            new SlabBlock(properties.mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
+    public static final Block DEEPCRIMSTONE_WALL  =registerBlock("deepcrimstone_wall", properties ->
+            new WallBlock(properties.mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
+    public static final Block EBONSANDSTONE = registerBlock("ebonsandstone", properties ->
+            new Block(properties.mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(0.8F)));
+    public static final Block EYE_FLOWER = registerBlock("eye_flower", properties ->
+            new FlowerBlock(MobEffects.BLINDNESS, 0.5f, properties.mapColor(MapColor.PLANT).noCollision().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final Block EYE_FLOWER_POTTED = registerBlock("eye_flower_potted", properties ->
+            new FlowerPotBlock(EYE_FLOWER, properties.instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
 
 

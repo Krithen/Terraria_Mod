@@ -22,6 +22,11 @@ public class ModFoods {
     public static final FoodProperties LEMON = new FoodProperties.Builder().nutrition(2).saturationModifier(2).build();
     public static final FoodProperties MANGO = new FoodProperties.Builder().nutrition(2).saturationModifier(2).build();
     public static final FoodProperties MARSHMALLOW = new FoodProperties.Builder().nutrition(5).saturationModifier(1).build();
+    public static final FoodProperties APPLE_PIE = new FoodProperties.Builder().nutrition(5).saturationModifier(5).build();
+    public static final FoodProperties BACON = new FoodProperties.Builder().nutrition(4).saturationModifier(4).build();
+    public static final FoodProperties BARBEQUE_RIBS = new FoodProperties.Builder().nutrition(4).saturationModifier(4).build();
+    public static final FoodProperties BUCKET_OF_MILKSHAKE = new FoodProperties.Builder().nutrition(10).saturationModifier(10).build();
+    public static final FoodProperties CREAM_SODA = new FoodProperties.Builder().nutrition(5).saturationModifier(5).build();
 
 
 

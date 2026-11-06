@@ -13,9 +13,15 @@ import java.util.Optional;
 
 public class ModPaintings {
     public static final ResourceKey<PaintingVariant> SKELETON_HAND_KEY = create("skeleton_hand");
+    public static final ResourceKey<PaintingVariant> LAND_OF_DECEIVING_LOOKS = create("land_of_deceiving_looks");
+    public static final ResourceKey<PaintingVariant> DEADLAND_COMES_ALIVE = create("deadland_comes_alive");
+    public static final ResourceKey<PaintingVariant> CRYSTALLIZE = create("crystallize");
 
     public static void bootstrap(BootstrapContext<PaintingVariant> context) {
         register(context, SKELETON_HAND_KEY, 1, 1, true);
+        register(context, LAND_OF_DECEIVING_LOOKS, 2, 1, true);
+        register(context, DEADLAND_COMES_ALIVE, 2, 1, true);
+        register(context, CRYSTALLIZE, 1, 1, true);
     }
 
     private static ResourceKey<PaintingVariant> create(final String id) {

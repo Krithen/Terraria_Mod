@@ -10,5 +10,7 @@ public class ModPotionRecipes {
     public static void registerPotionRecipes() {
         FabricPotionBrewingBuilder.BUILD.register(builder ->
                 builder.registerPotionRecipe(Potions.AWKWARD, Ingredient.of(ModItems.GRAPEFRUIT), ModPotions.WELLFED_POTION));
+        FabricPotionBrewingBuilder.BUILD.register(builder ->
+                builder.registerPotionRecipe(ModPotions.WELLFED_POTION, Ingredient.of(ModItems.APRICOT), ModPotions.PLENTY_SATISFIED_POTION));
     }
 }

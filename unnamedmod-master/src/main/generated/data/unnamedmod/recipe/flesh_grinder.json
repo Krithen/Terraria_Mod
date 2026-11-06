@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "crimtane",
+  "key": {
+    "A": "unnamedmod:bleeding_stick",
+    "t": "unnamedmod:crimtane_bar"
+  },
+  "pattern": [
+    "ttt",
+    "tAt",
+    " A "
+  ],
+  "result": {
+    "id": "unnamedmod:flesh_grinder"
+  }
+}

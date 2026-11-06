@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "unnamedmod:block/crimson_tall_grass_bottom"
+  }
+}

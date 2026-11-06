@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "gold",
+  "key": {
+    "A": "minecraft:stick",
+    "T": "unnamedmod:gold_bricks"
+  },
+  "pattern": [
+    "T",
+    "A"
+  ],
+  "result": {
+    "id": "unnamedmod:gold_shortsword"
+  }
+}

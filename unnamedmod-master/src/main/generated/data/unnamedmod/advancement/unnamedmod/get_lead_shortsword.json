@@ -1,0 +1,32 @@
+{
+  "parent": "unnamedmod:unnamedmod/get_lead",
+  "criteria": {
+    "has_lead_shortsword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:lead_shortsword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.unnamedmod.get_lead_shortsword.description"
+    },
+    "icon": {
+      "id": "unnamedmod:lead_shortsword"
+    },
+    "title": {
+      "translate": "advancements.unnamedmod.get_lead_shortsword.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_lead_shortsword"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

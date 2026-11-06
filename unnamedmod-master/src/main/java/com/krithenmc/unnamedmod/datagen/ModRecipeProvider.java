@@ -2,6 +2,7 @@ package com.krithenmc.unnamedmod.datagen;
 
 import com.krithenmc.unnamedmod.block.ModBlocks;
 import com.krithenmc.unnamedmod.item.ModItems;
+import com.krithenmc.unnamedmod.tags.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.core.HolderLookup;
@@ -9,6 +10,7 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -53,6 +55,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 oreSmelting(DEMONITE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.DEMONITE_BAR, 0.25f, 200, "demonite");
                 oreBlasting(DEMONITE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.DEMONITE_BAR, 0.25f, 100, "demonite");
+
+                List<ItemLike> LEAD_SMELTABLES = List.of(ModItems.RAW_LEAD, ModBlocks.LEAD_ORE, ModBlocks.LEAD_DEEPSLATE_ORE);
+
+                oreSmelting(LEAD_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.LEAD_BAR, 0.25f, 200, "lead");
+                oreBlasting(LEAD_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.LEAD_BAR, 0.25f, 100, "lead");
+
+                List<ItemLike> SILVER_SMELTABLES = List.of(ModItems.RAW_SILVER, ModBlocks.SILVER_ORE, ModBlocks.SILVER_DEEPSLATE_ORE);
+
+                oreSmelting(SILVER_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.SILVER_BAR, 0.25f, 200, "silver");
+                oreBlasting(SILVER_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.SILVER_BAR, 0.25f, 100, "silver");
+
+                List<ItemLike> TUNGSTEN_SMELTABLES = List.of(ModItems.RAW_TUNGSTEN, ModBlocks.TUNGSTEN_ORE, ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
+
+                oreSmelting(TUNGSTEN_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.TUNGSTEN_BAR, 0.25f, 200, "tungsten");
+                oreBlasting(TUNGSTEN_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.TUNGSTEN_BAR, 0.25f, 100, "tungsten");
+
+
 
 
 
@@ -494,6 +513,504 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 woodFromLogs(ModBlocks.PALMWOOD, ModBlocks.PALMWOOD_LOG);
                 woodFromLogs(ModBlocks.SHADEWOOD, ModBlocks.SHADEWOOD_LOG);
                 woodFromLogs(ModBlocks.BOREAL_WOOD, ModBlocks.BOREAL_WOOD_LOG);
+
+                stairBuilder(ModBlocks.EBONWOOD_STAIRS, Ingredient.of(ModBlocks.EBONWOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.EBONWOOD_PLANKS), has(ModBlocks.EBONWOOD_PLANKS))
+                        .group("ebonwood")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EBONWOOD_SLAB, ModBlocks.EBONWOOD_PLANKS);
+
+                buttonBuilder(ModBlocks.EBONWOOD_BUTTON, Ingredient.of(ModBlocks.EBONWOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.EBONWOOD_PLANKS), has(ModBlocks.EBONWOOD_PLANKS))
+                        .group("ebonwood")
+                        .save(output);
+
+                pressurePlate(ModBlocks.EBONWOOD_PRESSURE_PLATE, ModBlocks.EBONWOOD_PLANKS);
+
+                fenceBuilder(ModBlocks.EBONWOOD_FENCE, Ingredient.of(ModBlocks.EBONWOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.EBONWOOD_PLANKS), has(ModBlocks.EBONWOOD_PLANKS))
+                        .group("ebonwood")
+                        .save(output);
+
+                fenceGateBuilder(ModBlocks.EBONWOOD_FENCE_GATE, Ingredient.of(ModBlocks.EBONWOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.EBONWOOD_PLANKS), has(ModBlocks.EBONWOOD_PLANKS))
+                        .group("ebonwood")
+                        .save(output);
+
+                doorBuilder(ModBlocks.EBONWOOD_DOOR, Ingredient.of(ModBlocks.EBONWOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.EBONWOOD_PLANKS), has(ModBlocks.EBONWOOD_PLANKS))
+                        .group("ebonwood")
+                        .save(output);
+
+                trapdoorBuilder(ModBlocks.EBONWOOD_TRAPDOOR, Ingredient.of(ModBlocks.EBONWOOD_TRAPDOOR))
+                        .unlockedBy(getHasName(ModBlocks.EBONWOOD_PLANKS), has(ModBlocks.EBONWOOD_PLANKS))
+                        .group("ebonwood")
+                        .save(output);
+
+
+                bricksBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GOLD_BRICKS, Ingredient.of(Items.GOLD_INGOT))
+                        .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                        .group("gold")
+                        .save(output);
+
+                bricksBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_BRICKS, Ingredient.of(Items.IRON_INGOT))
+                        .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                        .group("iron")
+                        .save(output);
+
+                shaped(RecipeCategory.TOOLS, Items.IRON_INGOT)
+                        .pattern(" I ")
+                        .define('I', ModBlocks.IRON_BRICKS)
+                        .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                        .group("iron")
+                        .save(output);
+
+                shaped(RecipeCategory.TOOLS, Items.GOLD_INGOT)
+                        .pattern(" I ")
+                        .define('I', ModBlocks.GOLD_BRICKS)
+                        .unlockedBy(getHasName(ModBlocks.GOLD_BRICKS), has(ModBlocks.GOLD_BRICKS))
+                        .group("gold")
+                        .save(output);
+
+                bricksBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAD_BRICKS, Ingredient.of(ModItems.LEAD_BAR))
+                        .unlockedBy(getHasName(ModItems.LEAD_BAR), has(ModItems.LEAD_BAR))
+                        .group("lead")
+                        .save(output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.LEAD_BAR)
+                        .pattern(" I ")
+                        .define('I', ModBlocks.LEAD_BRICKS)
+                        .unlockedBy(getHasName(ModBlocks.LEAD_BRICKS), has(ModBlocks.LEAD_BRICKS))
+                        .group("lead")
+                        .save(output);
+
+
+                bricksBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PLATINUM_BRICKS, Ingredient.of(ModItems.PLATINUM_BAR))
+                        .unlockedBy(getHasName(ModItems.PLATINUM_BAR), has(ModItems.PLATINUM_BAR))
+                        .group("platinum")
+                        .save(output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.PLATINUM_BAR)
+                        .pattern(" I ")
+                        .define('I', ModBlocks.PLATINUM_BRICKS)
+                        .unlockedBy(getHasName(ModBlocks.PLATINUM_BRICKS), has(ModBlocks.PLATINUM_BRICKS))
+                        .group("platinum")
+                        .save(output);
+
+                trapdoorBuilder(ModBlocks.RICH_MAHOGANY_TRAPDOOR, Ingredient.of(ModBlocks.RICH_MAHOGANY_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.RICH_MAHOGANY_PLANKS), has(ModBlocks.RICH_MAHOGANY_PLANKS))
+                        .group("mahogany")
+                        .save(output);
+
+                bricksBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SILVER_BRICKS, Ingredient.of(ModItems.SILVER_BAR))
+                        .unlockedBy(getHasName(ModItems.SILVER_BAR), has(ModItems.SILVER_BAR))
+                        .group("silver")
+                        .save(output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.SILVER_BAR)
+                        .pattern(" I ")
+                        .define('I', ModBlocks.SILVER_BRICKS)
+                        .unlockedBy(getHasName(ModBlocks.SILVER_BRICKS), has(ModBlocks.SILVER_BRICKS))
+                        .group("silver")
+                        .save(output);
+
+                bricksBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TIN_BRICKS, Ingredient.of(ModItems.TIN_BAR))
+                        .unlockedBy(getHasName(ModItems.TIN_BAR), has(ModItems.TIN_BAR))
+                        .group("tin")
+                        .save(output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.TIN_BAR)
+                        .pattern(" I ")
+                        .define('I', ModBlocks.TIN_BRICKS)
+                        .unlockedBy(getHasName(ModBlocks.TIN_BRICKS), has(ModBlocks.TIN_BRICKS))
+                        .group("tin")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.LEAD_HAMMER)
+                        .pattern("LLL")
+                        .pattern("LLL")
+                        .pattern(" S ")
+                        .define('L', ModItems.LEAD_BAR)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.LEAD_BAR), has(ModItems.LEAD_BAR))
+                        .group("lead")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.ADAMANTITE_GLAIVE)
+                        .pattern("AA ")
+                        .pattern(" S ")
+                        .pattern("  S")
+                        .define('A', ModBlocks.ADAMANTITE_BEAM)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.ADAMANTITE_BAR), has(ModItems.ADAMANTITE_BAR))
+                        .group("adamantite")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.ADAMANTITE_SWORD)
+                        .pattern(" A ")
+                        .pattern(" A ")
+                        .pattern(" S ")
+                        .define('A', ModBlocks.ADAMANTITE_BEAM)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.ADAMANTITE_BAR), has(ModItems.ADAMANTITE_BAR))
+                        .group("adamantite")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.ADAMANTITE_WARAXE)
+                        .pattern("aAa")
+                        .pattern("aAa")
+                        .pattern(" S ")
+                        .define('A', ModBlocks.ADAMANTITE_BEAM)
+                        .define('a', ModItems.ADAMANTITE_BAR)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.ADAMANTITE_BAR), has(ModItems.ADAMANTITE_BAR))
+                        .group("adamantite")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.TITANIUM_SWORD)
+                        .pattern(" A ")
+                        .pattern(" A ")
+                        .pattern(" S ")
+                        .define('A', ModItems.TITANIUM_BAR)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.TITANIUM_BAR), has(ModItems.TITANIUM_BAR))
+                        .group("titanium")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.TIN_BROADSWORD)
+                        .pattern("T")
+                        .pattern("T")
+                        .pattern("A")
+                        .define('T', ModBlocks.TIN_BRICKS)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.TIN_BAR), has(ModItems.TIN_BAR))
+                        .group("tin")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.TIN_PICKAXE)
+                        .pattern("TTT")
+                        .pattern(" A ")
+                        .pattern(" A ")
+                        .define('T', ModBlocks.TIN_BRICKS)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.TIN_BAR), has(ModItems.TIN_BAR))
+                        .group("tin")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.TIN_AXE)
+                        .pattern(" TT")
+                        .pattern(" AT")
+                        .pattern(" A ")
+                        .define('T', ModBlocks.TIN_BRICKS)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.TIN_BAR), has(ModItems.TIN_BAR))
+                        .group("tin")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.TIN_HAMMER)
+                        .pattern("TTT")
+                        .pattern("tAt")
+                        .pattern(" A ")
+                        .define('T', ModBlocks.TIN_BRICKS)
+                        .define('t', ModItems.TIN_BAR)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.TIN_BAR), has(ModItems.TIN_BAR))
+                        .group("tin")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.TIN_SHORTSWORD)
+                        .pattern("T")
+                        .pattern("A")
+                        .define('T', ModBlocks.TIN_BRICKS)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.TIN_BAR), has(ModItems.TIN_BAR))
+                        .group("tin")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.SILVER_BROADSWORD)
+                        .pattern("S")
+                        .pattern("S")
+                        .pattern("A")
+                        .define('S', ModBlocks.SILVER_BRICKS)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.SILVER_BAR), has(ModItems.SILVER_BAR))
+                        .group("silver")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.SILVER_PICKAXE)
+                        .pattern("TTT")
+                        .pattern(" A ")
+                        .pattern(" A ")
+                        .define('T', ModBlocks.SILVER_BRICKS)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.SILVER_BAR), has(ModItems.SILVER_BAR))
+                        .group("silver")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.SILVER_AXE)
+                        .pattern("TT")
+                        .pattern("AT")
+                        .pattern("A ")
+                        .define('T', ModBlocks.SILVER_BRICKS)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.SILVER_BAR), has(ModItems.SILVER_BAR))
+                        .group("silver")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.SILVER_HAMMER)
+                        .pattern("TTT")
+                        .pattern("tAt")
+                        .pattern(" A ")
+                        .define('T', ModBlocks.SILVER_BRICKS)
+                        .define('t', ModItems.SILVER_BAR)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.SILVER_HAMMER), has(ModItems.SILVER_HAMMER))
+                        .group("silver")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.SILVER_SHORTSWORD)
+                        .pattern("T")
+                        .pattern("A")
+                        .define('T', ModBlocks.SILVER_BRICKS)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.SILVER_BAR), has(ModItems.SILVER_BAR))
+                        .group("silver")
+                        .save(output);
+
+
+                shaped(RecipeCategory.COMBAT, ModItems.TUNGSTEN_PICKAXE)
+                        .pattern("TTT")
+                        .pattern(" A ")
+                        .pattern(" A ")
+                        .define('T', ModBlocks.TUNGSTEN_BRICKS)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.TUNGSTEN_BAR), has(ModItems.TUNGSTEN_BAR))
+                        .group("tungsten")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.TUNGSTEN_AXE)
+                        .pattern("TT")
+                        .pattern("AT")
+                        .pattern("A ")
+                        .define('T', ModBlocks.TUNGSTEN_BRICKS)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.TUNGSTEN_BAR), has(ModItems.TUNGSTEN_BAR))
+                        .group("tungsten")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.TUNGSTEN_HAMMER)
+                        .pattern("TTT")
+                        .pattern("tAt")
+                        .pattern(" A ")
+                        .define('T', ModBlocks.TUNGSTEN_BRICKS)
+                        .define('t', ModItems.TUNGSTEN_BAR)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.TUNGSTEN_HAMMER), has(ModItems.TUNGSTEN_HAMMER))
+                        .group("tungsten")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.TUNGSTEN_SHORTSWORD)
+                        .pattern("T")
+                        .pattern("A")
+                        .define('T', ModBlocks.TUNGSTEN_BRICKS)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.TUNGSTEN_BAR), has(ModItems.TUNGSTEN_BAR))
+                        .group("tungsten")
+                        .save(output);
+
+
+                shaped(RecipeCategory.COMBAT, ModItems.TUNGSTEN_BROADSWORD)
+                        .pattern("S")
+                        .pattern("S")
+                        .pattern("A")
+                        .define('S', ModBlocks.TUNGSTEN_BRICKS)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.TUNGSTEN_BAR), has(ModItems.TUNGSTEN_BAR))
+                        .group("tungsten")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.PLATINUM_BROADSWORD)
+                        .pattern("S")
+                        .pattern("S")
+                        .pattern("A")
+                        .define('S', ModBlocks.PLATINUM_BRICKS)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.PLATINUM_BAR), has(ModItems.PLATINUM_BAR))
+                        .group("platinum")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.PLATINUM_PICKAXE)
+                        .pattern("TTT")
+                        .pattern(" A ")
+                        .pattern(" A ")
+                        .define('T', ModBlocks.PLATINUM_BRICKS)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.PLATINUM_BAR), has(ModItems.PLATINUM_BAR))
+                        .group("platinum")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.PLATINUM_AXE)
+                        .pattern("TT")
+                        .pattern("AT")
+                        .pattern("A ")
+                        .define('T', ModBlocks.PLATINUM_BRICKS)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.PLATINUM_BAR), has(ModItems.PLATINUM_BAR))
+                        .group("platinum")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.PLATINUM_HAMMER)
+                        .pattern("TTT")
+                        .pattern("tAt")
+                        .pattern(" A ")
+                        .define('T', ModBlocks.PLATINUM_BRICKS)
+                        .define('t', ModItems.PLATINUM_BAR)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.PLATINUM_HAMMER), has(ModItems.PLATINUM_HAMMER))
+                        .group("platinum")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.GOLD_BROADSWORD)
+                        .pattern("S")
+                        .pattern("S")
+                        .pattern("A")
+                        .define('S', Blocks.GOLD_BLOCK)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                        .group("gold")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.GOLDEN_HAMMER)
+                        .pattern("TTT")
+                        .pattern("tAt")
+                        .pattern(" A ")
+                        .define('T', Blocks.GOLD_BLOCK)
+                        .define('t', Items.GOLD_INGOT)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                        .group("gold")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.GOLD_SHORTSWORD)
+                        .pattern("T")
+                        .pattern("A")
+                        .define('T', ModBlocks.GOLD_BRICKS)
+                        .define('A', Items.STICK)
+                        .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                        .group("gold")
+                        .save(output);
+
+
+                shaped(RecipeCategory.COMBAT, ModItems.FLESH_GRINDER)
+                        .pattern("ttt")
+                        .pattern("tAt")
+                        .pattern(" A ")
+                        .define('t', ModItems.CRIMTANE_BAR)
+                        .define('A', ModItems.BLEEDING_STICK)
+                        .unlockedBy(getHasName(ModItems.CRIMTANE_BAR), has(ModItems.CRIMTANE_BAR))
+                        .group("crimtane")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.DEATHBRINGER_PICKAXE)
+                        .pattern("TTT")
+                        .pattern(" A ")
+                        .pattern(" A ")
+                        .define('T', ModItems.CRIMTANE_BAR)
+                        .define('A', ModItems.BLEEDING_STICK)
+                        .unlockedBy(getHasName(ModItems.CRIMTANE_BAR), has(ModItems.CRIMTANE_BAR))
+                        .group("crimtane")
+                        .save(output);
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TUNGSTEN_BRICKS)
+                        .pattern("TT")
+                        .pattern("TT")
+                        .define('T', ModItems.TUNGSTEN_BAR)
+                        .unlockedBy(getHasName(ModItems.TUNGSTEN_BAR), has(ModItems.TUNGSTEN_BAR))
+                        .group("tungsten")
+                        .save(output);
+
+
+                stairBuilder(ModBlocks.ASH_STAIRS, Ingredient.of(ModBlocks.ASH_WOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.ASH_WOOD_PLANKS), has(ModBlocks.ASH_WOOD_PLANKS))
+                        .group("ash")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ASH_SLAB, ModBlocks.ASH_WOOD_PLANKS);
+
+                buttonBuilder(ModBlocks.ASH_BUTTON, Ingredient.of(ModBlocks.ASH_WOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.ASH_WOOD_PLANKS), has(ModBlocks.ASH_WOOD_PLANKS))
+                        .group("ash")
+                        .save(output);
+
+                pressurePlate(ModBlocks.ASH_PRESSURE_PLATE, ModBlocks.ASH_WOOD_PLANKS);
+
+                fenceBuilder(ModBlocks.ASH_FENCE, Ingredient.of(ModBlocks.ASH_WOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.ASH_WOOD_PLANKS), has(ModBlocks.ASH_WOOD_PLANKS))
+                        .group("ash")
+                        .save(output);
+
+                fenceGateBuilder(ModBlocks.ASH_FENCE_GATE, Ingredient.of(ModBlocks.ASH_WOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.ASH_WOOD_PLANKS), has(ModBlocks.ASH_WOOD_PLANKS))
+                        .group("ash")
+                        .save(output);
+
+                doorBuilder(ModBlocks.ASH_DOOR, Ingredient.of(ModBlocks.ASH_WOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.ASH_WOOD_PLANKS), has(ModBlocks.ASH_WOOD_PLANKS))
+                        .group("ash")
+                        .save(output);
+
+                trapdoorBuilder(ModBlocks.ASH_TRAPDOOR, Ingredient.of(ModBlocks.ASH_WOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.ASH_WOOD_PLANKS), has(ModBlocks.ASH_WOOD_PLANKS))
+                        .group("ash")
+                        .save(output);
+
+                planksFromLog(ModBlocks.ASH_WOOD_PLANKS, ModTags.Items.ASH_WOOD_LOGS, 4);
+
+                stairBuilder(ModBlocks.BLOODY_ANDESITE_STAIRS, Ingredient.of(ModBlocks.BLOODY_ANDESITE))
+                        .unlockedBy(getHasName(ModBlocks.BLOODY_ANDESITE), has(ModBlocks.BLOODY_ANDESITE))
+                        .group("bloody_andesite")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODY_ANDESITE_SLAB, ModBlocks.BLOODY_ANDESITE);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODY_ANDESITE_WALL, ModBlocks.BLOODY_ANDESITE);
+
+                stairBuilder(ModBlocks.CRIMSON_GRANITE_STAIRS, Ingredient.of(ModBlocks.CRIMSON_GRANITE))
+                        .unlockedBy(getHasName(ModBlocks.CRIMSON_GRANITE), has(ModBlocks.CRIMSON_GRANITE))
+                        .group("crimson_granite")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_GRANITE_SLAB, ModBlocks.CRIMSON_GRANITE);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_GRANITE_WALL, ModBlocks.CRIMSON_GRANITE);
+
+                stairBuilder(ModBlocks.DEEPCRIMSTONE_STAIRS, Ingredient.of(ModBlocks.DEEPCRIMSTONE))
+                        .unlockedBy(getHasName(ModBlocks.DEEPCRIMSTONE), has(ModBlocks.DEEPCRIMSTONE))
+                        .group("deepcrimstone")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEEPCRIMSTONE_SLAB, ModBlocks.DEEPCRIMSTONE);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEEPCRIMSTONE_WALL, ModBlocks.DEEPCRIMSTONE);
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EBONSANDSTONE)
+                        .pattern("SS")
+                        .pattern("SS")
+                        .define('S', ModBlocks.EBONSAND)
+                        .unlockedBy(getHasName(ModBlocks.EBONSAND), has(ModBlocks.EBONSAND))
+                        .group("ebon")
+                        .save(output);
+
+
+
+
+
+
+
+
+
+
 
 
 

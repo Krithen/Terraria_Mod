@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crimson_granite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:crimson_granite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "unnamedmod:crimson_granite_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crimson_granite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "unnamedmod:crimson_granite_stairs"
+    ]
+  }
+}

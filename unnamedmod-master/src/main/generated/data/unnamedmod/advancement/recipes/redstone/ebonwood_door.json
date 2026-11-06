@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ebonwood_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:ebonwood_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "unnamedmod:ebonwood_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ebonwood_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "unnamedmod:ebonwood_door"
+    ]
+  }
+}

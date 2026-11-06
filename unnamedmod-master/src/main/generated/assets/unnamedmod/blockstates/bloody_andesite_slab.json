@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "unnamedmod:block/bloody_andesite_slab"
+    },
+    "type=double": {
+      "model": "unnamedmod:block/bloody_andesite"
+    },
+    "type=top": {
+      "model": "unnamedmod:block/bloody_andesite_slab_top"
+    }
+  }
+}

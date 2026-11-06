@@ -146,6 +146,69 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.RICH_MAHOGANY_BUTTON);
         dropSelf(ModBlocks.SNOW_BRICKS);
         dropSelf(ModBlocks.SUNPLATE_BLOCK);
+        dropSelf(ModBlocks.ADAMANTITE_BEAM);
+        dropSelf(ModBlocks.AMETHYST_GEMSPARK_BLOCK);
+        dropSelf(ModBlocks.AMBER_GEMSPARK_BLOCK);
+        dropSelf(ModBlocks.ANCIENT_BLUE_BRICKS);
+        dropSelf(ModBlocks.ANCIENT_COBALT_BRICKS);
+        dropSelf(ModBlocks.ANCIENT_COPPER_BRICKS);
+        dropSelf(ModBlocks.ANCIENT_GOLD_BRICKS);
+        dropSelf(ModBlocks.ANCIENT_GREEN_BRICKS);
+        dropSelf(ModBlocks.ANCIENT_MYTHRIL_BRICKS);
+        dropSelf(ModBlocks.ANCIENT_PINK_BRICKS);
+        dropSelf(ModBlocks.ANCIENT_HELLSTONE_BRICKS);
+        dropSelf(ModBlocks.ANCIENT_OBSIDIAN_BRICKS);
+        dropSelf(ModBlocks.ARGON_MOSS_BRICK);
+        dropSelf(ModBlocks.ASH_WOOD);
+        dropSelf(ModBlocks.ASPHALT);
+        dropSelf(ModBlocks.COPPER_BRICKS);
+        dropSelf(ModBlocks.EBONWOOD_LOG);
+        dropSelf(ModBlocks.EBONWOOD_PLANKS);
+        dropSelf(ModBlocks.EBONWOOD_STAIRS);
+        dropSelf(ModBlocks.EBONWOOD_BUTTON);
+        dropSelf(ModBlocks.EBONWOOD_PRESSURE_PLATE);
+        dropSelf(ModBlocks.EBONWOOD_FENCE);
+        dropSelf(ModBlocks.EBONWOOD_FENCE_GATE);
+        dropSelf(ModBlocks.EBONWOOD_TRAPDOOR);
+        dropSelf(ModBlocks.GOLD_BRICKS);
+        dropSelf(ModBlocks.GOTHIC_BRICKS);
+        dropSelf(ModBlocks.HELIUM_MOSS_BRICK);
+        dropSelf(ModBlocks.IRON_BRICKS);
+        dropSelf(ModBlocks.KRYPTON_MOSS_BRICK);
+        dropSelf(ModBlocks.LAVA_MOSS_BRICK);
+        dropSelf(ModBlocks.LEAD_BRICKS);
+        dropSelf(ModBlocks.MIDNIGHT_CONFETTI_BLOCK);
+        dropSelf(ModBlocks.PLATINUM_BRICKS);
+        dropSelf(ModBlocks.RICH_MAHOGANY_TRAPDOOR);
+        dropSelf(ModBlocks.SILVER_BRICKS);
+        dropSelf(ModBlocks.TIN_BRICKS);
+        dropSelf(ModBlocks.HELLSTONE_FORGE);
+        dropSelf(ModBlocks.BLINKROOT);
+        dropSelf(ModBlocks.CRIMSANDSTONE);
+        dropSelf(ModBlocks.CRIMSON_DIRT);
+        dropSelf(ModBlocks.STRIPPED_SHADEWOOD_LOG);
+        dropSelf(ModBlocks.SHADEWOOD_SAPLING);
+        dropSelf(ModBlocks.ASH_WOOD_PLANKS);
+        dropSelf(ModBlocks.ASH_STAIRS);
+        dropSelf(ModBlocks.ASH_BUTTON);
+        dropSelf(ModBlocks.ASH_PRESSURE_PLATE);
+        dropSelf(ModBlocks.ASH_FENCE);
+        dropSelf(ModBlocks.ASH_FENCE_GATE);
+        dropSelf(ModBlocks.ASH_TRAPDOOR);
+        dropSelf(ModBlocks.BOREAL_SAPLING);
+        dropSelf(ModBlocks.XENON_MOSS_BRICKS);
+        dropSelf(ModBlocks.TUNGSTEN_BRICKS);
+        dropSelf(ModBlocks.BLOODY_ANDESITE);
+        dropSelf(ModBlocks.BLOODY_ANDESITE_STAIRS);
+        dropSelf(ModBlocks.BLOODY_ANDESITE_WALL);
+        dropSelf(ModBlocks.CRIMSON_GRANITE);
+        dropSelf(ModBlocks.CRIMSON_GRANITE_STAIRS);
+        dropSelf(ModBlocks.CRIMSON_GRANITE_WALL);
+        dropSelf(ModBlocks.DEEPCRIMSTONE);
+        dropSelf(ModBlocks.DEEPCRIMSTONE_STAIRS);
+        dropSelf(ModBlocks.DEEPCRIMSTONE_WALL);
+        dropSelf(ModBlocks.EBONSANDSTONE);
+        dropSelf(ModBlocks.EYE_FLOWER);
 
 
 
@@ -173,14 +236,29 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         add(ModBlocks.SHIMMER_BLOCK, createSilkTouchOnlyTable(ModBlocks.SHIMMER_BLOCK));
         add(ModBlocks.PALLADIUM_ORE, createOreDrop(ModBlocks.PALLADIUM_ORE, ModItems.RAW_PALLADIUM));
         add(ModBlocks.PALLADIUM_DEEPSLATE_ORE, createOreDrop(ModBlocks.PALLADIUM_DEEPSLATE_ORE, ModItems.RAW_PALLADIUM));
+        add(ModBlocks.CRIMSON_GRASS, createSingleItemTableWithSilkTouch(ModBlocks.CRIMSON_GRASS, ModBlocks.CRIMSON_DIRT));
         add(ModBlocks.SHADEWOOD_SLAB, this::createSlabItemTable);
+        add(ModBlocks.BLOODY_ANDESITE_SLAB, this::createSlabItemTable);
+        add(ModBlocks.CRIMSON_GRANITE_SLAB, this::createSlabItemTable);
+        add(ModBlocks.DEEPCRIMSTONE_SLAB, this::createSlabItemTable);
+        add(ModBlocks.CRIMSON_TALL_GRASS, this::createDoublePlantShearsDrop);
         add(ModBlocks.SHADEWOOD_DOOR, this::createDoorTable);
         add(ModBlocks.BOREAL_SLAB, this::createSlabItemTable);
+        add(ModBlocks.ASH_SLAB, this::createSlabItemTable);
         add(ModBlocks.BOREAL_DOOR, this::createDoorTable);
+        add(ModBlocks.ASH_DOOR, this::createDoorTable);
         add(ModBlocks.PALMWOOD_SLABS, this::createSlabItemTable);
         add(ModBlocks.PALMWOOD_DOOR, this::createDoorTable);
         add(ModBlocks.RICH_MAHOGANY_DOOR, this::createDoorTable);
+        add(ModBlocks.EBONWOOD_SLAB, this::createSlabItemTable);
+        add(ModBlocks.EBONWOOD_DOOR, this::createDoorTable);
+        add(ModBlocks.PALM_LEAVES, createSilkTouchOnlyTable(ModBlocks.PALM_LEAVES));
+        add(ModBlocks.CRIMSON_CACTUS, createSingleItemTable(Blocks.CACTUS));
+        add(ModBlocks.CRIMSON_CACTUS, createSingleItemTable(ModItems.CRYSTAL_SHARD));
         add(ModBlocks.BLUE_MUSHROOM_STEM, createSilkTouchOnlyTable(ModBlocks.BLUE_MUSHROOM_STEM));
+        add(ModBlocks.CRACKED_BLUE_DUNGEON_BRICKS, createSilkTouchOnlyTable(ModBlocks.CRACKED_BLUE_DUNGEON_BRICKS));
+        add(ModBlocks.CRACKED_GREEN_DUNGEON_BRICKS, createSilkTouchOnlyTable(ModBlocks.CRACKED_GREEN_DUNGEON_BRICKS));
+        add(ModBlocks.CRACKED_PINK_DUNGEON_BRICKS, createSilkTouchOnlyTable(ModBlocks.CRACKED_PINK_DUNGEON_BRICKS));
         add(ModBlocks.BLUE_MUSHROOM_BLOCK, createMushroomBlockDrop(ModBlocks.BLUE_MUSHROOM_BLOCK, ModItems.GLOWING_MUSHROOM));
         add(ModBlocks.DEEPSLATE_TUNGSTEN_ORE, createOreDrop(ModBlocks.DEEPSLATE_TUNGSTEN_ORE, ModItems.RAW_TUNGSTEN));
         add(ModBlocks.TUNGSTEN_ORE, createOreDrop(ModBlocks.TUNGSTEN_ORE, ModItems.RAW_TUNGSTEN));
@@ -209,6 +287,11 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F))).apply(ApplyBonusCount.addUniformBonusCount(enchantments.getOrThrow(Enchantments.FORTUNE)))).withPool(LootPool.lootPool()
                 .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.BLOOD_ORANGE_BUSH).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BloodOrangeBushBlock.AGE, 2)))
                 .add(LootItem.lootTableItem(ModItems.BLOOD_ORANGE)).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F))).apply(ApplyBonusCount.addUniformBonusCount(enchantments.getOrThrow(Enchantments.FORTUNE))))));
+        add(ModBlocks.AMBER_STONE, createOreDrop(ModBlocks.AMBER_STONE, ModItems.AMBER));
+        add(ModBlocks.SHADEWOOD_LEAVES, block -> createLeavesDrops(block, ModBlocks.SHADEWOOD_SAPLING, NORMAL_LEAVES_SAPLING_CHANCES));
+        add(ModBlocks.POTTED_SHADEWOOD_SAPLING, createPotFlowerItemTable(ModBlocks.SHADEWOOD_SAPLING));
+        add(ModBlocks.POTTED_BOREAL_SAPLING, createPotFlowerItemTable(ModBlocks.BOREAL_SAPLING));
+        add(ModBlocks.EYE_FLOWER_POTTED, createPotFlowerItemTable(ModBlocks.EYE_FLOWER));
 
 
 

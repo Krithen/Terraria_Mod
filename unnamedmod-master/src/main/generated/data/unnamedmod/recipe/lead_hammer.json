@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "lead",
+  "key": {
+    "L": "unnamedmod:lead_bar",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "LLL",
+    "LLL",
+    " S "
+  ],
+  "result": {
+    "id": "unnamedmod:lead_hammer"
+  }
+}

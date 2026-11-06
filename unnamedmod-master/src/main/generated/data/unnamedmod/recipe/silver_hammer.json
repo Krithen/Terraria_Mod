@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "silver",
+  "key": {
+    "A": "minecraft:stick",
+    "T": "unnamedmod:silver_bricks",
+    "t": "unnamedmod:silver_bar"
+  },
+  "pattern": [
+    "TTT",
+    "tAt",
+    " A "
+  ],
+  "result": {
+    "id": "unnamedmod:silver_hammer"
+  }
+}

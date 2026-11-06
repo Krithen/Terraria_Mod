@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "silver",
+  "key": {
+    "A": "minecraft:stick",
+    "S": "unnamedmod:silver_bricks"
+  },
+  "pattern": [
+    "S",
+    "S",
+    "A"
+  ],
+  "result": {
+    "id": "unnamedmod:silver_broadsword"
+  }
+}

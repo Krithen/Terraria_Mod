@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/chlorophyte_claymore",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

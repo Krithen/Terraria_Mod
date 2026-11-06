@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "gold",
+  "key": {
+    "A": "minecraft:stick",
+    "T": "minecraft:gold_block",
+    "t": "minecraft:gold_ingot"
+  },
+  "pattern": [
+    "TTT",
+    "tAt",
+    " A "
+  ],
+  "result": {
+    "id": "unnamedmod:golden_hammer"
+  }
+}

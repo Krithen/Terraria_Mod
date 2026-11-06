@@ -1,4 +1,16 @@
 {
+  "antlion_hit": {
+    "sounds": [
+      "unnamedmod:antlion_hit"
+    ],
+    "subtitle": "sounds.unnamedmod.antlion_hit"
+  },
+  "antlion_killed": {
+    "sounds": [
+      "unnamedmod:antlion_killed"
+    ],
+    "subtitle": "sounds.unnamedmod.antlion_killed"
+  },
   "nightsedge": {
     "sounds": [
       "unnamedmod:nightsedge"

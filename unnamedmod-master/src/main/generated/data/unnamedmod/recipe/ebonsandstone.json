@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "ebon",
+  "key": {
+    "S": "unnamedmod:ebonsand"
+  },
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "result": {
+    "id": "unnamedmod:ebonsandstone"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.25,
+  "group": "tungsten",
+  "ingredient": "unnamedmod:raw_tungsten",
+  "result": {
+    "id": "unnamedmod:tungsten_bar"
+  }
+}

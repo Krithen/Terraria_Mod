@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "tungsten",
+  "key": {
+    "A": "minecraft:stick",
+    "T": "unnamedmod:tungsten_bricks"
+  },
+  "pattern": [
+    "TTT",
+    " A ",
+    " A "
+  ],
+  "result": {
+    "id": "unnamedmod:tungsten_pickaxe"
+  }
+}

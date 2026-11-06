@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "iron",
+  "key": {
+    "I": "unnamedmod:iron_bricks"
+  },
+  "pattern": [
+    " I "
+  ],
+  "result": {
+    "id": "minecraft:iron_ingot"
+  }
+}

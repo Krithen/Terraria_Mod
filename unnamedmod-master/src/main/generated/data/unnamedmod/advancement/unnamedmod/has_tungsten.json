@@ -1,0 +1,32 @@
+{
+  "parent": "unnamedmod:unnamedmod/get_lead",
+  "criteria": {
+    "has_tungsten": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:tungsten_bar"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.unnamedmod.get_tungsten.description"
+    },
+    "icon": {
+      "id": "unnamedmod:tungsten_bar"
+    },
+    "title": {
+      "translate": "advancements.unnamedmod.get_tungsten.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_tungsten"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

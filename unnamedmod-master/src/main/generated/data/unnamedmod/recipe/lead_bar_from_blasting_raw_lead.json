@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "experience": 0.25,
+  "group": "lead",
+  "ingredient": "unnamedmod:raw_lead",
+  "result": {
+    "id": "unnamedmod:lead_bar"
+  }
+}

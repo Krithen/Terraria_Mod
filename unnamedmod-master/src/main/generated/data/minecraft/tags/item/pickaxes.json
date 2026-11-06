@@ -10,6 +10,12 @@
     "unnamedmod:molten_pickaxe",
     "unnamedmod:silver_pickaxe",
     "unnamedmod:tin_pickaxe",
-    "unnamedmod:tungsten_pickaxe"
+    "unnamedmod:tungsten_pickaxe",
+    "unnamedmod:pickaxe_axe",
+    "unnamedmod:picksaw",
+    "unnamedmod:adamantite_pickaxe",
+    "unnamedmod:nebula_pickaxe",
+    "unnamedmod:orichalcum_pickaxe",
+    "unnamedmod:palladium_pickaxe"
   ]
 }

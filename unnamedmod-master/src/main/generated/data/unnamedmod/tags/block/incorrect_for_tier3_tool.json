@@ -20,6 +20,14 @@
     "unnamedmod:green_dungeon_bricks",
     "unnamedmod:pink_dungeon_bricks",
     "unnamedmod:hellstone_ore",
-    "unnamedmod:lizahard_bricks"
+    "unnamedmod:lizahard_bricks",
+    "unnamedmod:bloody_andesite",
+    "unnamedmod:bloody_andesite_slab",
+    "unnamedmod:bloody_andesite_wall",
+    "unnamedmod:bloody_andesite_stairs",
+    "unnamedmod:crimson_granite",
+    "unnamedmod:crimson_granite_slab",
+    "unnamedmod:crimson_granite_wall",
+    "unnamedmod:crimson_granite_stairs"
   ]
 }

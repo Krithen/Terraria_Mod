@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "ash",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "unnamedmod:ash_wood_planks"
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "id": "unnamedmod:ash_fence_gate"
+  }
+}

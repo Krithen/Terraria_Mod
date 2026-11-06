@@ -4,7 +4,7 @@ package com.krithenmc.unnamedmod.datagen;
 import com.krithenmc.unnamedmod.block.ModBlocks;
 import com.krithenmc.unnamedmod.block.custom.BloodOrangeBushBlock;
 import com.krithenmc.unnamedmod.block.custom.DeathweedCropBlock;
-import com.krithenmc.unnamedmod.block.custom.EmeraldGemSparkBlock;
+import com.krithenmc.unnamedmod.block.custom.GemSparkBlock;
 import com.krithenmc.unnamedmod.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -48,7 +48,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.LEAD_DEEPSLATE_ORE);
 
 
-        blockModelGenerators.createTintedLeaves(ModBlocks.SHADEWOOD_LEAVES, TexturedModel.LEAVES, 780606);
+      //  blockModelGenerators.createTintedLeaves(ModBlocks.SHADEWOOD_LEAVES, TexturedModel.LEAVES, 780606);
         blockModelGenerators.family(ModBlocks.CRIMSTONE)
                 .stairs(ModBlocks.CRIMSTONE_STAIRS)
                 .slab(ModBlocks.CRIMSTONE_SLAB)
@@ -90,13 +90,13 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createDoor(ModBlocks.SHADEWOOD_DOOR);
         blockModelGenerators.createTrapdoor(ModBlocks.SHADEWOOD_TRAPDOOR);
 
-        Identifier LampOffIdentifier = TexturedModel.CUBE.create(ModBlocks.EMERALD_GEMSPARK_BLOCK, blockModelGenerators.modelOutput);
-        Identifier LampOnIdentifier = blockModelGenerators.createSuffixedVariant(ModBlocks.EMERALD_GEMSPARK_BLOCK, "_on", ModelTemplates.CUBE_ALL, TextureMapping::cube);
+        Identifier EmeraldLampOffIdentifier = TexturedModel.CUBE.create(ModBlocks.EMERALD_GEMSPARK_BLOCK, blockModelGenerators.modelOutput);
+        Identifier EmeraldLampOnIdentifier = blockModelGenerators.createSuffixedVariant(ModBlocks.EMERALD_GEMSPARK_BLOCK, "_on", ModelTemplates.CUBE_ALL, TextureMapping::cube);
 
         blockModelGenerators.blockStateOutput.accept(MultiVariantGenerator.dispatch(ModBlocks.EMERALD_GEMSPARK_BLOCK)
-                .with(BlockModelGenerators.createBooleanModelDispatch(EmeraldGemSparkBlock.CLICKED,
-                        new MultiVariant(WeightedList.<Variant>builder().add(new Variant(LampOnIdentifier)).build()),
-                        new MultiVariant(WeightedList.<Variant>builder().add(new Variant(LampOffIdentifier)).build()))));
+                .with(BlockModelGenerators.createBooleanModelDispatch(GemSparkBlock.CLICKED,
+                        new MultiVariant(WeightedList.<Variant>builder().add(new Variant(EmeraldLampOnIdentifier)).build()),
+                        new MultiVariant(WeightedList.<Variant>builder().add(new Variant(EmeraldLampOffIdentifier)).build()))));
         blockModelGenerators.family(ModBlocks.Boreal_Planks)
                 .stairs(ModBlocks.BOREAL_STAIRS)
                 .slab(ModBlocks.BOREAL_SLAB)
@@ -106,7 +106,7 @@ public class ModModelProvider extends FabricModelProvider {
                 .fenceGate(ModBlocks.BOREAL_FENCE_GATE);
         blockModelGenerators.createDoor(ModBlocks.BOREAL_DOOR);
         blockModelGenerators.createTrapdoor(ModBlocks.BOREAL_TRAPDOOR);
-        blockModelGenerators.createRotatedPillarWithHorizontalVariant(ModBlocks.SHADEWOOD_LOG, TexturedModel.COLUMN_ALT, TexturedModel.COLUMN_HORIZONTAL );
+       // blockModelGenerators.createRotatedPillarWithHorizontalVariant(ModBlocks.SHADEWOOD_LOG, TexturedModel.COLUMN_ALT, TexturedModel.COLUMN_HORIZONTAL );
         blockModelGenerators.createRotatedPillarWithHorizontalVariant(ModBlocks.BOREAL_WOOD_LOG, TexturedModel.COLUMN_ALT, TexturedModel.COLUMN_HORIZONTAL );
         blockModelGenerators.createRotatedPillarWithHorizontalVariant(ModBlocks.PALMWOOD_LOG, TexturedModel.COLUMN_ALT, TexturedModel.COLUMN_HORIZONTAL);
         blockModelGenerators.createAnvil(ModBlocks.LEAD_ANVIL);
@@ -171,7 +171,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrapdoor(ModBlocks.PALMWOOD_TRAPDOOR);
         blockModelGenerators.createDoor(ModBlocks.PALMWOOD_DOOR);
         blockModelGenerators.createTrivialCube(ModBlocks.PALMWOOD);
-        blockModelGenerators.createTrivialCube(ModBlocks.SHADEWOOD);
+        //blockModelGenerators.createTrivialCube(ModBlocks.SHADEWOOD);
         blockModelGenerators.createTrivialCube(ModBlocks.BOREAL_WOOD);
         blockModelGenerators.createTrivialCube(ModBlocks.HELIUM_MOSS);
         blockModelGenerators.createMossyCarpet(ModBlocks.HELIUM_MOSS_CARPET);
@@ -207,6 +207,103 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.SILVER_DEEPSLATE_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.SNOW_BRICKS);
         blockModelGenerators.createTrivialCube(ModBlocks.SUNPLATE_BLOCK);
+        blockModelGenerators.createHorizontallyRotatedBlock(ModBlocks.ADAMANTITE_BEAM, TexturedModel.GLAZED_TERRACOTTA);
+
+        Identifier AmberLampOffIdentifier = TexturedModel.CUBE.create(ModBlocks.AMBER_GEMSPARK_BLOCK, blockModelGenerators.modelOutput);
+        Identifier AmberLampOnIdentifier = blockModelGenerators.createSuffixedVariant(ModBlocks.AMBER_GEMSPARK_BLOCK, "_on", ModelTemplates.CUBE_ALL, TextureMapping::cube);
+
+        blockModelGenerators.blockStateOutput.accept(MultiVariantGenerator.dispatch(ModBlocks.AMBER_GEMSPARK_BLOCK)
+                .with(BlockModelGenerators.createBooleanModelDispatch(GemSparkBlock.CLICKED,
+                        new MultiVariant(WeightedList.<Variant>builder().add(new Variant(AmberLampOnIdentifier)).build()),
+                        new MultiVariant(WeightedList.<Variant>builder().add(new Variant(AmberLampOffIdentifier)).build()))));
+
+        blockModelGenerators.createTrivialCube(ModBlocks.AMBER_STONE);
+
+        Identifier AmethystLampOffIdentifier = TexturedModel.CUBE.create(ModBlocks.AMETHYST_GEMSPARK_BLOCK, blockModelGenerators.modelOutput);
+        Identifier AmethystLampOnIdentifier = blockModelGenerators.createSuffixedVariant(ModBlocks.AMETHYST_GEMSPARK_BLOCK, "_on", ModelTemplates.CUBE_ALL, TextureMapping::cube);
+
+        blockModelGenerators.blockStateOutput.accept(MultiVariantGenerator.dispatch(ModBlocks.AMETHYST_GEMSPARK_BLOCK)
+                .with(BlockModelGenerators.createBooleanModelDispatch(GemSparkBlock.CLICKED,
+                        new MultiVariant(WeightedList.<Variant>builder().add(new Variant(AmethystLampOnIdentifier)).build()),
+                        new MultiVariant(WeightedList.<Variant>builder().add(new Variant(AmethystLampOffIdentifier)).build()))));
+        blockModelGenerators.createTrivialCube(ModBlocks.ANCIENT_BLUE_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.ANCIENT_GOLD_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.ANCIENT_COPPER_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.ANCIENT_COBALT_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.ANCIENT_HELLSTONE_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.ANCIENT_OBSIDIAN_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.ANCIENT_PINK_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.ANCIENT_GREEN_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.ANCIENT_MYTHRIL_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.ARGON_MOSS_BRICK);
+        blockModelGenerators.createRotatedPillarWithHorizontalVariant(ModBlocks.ASH_WOOD, TexturedModel.COLUMN_ALT, TexturedModel.COLUMN_HORIZONTAL);
+        blockModelGenerators.createTrivialCube(ModBlocks.ASPHALT);
+        blockModelGenerators.createRotatedPillarWithHorizontalVariant(ModBlocks.COPPER_BRICKS, TexturedModel.COLUMN, TexturedModel.COLUMN_HORIZONTAL);
+        blockModelGenerators.createTrivialCube(ModBlocks.CRACKED_BLUE_DUNGEON_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.CRACKED_GREEN_DUNGEON_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.CRACKED_PINK_DUNGEON_BRICKS);
+        blockModelGenerators.createRotatedPillarWithHorizontalVariant(ModBlocks.EBONWOOD_LOG, TexturedModel.COLUMN, TexturedModel.COLUMN_HORIZONTAL);
+        blockModelGenerators.family(ModBlocks.EBONWOOD_PLANKS)
+                .stairs(ModBlocks.EBONWOOD_STAIRS)
+                .slab(ModBlocks.EBONWOOD_SLAB)
+                .button(ModBlocks.EBONWOOD_BUTTON)
+                .pressurePlate(ModBlocks.EBONWOOD_PRESSURE_PLATE)
+                .fence(ModBlocks.EBONWOOD_FENCE)
+                .fenceGate(ModBlocks.EBONWOOD_FENCE_GATE);
+        blockModelGenerators.createDoor(ModBlocks.EBONWOOD_DOOR);
+        blockModelGenerators.createTrapdoor(ModBlocks.EBONWOOD_TRAPDOOR);
+        blockModelGenerators.createTrivialCube(ModBlocks.GOLD_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.GOTHIC_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.HELIUM_MOSS_BRICK);
+        blockModelGenerators.createTrivialCube(ModBlocks.IRON_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.KRYPTON_MOSS_BRICK);
+        blockModelGenerators.createTrivialCube(ModBlocks.LAVA_MOSS_BRICK);
+        blockModelGenerators.createTrivialCube(ModBlocks.LEAD_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.MIDNIGHT_CONFETTI_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.PALM_LEAVES);
+        blockModelGenerators.createTrivialCube(ModBlocks.PLATINUM_BRICKS);
+        blockModelGenerators.createTrapdoor(ModBlocks.RICH_MAHOGANY_TRAPDOOR);
+        blockModelGenerators.createTrivialCube(ModBlocks.SILVER_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.TIN_BRICKS);
+        blockModelGenerators.createNonTemplateModelBlock(ModBlocks.HELLSTONE_FORGE);
+        blockModelGenerators.createCrossBlockWithDefaultItem(ModBlocks.BLINKROOT, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockModelGenerators.createTrivialCube(ModBlocks.CRIMSANDSTONE);
+        blockModelGenerators.createTrivialCube(ModBlocks.CRIMSON_DIRT);
+        blockModelGenerators.createCrossBlock(ModBlocks.CRYSTAL_SHARD, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockModelGenerators.woodProvider(ModBlocks.SHADEWOOD_LOG).log(ModBlocks.SHADEWOOD_LOG).wood(ModBlocks.SHADEWOOD);
+        blockModelGenerators.woodProvider(ModBlocks.STRIPPED_SHADEWOOD_LOG).log(ModBlocks.STRIPPED_SHADEWOOD_LOG).wood(ModBlocks.STRIPPED_SHADEWOOD);
+        blockModelGenerators.createTrivialBlock(ModBlocks.SHADEWOOD_LEAVES, TexturedModel.LEAVES);
+        blockModelGenerators.createPlantWithDefaultItem(ModBlocks.SHADEWOOD_SAPLING, ModBlocks.POTTED_SHADEWOOD_SAPLING, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockModelGenerators.family(ModBlocks.ASH_WOOD_PLANKS)
+                .stairs(ModBlocks.ASH_STAIRS)
+                .slab(ModBlocks.ASH_SLAB)
+                .button(ModBlocks.ASH_BUTTON)
+                .pressurePlate(ModBlocks.ASH_PRESSURE_PLATE)
+                .fence(ModBlocks.ASH_FENCE)
+                .fenceGate(ModBlocks.ASH_FENCE_GATE);
+        blockModelGenerators.createDoor(ModBlocks.ASH_DOOR);
+        blockModelGenerators.createTrapdoor(ModBlocks.ASH_TRAPDOOR);
+        blockModelGenerators.createPlantWithDefaultItem(ModBlocks.BOREAL_SAPLING, ModBlocks.POTTED_BOREAL_SAPLING, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockModelGenerators.createTrivialCube(ModBlocks.XENON_MOSS_BRICKS);
+        blockModelGenerators.createTrivialCube(ModBlocks.TUNGSTEN_BRICKS);
+        blockModelGenerators.family(ModBlocks.BLOODY_ANDESITE)
+                .stairs(ModBlocks.BLOODY_ANDESITE_STAIRS)
+                .slab(ModBlocks.BLOODY_ANDESITE_SLAB)
+                .wall(ModBlocks.BLOODY_ANDESITE_WALL);
+        blockModelGenerators.family(ModBlocks.CRIMSON_GRANITE)
+                .stairs(ModBlocks.CRIMSON_GRANITE_STAIRS)
+                .slab(ModBlocks.CRIMSON_GRANITE_SLAB)
+                .wall(ModBlocks.CRIMSON_GRANITE_WALL);
+        blockModelGenerators.family(ModBlocks.DEEPCRIMSTONE)
+                .stairs(ModBlocks.DEEPCRIMSTONE_STAIRS)
+                .slab(ModBlocks.DEEPCRIMSTONE_SLAB)
+                .wall(ModBlocks.DEEPCRIMSTONE_WALL);
+        blockModelGenerators.createDoublePlantWithDefaultItem(ModBlocks.CRIMSON_TALL_GRASS, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockModelGenerators.createTrivialCube(ModBlocks.EBONSANDSTONE);
+        blockModelGenerators.createPlantWithDefaultItem(ModBlocks.EYE_FLOWER, ModBlocks.EYE_FLOWER_POTTED, BlockModelGenerators.PlantType.NOT_TINTED);
+
+
+
 
 
 
@@ -383,6 +480,50 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.declareCustomModelItem(ModItems.COBALT_NAGINATA);
         itemModelGenerators.declareCustomModelItem(ModItems.DARK_LANCE);
         itemModelGenerators.declareCustomModelItem(ModItems.GHASTLY_GLAIVE);
+        itemModelGenerators.declareCustomModelItem(ModItems.BOTANICAL_PIERCER);
+        itemModelGenerators.declareCustomModelItem(ModItems.COPPER_HAMMER);
+        itemModelGenerators.declareCustomModelItem(ModItems.CHLOROPHYTE_GREATHAMMER);
+        itemModelGenerators.declareCustomModelItem(ModItems.FLESH_GRINDER);
+        itemModelGenerators.declareCustomModelItem(ModItems.GOLDEN_HAMMER);
+        itemModelGenerators.declareCustomModelItem(ModItems.HAEMORRHAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.HAMMUSH);
+        itemModelGenerators.declareCustomModelItem(ModItems.IRON_HAMMER);
+        itemModelGenerators.declareCustomModelItem(ModItems.LEAD_HAMMER);
+        itemModelGenerators.declareCustomModelItem(ModItems.METEOR_HAMAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.MOLTEN_HAMAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.SILVER_HAMMER);
+        itemModelGenerators.declareCustomModelItem(ModItems.PLATINUM_HAMMER);
+        itemModelGenerators.declareCustomModelItem(ModItems.PWNHAMMER);
+        itemModelGenerators.declareCustomModelItem(ModItems.TIN_HAMMER);
+        itemModelGenerators.declareCustomModelItem(ModItems.TUNGSTEN_HAMMER);
+        itemModelGenerators.declareCustomModelItem(ModItems.CHLOROPHYTE_GREATAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.ADAMANTITE_WARAXE);
+        itemModelGenerators.generateFlatItem(ModItems.ANCIENT_CLOTH, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.APPLE_PIE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.BACON, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.BARBEQUE_RIBS, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.BLACK_LENS, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.BUCKET_OF_MILKSHAKE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.CREAM_SODA, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.CRIMSON_CRATE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.CRYSTAL_SHARD, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.CURSED_FLAMES, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.DIVINE_CRATE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.ANTLION_SPAWN_EGG, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.SWARMER_SPAWN_EGG, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.ANTLION_MANDIBLE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.DEMON_EYE_SPAWN_EGG, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.declareCustomModelItem(ModItems.ORICHALCUM_WARAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.MYTHRIL_WARAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.PALLADIUM_WARAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.PICKAXE_AXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.PICKSAW);
+        itemModelGenerators.declareCustomModelItem(ModItems.TITANIUM_WARAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.ADAMANTITE_PICKAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.CHLOROPHYTE_CLAYMORE);
+        itemModelGenerators.declareCustomModelItem(ModItems.NEBULA_PICKAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.ORICHALCUM_PICKAXE);
+        itemModelGenerators.declareCustomModelItem(ModItems.PALLADIUM_PICKAXE);
 
 
 

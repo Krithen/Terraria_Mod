@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "platinum",
+  "key": {
+    "A": "minecraft:stick",
+    "S": "unnamedmod:platinum_bricks"
+  },
+  "pattern": [
+    "S",
+    "S",
+    "A"
+  ],
+  "result": {
+    "id": "unnamedmod:platinum_broadsword"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "snowy=false": [
+      {
+        "model": "unnamedmod:block/crimson_grass"
+      },
+      {
+        "model": "unnamedmod:block/crimson_grass",
+        "y": 90
+      },
+      {
+        "model": "unnamedmod:block/crimson_grass",
+        "y": 180
+      },
+      {
+        "model": "unnamedmod:block/crimson_grass",
+        "y": 270
+      }
+    ],
+    "snowy=true": {
+      "model": "unnamedmod:block/crimson_grass"
+    }
+  }
+}

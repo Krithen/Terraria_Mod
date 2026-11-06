@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "platinum",
+  "key": {
+    "I": "unnamedmod:platinum_bricks"
+  },
+  "pattern": [
+    " I "
+  ],
+  "result": {
+    "id": "unnamedmod:platinum_bar"
+  }
+}

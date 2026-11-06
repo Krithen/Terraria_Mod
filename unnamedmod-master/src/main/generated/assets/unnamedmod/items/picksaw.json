@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "unnamedmod:item/picksaw",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

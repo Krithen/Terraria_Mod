@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "adamantite",
+  "key": {
+    "A": "unnamedmod:adamantite_beam",
+    "S": "minecraft:stick",
+    "a": "unnamedmod:adamantite_bar"
+  },
+  "pattern": [
+    "aAa",
+    "aAa",
+    " S "
+  ],
+  "result": {
+    "id": "unnamedmod:adamantite_waraxe"
+  }
+}

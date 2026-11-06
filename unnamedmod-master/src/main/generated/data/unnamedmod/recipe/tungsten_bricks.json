@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "tungsten",
+  "key": {
+    "T": "unnamedmod:tungsten_bar"
+  },
+  "pattern": [
+    "TT",
+    "TT"
+  ],
+  "result": {
+    "id": "unnamedmod:tungsten_bricks"
+  }
+}

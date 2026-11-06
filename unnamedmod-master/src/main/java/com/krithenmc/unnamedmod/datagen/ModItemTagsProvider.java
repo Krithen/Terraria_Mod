@@ -1,4 +1,5 @@
 package com.krithenmc.unnamedmod.datagen;
+import com.krithenmc.unnamedmod.block.ModBlocks;
 import com.krithenmc.unnamedmod.item.ModItems;
 import com.krithenmc.unnamedmod.tags.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -75,6 +76,8 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.getRK(ModItems.COBALT_NAGINATA))
                 .add(ModItems.getRK(ModItems.DARK_LANCE))
                 .add(ModItems.getRK(ModItems.GHASTLY_GLAIVE))
+                .add(ModItems.getRK(ModItems.BOTANICAL_PIERCER))
+                .add(ModItems.getRK(ModItems.CHLOROPHYTE_CLAYMORE))
 
         ;
         tag(ItemTags.PICKAXES)
@@ -88,7 +91,14 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.getRK(ModItems.MOLTEN_PICKAXE))
                 .add(ModItems.getRK(ModItems.SILVER_PICKAXE))
                 .add(ModItems.getRK(ModItems.TIN_PICKAXE))
-                .add(ModItems.getRK(ModItems.TUNGSTEN_PICKAXE));
+                .add(ModItems.getRK(ModItems.TUNGSTEN_PICKAXE))
+                .add(ModItems.getRK(ModItems.PICKAXE_AXE))
+                .add(ModItems.getRK(ModItems.PICKSAW))
+                .add(ModItems.getRK(ModItems.ADAMANTITE_PICKAXE))
+                .add(ModItems.getRK(ModItems.NEBULA_PICKAXE))
+                .add(ModItems.getRK(ModItems.ORICHALCUM_PICKAXE))
+                .add(ModItems.getRK(ModItems.PALLADIUM_PICKAXE))
+                ;
         tag(ItemTags.SHOVELS).add(ModItems.getRK(ModItems.NIGHTMARE_SHOVEL));
         tag(ItemTags.SPEARS)
                 .add(ModItems.getRK(ModItems.GUNGNIR));
@@ -103,8 +113,37 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.getRK(ModItems.NEBULA_HAMAXE))
                 .add(ModItems.getRK(ModItems.VORTEX_HAMAXE))
                 .add(ModItems.getRK(ModItems.SOLAR_HAMAXE))
+                .add(ModItems.getRK(ModItems.HAEMORRHAXE))
+                .add(ModItems.getRK(ModItems.METEOR_HAMAXE))
+                .add(ModItems.getRK(ModItems.MOLTEN_HAMAXE))
+                .add(ModItems.getRK(ModItems.CHLOROPHYTE_GREATAXE))
+                .add(ModItems.getRK(ModItems.ADAMANTITE_WARAXE))
+                .add(ModItems.getRK(ModItems.ORICHALCUM_WARAXE) )
+                .add(ModItems.getRK(ModItems.MYTHRIL_WARAXE))
+                .add(ModItems.getRK(ModItems.PALLADIUM_WARAXE))
+                .add(ModItems.getRK(ModItems.PICKAXE_AXE))
+                .add(ModItems.getRK(ModItems.PICKSAW))
+                .add(ModItems.getRK(ModItems.TITANIUM_WARAXE))
 
         ;
+
+        tag(ModTags.Items.HAMMER)
+                .add(ModItems.getRK(ModItems.CHLOROPHYTE_GREATHAMMER))
+                .add(ModItems.getRK(ModItems.COPPER_HAMMER))
+                .add(ModItems.getRK(ModItems.FLESH_GRINDER))
+                .add(ModItems.getRK(ModItems.GOLDEN_HAMMER))
+                .add(ModItems.getRK(ModItems.HAEMORRHAXE))
+                .add(ModItems.getRK(ModItems.HAMMUSH))
+                .add(ModItems.getRK(ModItems.IRON_HAMMER))
+                .add(ModItems.getRK(ModItems.LEAD_HAMMER))
+                .add(ModItems.getRK(ModItems.NEBULA_HAMAXE))
+                .add(ModItems.getRK(ModItems.METEOR_HAMAXE))
+                .add(ModItems.getRK(ModItems.MOLTEN_HAMAXE))
+                .add(ModItems.getRK(ModItems.SILVER_HAMMER))
+                .add(ModItems.getRK(ModItems.PLATINUM_HAMMER))
+                .add(ModItems.getRK(ModItems.PWNHAMMER))
+                .add(ModItems.getRK(ModItems.TIN_HAMMER))
+                .add(ModItems.getRK(ModItems.TUNGSTEN_HAMMER));
 
         tag(ModTags.Items.DEMONITE_REPAIR)
                 .add(ModItems.getRK(ModItems.DEMONITE_BAR))
@@ -123,6 +162,7 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 //CandyCane once its added)
 
         tag(ModTags.Items.ICE_REPAIR)
+
                 ;
                 //add ice, blue ice, and packed ice
 
@@ -200,6 +240,28 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
         tag(ItemTags.BOW_ENCHANTABLE)
                 .add(ModItems.getRK(ModItems.DEMON_BOW));
+
+        tag(ItemTags.LOGS_THAT_BURN)
+                .addTag(ModTags.Items.SHADEWOOD_LOGS);
+
+        tag(ModTags.Items.SHADEWOOD_LOGS)
+                .add(ModItems.getRK(ModBlocks.SHADEWOOD_LOG.asItem()))
+                .add(ModItems.getRK(ModBlocks.SHADEWOOD.asItem()))
+                .add(ModItems.getRK(ModBlocks.STRIPPED_SHADEWOOD.asItem()))
+                .add(ModItems.getRK(ModBlocks.STRIPPED_SHADEWOOD_LOG.asItem()));
+
+        tag(ItemTags.PLANKS)
+                .add(ModItems.getRK(ModBlocks.SHADEWOOD_PLANK.asItem()))
+                .add(ModItems.getRK(ModBlocks.Boreal_Planks.asItem()))
+                .add(ModItems.getRK(ModBlocks.ASH_WOOD_PLANKS.asItem()));
+
+        tag(ItemTags.LEAVES)
+                .add(ModItems.getRK(ModBlocks.SHADEWOOD_LEAVES.asItem()));
+
+        tag(ItemTags.SAPLINGS)
+                .add(ModItems.getRK(ModBlocks.SHADEWOOD_SAPLING.asItem()))
+                .add(ModItems.getRK(ModBlocks.BOREAL_SAPLING.asItem()));
+
 
 
 

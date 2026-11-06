@@ -48,5 +48,10 @@ public class ModConsumables {
             .onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(ModEffects.WELLFED, 300 * 20, 1), 1.0f)).build();
     public static final Consumable MARSHMALLOW = Consumables.defaultFood()
             .onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(ModEffects.WELLFED, 300 * 20, 1), 1.0f)).build();
+    public static final Consumable APPLE_PIE = Consumables.defaultFood().build();
+    public static final Consumable BACON = Consumables.defaultFood().build();
+    public static final Consumable BARBEQUE_RIBS = Consumables.defaultFood().build();
+    public static final Consumable BUCKET_OF_MILKSHAKE = Consumables.defaultDrink().build();
+    public static final Consumable CREAM_SODA = Consumables.defaultDrink().build();
 
 }

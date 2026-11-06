@@ -27,6 +27,14 @@
     "unnamedmod:hellstone_ore",
     "unnamedmod:lizahard_bricks",
     "unnamedmod:snow_bricks",
-    "unnamedmod:sunplate_block"
+    "unnamedmod:sunplate_block",
+    "unnamedmod:bloody_andesite",
+    "unnamedmod:bloody_andesite_slab",
+    "unnamedmod:bloody_andesite_wall",
+    "unnamedmod:bloody_andesite_stairs",
+    "unnamedmod:crimson_granite",
+    "unnamedmod:crimson_granite_slab",
+    "unnamedmod:crimson_granite_wall",
+    "unnamedmod:crimson_granite_stairs"
   ]
 }

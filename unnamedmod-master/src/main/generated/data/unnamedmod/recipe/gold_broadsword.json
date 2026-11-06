@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "gold",
+  "key": {
+    "A": "minecraft:stick",
+    "S": "minecraft:gold_block"
+  },
+  "pattern": [
+    "S",
+    "S",
+    "A"
+  ],
+  "result": {
+    "id": "unnamedmod:gold_broadsword"
+  }
+}
