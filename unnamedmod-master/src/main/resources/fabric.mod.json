@@ -23,6 +23,9 @@
 		],
 		"fabric-datagen": [
 			"com.krithenmc.unnamedmod.UnnamedmodDataGenerator"
+		],
+		"terrablender": [
+			"com.krithenmc.unnamedmod.UnnamedmodBlender"
 		]
 	},
 	"mixins": [

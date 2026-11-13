@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "unnamedmod:block/pearlstone_slab"
+    },
+    "type=double": {
+      "model": "unnamedmod:block/pearlstone"
+    },
+    "type=top": {
+      "model": "unnamedmod:block/pearlstone_slab_top"
+    }
+  }
+}

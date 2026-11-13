@@ -20,6 +20,8 @@ import net.minecraft.world.level.block.Blocks;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
+import static com.krithenmc.unnamedmod.block.ModBlocks.*;
+
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
         super(output, registriesFuture);
@@ -70,6 +72,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 oreSmelting(TUNGSTEN_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.TUNGSTEN_BAR, 0.25f, 200, "tungsten");
                 oreBlasting(TUNGSTEN_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.TUNGSTEN_BAR, 0.25f, 100, "tungsten");
+
+
+                List<ItemLike> TIN_SMELTABLES = List.of(ModItems.RAW_TIN, ModBlocks.TIN_ORE, ModBlocks.TIN_DEEPSLATE_ORE);
+
+                oreSmelting(TIN_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.TIN_BAR, 0.25f, 200, "tin");
+                oreBlasting(TIN_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.TIN_BAR, 0.25f, 100, "tin");
 
 
 
@@ -1001,6 +1009,190 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModBlocks.EBONSAND), has(ModBlocks.EBONSAND))
                         .group("ebon")
                         .save(output);
+
+               planksFromLog(ModBlocks.Boreal_Planks, ModTags.Items.BOREAL_LOGS, 4);
+
+               woodFromLogs(ModBlocks.BOREAL_WOOD_LOG, ModBlocks.BOREAL_WOOD);
+
+               woodFromLogs(ModBlocks.STRIPPED_BOREAL_LOG, ModBlocks.STRIPPED_BOREAL_WOOD);
+
+               planksFromLog(ModBlocks.PEARLWOOD_PLANKS, ModTags.Items.PEARLWOOD_LOGS, 4);
+
+                stairBuilder(ModBlocks.PEARLWOOD_STAIRS, Ingredient.of(ModBlocks.PEARLWOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.PEARLWOOD_PLANKS), has(ModBlocks.PEARLWOOD_PLANKS))
+                        .group("pearlwood")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PEARLWOOD_SLAB, ModBlocks.PEARLWOOD_PLANKS);
+
+                buttonBuilder(ModBlocks.PEARLWOOD_BUTTON, Ingredient.of(ModBlocks.PEARLWOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.PEARLWOOD_PLANKS), has(ModBlocks.PEARLWOOD_PLANKS))
+                        .group("pearlwood")
+                        .save(output);
+
+                pressurePlate(ModBlocks.PEARLWOOD_PRESSURE_PLATE, ModBlocks.PEARLWOOD_PLANKS);
+
+                fenceBuilder(ModBlocks.PEARLWOOD_FENCE, Ingredient.of(ModBlocks.PEARLWOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.PEARLWOOD_PLANKS), has(ModBlocks.PEARLWOOD_PLANKS))
+                        .group("pearlwood")
+                        .save(output);
+
+                fenceGateBuilder(ModBlocks.PEARLWOOD_FENCE_GATE, Ingredient.of(ModBlocks.PEARLWOOD_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.PEARLWOOD_PLANKS), has(ModBlocks.PEARLWOOD_PLANKS))
+                        .group("pearlwood")
+                        .save(output);
+
+                stairBuilder(ModBlocks.PEARLSTONE_STAIRS, Ingredient.of(ModBlocks.PEARLSTONE))
+                        .unlockedBy(getHasName(ModBlocks.PEARLSTONE), has(ModBlocks.PEARLSTONE))
+                        .group("pearlstone")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PEARLSTONE_SLAB, ModBlocks.PEARLSTONE);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PEARLSTONE_WALL, ModBlocks.PEARLSTONE);
+
+
+                stairBuilder(ModBlocks.CRIMSTONE_BRICK_STAIRS, Ingredient.of(ModBlocks.CRIMSTONE_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.CRIMSTONE_BRICKS), has(ModBlocks.CRIMSTONE_BRICKS))
+                        .group("crimstone")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSTONE_BRICK_SLAB, ModBlocks.CRIMSTONE_BRICKS);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSTONE_BRICK_WALL, ModBlocks.CRIMSTONE_BRICKS);
+
+                stairBuilder(ModBlocks.CRIMTANE_BRICK_STAIRS, Ingredient.of(ModBlocks.CRIMTANE_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.CRIMTANE_BRICKS), has(ModBlocks.CRIMTANE_BRICKS))
+                        .group("crimtane")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMTANE_BRICK_SLAB, ModBlocks.CRIMTANE_BRICKS);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMTANE_BRICK_WALL, ModBlocks.CRIMTANE_BRICKS);
+
+                stairBuilder(ModBlocks.DEMONITE_BRICK_STAIRS, Ingredient.of(ModBlocks.DEMONITE_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.DEMONITE_BRICKS), has(ModBlocks.DEMONITE_BRICKS))
+                        .group("demonite")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEMONITE_BRICK_SLAB, ModBlocks.DEMONITE_BRICKS);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEMONITE_BRICK_WALL, ModBlocks.DEMONITE_BRICKS);
+
+                stairBuilder(ModBlocks.EBONSTONE_BRICK_STAIRS, Ingredient.of(ModBlocks.EBONSTONE_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.EBONSTONE_BRICKS), has(ModBlocks.EBONSTONE_BRICKS))
+                        .group("ebonstone")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EBONSTONE_BRICK_SLAB, ModBlocks.EBONSTONE_BRICKS);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EBONSTONE_BRICK_WALL, ModBlocks.EBONSTONE_BRICKS);
+
+
+                stairBuilder(ModBlocks.HALLOWED_BRICK_STAIRS, Ingredient.of(ModBlocks.HALLOWED_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.HALLOWED_BRICKS), has(ModBlocks.HALLOWED_BRICKS))
+                        .group("hallowed")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.HALLOWED_BRICK_SLAB, ModBlocks.HALLOWED_BRICKS);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.HALLOWED_BRICK_WALL, ModBlocks.HALLOWED_BRICKS);
+
+
+                stairBuilder(ModBlocks.ICE_BRICK_STAIRS, Ingredient.of(ModBlocks.ICE_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.ICE_BRICKS), has(ModBlocks.ICE_BRICKS))
+                        .group("ice")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_BRICK_SLAB, ModBlocks.ICE_BRICKS);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_BRICK_WALL, ModBlocks.ICE_BRICKS);
+
+                stairBuilder(ModBlocks.IRIDESCENT_BRICK_STAIRS, Ingredient.of(ModBlocks.IRIDESCENT_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.IRIDESCENT_BRICKS), has(ModBlocks.IRIDESCENT_BRICKS))
+                        .group("iridescent")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRIDESCENT_BRICK_SLAB, ModBlocks.IRIDESCENT_BRICKS);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRIDESCENT_BRICK_WALL, ModBlocks.IRIDESCENT_BRICKS);
+
+                stairBuilder(ModBlocks.METEORITE_BRICK_STAIRS, Ingredient.of(ModBlocks.METEORITE_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.METEORITE_BRICKS), has(ModBlocks.METEORITE_BRICKS))
+                        .group("meteorite")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.METEORITE_BRICK_SLAB, ModBlocks.METEORITE_BRICKS);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.METEORITE_BRICK_WALL, ModBlocks.METEORITE_BRICKS);
+
+                stairBuilder(ModBlocks.MUDSTONE_BRICK_STAIRS, Ingredient.of(ModBlocks.MUDSTONE_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.MUDSTONE_BRICKS), has(ModBlocks.MUDSTONE_BRICKS))
+                        .group("mudstone")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MUDSTONE_BRICK_SLAB, ModBlocks.MUDSTONE_BRICKS);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MUDSTONE_BRICK_WALL, ModBlocks.MUDSTONE_BRICKS);
+
+                stairBuilder(ModBlocks.MYTHRIL_BRICK_STAIRS, Ingredient.of(ModBlocks.MYTHRIL_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.MYTHRIL_BRICKS), has(ModBlocks.MYTHRIL_BRICKS))
+                        .group("mythril_bricks")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MYTHRIL_BRICK_SLAB, ModBlocks.MYTHRIL_BRICKS);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MYTHRIL_BRICK_WALL, ModBlocks.MYTHRIL_BRICKS);
+
+                stairBuilder(ModBlocks.OBSIDIAN_BRICK_STAIRS, Ingredient.of(ModBlocks.OBSIDIAN_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.OBSIDIAN_BRICKS), has(ModBlocks.OBSIDIAN_BRICKS))
+                        .group("obsidian_bricks")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_BRICK_SLAB, ModBlocks.OBSIDIAN_BRICKS);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_BRICK_WALL, ModBlocks.OBSIDIAN_BRICKS);
+
+                stairBuilder(ModBlocks.BLUE_DUNGEON_BRICK_STAIRS, Ingredient.of(ModBlocks.BLUE_DUNGEON_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.BLUE_DUNGEON_BRICKS), has(ModBlocks.BLUE_DUNGEON_BRICKS))
+                        .group("blue_dungeon_bricks")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_DUNGEON_BRICK_SLAB, ModBlocks.BLUE_DUNGEON_BRICKS);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_DUNGEON_BRICK_WALL, ModBlocks.BLUE_DUNGEON_BRICKS);
+
+                stairBuilder(ModBlocks.GREEN_DUNGEON_BRICK_STAIRS, Ingredient.of(GREEN_DUNGEON_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.GREEN_DUNGEON_BRICKS), has(ModBlocks.GREEN_DUNGEON_BRICKS))
+                        .group("green_dungeon_bricks")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_DUNGEON_BRICK_SLAB, ModBlocks.GREEN_DUNGEON_BRICKS);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_DUNGEON_BRICK_WALL, ModBlocks.GREEN_DUNGEON_BRICKS);
+
+                stairBuilder(ModBlocks.LIZAHARD_BRICK_STAIRS, Ingredient.of(LIZAHARD_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.LIZAHARD_BRICKS), has(ModBlocks.LIZAHARD_BRICKS))
+                        .group("lizahard")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIZAHARD_BRICK_SLAB, ModBlocks.LIZAHARD_BRICKS);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIZAHARD_BRICK_WALL, ModBlocks.LIZAHARD_BRICKS);
+
+
+                stairBuilder(ModBlocks.PEARLSTONE_BRICK_STAIRS, Ingredient.of(PEARLSTONE_BRICKS))
+                        .unlockedBy(getHasName(ModBlocks.PEARLSTONE_BRICKS), has(ModBlocks.PEARLSTONE_BRICKS))
+                        .group("pearlstone")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PEARLSTONE_BRICK_SLAB, ModBlocks.PEARLSTONE_BRICKS);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PEARLSTONE_BRICK_WALL, ModBlocks.PEARLSTONE_BRICKS);
+
+
+
+
 
 
 

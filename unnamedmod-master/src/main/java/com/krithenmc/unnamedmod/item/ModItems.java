@@ -323,7 +323,7 @@ public class ModItems extends Item.Properties {
     public static final Item SHADOW_SABATONS = registerItem("shadow_sabatons", properties ->
             new TerrariaArmorItems(properties.humanoidArmor(ModArmorMaterials.DEMONITE_ARMOR_MATERIAL, ArmorType.BOOTS)));
     public static final Item DEMON_BOW = registerItem("demon_bow", properties ->
-            new TerrariaBowItem(properties.durability(5000)));
+            new AerialBaneItem(properties.durability(1000), 10, 10, 60000, 6.0f));
     public static final Item ADAMANTITE_SWORD = registerItem("adamantite_sword", properties ->
             new ShortSwordItem(properties.sword(ModToolMaterials.ADAMANTITE, 60, -1.4f)));
     public static final Item DEATHWEED_SEEDS = registerItem("deathweed_seeds", properties ->
@@ -482,6 +482,30 @@ public class ModItems extends Item.Properties {
             new ShortSwordItem(properties.pickaxe(ModToolMaterials.ORICHALCUM, 16, -2)));
     public static final Item PALLADIUM_PICKAXE = registerItem("palladium_pickaxe", properties ->
             new ShortSwordItem(properties.pickaxe(ModToolMaterials.PALLADIUM, 11, -2)));
+    public static final Item PURPLE_EYE_SPAWN_EGG = registerItem("purple_eye_spawn_egg", properties ->
+            new SpawnEggItem(properties.spawnEgg(ModEntities.PURPLE_EYE)));
+    public static final Item GELATIN_CRYSTAL = registerItem("gelatin_crystal", GelatinCrystal::new);
+    public static final Item GREEN_MUSHROOM = registerItem("green_mushroom", Item::new);
+    public static final Item HALLOWED_CRATE = registerItem("hallowed_crate", HallowedCrateItem::new);
+    public static final Item FRUIT_SALAD = registerItem("fruit_salad", properties ->
+            new Item(properties.food(ModFoods.FRUIT_SALAD, ModConsumables.FRUIT_SALAD)));
+    public static final Item GOLDEN_DELIGHT = registerItem("golden_delight", properties ->
+            new Item(properties.food(ModFoods.GOLDEN_DELIGHT, ModConsumables.GOLDEN_DELIGHT)));
+    public static final Item GRAPE_JUICE = registerItem("grape_juice", properties ->
+            new Item(properties.food(ModFoods.GRAPE_JUICE, ModConsumables.GRAPE_JUICE)));
+    public static final Item GRAPES = registerItem("grapes", properties ->
+            new Item(properties.food(ModFoods.GRAPES, ModConsumables.GRAPES)));
+    public static final Item HOT_DOG = registerItem("hot_dog", properties ->
+            new Item(properties.food(ModFoods.HOT_DOG, ModConsumables.HOT_DOG)));
+    public static final Item AERIAL_BANE = registerItem("aerial_bane", properties ->
+            new AerialBaneItem(properties.durability(10000).rarity(Rarity.EPIC), 20, 5, 30000, 4.0f) {
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder.accept(Component.translatable("tooltip.unnamedmod.aerial_bane"));
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
+    public static final Item FLAMING_ARROW = registerItem("flaming_arrow", FlamingArrowItem::new);
 
 
 

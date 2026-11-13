@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "unnamedmod:pearlwood_planks"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "unnamedmod:pearlwood_pressure_plate"
+  }
+}

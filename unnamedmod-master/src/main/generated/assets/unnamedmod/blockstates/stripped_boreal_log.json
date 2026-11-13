@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "unnamedmod:block/stripped_boreal_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "unnamedmod:block/stripped_boreal_log"
+    },
+    "axis=z": {
+      "model": "unnamedmod:block/stripped_boreal_log",
+      "x": 90
+    }
+  }
+}

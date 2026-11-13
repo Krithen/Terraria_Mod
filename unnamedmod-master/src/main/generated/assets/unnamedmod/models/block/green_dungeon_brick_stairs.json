@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "unnamedmod:block/green_dungeon_bricks",
+    "side": "unnamedmod:block/green_dungeon_bricks",
+    "top": "unnamedmod:block/green_dungeon_bricks"
+  }
+}

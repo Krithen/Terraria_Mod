@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "unnamedmod:block/pearlstone",
+    "side": "unnamedmod:block/pearlstone",
+    "top": "unnamedmod:block/pearlstone"
+  }
+}

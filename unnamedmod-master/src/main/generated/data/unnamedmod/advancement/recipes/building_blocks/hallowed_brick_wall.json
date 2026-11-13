@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hallowed_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "unnamedmod:hallowed_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "unnamedmod:hallowed_brick_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hallowed_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "unnamedmod:hallowed_brick_wall"
+    ]
+  }
+}

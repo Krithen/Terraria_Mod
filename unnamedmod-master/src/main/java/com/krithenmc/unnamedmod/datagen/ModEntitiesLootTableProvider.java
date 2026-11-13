@@ -45,11 +45,6 @@ public class ModEntitiesLootTableProvider extends FabricEntityLootSubProvider {
                         .add(LootItem.lootTableItem(ModItems.LENS)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2)))
                                 .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(1, 2)))
-                                .when(LootItemKilledByPlayerCondition.killedByPlayer()))
-                        .setRolls(ConstantValue.exactly(0.1f))
-                        .add(LootItem.lootTableItem(ModItems.BLACK_LENS)
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2)))
-                                .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(1, 2)))
                                 .when(LootItemKilledByPlayerCondition.killedByPlayer()))));
 
 
@@ -57,11 +52,6 @@ public class ModEntitiesLootTableProvider extends FabricEntityLootSubProvider {
                 LootTable.lootTable().withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(0.3f))
                         .add(LootItem.lootTableItem(ModItems.LENS)
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2)))
-                                .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(1, 2)))
-                                .when(LootItemKilledByPlayerCondition.killedByPlayer()))
-                        .setRolls(ConstantValue.exactly(0.1f))
-                        .add(LootItem.lootTableItem(ModItems.BLACK_LENS)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2)))
                                 .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(1, 2)))
                                 .when(LootItemKilledByPlayerCondition.killedByPlayer()))));

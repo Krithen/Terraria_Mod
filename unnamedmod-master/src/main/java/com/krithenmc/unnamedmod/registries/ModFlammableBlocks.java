@@ -11,6 +11,16 @@ public class ModFlammableBlocks {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_SHADEWOOD, 5, 5);
 
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SHADEWOOD_PLANK, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PEARLWOOD_PLANKS, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SHADEWOOD_LEAVES, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALMWOOD_LEAVES, 30, 60);
+
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.BOREAL_WOOD_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.BOREAL_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_BOREAL_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_BOREAL_LOG, 5, 5);
+
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PEARLWOOD_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PEARLWOOD, 5, 5);
     }
 }

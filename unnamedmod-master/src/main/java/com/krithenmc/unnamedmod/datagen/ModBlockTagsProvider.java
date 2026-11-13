@@ -147,6 +147,16 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.DEEPCRIMSTONE_WALL))
                 .add(ModBlocks.getRK(ModBlocks.DEEPCRIMSTONE_STAIRS))
                 .add(ModBlocks.getRK(ModBlocks.EBONSANDSTONE))
+                .add(ModBlocks.getRK(ModBlocks.PEARLSTONE))
+                .add(ModBlocks.getRK(ModBlocks.PEARLSTONE_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.PEARLSTONE_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.PEARLSTONE_WALL))
+                .add(ModBlocks.getRK(ModBlocks.CRIMSTONE_BRICK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.CRIMSTONE_BRICK_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.CRIMSTONE_BRICK_WALL))
+                .add(ModBlocks.getRK(ModBlocks.CRIMTANE_BRICK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.CRIMTANE_BRICK_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.CRIMSTONE_BRICK_STAIRS))
 
         ;
 
@@ -174,6 +184,21 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.RICH_MAHOGANY_SLAB))
                 .add(ModBlocks.getRK(ModBlocks.EBONWOOD_SLAB))
                 .add(ModBlocks.getRK(ModBlocks.ASH_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.PEARLWOOD_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.PEARLSTONE_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.CRIMSTONE_BRICK_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.DEMONITE_BRICK_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.EBONSTONE_BRICK_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.HALLOWED_BRICK_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.ICE_BRICK_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.METEORITE_BRICK_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.MUDSTONE_BRICK_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.IRIDESCENT_BRICK_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.MYTHRIL_BRICK_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.OBSIDIAN_BRICK_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.CRIMTANE_BRICK_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.LIZAHARD_BRICK_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.PEARLSTONE_BRICK_SLAB))
         ;
 
         tag(BlockTags.STAIRS)
@@ -188,8 +213,23 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_BRICK_STAIRS))
                 .add(ModBlocks.getRK(ModBlocks.COBALT_BRICK_STAIRS))
                 .add(ModBlocks.getRK(ModBlocks.RICH_MAHOGANY_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.MUDSTONE_BRICK_STAIRS))
                 .add(ModBlocks.getRK(ModBlocks.ASH_STAIRS))
-                .add(ModBlocks.getRK(ModBlocks.EBONWOOD_STAIRS));
+                .add(ModBlocks.getRK(ModBlocks.EBONWOOD_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.PEARLWOOD_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.CRIMSTONE_BRICK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.CRIMTANE_BRICK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.PEARLSTONE_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.IRIDESCENT_BRICK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.EBONSTONE_BRICK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.ICE_BRICK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.HALLOWED_BRICK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.METEORITE_BRICK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.MYTHRIL_BRICK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.OBSIDIAN_BRICK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.LIZAHARD_BRICK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.PEARLSTONE_BRICK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.DEMONITE_BRICK_STAIRS));
 
         tag(BlockTags.WOODEN_BUTTONS)
                 .add(ModBlocks.getRK(ModBlocks.SHADEWOOD_BUTTON))
@@ -197,7 +237,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.PALMWOOD_BUTTON))
                 .add(ModBlocks.getRK(ModBlocks.RICH_MAHOGANY_BUTTON))
                 .add(ModBlocks.getRK(ModBlocks.ASH_BUTTON))
-                .add(ModBlocks.getRK(ModBlocks.EBONWOOD_BUTTON));
+                .add(ModBlocks.getRK(ModBlocks.EBONWOOD_BUTTON))
+                .add(ModBlocks.getRK(ModBlocks.PEARLWOOD_BUTTON));
 
         tag(BlockTags.WOODEN_PRESSURE_PLATES)
                 .add(ModBlocks.getRK(ModBlocks.SHADEWOOD_PRESSURE_PLATE))
@@ -205,7 +246,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.PALMWOOD_PRESSURE_PLATE))
                 .add(ModBlocks.getRK(ModBlocks.RICH_MAHOGANY_BUTTON))
                 .add(ModBlocks.getRK(ModBlocks.ASH_BUTTON))
-                .add(ModBlocks.getRK(ModBlocks.EBONWOOD_PRESSURE_PLATE));
+                .add(ModBlocks.getRK(ModBlocks.EBONWOOD_PRESSURE_PLATE))
+                .add(ModBlocks.getRK(ModBlocks.PEARLWOOD_PRESSURE_PLATE));
 
         tag(BlockTags.FENCES)
                 .add(ModBlocks.getRK(ModBlocks.SHADEWOOD_FENCE))
@@ -213,7 +255,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.BOREAL_FENCE))
                 .add(ModBlocks.getRK(ModBlocks.RICH_MAHOGANY_FENCE))
                 .add(ModBlocks.getRK(ModBlocks.ASH_FENCE))
-                .add(ModBlocks.getRK(ModBlocks.EBONWOOD_FENCE));
+                .add(ModBlocks.getRK(ModBlocks.EBONWOOD_FENCE))
+                .add(ModBlocks.getRK(ModBlocks.PEARLWOOD_FENCE));
 
         tag(BlockTags.FENCE_GATES)
                 .add(ModBlocks.getRK(ModBlocks.SHADEWOOD_FENCE_GATE))
@@ -221,7 +264,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.BOREAL_FENCE_GATE))
                 .add(ModBlocks.getRK(ModBlocks.RICH_MAHOGANY_FENCE_GATE))
                 .add(ModBlocks.getRK(ModBlocks.ASH_FENCE_GATE))
-                .add(ModBlocks.getRK(ModBlocks.EBONWOOD_FENCE_GATE));
+                .add(ModBlocks.getRK(ModBlocks.EBONWOOD_FENCE_GATE))
+                .add(ModBlocks.getRK(ModBlocks.PEARLWOOD_FENCE_GATE));
 
 
         tag(BlockTags.WALLS)
@@ -231,7 +275,21 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.BLUE_GRANITE_WALL))
                 .add(ModBlocks.getRK(ModBlocks.MARBLE_WALL))
                 .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_BRICK_WALL))
-                .add(ModBlocks.getRK(ModBlocks.COBALT_BRICK_WALL));
+                .add(ModBlocks.getRK(ModBlocks.COBALT_BRICK_WALL))
+                .add(ModBlocks.getRK(ModBlocks.CRIMSTONE_BRICK_WALL))
+                .add(ModBlocks.getRK(ModBlocks.CRIMTANE_BRICK_WALL))
+                .add(ModBlocks.getRK(ModBlocks.PEARLSTONE_WALL))
+                .add(ModBlocks.getRK(ModBlocks.EBONSTONE_BRICK_WALL))
+                .add(ModBlocks.getRK(ModBlocks.ICE_BRICK_WALL))
+                .add(ModBlocks.getRK(ModBlocks.IRIDESCENT_BRICK_WALL))
+                .add(ModBlocks.getRK(ModBlocks.METEORITE_BRICK_WALL))
+                .add(ModBlocks.getRK(ModBlocks.HALLOWED_BRICK_WALL))
+                .add(ModBlocks.getRK(ModBlocks.MUDSTONE_BRICK_WALL))
+                .add(ModBlocks.getRK(ModBlocks.MYTHRIL_BRICK_WALL))
+                .add(ModBlocks.getRK(ModBlocks.OBSIDIAN_BRICK_WALL))
+                .add(ModBlocks.getRK(ModBlocks.LIZAHARD_BRICK_WALL))
+                .add(ModBlocks.getRK(ModBlocks.PEARLSTONE_BRICK_WALL))
+                .add(ModBlocks.getRK(ModBlocks.DEMONITE_BRICK_WALL));
 
         tag(BlockTags.DOORS)
                 .add(ModBlocks.getRK(ModBlocks.SHADEWOOD_DOOR))
@@ -267,11 +325,12 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.LAVA_MOSS));
 
         tag(BlockTags.ICE)
-                .add(ModBlocks.getRK(ModBlocks.RED_ICE));
+                .add(ModBlocks.getRK(ModBlocks.RED_ICE))
+                .add(ModBlocks.getRK(ModBlocks.PINK_ICE));
 
 
         tag(BlockTags.LEAVES)
-                .add(ModBlocks.getRK(ModBlocks.PALM_LEAVES))
+                .add(ModBlocks.getRK(ModBlocks.PALMWOOD_LEAVES))
                 .add(ModBlocks.getRK(ModBlocks.SHADEWOOD_LEAVES));
 
         tag(BlockTags.GRASS_BLOCKS)
@@ -303,7 +362,7 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.LIVING_LEAF_BLOCK))
                 .add(ModBlocks.getRK(ModBlocks.LIVING_MAHOGANY_LEAVES))
                 .add(ModBlocks.getRK(ModBlocks.CRACKED_BLUE_DUNGEON_BRICKS))
-                .add(ModBlocks.getRK(ModBlocks.PALM_LEAVES));
+                .add(ModBlocks.getRK(ModBlocks.PALMWOOD_LEAVES));
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(ModBlocks.getRK(ModBlocks.CHLOROPHYTE_ORE))
@@ -317,7 +376,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.CRACKED_BLUE_DUNGEON_BRICKS))
                 .add(ModBlocks.getRK(ModBlocks.CRIMSANDSTONE))
                 .add(ModBlocks.getRK(ModBlocks.CRIMSON_GRASS))
-                .add(ModBlocks.getRK(ModBlocks.CRIMSON_DIRT));
+                .add(ModBlocks.getRK(ModBlocks.CRIMSON_DIRT))
+                .add(ModBlocks.getRK(ModBlocks.PEARLSANDSTONE));
 
         tag(BlockTags.SHEARS_EXTREME_BREAKING_SPEED)
                 .add(ModBlocks.getRK(ModBlocks.SHADEWOOD_LEAVES));
@@ -832,11 +892,13 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.Boreal_Planks))
                 .add(ModBlocks.getRK(ModBlocks.ASH_WOOD_PLANKS))
                 .add(ModBlocks.getRK(ModBlocks.EBONWOOD_PLANKS))
-                .add(ModBlocks.getRK(ModBlocks.RICH_MAHOGANY_PLANKS));
+                .add(ModBlocks.getRK(ModBlocks.RICH_MAHOGANY_PLANKS))
+                .add(ModBlocks.getRK(ModBlocks.PEARLWOOD_PLANKS));
 
         tag(BlockTags.LOGS)
                 .addTag(ModTags.Blocks.SHADEWOOD_LOGS)
-                .add(ModBlocks.getRK(ModBlocks.BOREAL_WOOD_LOG));
+                .addTag(ModTags.Blocks.BOREAL_LOGS)
+                .addTag(ModTags.Blocks.PEARLWOOD_LOGS);
 
         tag(BlockTags.CROPS)
                 .add(ModBlocks.getRK(ModBlocks.DEATHWEED_CROP))
@@ -864,6 +926,19 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(ModTags.Blocks.UNDERWORLD_ORE_REPLACEABLES)
                 .add(ModBlocks.getRK(ModBlocks.ASH));
+
+        tag(ModTags.Blocks.BOREAL_LOGS)
+                .add(ModBlocks.getRK(ModBlocks.BOREAL_WOOD))
+                .add(ModBlocks.getRK(ModBlocks.STRIPPED_BOREAL_LOG))
+                .add(ModBlocks.getRK(ModBlocks.STRIPPED_BOREAL_WOOD))
+                .add(ModBlocks.getRK(ModBlocks.BOREAL_WOOD_LOG));
+
+        tag(ModTags.Blocks.PEARLWOOD_LOGS)
+                .add(ModBlocks.getRK(ModBlocks.PEARLWOOD))
+                .add(ModBlocks.getRK(ModBlocks.PEARLWOOD_LOG));
+
+        tag(BlockTags.BEDS)
+                .add(ModBlocks.getRK(ModBlocks.OBSIDIAN_BED));
 
 
 

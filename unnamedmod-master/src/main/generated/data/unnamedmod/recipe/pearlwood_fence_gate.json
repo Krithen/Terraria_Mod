@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "pearlwood",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "unnamedmod:pearlwood_planks"
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "id": "unnamedmod:pearlwood_fence_gate"
+  }
+}

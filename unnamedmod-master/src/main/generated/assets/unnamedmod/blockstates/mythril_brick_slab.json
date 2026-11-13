@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "unnamedmod:block/mythril_brick_slab"
+    },
+    "type=double": {
+      "model": "unnamedmod:block/mythril_bricks"
+    },
+    "type=top": {
+      "model": "unnamedmod:block/mythril_brick_slab_top"
+    }
+  }
+}

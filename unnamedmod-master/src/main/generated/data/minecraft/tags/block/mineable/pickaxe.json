@@ -124,6 +124,16 @@
     "unnamedmod:deepcrimstone_slab",
     "unnamedmod:deepcrimstone_wall",
     "unnamedmod:deepcrimstone_stairs",
-    "unnamedmod:ebonsandstone"
+    "unnamedmod:ebonsandstone",
+    "unnamedmod:pearlstone",
+    "unnamedmod:pearlstone_stairs",
+    "unnamedmod:pearlstone_slab",
+    "unnamedmod:pearlstone_wall",
+    "unnamedmod:crimstone_brick_stairs",
+    "unnamedmod:crimstone_brick_slab",
+    "unnamedmod:crimstone_brick_wall",
+    "unnamedmod:crimtane_brick_stairs",
+    "unnamedmod:crimtane_brick_slab",
+    "unnamedmod:crimstone_brick_stairs"
   ]
 }

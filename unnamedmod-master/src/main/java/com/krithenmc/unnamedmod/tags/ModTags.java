@@ -7,6 +7,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
+import javax.swing.text.html.HTML;
 
 
 public class ModTags {
@@ -128,6 +129,8 @@ public class ModTags {
 
         public static final TagKey<Block> SHADEWOOD_LOGS = createTag("shadewood_log");
         public static final TagKey<Block> ASH_WOOD_LOGS = createTag("ash_wood_log");
+        public static final TagKey<Block> BOREAL_LOGS = createTag("boreal_logs");
+        public static final TagKey<Block> PEARLWOOD_LOGS = createTag("pearlwood_logs");
 
         public static final TagKey<Block> UNDERWORLD_ORE_REPLACEABLES = createTag("underworld_ore_replaceables");
         public static final TagKey<Block> JUNGLE_ORE_REPLACEABLES = createTag("jungle_ore_replaceables");
@@ -178,6 +181,10 @@ public class ModTags {
 
         public static final TagKey<Item> SHADEWOOD_LOGS = createTag("shadewood_logs");
         public static final TagKey<Item> ASH_WOOD_LOGS = createTag("ash_wood_logs");
+        public static final TagKey<Item> BOREAL_LOGS = createTag("boreal_logs");
+        public static final TagKey<Item> PEARLWOOD_LOGS = createTag("pearlwood_logs");
+
+        public static final TagKey<Item> ARROWS = createTag("arrows");
 
 
 

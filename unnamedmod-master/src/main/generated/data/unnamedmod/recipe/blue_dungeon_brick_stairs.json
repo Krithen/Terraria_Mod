@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "blue_dungeon_bricks",
+  "key": {
+    "#": "unnamedmod:blue_dungeon_bricks"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "unnamedmod:blue_dungeon_brick_stairs"
+  }
+}

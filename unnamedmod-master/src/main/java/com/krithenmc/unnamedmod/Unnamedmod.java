@@ -61,6 +61,8 @@ public class Unnamedmod implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(ModEntities.DEMON_EYE, DemonEyeEntity.createAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.GREEN_EYE, GreenEyeEntity.createAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.LARGE_DEMON_EYE, LargeDemonEyeEntity.createAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.PURPLE_EYE, PurpleEyeEntity.createAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.CRIMERA, CrimeraEntity.createAttributes());
 
 		LootTableEvents.MODIFY.register(ModLootTablesModifier::modifyLootTables);
 
@@ -72,6 +74,8 @@ public class Unnamedmod implements ModInitializer {
 		SpawnPlacements.register(ModEntities.GREEN_EYE, SpawnPlacementTypes.NO_RESTRICTIONS,
 				Heightmap.Types.MOTION_BLOCKING, Monster::checkSurfaceMonstersSpawnRules);
 		SpawnPlacements.register(ModEntities.LARGE_DEMON_EYE, SpawnPlacementTypes.NO_RESTRICTIONS,
+				Heightmap.Types.MOTION_BLOCKING, Monster::checkSurfaceMonstersSpawnRules);
+		SpawnPlacements.register(ModEntities.PURPLE_EYE, SpawnPlacementTypes.NO_RESTRICTIONS,
 				Heightmap.Types.MOTION_BLOCKING, Monster::checkSurfaceMonstersSpawnRules);
 	}
 }

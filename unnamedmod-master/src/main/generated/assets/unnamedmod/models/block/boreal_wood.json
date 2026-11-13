@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "all": "unnamedmod:block/boreal_wood_log"
+    "end": "unnamedmod:block/boreal_wood_log",
+    "side": "unnamedmod:block/boreal_wood_log"
   }
 }

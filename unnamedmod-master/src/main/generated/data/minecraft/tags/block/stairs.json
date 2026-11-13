@@ -11,7 +11,22 @@
     "unnamedmod:chlorophyte_brick_stairs",
     "unnamedmod:cobalt_brick_stairs",
     "unnamedmod:rich_mahogany_stairs",
+    "unnamedmod:mudstone_brick_stairs",
     "unnamedmod:ash_stairs",
-    "unnamedmod:ebonwood_stairs"
+    "unnamedmod:ebonwood_stairs",
+    "unnamedmod:pearlwood_stairs",
+    "unnamedmod:crimstone_brick_stairs",
+    "unnamedmod:crimtane_brick_stairs",
+    "unnamedmod:pearlstone_stairs",
+    "unnamedmod:iridescent_brick_stairs",
+    "unnamedmod:ebonstone_brick_stairs",
+    "unnamedmod:ice_brick_stairs",
+    "unnamedmod:hallowed_brick_stairs",
+    "unnamedmod:meteorite_brick_stairs",
+    "unnamedmod:mythril_brick_stairs",
+    "unnamedmod:obsidian_brick_stairs",
+    "unnamedmod:lizahard_brick_stairs",
+    "unnamedmod:pearlstone_brick_stairs",
+    "unnamedmod:demonite_brick_stairs"
   ]
 }

@@ -53,5 +53,14 @@ public class ModConsumables {
     public static final Consumable BARBEQUE_RIBS = Consumables.defaultFood().build();
     public static final Consumable BUCKET_OF_MILKSHAKE = Consumables.defaultDrink().build();
     public static final Consumable CREAM_SODA = Consumables.defaultDrink().build();
+    public static final Consumable GRAPE_JUICE = Consumables.defaultDrink().build();
+    public static final Consumable FRUIT_SALAD = Consumables.defaultFood().build();
+    public static final Consumable GOLDEN_DELIGHT = Consumables.defaultFood().build();
+    public static final Consumable GRAPES = Consumables.defaultFood().build();
+    public static final Consumable HOT_DOG = Consumables.defaultFood().build();
+    public static final Consumable ICE_CREAM = Consumables.defaultFood().build();
+    public static final Consumable NACHOS = Consumables.defaultFood().build();
+    public static final Consumable PIXIEFISH = Consumables.defaultFood().build();
+
 
 }

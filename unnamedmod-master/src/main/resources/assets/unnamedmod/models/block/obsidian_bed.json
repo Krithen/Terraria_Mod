@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:special",
+  "textures": {
+"pattern": "unnamedmod:block/obsidian_bed"
+  }
+}

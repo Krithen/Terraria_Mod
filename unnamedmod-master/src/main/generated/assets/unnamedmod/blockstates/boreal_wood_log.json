@@ -1,7 +1,7 @@
 {
   "variants": {
     "axis=x": {
-      "model": "unnamedmod:block/boreal_wood_log_horizontal",
+      "model": "unnamedmod:block/boreal_wood_log",
       "x": 90,
       "y": 90
     },
@@ -9,7 +9,7 @@
       "model": "unnamedmod:block/boreal_wood_log"
     },
     "axis=z": {
-      "model": "unnamedmod:block/boreal_wood_log_horizontal",
+      "model": "unnamedmod:block/boreal_wood_log",
       "x": 90
     }
   }

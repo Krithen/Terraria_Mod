@@ -239,10 +239,13 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.getRK(ModItems.SHADOW_SABATONS));
 
         tag(ItemTags.BOW_ENCHANTABLE)
-                .add(ModItems.getRK(ModItems.DEMON_BOW));
+                .add(ModItems.getRK(ModItems.DEMON_BOW))
+                .add(ModItems.getRK(ModItems.AERIAL_BANE));
 
         tag(ItemTags.LOGS_THAT_BURN)
-                .addTag(ModTags.Items.SHADEWOOD_LOGS);
+                .addTag(ModTags.Items.SHADEWOOD_LOGS)
+                .addTag(ModTags.Items.BOREAL_LOGS)
+                .addTag(ModTags.Items.PEARLWOOD_LOGS);
 
         tag(ModTags.Items.SHADEWOOD_LOGS)
                 .add(ModItems.getRK(ModBlocks.SHADEWOOD_LOG.asItem()))
@@ -250,17 +253,33 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.getRK(ModBlocks.STRIPPED_SHADEWOOD.asItem()))
                 .add(ModItems.getRK(ModBlocks.STRIPPED_SHADEWOOD_LOG.asItem()));
 
+        tag(ModTags.Items.BOREAL_LOGS)
+                .add(ModItems.getRK(ModBlocks.BOREAL_WOOD_LOG.asItem()))
+                .add(ModItems.getRK(ModBlocks.STRIPPED_BOREAL_LOG.asItem()))
+                .add(ModItems.getRK(ModBlocks.STRIPPED_BOREAL_WOOD.asItem()))
+                .add(ModItems.getRK(ModBlocks.BOREAL_WOOD.asItem()));
+
+        tag(ModTags.Items.PEARLWOOD_LOGS)
+                .add(ModItems.getRK(ModBlocks.PEARLWOOD_LOG.asItem()))
+                .add(ModItems.getRK(ModBlocks.PEARLWOOD.asItem()));
+
         tag(ItemTags.PLANKS)
                 .add(ModItems.getRK(ModBlocks.SHADEWOOD_PLANK.asItem()))
                 .add(ModItems.getRK(ModBlocks.Boreal_Planks.asItem()))
-                .add(ModItems.getRK(ModBlocks.ASH_WOOD_PLANKS.asItem()));
+                .add(ModItems.getRK(ModBlocks.ASH_WOOD_PLANKS.asItem()))
+                .add(ModItems.getRK(ModBlocks.PEARLWOOD_PLANKS.asItem()));
 
         tag(ItemTags.LEAVES)
-                .add(ModItems.getRK(ModBlocks.SHADEWOOD_LEAVES.asItem()));
+                .add(ModItems.getRK(ModBlocks.SHADEWOOD_LEAVES.asItem()))
+                .add(ModItems.getRK(ModBlocks.PALMWOOD_LEAVES.asItem()));
 
         tag(ItemTags.SAPLINGS)
                 .add(ModItems.getRK(ModBlocks.SHADEWOOD_SAPLING.asItem()))
                 .add(ModItems.getRK(ModBlocks.BOREAL_SAPLING.asItem()));
+
+        tag(ModTags.Items.ARROWS)
+                .add(ModItems.getRK(ModItems.FLAMING_ARROW))
+                .add(ItemIds.ARROW);
 
 
 

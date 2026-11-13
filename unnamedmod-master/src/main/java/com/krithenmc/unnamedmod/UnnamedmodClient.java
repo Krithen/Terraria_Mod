@@ -18,8 +18,10 @@ import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
+import net.minecraft.world.entity.projectile.arrow.AbstractArrow;
 import net.rpg_foundation.armor_api.client.ArmorRenderers;
 import net.rpg_foundation.armor_api.client.GeoArmorRenderer;
 
@@ -49,6 +51,10 @@ public class UnnamedmodClient implements ClientModInitializer {
         EntityRenderers.register(ModEntities.DEMON_EYE, DemonEyeRenderer::new);
         EntityRenderers.register(ModEntities.GREEN_EYE, GreenEyeRenderer::new);
         EntityRenderers.register(ModEntities.LARGE_DEMON_EYE, LargeDemonEyeRenderer::new);
+        EntityRenderers.register(ModEntities.PURPLE_EYE, PurpleEyeRenderer::new);
+        EntityRenderers.register(ModEntities.CRIMERA, CrimeraRenderer::new);
+        ModelLayerRegistry.registerModelLayer(ModModelLayerLocations.FLAMING_ARROW, FlamingArrowEntityModel::createBodyLayer);
+        EntityRenderers.register(ModEntities.FLAMING_ARROW, FlamingArrowEntityRenderer::new);
 
 
 

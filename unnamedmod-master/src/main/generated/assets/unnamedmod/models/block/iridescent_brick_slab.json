@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "unnamedmod:block/iridescent_bricks",
+    "side": "unnamedmod:block/iridescent_bricks",
+    "top": "unnamedmod:block/iridescent_bricks"
+  }
+}

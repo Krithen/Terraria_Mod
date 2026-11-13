@@ -68,6 +68,8 @@ public class ModWorldGeneration {
                 ModEntities.GREEN_EYE, 5, 1, 2);
         BiomeModifications.addSpawn(BiomeSelectors.foundInOverworld(), MobCategory.MONSTER,
                 ModEntities.LARGE_DEMON_EYE, 5, 1, 1);
+        BiomeModifications.addSpawn(BiomeSelectors.foundInOverworld(), MobCategory.MONSTER,
+                ModEntities.PURPLE_EYE, 5, 1, 2);
 
 
     }

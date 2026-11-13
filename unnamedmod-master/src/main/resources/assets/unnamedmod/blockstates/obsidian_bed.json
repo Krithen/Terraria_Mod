@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,part=foot": {
+      "model": "unnamedmod:geckolib/block/obsidian_bed.geo",
+      "y": 90
+    },
+    "facing=east,part=head": {
+      "model": "unnamedmod:geckolib/block/obsidian_bed.geo",
+      "y": 90
+    },
+    "facing=north,part=foot": {
+      "model": "unnamedmod:geckolib/block/obsidian_bed.geo"
+    },
+    "facing=north,part=head": {
+      "model": "unnamedmod:geckolib/block/obsidian_bed.geo"
+    },
+    "facing=south,part=foot": {
+      "model": "unnamedmod:geckolib/block/obsidian_bed.geo",
+      "y": 180
+    },
+    "facing=south,part=head": {
+      "model": "unnamedmod:geckolib/block/obsidian_bed.geo",
+      "y": 180
+    },
+    "facing=west,part=foot": {
+      "model": "unnamedmod:geckolib/block/obsidian_bed.geo",
+      "y": 270
+    },
+    "facing=west,part=head": {
+      "model": "unnamedmod:geckolib/block/obsidian_bed.geo",
+      "y": 270
+    }
+  }
+}

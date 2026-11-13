@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "unnamedmod:block/crimstone_brick_slab"
+    },
+    "type=double": {
+      "model": "unnamedmod:block/crimstone_bricks"
+    },
+    "type=top": {
+      "model": "unnamedmod:block/crimstone_brick_slab_top"
+    }
+  }
+}

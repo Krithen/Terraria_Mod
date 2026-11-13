@@ -87,6 +87,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CURSED_FLAMES);
                         output.accept(ModItems.DIVINE_CRATE);
                         output.accept(ModItems.ANTLION_MANDIBLE);
+                        output.accept(ModItems.GELATIN_CRYSTAL);
+                        output.accept(ModItems.GREEN_MUSHROOM);
+                        output.accept(ModItems.HALLOWED_CRATE);
+                        output.accept(ModItems.FLAMING_ARROW);
 
 
 
@@ -157,6 +161,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SHADEWOOD_DOOR);
                         output.accept(ModBlocks.SHADEWOOD_TRAPDOOR);
                         output.accept(ModBlocks.BOREAL_WOOD_LOG);
+                        output.accept(ModBlocks.STRIPPED_BOREAL_LOG);
+                        output.accept(ModBlocks.STRIPPED_BOREAL_WOOD);
                         output.accept(ModBlocks.Boreal_Planks);
                         output.accept(ModBlocks.BOREAL_STAIRS);
                         output.accept(ModBlocks.BOREAL_SLAB);
@@ -206,6 +212,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.EBONWOOD_FENCE_GATE);
                         output.accept(ModBlocks.EBONWOOD_DOOR);
                         output.accept(ModBlocks.EBONWOOD_TRAPDOOR);
+                        output.accept(ModBlocks.PEARLWOOD_LOG);
+                        output.accept(ModBlocks.PEARLWOOD);
+                        output.accept(ModBlocks.PEARLWOOD_PLANKS);
+                        output.accept(ModBlocks.PEARLWOOD_STAIRS);
+                        output.accept(ModBlocks.PEARLWOOD_SLAB);
+                        output.accept(ModBlocks.PEARLWOOD_BUTTON);
+                        output.accept(ModBlocks.PEARLWOOD_PRESSURE_PLATE);
+                        output.accept(ModBlocks.PEARLWOOD_FENCE);
+                        output.accept(ModBlocks.PEARLWOOD_FENCE_GATE);
 
                         //bricks
                         output.accept(ModBlocks.ASTRA_BRICKS);
@@ -219,28 +234,80 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.COBALT_BRICK_WALL);
                         output.accept(ModBlocks.COSMIC_EMBER_BRICKS);
                         output.accept(ModBlocks.CRIMSTONE_BRICKS);
+                        output.accept(ModBlocks.CRIMSTONE_BRICK_STAIRS);
+                        output.accept(ModBlocks.CRIMSTONE_BRICK_SLAB);
+                        output.accept(ModBlocks.CRIMSTONE_BRICK_WALL);
                         output.accept(ModBlocks.CRIMTANE_BRICKS);
+                        output.accept(ModBlocks.CRIMTANE_BRICK_STAIRS);
+                        output.accept(ModBlocks.CRIMTANE_BRICK_SLAB);
+                        output.accept(ModBlocks.CRIMTANE_BRICK_WALL);
                         output.accept(ModBlocks.CRYOCORE_BRICKS);
                         output.accept(ModBlocks.DARK_CELESTIAL_BRICKS);
+                        output.accept(ModBlocks.HEAVENFORGED_BRICKS);
+                        output.accept(ModBlocks.LUNAR_RUST_BRICKS);
+                        output.accept(ModBlocks.MERCURY_BRICKS);
+                        output.accept(ModBlocks.LUMINITE_BRICKS);
                         output.accept(ModBlocks.DEMONITE_BRICKS);
+                        output.accept(ModBlocks.DEMONITE_BRICK_STAIRS);
+                        output.accept(ModBlocks.DEMONITE_BRICK_SLAB);
+                        output.accept(ModBlocks.DEMONITE_BRICK_WALL);
                         output.accept(ModBlocks.EBONSTONE_BRICKS);
+                        output.accept(ModBlocks.EBONSTONE_BRICK_STAIRS);
+                        output.accept(ModBlocks.EBONSTONE_BRICK_SLAB);
+                        output.accept(ModBlocks.EBONSTONE_BRICK_WALL);
                         output.accept(ModBlocks.HALLOWED_BRICKS);
+                        output.accept(ModBlocks.HALLOWED_BRICK_STAIRS);
+                        output.accept(ModBlocks.HALLOWED_BRICK_SLAB);
+                        output.accept(ModBlocks.HALLOWED_BRICK_WALL);
                         output.accept(ModBlocks.RAINBOW_BRICKS);
                         output.accept(ModBlocks.RAINBOW_BRICK_SLABS);
                         output.accept(ModBlocks.RAINBOW_BRICK_STAIRS);
                         output.accept(ModBlocks.RAINBOW_BRICK_WALLS);
                         output.accept(ModBlocks.RAINBOW_BRICK_BUTTON);
                         output.accept(ModBlocks.ICE_BRICKS);
+                        output.accept(ModBlocks.ICE_BRICK_STAIRS);
+                        output.accept(ModBlocks.ICE_BRICK_SLAB);
+                        output.accept(ModBlocks.ICE_BRICK_WALL);
                         output.accept(ModBlocks.IRIDESCENT_BRICKS);
+                        output.accept(ModBlocks.IRIDESCENT_BRICK_STAIRS);
+                        output.accept(ModBlocks.IRIDESCENT_BRICK_SLAB);
+                        output.accept(ModBlocks.IRIDESCENT_BRICK_WALL);
                         output.accept(ModBlocks.METEORITE_BRICKS);
+                        output.accept(ModBlocks.METEORITE_BRICK_STAIRS);
+                        output.accept(ModBlocks.METEORITE_BRICK_SLAB);
+                        output.accept(ModBlocks.METEORITE_BRICK_WALL);
                         output.accept(ModBlocks.MUDSTONE_BRICKS);
+                        output.accept(ModBlocks.MUDSTONE_BRICK_STAIRS);
+                        output.accept(ModBlocks.MUDSTONE_BRICK_SLAB);
+                        output.accept(ModBlocks.MUDSTONE_BRICK_WALL);
                         output.accept(ModBlocks.MYTHRIL_BRICKS);
+                        output.accept(ModBlocks.MYTHRIL_BRICK_STAIRS);
+                        output.accept(ModBlocks.MYTHRIL_BRICK_SLAB);
+                        output.accept(ModBlocks.MYTHRIL_BRICK_WALL);
                         output.accept(ModBlocks.OBSIDIAN_BRICKS);
+                        output.accept(ModBlocks.OBSIDIAN_BRICK_STAIRS);
+                        output.accept(ModBlocks.OBSIDIAN_BRICK_SLAB);
+                        output.accept(ModBlocks.OBSIDIAN_BRICK_WALL);
                         output.accept(ModBlocks.BLUE_DUNGEON_BRICKS);
+                        output.accept(ModBlocks.BLUE_DUNGEON_BRICK_STAIRS);
+                        output.accept(ModBlocks.BLUE_DUNGEON_BRICK_SLAB);
+                        output.accept(ModBlocks.BLUE_DUNGEON_BRICK_WALL);
                         output.accept(ModBlocks.GREEN_DUNGEON_BRICKS);
+                        output.accept(ModBlocks.GREEN_DUNGEON_BRICK_STAIRS);
+                        output.accept(ModBlocks.GREEN_DUNGEON_BRICK_SLAB);
+                        output.accept(ModBlocks.GREEN_DUNGEON_BRICK_WALL);
                         output.accept(ModBlocks.PINK_DUNGEON_BRICKS);
+                        output.accept(ModBlocks.PINK_DUNGEON_BRICK_STAIRS);
+                        output.accept(ModBlocks.PINK_DUNGEON_BRICK_SLAB);
+                        output.accept(ModBlocks.PINK_DUNGEON_BRICK_WALL);
                         output.accept(ModBlocks.LIZAHARD_BRICKS);
+                        output.accept(ModBlocks.LIZAHARD_BRICK_STAIRS);
+                        output.accept(ModBlocks.LIZAHARD_BRICK_SLAB);
+                        output.accept(ModBlocks.LIZAHARD_BRICK_WALL);
                         output.accept(ModBlocks.PEARLSTONE_BRICKS);
+                        output.accept(ModBlocks.PEARLSTONE_BRICK_STAIRS);
+                        output.accept(ModBlocks.PEARLSTONE_BRICK_SLAB);
+                        output.accept(ModBlocks.PEARLSTONE_BRICK_WALL);
                         output.accept(ModBlocks.RED_BRICK);
                         output.accept(ModBlocks.EMERALD_GEMSPARK_BLOCK);
                         output.accept(ModBlocks.SNOW_BRICKS);
@@ -286,6 +353,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.EBONSTONE_STAIRS);
                         output.accept(ModBlocks.EBONSTONE_SLAB);
                         output.accept(ModBlocks.EBONSTONE_WALL);
+                        output.accept(ModBlocks.PEARLSTONE);
+                        output.accept(ModBlocks.PEARLSTONE_STAIRS);
+                        output.accept(ModBlocks.PEARLSTONE_SLAB);
+                        output.accept(ModBlocks.PEARLSTONE_WALL);
                         output.accept(ModBlocks.BLUE_GRANITE);
                         output.accept(ModBlocks.BLUE_GRANITE_SLAB);
                         output.accept(ModBlocks.BLUE_GRANITE_WALL);
@@ -330,7 +401,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PEARLSAND);
                         output.accept(ModBlocks.RED_ICE);
                         output.accept(ModBlocks.RAINCLOUD);
-                        output.accept(ModBlocks.PALM_LEAVES);
+                        output.accept(ModBlocks.PALMWOOD_LEAVES);
                         output.accept(ModBlocks.BLINKROOT);
                         output.accept(ModBlocks.CRIMSON_CACTUS);
                         output.accept(ModBlocks.CRIMSANDSTONE);
@@ -341,11 +412,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.EYE_FLOWER);
                         output.accept(ModBlocks.SHADEWOOD_SAPLING);
                         output.accept(ModBlocks.BOREAL_SAPLING);
+                        output.accept(ModBlocks.PEARLSANDSTONE);
+                        output.accept(ModBlocks.PINK_ICE);
                         //functuinal
                         output.accept(ModBlocks.BOTTLE_TERRARIA);
                         output.accept(ModBlocks.LEAD_ANVIL);
                         output.accept(ModBlocks.HELLSTONE_FORGE);
                         output.accept(ModBlocks.XENON_MOSS_BRICKS);
+                        output.accept(ModBlocks.OBSIDIAN_BED);
                     }).build());
 
 
@@ -425,6 +499,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHLOROPHYTE_CLAYMORE);
                         //bows
                         output.accept(ModItems.DEMON_BOW);
+                        output.accept(ModItems.AERIAL_BANE);
                         //pickaxes
                         output.accept(ModItems.NIGHTMARE_PICKAXE);
                         output.accept(ModItems.BONE_PICKAXE);
@@ -500,6 +575,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BARBEQUE_RIBS);
                         output.accept(ModItems.BUCKET_OF_MILKSHAKE);
                         output.accept(ModItems.CREAM_SODA);
+                        output.accept(ModItems.FRUIT_SALAD);
+                        output.accept(ModItems.GOLDEN_DELIGHT);
+                        output.accept(ModItems.GRAPE_JUICE);
+                        output.accept(ModItems.GRAPES);
 
 
 
@@ -527,6 +606,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SWARMER_SPAWN_EGG);
                         output.accept(ModItems.DEMON_EYE_SPAWN_EGG);
                         output.accept(ModItems.GREEN_EYE_SPAWN_EGG);
+                        output.accept(ModItems.PURPLE_EYE_SPAWN_EGG);
 
                     }).build());
 
