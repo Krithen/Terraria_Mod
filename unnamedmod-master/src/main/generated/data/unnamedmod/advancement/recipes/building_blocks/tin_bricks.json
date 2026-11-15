@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:tin_bricks"
+        "recipes": "unnamedmod:tin_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

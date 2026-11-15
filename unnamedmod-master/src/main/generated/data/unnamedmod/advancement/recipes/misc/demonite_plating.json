@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:demonite_plating"
+        "recipes": "unnamedmod:demonite_plating"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

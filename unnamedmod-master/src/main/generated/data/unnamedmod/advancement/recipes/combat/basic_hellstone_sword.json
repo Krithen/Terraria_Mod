@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:basic_hellstone_sword"
+        "recipes": "unnamedmod:basic_hellstone_sword"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

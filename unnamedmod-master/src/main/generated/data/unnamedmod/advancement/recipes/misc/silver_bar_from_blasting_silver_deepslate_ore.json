@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:silver_bar_from_blasting_silver_deepslate_ore"
+        "recipes": "unnamedmod:silver_bar_from_blasting_silver_deepslate_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

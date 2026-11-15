@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:lead_hammer"
+        "recipes": "unnamedmod:lead_hammer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:the_volcano"
+        "recipes": "unnamedmod:the_volcano"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

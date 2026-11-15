@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:silver_shortsword"
+        "recipes": "unnamedmod:silver_shortsword"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

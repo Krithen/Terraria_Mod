@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:demonite_bar_from_blasting_demonite_deepslate_ore"
+        "recipes": "unnamedmod:demonite_bar_from_blasting_demonite_deepslate_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

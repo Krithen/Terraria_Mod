@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:tin_broadsword"
+        "recipes": "unnamedmod:tin_broadsword"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

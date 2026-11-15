@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:gold_ingot"
+        "recipes": "unnamedmod:gold_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -3,9 +3,7 @@ package com.krithenmc.unnamedmod.effect;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.phys.AABB;
 
 public class WellFedEffect extends MobEffect {
     public WellFedEffect(MobEffectCategory category, int color) {

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:rich_mahogany_trapdoor"
+        "recipes": "unnamedmod:rich_mahogany_trapdoor"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

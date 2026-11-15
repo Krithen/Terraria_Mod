@@ -5,34 +5,32 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "conditions": [
+          "condition": {
+            "type": "minecraft:killed_by_player"
+          },
+          "modifier": [
             {
-              "condition": "minecraft:killed_by_player"
-            }
-          ],
-          "functions": [
-            {
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "max": 2.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
+                "max": 2,
+                "min": 1
+              }
             },
             {
+              "type": "minecraft:enchanted_count_increase",
               "count": {
                 "type": "minecraft:uniform",
                 "max": 2.0,
                 "min": 1.0
               },
-              "enchantment": "minecraft:looting",
-              "function": "minecraft:enchanted_count_increase"
+              "enchantment": "minecraft:looting"
             }
           ],
           "name": "unnamedmod:lens"
         }
       ],
-      "rolls": 0.3
+      "rolls": 1
     }
   ]
 }

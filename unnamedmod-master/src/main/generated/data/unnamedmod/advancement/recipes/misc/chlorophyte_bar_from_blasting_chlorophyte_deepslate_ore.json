@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:chlorophyte_bar_from_blasting_chlorophyte_deepslate_ore"
+        "recipes": "unnamedmod:chlorophyte_bar_from_blasting_chlorophyte_deepslate_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

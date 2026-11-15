@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:tin_hammer"
+        "recipes": "unnamedmod:tin_hammer"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

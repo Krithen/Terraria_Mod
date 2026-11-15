@@ -24,6 +24,7 @@ import net.minecraft.world.item.component.TooltipDisplay;
 
 import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.level.levelgen.structure.templatesystem.loader.DirectoryTemplateSource;
+import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProviders;
 
 
 import java.util.function.Consumer;
@@ -106,14 +107,15 @@ public class ModItems extends Item.Properties {
     public static final Item APRICOT = registerItem("apricot", properties -> new
             Item(properties.food(ModFoods.APRICOT, ModConsumables.APRICOT_CONSUMABLE)));
     public static final Item BANANUH = registerItem("banana", properties -> new
-            Item(properties.food(ModFoods.BANANUH, ModConsumables.BANANUH_CONSUMABLE)) {
+            Item(properties.food(ModFoods.BANANUH, ModConsumables.BANANUH_CONSUMABLE).compostable(ContextIntProviders.COMPOSTABLE_MEDIUM)) {
                 @Override
                 public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
                     builder.accept(Component.translatable("tooltip.unnamedmod.bananuh"));
                     super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
                 }
             });
-    public static final Item GEL = registerItem("gel", Item::new);
+    public static final Item GEL = registerItem("gel", properties ->
+            new Item(properties.cookingFuel(ContextIntProviders.COOKING_TIME_BAMBOO)));
     public static final Item JOJA_COLA = registerItem("joja_cola", properties -> new
             Item(properties.food(ModFoods.JOJA_COLA, ModConsumables.JOJA_COLA_CONSUMABLE)) {
                 @Override
@@ -142,9 +144,9 @@ public class ModItems extends Item.Properties {
                 }
             });
     public static final Item NIGHTMARE_SHOVEL = registerItem("nightmare_shovel", properties -> new
-            ShovelItem(ModToolMaterials.DEMONITE, 1, -1.4f, properties));
+            Item(properties.shovel(ModToolMaterials.DEMONITE, 1, -1.4f)));
     public static final Item WAR_AXE_OF_THE_NIGHT = registerItem("war_axe_of_the_night", properties -> new
-            AxeItem(ModToolMaterials.DEMONITE, 16, -3.0f, properties));
+            Item(properties.axe(ModToolMaterials.DEMONITE, 16, -3.0f)));
     public static final Item GUNGNIR = registerItem("gungnir", properties -> new
             ShortSwordItem(properties.sword(ModToolMaterials.HALLOWED, 60, -1.4f)));
     public static final Item CORRUPTED_STICK = registerItem("corrupted_stick", Item::new);

@@ -259,6 +259,9 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.getRK(ModBlocks.STRIPPED_BOREAL_WOOD.asItem()))
                 .add(ModItems.getRK(ModBlocks.BOREAL_WOOD.asItem()));
 
+        tag(ModTags.Items.ASH_WOOD_LOGS)
+                .add(ModItems.getRK(ModBlocks.ASH_WOOD.asItem()));
+
         tag(ModTags.Items.PEARLWOOD_LOGS)
                 .add(ModItems.getRK(ModBlocks.PEARLWOOD_LOG.asItem()))
                 .add(ModItems.getRK(ModBlocks.PEARLWOOD.asItem()));

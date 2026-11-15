@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:bloody_andesite_slab"
+        "recipes": "unnamedmod:bloody_andesite_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

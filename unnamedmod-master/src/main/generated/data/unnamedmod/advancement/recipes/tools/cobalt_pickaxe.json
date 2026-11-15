@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:cobalt_pickaxe"
+        "recipes": "unnamedmod:cobalt_pickaxe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

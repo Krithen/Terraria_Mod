@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:cobalt_bricks"
+        "recipes": "unnamedmod:cobalt_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

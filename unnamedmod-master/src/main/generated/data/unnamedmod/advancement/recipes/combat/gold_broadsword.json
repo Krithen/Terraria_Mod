@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:gold_broadsword"
+        "recipes": "unnamedmod:gold_broadsword"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:tungsten_bar_from_blasting_tungsten_ore"
+        "recipes": "unnamedmod:tungsten_bar_from_blasting_tungsten_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

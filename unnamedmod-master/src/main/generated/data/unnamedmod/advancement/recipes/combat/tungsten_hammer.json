@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:tungsten_hammer"
+        "recipes": "unnamedmod:tungsten_hammer"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

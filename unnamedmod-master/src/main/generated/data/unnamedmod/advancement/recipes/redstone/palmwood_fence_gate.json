@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:palmwood_fence_gate"
+        "recipes": "unnamedmod:palmwood_fence_gate"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

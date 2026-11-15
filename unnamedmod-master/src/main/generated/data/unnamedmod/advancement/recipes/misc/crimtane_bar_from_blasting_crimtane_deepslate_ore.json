@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:crimtane_bar_from_blasting_crimtane_deepslate_ore"
+        "recipes": "unnamedmod:crimtane_bar_from_blasting_crimtane_deepslate_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

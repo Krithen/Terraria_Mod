@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:blue_dungeon_brick_stairs"
+        "recipes": "unnamedmod:blue_dungeon_brick_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

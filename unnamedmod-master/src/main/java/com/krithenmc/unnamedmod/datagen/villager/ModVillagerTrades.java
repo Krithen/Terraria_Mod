@@ -4,7 +4,6 @@ package com.krithenmc.unnamedmod.datagen.villager;
 import com.krithenmc.unnamedmod.Unnamedmod;
 import com.krithenmc.unnamedmod.item.ModItems;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.data.info.RegistryComponentsReport;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
@@ -13,9 +12,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.TradeCost;
 import net.minecraft.world.item.trading.VillagerTrade;
 import net.minecraft.world.level.block.Blocks;
-
-import java.util.List;
-import java.util.Optional;
 
 public class ModVillagerTrades {
     public static final ResourceKey<VillagerTrade> FARMER_1_EMERALD_BANANUH = createKey("farmer/1/emerald_bananuh");
@@ -30,35 +26,30 @@ public class ModVillagerTrades {
         var items = context.lookup(Registries.ITEM);
         var enchantments = context.lookup(Registries.ENCHANTMENT);
 
-        context.register(FARMER_1_EMERALD_BANANUH, new VillagerTrade(
+        context.register(FARMER_1_EMERALD_BANANUH, VillagerTrade.builder(
                 new TradeCost(Items.EMERALD, 4),
                 new ItemStackTemplate(ModItems.BANANUH),
-                12, 8, 0.05f,
-                Optional.empty(), List.of()));
+                12, 8, 0.05f).build());
 
-        context.register(FARMER_1_SAND_COCONUT, new VillagerTrade(
+        context.register(FARMER_1_SAND_COCONUT, VillagerTrade.builder(
                 new TradeCost(Blocks.SAND, 3),
                 new ItemStackTemplate(ModItems.COCONUT),
-                30, 8, 0.05f,
-                Optional.empty(), List.of()));
+                30, 8, 0.05f).build());
 
-        context.register(FARMER_2_EMERALD_MANGO, new VillagerTrade(
+        context.register(FARMER_2_EMERALD_MANGO, VillagerTrade.builder(
                 new TradeCost(Items.EMERALD, 5),
                 new ItemStackTemplate(ModItems.MANGO),
-                12, 8, 0.05f,
-                Optional.empty(), List.of()));
+                12, 8, 0.05f).build());
 
-        context.register(WEAPONSMITH_4_EMERALD_BLOOD_BUTCHERER, new VillagerTrade(
+        context.register(WEAPONSMITH_4_EMERALD_BLOOD_BUTCHERER, VillagerTrade.builder(
                 new TradeCost(Items.EMERALD, 30),
                 new ItemStackTemplate(ModItems.BLOOD_BUTCHERER),
-                1, 8, 0.05f,
-                Optional.empty(), List.of()));
+                1, 8, 0.05f).build());
 
-        context.register(BUTCHER_4_EMERALD_HAMBURGER, new VillagerTrade(
+        context.register(BUTCHER_4_EMERALD_HAMBURGER, VillagerTrade.builder(
                 new TradeCost(Items.EMERALD, 4),
                 new ItemStackTemplate(ModItems.HAMBURGER, 2),
-                12, 8, 0.05f,
-                Optional.empty(), List.of()));
+                12, 8, 0.05f).build());
     }
 
     private static ResourceKey<VillagerTrade> createKey(String name) {

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:bloody_andesite_wall"
+        "recipes": "unnamedmod:bloody_andesite_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

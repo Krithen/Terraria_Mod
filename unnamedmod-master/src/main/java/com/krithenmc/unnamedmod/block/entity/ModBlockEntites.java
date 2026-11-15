@@ -3,11 +3,9 @@ package com.krithenmc.unnamedmod.block.entity;
 import com.krithenmc.unnamedmod.Unnamedmod;
 import com.krithenmc.unnamedmod.block.ModBlocks;
 import com.krithenmc.unnamedmod.block.entity.custom.HellstoneForgeBlockEntity;
-import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityType;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:tree",
+  "below_trunk_provider": {
+    "id": "unnamedmod:crimson_dirt"
+  },
+  "decorators": [],
+  "foliage_placer": {
+    "type": "minecraft:blob_foliage_placer",
+    "height": 3,
+    "offset": 4,
+    "radius": 4
+  },
+  "foliage_provider": {
+    "id": "unnamedmod:shadewood_leaves",
+    "properties": {
+      "distance": "7",
+      "persistent": "false",
+      "waterlogged": "false"
+    }
+  },
+  "ignore_vines": false,
+  "minimum_size": {
+    "type": "minecraft:two_layers_feature_size",
+    "upper_size": 2
+  },
+  "trunk_placer": {
+    "type": "minecraft:fancy_trunk_placer",
+    "base_height": 3,
+    "height_rand_a": 3,
+    "height_rand_b": 8
+  },
+  "trunk_provider": {
+    "id": "unnamedmod:shadewood_log",
+    "properties": {
+      "axis": "y"
+    }
+  }
+}

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:flesh_grinder"
+        "recipes": "unnamedmod:flesh_grinder"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

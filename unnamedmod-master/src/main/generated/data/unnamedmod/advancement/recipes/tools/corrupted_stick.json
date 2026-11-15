@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:corrupted_stick"
+        "recipes": "unnamedmod:corrupted_stick"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

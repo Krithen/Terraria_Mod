@@ -4,7 +4,6 @@ import com.geckolib.renderer.GeoEntityRenderer;
 import com.geckolib.renderer.base.GeoRenderState;
 import com.krithenmc.unnamedmod.Unnamedmod;
 import com.krithenmc.unnamedmod.entities.custom.CrimeraEntity;
-import com.krithenmc.unnamedmod.entities.custom.DemonEyeEntity;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 import net.minecraft.resources.Identifier;

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:wooden_hammer_acacia"
+        "recipes": "unnamedmod:wooden_hammer_acacia"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

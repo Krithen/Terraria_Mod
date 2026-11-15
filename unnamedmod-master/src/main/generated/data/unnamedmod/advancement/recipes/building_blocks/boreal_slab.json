@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:boreal_slab"
+        "recipes": "unnamedmod:boreal_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

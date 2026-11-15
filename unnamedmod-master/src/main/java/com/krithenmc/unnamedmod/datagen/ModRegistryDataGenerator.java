@@ -17,7 +17,7 @@ public class ModRegistryDataGenerator extends FabricDynamicRegistryProvider {
         entries.addAll(registries.lookupOrThrow(Registries.PAINTING_VARIANT));
         entries.addAll(registries.lookupOrThrow(Registries.DAMAGE_TYPE));
         entries.addAll(registries.lookupOrThrow(Registries.VILLAGER_TRADE));
-        entries.addAll(registries.lookupOrThrow(Registries.CONFIGURED_FEATURE));
+        entries.addAll(registries.lookupOrThrow(Registries.FEATURE));
         entries.addAll(registries.lookupOrThrow(Registries.PLACED_FEATURE));
         entries.addAll(registries.lookupOrThrow(Registries.LEVEL_STEM));
         entries.addAll(registries.lookupOrThrow(Registries.DIMENSION_TYPE));

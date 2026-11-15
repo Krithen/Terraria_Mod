@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:ice_bricks"
+        "recipes": "unnamedmod:ice_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

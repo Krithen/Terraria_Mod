@@ -25,7 +25,7 @@
 			"com.krithenmc.unnamedmod.UnnamedmodDataGenerator"
 		],
 		"terrablender": [
-			"com.krithenmc.unnamedmod.UnnamedmodBlender"
+			"com.krithenmc.unnamedmod.Unnamedmod"
 		]
 	},
 	"mixins": [
@@ -33,8 +33,8 @@
 	],
 	"accessWidener": "Unnamedmod.classtweaker",
 	"depends": {
-		"fabricloader": ">=0.19.3",
-		"minecraft": "~26.2",
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
 		"java": ">=25",
 		"fabric-api": "*"
 	}

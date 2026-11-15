@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:shroomite_bar"
+        "recipes": "unnamedmod:shroomite_bar"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -1,13 +1,10 @@
 package com.krithenmc.unnamedmod.item.custom;
 
-import com.krithenmc.unnamedmod.item.ModItems;
 import com.krithenmc.unnamedmod.tags.ModTags;
-import net.minecraft.client.renderer.item.properties.numeric.Damage;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
@@ -16,10 +13,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.arrow.AbstractArrow;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
 import org.jspecify.annotations.Nullable;
-import org.w3c.dom.ranges.Range;
 
 import java.util.List;
 import java.util.function.Predicate;
@@ -29,7 +24,7 @@ public class AerialBaneItem extends ProjectileWeaponItem {
     private float damage;
     private final int range;
     private final int useTime;
-    private float drawTime;
+    private final float drawTime;
 
     public AerialBaneItem(Properties properties, float damage, int range, int useTime, float drawTime) {
 

@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:tin_bar_from_blasting_tin_deepslate_ore"
+        "recipes": "unnamedmod:tin_bar_from_blasting_tin_deepslate_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

@@ -7,7 +7,6 @@ import com.krithenmc.unnamedmod.entities.custom.DemonEyeEntity;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 import net.minecraft.resources.Identifier;
-import net.minecraft.world.entity.EntityType;
 
 public class DemonEyeRenderer<R extends LivingEntityRenderState & GeoRenderState> extends GeoEntityRenderer<DemonEyeEntity, R> {
 

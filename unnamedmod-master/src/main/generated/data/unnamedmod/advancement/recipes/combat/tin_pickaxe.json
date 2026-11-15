@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:tin_pickaxe"
+        "recipes": "unnamedmod:tin_pickaxe"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

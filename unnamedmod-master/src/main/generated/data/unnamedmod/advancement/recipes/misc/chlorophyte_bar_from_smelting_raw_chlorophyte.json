@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:chlorophyte_bar_from_smelting_raw_chlorophyte"
+        "recipes": "unnamedmod:chlorophyte_bar_from_smelting_raw_chlorophyte"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

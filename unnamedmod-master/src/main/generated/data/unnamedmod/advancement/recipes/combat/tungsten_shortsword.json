@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:tungsten_shortsword"
+        "recipes": "unnamedmod:tungsten_shortsword"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

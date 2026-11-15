@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:gold_bricks"
+        "recipes": "unnamedmod:gold_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:ash_fence"
+        "recipes": "unnamedmod:ash_fence"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:golden_hammer"
+        "recipes": "unnamedmod:golden_hammer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

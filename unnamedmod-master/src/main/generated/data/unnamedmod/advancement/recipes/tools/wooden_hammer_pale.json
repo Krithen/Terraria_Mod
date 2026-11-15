@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:wooden_hammer_pale"
+        "recipes": "unnamedmod:wooden_hammer_pale"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

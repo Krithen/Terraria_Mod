@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:wooden_hammer_spruce"
+        "recipes": "unnamedmod:wooden_hammer_spruce"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

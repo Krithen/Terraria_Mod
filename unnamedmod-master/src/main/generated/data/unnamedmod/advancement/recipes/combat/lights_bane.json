@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:lights_bane"
+        "recipes": "unnamedmod:lights_bane"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

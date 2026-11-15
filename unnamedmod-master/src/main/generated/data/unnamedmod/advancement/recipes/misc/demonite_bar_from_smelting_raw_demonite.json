@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:demonite_bar_from_smelting_raw_demonite"
+        "recipes": "unnamedmod:demonite_bar_from_smelting_raw_demonite"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

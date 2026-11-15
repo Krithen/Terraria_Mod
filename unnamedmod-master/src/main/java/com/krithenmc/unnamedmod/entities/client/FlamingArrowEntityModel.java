@@ -1,13 +1,9 @@
 package com.krithenmc.unnamedmod.entities.client;
 
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
-
-import javax.swing.text.html.parser.Entity;
 
 public class FlamingArrowEntityModel extends EntityModel<FlamingArrowEntityRenderState> {
     private final ModelPart main;

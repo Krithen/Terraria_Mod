@@ -4,7 +4,6 @@ import com.krithenmc.unnamedmod.block.entity.ModBlockEntites;
 import com.krithenmc.unnamedmod.block.entity.renderer.HellstoneForgeBlockEntityRenderer;
 import com.krithenmc.unnamedmod.entities.ModEntities;
 import com.krithenmc.unnamedmod.entities.client.*;
-import com.krithenmc.unnamedmod.item.ModItems;
 import com.krithenmc.unnamedmod.keymapping.ModKeyMappings;
 import com.krithenmc.unnamedmod.menu.ModMenuTypes;
 import com.krithenmc.unnamedmod.menu.custom.HellstoneForgeScreen;
@@ -15,17 +14,9 @@ import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.client.rendering.v1.ModelLayerRegistry;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.MenuScreens;
-import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
-import net.minecraft.world.entity.projectile.arrow.AbstractArrow;
-import net.rpg_foundation.armor_api.client.ArmorRenderers;
-import net.rpg_foundation.armor_api.client.GeoArmorRenderer;
-
-import javax.swing.text.html.parser.Entity;
 
 public class UnnamedmodClient implements ClientModInitializer {
 

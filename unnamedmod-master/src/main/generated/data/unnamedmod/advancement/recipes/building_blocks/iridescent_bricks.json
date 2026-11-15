@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:iridescent_bricks"
+        "recipes": "unnamedmod:iridescent_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

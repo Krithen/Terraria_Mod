@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:ebonstone_bricks"
+        "recipes": "unnamedmod:ebonstone_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

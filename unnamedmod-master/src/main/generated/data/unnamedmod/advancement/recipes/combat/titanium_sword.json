@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:titanium_sword"
+        "recipes": "unnamedmod:titanium_sword"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

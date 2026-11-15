@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:rainbow_brick_walls"
+        "recipes": "unnamedmod:rainbow_brick_walls"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

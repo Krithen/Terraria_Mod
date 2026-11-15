@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:tree",
+  "below_trunk_provider": {
+    "id": "minecraft:dirt"
+  },
+  "decorators": [],
+  "foliage_placer": {
+    "type": "minecraft:blob_foliage_placer",
+    "height": 0,
+    "offset": 0,
+    "radius": 0
+  },
+  "foliage_provider": {
+    "id": "minecraft:air"
+  },
+  "ignore_vines": false,
+  "minimum_size": {
+    "type": "minecraft:two_layers_feature_size",
+    "upper_size": 2
+  },
+  "trunk_placer": {
+    "type": "minecraft:fancy_trunk_placer",
+    "base_height": 4,
+    "height_rand_a": 4,
+    "height_rand_b": 9
+  },
+  "trunk_provider": {
+    "id": "unnamedmod:boreal_wood_log",
+    "properties": {
+      "axis": "y"
+    }
+  }
+}

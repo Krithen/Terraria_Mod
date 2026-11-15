@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:adamantite_waraxe"
+        "recipes": "unnamedmod:adamantite_waraxe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:adamantite_bar_from_smelting_adamantite_ore"
+        "recipes": "unnamedmod:adamantite_bar_from_smelting_adamantite_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:pearlstone_slab"
+        "recipes": "unnamedmod:pearlstone_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

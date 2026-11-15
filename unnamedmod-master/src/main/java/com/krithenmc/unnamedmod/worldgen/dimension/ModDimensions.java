@@ -55,13 +55,13 @@ public class ModDimensions {
                 DimensionType.Skybox.OVERWORLD,
                 CardinalLighting.Type.DEFAULT,
                 EnvironmentAttributeMap.builder()
-                        .set(EnvironmentAttributes.FOG_COLOR, -0000000)
-                        .set(EnvironmentAttributes.SKY_COLOR, OverworldBiomes.calculateSkyColor(2.8f))
-                        .set(EnvironmentAttributes.AMBIENT_LIGHT_COLOR, -0000000)
-                        .set(EnvironmentAttributes.CLOUD_COLOR, ARGB.red(50))
+                        .set(EnvironmentAttributes.FOG_COLOR, ARGB.vector3fFromRGB24(-0000000))
+                        .set(EnvironmentAttributes.SKY_COLOR, ARGB.vector3fFromRGB24(OverworldBiomes.calculateSkyColor(2.8f)))
+                        .set(EnvironmentAttributes.AMBIENT_LIGHT_COLOR, ARGB.vector3fFromRGB24(-0000000))
+                        .set(EnvironmentAttributes.CLOUD_COLOR, ARGB.vector4fFromARGB32(-0000000))
                         .set(EnvironmentAttributes.CLOUD_HEIGHT, 200F)
                         .set(EnvironmentAttributes.BACKGROUND_MUSIC, BackgroundMusic.EMPTY)
-                        .set(EnvironmentAttributes.BED_RULE, BedRule.EXPLODES)
+                        .set(EnvironmentAttributes.BED_RULE, BedRule.DESTROY_ON_LEAVE)
                         .set(EnvironmentAttributes.RESPAWN_ANCHOR_WORKS, false)
                         .set(EnvironmentAttributes.NETHER_PORTAL_SPAWNS_PIGLINS, false)
                         .set(EnvironmentAttributes.AMBIENT_SOUNDS, AmbientSounds.EMPTY)

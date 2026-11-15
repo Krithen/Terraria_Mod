@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:palmwood"
+        "recipes": "unnamedmod:palmwood"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -11,7 +11,7 @@ import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
-import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
@@ -42,48 +42,48 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> BLOOD_ORANGE = registerKey("blood_orange");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
-        var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
+        var configuredFeatures = context.lookup(Registries.FEATURE);
 
-        register(context, LEAD_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.LEAD_ORE_KEY),
+        register(context, LEAD_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModFeatures.LEAD_ORE_KEY),
                 OrePlacements.commonOrePlacement(8, HeightRangePlacement.triangle(VerticalAnchor.absolute(-10), VerticalAnchor.absolute(100))));
-        register(context, CRIMTANE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRIMTANE_ORE_KEY),
+        register(context, CRIMTANE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModFeatures.CRIMTANE_ORE_KEY),
                 OrePlacements.commonOrePlacement(1, HeightRangePlacement.triangle(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(20))));
-        register(context, TIN_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.TIN_KEY),
+        register(context, TIN_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModFeatures.TIN_KEY),
                 OrePlacements.commonOrePlacement(8, HeightRangePlacement.triangle(VerticalAnchor.absolute(-10), VerticalAnchor.absolute(100))));
-        register(context, SILVER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SILVER_KEY),
+        register(context, SILVER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModFeatures.SILVER_KEY),
                 OrePlacements.commonOrePlacement(7, HeightRangePlacement.triangle(VerticalAnchor.absolute(-20), VerticalAnchor.absolute(100))));
-        register(context, TUNGSTEN_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.TUNGSTEN_KEY),
+        register(context, TUNGSTEN_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModFeatures.TUNGSTEN_KEY),
                 OrePlacements.commonOrePlacement(7, HeightRangePlacement.triangle(VerticalAnchor.absolute(-20), VerticalAnchor.absolute(100))));
-        register(context, DEMONITE, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEMONITE_KEY),
+        register(context, DEMONITE, configuredFeatures.getOrThrow(ModFeatures.DEMONITE_KEY),
                 OrePlacements.commonOrePlacement(1, HeightRangePlacement.triangle(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(20))));
-        register(context, HELLSTONE, configuredFeatures.getOrThrow(ModConfiguredFeatures.HELLSTONE_KEY),
+        register(context, HELLSTONE, configuredFeatures.getOrThrow(ModFeatures.HELLSTONE_KEY),
                 OrePlacements.commonOrePlacement(3, HeightRangePlacement.triangle(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(-30))));
-        register(context, COBALT, configuredFeatures.getOrThrow(ModConfiguredFeatures.COBALT_KEY),
+        register(context, COBALT, configuredFeatures.getOrThrow(ModFeatures.COBALT_KEY),
                 OrePlacements.commonOrePlacement(3, HeightRangePlacement.triangle(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(20))));
-        register(context, PALLADIUM, configuredFeatures.getOrThrow(ModConfiguredFeatures.PALLADIUM_KEY),
+        register(context, PALLADIUM, configuredFeatures.getOrThrow(ModFeatures.PALLADIUM_KEY),
                 OrePlacements.commonOrePlacement(3, HeightRangePlacement.triangle(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(20))));
-        register(context, MYTHRIL, configuredFeatures.getOrThrow(ModConfiguredFeatures.MYTHRIL_KEY),
+        register(context, MYTHRIL, configuredFeatures.getOrThrow(ModFeatures.MYTHRIL_KEY),
                 OrePlacements.commonOrePlacement(2, HeightRangePlacement.triangle(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(20))));
-        register(context, ORICHALCUM, configuredFeatures.getOrThrow(ModConfiguredFeatures.ORICHALCUM_KEY),
+        register(context, ORICHALCUM, configuredFeatures.getOrThrow(ModFeatures.ORICHALCUM_KEY),
                 OrePlacements.commonOrePlacement(2, HeightRangePlacement.triangle(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(20))));
-        register(context, ADAMANTITE, configuredFeatures.getOrThrow(ModConfiguredFeatures.ADAMANTITE_KEY),
+        register(context, ADAMANTITE, configuredFeatures.getOrThrow(ModFeatures.ADAMANTITE_KEY),
                 OrePlacements.commonOrePlacement(1, HeightRangePlacement.triangle(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(20))));
-        register(context, TITANIUM, configuredFeatures.getOrThrow(ModConfiguredFeatures.TITANIUM_KEY),
+        register(context, TITANIUM, configuredFeatures.getOrThrow(ModFeatures.TITANIUM_KEY),
                 OrePlacements.commonOrePlacement(1, HeightRangePlacement.triangle(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(20))));
-        register(context, CHLOROPHYTE, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHLOROPHYTE_KEY),
+        register(context, CHLOROPHYTE, configuredFeatures.getOrThrow(ModFeatures.CHLOROPHYTE_KEY),
                 OrePlacements.commonOrePlacement(2, HeightRangePlacement.triangle(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(100))));
-        register(context, MUD, configuredFeatures.getOrThrow(ModConfiguredFeatures.MUD),
+        register(context, MUD, configuredFeatures.getOrThrow(ModFeatures.MUD),
                 OrePlacements.commonOrePlacement(5, HeightRangePlacement.uniform(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(100))));
 
-        register(context, SHADEWOOD_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SHADEWOOD_KEY),
+        register(context, SHADEWOOD_PLACED_KEY, configuredFeatures.getOrThrow(ModFeatures.SHADEWOOD_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
                         ModBlocks.SHADEWOOD_SAPLING));
 
-        register(context, BOREAL_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.BOREAL),
+        register(context, BOREAL_PLACED, configuredFeatures.getOrThrow(ModFeatures.BOREAL),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.01f, 1),
                         ModBlocks.BOREAL_SAPLING));
 
-        register(context, BLOOD_ORANGE, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLOOD_ORANGE_BUSH),
+        register(context, BLOOD_ORANGE, configuredFeatures.getOrThrow(ModFeatures.BLOOD_ORANGE_BUSH),
                 List.of(RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
     }
@@ -92,7 +92,7 @@ public class ModPlacedFeatures {
         return ResourceKey.create(Registries.PLACED_FEATURE, Identifier.fromNamespaceAndPath(Unnamedmod.MOD_ID, name));
     }
 
-    private static void register(BootstrapContext<PlacedFeature> context, ResourceKey<PlacedFeature> key, Holder<ConfiguredFeature<?, ?>> configuration,
+    private static void register(BootstrapContext<PlacedFeature> context, ResourceKey<PlacedFeature> key, Holder<Feature> configuration,
                                  List<PlacementModifier> modifiers) {
         context.register(key, new PlacedFeature(configuration, List.copyOf(modifiers)));
     }

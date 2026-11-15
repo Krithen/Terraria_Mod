@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:blood_butcherer"
+        "recipes": "unnamedmod:blood_butcherer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

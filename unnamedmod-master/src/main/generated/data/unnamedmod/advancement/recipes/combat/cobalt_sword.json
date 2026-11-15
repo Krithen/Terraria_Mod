@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:cobalt_sword"
+        "recipes": "unnamedmod:cobalt_sword"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:shadewood_slab"
+        "recipes": "unnamedmod:shadewood_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:ebonwood_stairs"
+        "recipes": "unnamedmod:ebonwood_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

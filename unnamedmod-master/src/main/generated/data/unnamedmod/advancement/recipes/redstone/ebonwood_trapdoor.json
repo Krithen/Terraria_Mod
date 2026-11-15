@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:ebonwood_trapdoor"
+        "recipes": "unnamedmod:ebonwood_trapdoor"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

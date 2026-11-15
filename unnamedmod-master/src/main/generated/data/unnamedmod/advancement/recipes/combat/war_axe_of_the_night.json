@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:war_axe_of_the_night"
+        "recipes": "unnamedmod:war_axe_of_the_night"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

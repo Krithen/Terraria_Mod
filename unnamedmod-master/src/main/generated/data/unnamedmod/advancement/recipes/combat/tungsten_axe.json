@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:tungsten_axe"
+        "recipes": "unnamedmod:tungsten_axe"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

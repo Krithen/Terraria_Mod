@@ -5,8 +5,11 @@
     "minecraft:audio/background_music": {},
     "minecraft:gameplay/bed_rule": {
       "can_set_spawn": "never",
-      "can_sleep": "never",
-      "explodes": true
+      "can_sleep": "when_dark",
+      "destroy_on_leave": true,
+      "error_message": {
+        "translate": "block.minecraft.bed.no_sleep"
+      }
     },
     "minecraft:gameplay/nether_portal_spawns_piglin": false,
     "minecraft:gameplay/respawn_anchor_works": false,

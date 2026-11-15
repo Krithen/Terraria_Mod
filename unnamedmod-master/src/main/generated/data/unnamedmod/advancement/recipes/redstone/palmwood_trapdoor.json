@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:palmwood_trapdoor"
+        "recipes": "unnamedmod:palmwood_trapdoor"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

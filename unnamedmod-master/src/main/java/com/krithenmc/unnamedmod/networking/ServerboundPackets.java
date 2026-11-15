@@ -4,7 +4,6 @@ import com.krithenmc.unnamedmod.networking.packet.TestPayloadC2S;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.world.entity.EntitySpawnReason;
 import net.minecraft.world.entity.EntityTypes;
-import net.minecraft.world.level.block.BlockTypes;
 
 //server
 public class ServerboundPackets {

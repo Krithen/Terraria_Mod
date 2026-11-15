@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:crimtane_brick_stairs"
+        "recipes": "unnamedmod:crimtane_brick_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

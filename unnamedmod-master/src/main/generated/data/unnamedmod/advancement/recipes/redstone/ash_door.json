@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:ash_door"
+        "recipes": "unnamedmod:ash_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -12,21 +12,18 @@ import com.krithenmc.unnamedmod.loot.ModLootTablesModifier;
 import com.krithenmc.unnamedmod.menu.ModMenuTypes;
 import com.krithenmc.unnamedmod.networking.ModPackets;
 import com.krithenmc.unnamedmod.potion.ModPotions;
-import com.krithenmc.unnamedmod.registries.*;
+import com.krithenmc.unnamedmod.registries.ModFlammableBlocks;
+import com.krithenmc.unnamedmod.registries.ModStrippableBlocks;
 import com.krithenmc.unnamedmod.sounds.ModSounds;
 import com.krithenmc.unnamedmod.stat.ModStats;
 import com.krithenmc.unnamedmod.worldgen.generation.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
-
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
-import net.minecraft.resources.Identifier;
 import net.minecraft.world.entity.SpawnPlacementTypes;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.rpg_foundation.armor_api.client.ArmorRenderers;
-import net.rpg_foundation.armor_api.client.GeoArmorRenderer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -41,12 +38,9 @@ public class Unnamedmod implements ModInitializer {
 		ModItems.registerModItems();
 		ModStats.registerStats();
 		ModBlocks.registerModBlocks();
-		ModFuels.registerFuels();
-		ModCompostables.registerCompostables();
 		ModSounds.registerSounds();
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
-		ModPotionRecipes.registerPotionRecipes();
 		ModPackets.registerPackets();
 		ModBlockEntites.registerBlockEntities();
 		ModMenuTypes.registerModMenuTypes();
@@ -54,6 +48,8 @@ public class Unnamedmod implements ModInitializer {
 		ModFlammableBlocks.registerFlammableBlocks();
 		ModStrippableBlocks.registerStrippableBlocks();
 		ModEntities.registerModEntities();
+
+
 
 		FabricDefaultAttributeRegistry.register(ModEntities.ANTLION, AntlionEntity.createAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.SWARMER, SwarmerEntity.createAttributes());

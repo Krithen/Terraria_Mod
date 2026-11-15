@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:cobalt_bar_from_smelting_cobalt_deepslate_ore"
+        "recipes": "unnamedmod:cobalt_bar_from_smelting_cobalt_deepslate_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

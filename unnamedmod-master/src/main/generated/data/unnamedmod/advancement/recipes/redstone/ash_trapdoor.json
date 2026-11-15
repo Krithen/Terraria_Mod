@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:ash_trapdoor"
+        "recipes": "unnamedmod:ash_trapdoor"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:silver_hammer"
+        "recipes": "unnamedmod:silver_hammer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -1,19 +1,24 @@
 package com.krithenmc.unnamedmod.datagen;
 
+import com.krithenmc.unnamedmod.Unnamedmod;
 import com.krithenmc.unnamedmod.block.ModBlocks;
 import com.krithenmc.unnamedmod.item.ModItems;
+import com.krithenmc.unnamedmod.potion.ModPotions;
 import com.krithenmc.unnamedmod.tags.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.advancements.Advancement;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.data.recipes.BrewingRecipeBuilder;
 import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
-
-import net.minecraft.tags.TagKey;
+import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 
@@ -28,8 +33,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     @Override
-    protected RecipeProvider createRecipeProvider(HolderLookup.Provider registries, RecipeOutput output) {
-        return new RecipeProvider(registries, output) {
+    protected RecipeProvider createRecipeProvider(HolderLookup.Provider registries, BootstrapContext<Recipe<?>> recipes, BootstrapContext<Advancement> advancements) {
+        return new RecipeProvider(recipes, advancements) {
             @Override
             public void buildRecipes() {
 
@@ -1189,6 +1194,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PEARLSTONE_BRICK_SLAB, ModBlocks.PEARLSTONE_BRICKS);
 
                 wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PEARLSTONE_BRICK_WALL, ModBlocks.PEARLSTONE_BRICKS);
+
+                for (Item potion : List.of(Items.POTION, Items.SPLASH_POTION, Items.LINGERING_POTION)) {
+                    BrewingRecipeBuilder.brewingMix(potion, Potions.AWKWARD, ModItems.APRICOT, ModPotions.WELLFED_POTION)
+                            .save(output, Unnamedmod.MOD_ID + ":brewing/" + getItemName(potion) + "_awkward_apricot");
+                }
 
 
 

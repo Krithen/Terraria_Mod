@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:tin_shortsword"
+        "recipes": "unnamedmod:tin_shortsword"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:shadewood_button"
+        "recipes": "unnamedmod:shadewood_button"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

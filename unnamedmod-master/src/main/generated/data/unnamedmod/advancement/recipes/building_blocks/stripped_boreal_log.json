@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:stripped_boreal_log"
+        "recipes": "unnamedmod:stripped_boreal_log"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -1,7 +1,6 @@
 package com.krithenmc.unnamedmod.datagen;
 
 import com.krithenmc.unnamedmod.Unnamedmod;
-import net.minecraft.client.renderer.item.properties.numeric.Damage;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.Identifier;

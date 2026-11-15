@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:mythril_bricks"
+        "recipes": "unnamedmod:mythril_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

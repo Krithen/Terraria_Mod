@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:demonite_brick_wall"
+        "recipes": "unnamedmod:demonite_brick_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:bleeding_stick"
+        "recipes": "unnamedmod:bleeding_stick"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:ebonsandstone"
+        "recipes": "unnamedmod:ebonsandstone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

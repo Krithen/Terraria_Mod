@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:platinum_axe"
+        "recipes": "unnamedmod:platinum_axe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:shadewood_door"
+        "recipes": "unnamedmod:shadewood_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

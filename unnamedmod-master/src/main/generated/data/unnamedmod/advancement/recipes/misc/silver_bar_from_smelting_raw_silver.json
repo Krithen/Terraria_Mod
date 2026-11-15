@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:silver_bar_from_smelting_raw_silver"
+        "recipes": "unnamedmod:silver_bar_from_smelting_raw_silver"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

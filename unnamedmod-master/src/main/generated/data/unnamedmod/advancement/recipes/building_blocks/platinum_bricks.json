@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:platinum_bricks"
+        "recipes": "unnamedmod:platinum_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

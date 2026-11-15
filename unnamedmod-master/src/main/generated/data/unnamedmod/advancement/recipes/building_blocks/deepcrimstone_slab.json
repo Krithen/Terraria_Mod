@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:deepcrimstone_slab"
+        "recipes": "unnamedmod:deepcrimstone_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

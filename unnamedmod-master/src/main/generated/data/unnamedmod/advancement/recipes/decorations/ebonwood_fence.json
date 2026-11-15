@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:ebonwood_fence"
+        "recipes": "unnamedmod:ebonwood_fence"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

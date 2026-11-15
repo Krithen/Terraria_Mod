@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:pearlwood_stairs"
+        "recipes": "unnamedmod:pearlwood_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

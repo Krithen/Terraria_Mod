@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:ash_button"
+        "recipes": "unnamedmod:ash_button"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

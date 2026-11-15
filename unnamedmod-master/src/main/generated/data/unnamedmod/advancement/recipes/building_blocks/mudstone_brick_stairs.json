@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:mudstone_brick_stairs"
+        "recipes": "unnamedmod:mudstone_brick_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

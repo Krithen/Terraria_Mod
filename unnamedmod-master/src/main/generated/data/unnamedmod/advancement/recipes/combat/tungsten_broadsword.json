@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:tungsten_broadsword"
+        "recipes": "unnamedmod:tungsten_broadsword"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

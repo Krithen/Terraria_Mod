@@ -1,10 +1,12 @@
 package com.krithenmc.unnamedmod.block.custom;
 
 import com.krithenmc.unnamedmod.block.entity.custom.HellstoneForgeBlockEntity;
-import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.Prediction;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -22,15 +24,12 @@ import org.jspecify.annotations.Nullable;
 
 public class HellstoneForgeBlock extends BaseEntityBlock {
     public static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 15, 16);
-    private static MapCodec<HellstoneForgeBlock> CODEC = simpleCodec(HellstoneForgeBlock::new);
+
     public HellstoneForgeBlock(Properties properties) {
         super(properties);
     }
 
-    @Override
-    protected MapCodec<? extends BaseEntityBlock> codec() {
-        return CODEC;
-    }
+
 
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
@@ -43,7 +42,7 @@ public class HellstoneForgeBlock extends BaseEntityBlock {
     }
 
     @Override
-    public void playerDestroy(Level level, Player player, BlockPos pos, BlockState state, @Nullable BlockEntity blockEntity, ItemStack destroyedWith) {
+    public void playerDestroy(ServerLevel level, ServerPlayer player, BlockPos pos, BlockState state, @Nullable BlockEntity blockEntity, ItemStack destroyedWith) {
         if (level.getBlockEntity(pos) instanceof HellstoneForgeBlockEntity hellstoneForgeBlockEntity) {
             hellstoneForgeBlockEntity.drops();
             level.updateNeighbourForOutputSignal(pos, this);
@@ -73,7 +72,7 @@ public class HellstoneForgeBlock extends BaseEntityBlock {
                 ItemStack stackOnForge = hellstoneForgeBlockEntity.getTheItem();
                 hellstoneForgeBlockEntity.clearContent();
                 if (!player.getInventory().add(stackOnForge)) {
-                    player.drop(stackOnForge, false);
+                    player.drop(stackOnForge, false, Prediction.SERVER_ONLY);
                 }
                 level.playSound(player, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1f, 1f);
             }

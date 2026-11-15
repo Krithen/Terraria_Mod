@@ -1,5 +1,4 @@
-// 26.2	-999999999-01-01T00:00:00	unnamedmod/Tags for minecraft:item
-a7f4d68f6e81cd41371efac7dc0c0f22f94e21be data/minecraft/tags/item/arrows.json
+// 26.3	-999999999-01-01T00:00:00	unnamedmod/Tags for minecraft:item
 943b813cc88420d0e49d46d5570aa2849a55d533 data/minecraft/tags/item/axes.json
 a2be46c079e4ab6fd4eb0d5d5431bb5add9f0101 data/minecraft/tags/item/chest_armor.json
 c5e3d20d88552a8f84900d91308cbb4eef7fc90b data/minecraft/tags/item/enchantable/bow.json
@@ -15,6 +14,8 @@ e056deda3a9718818e5781d935f18c1a9179c324 data/minecraft/tags/item/shovels.json
 d49115cf9666f6ebf7fc8104547ade379581e212 data/minecraft/tags/item/spears.json
 f97e5cb0a7ea0a9a4b8dee5fb5b2095771d360cc data/minecraft/tags/item/swords.json
 b913882b23bbe63a8c845c560152a9b6bd17f1ef data/unnamedmod/tags/item/adamantite_repair.json
+5e426e1fbcde9194462834622603957ca64dbc0b data/unnamedmod/tags/item/arrows.json
+c5b97870646cc4a9987dca8189a70f8c59918972 data/unnamedmod/tags/item/ash_wood_logs.json
 243f2dab6ef46a493d12775f6f28baf7b72922cf data/unnamedmod/tags/item/bone_repair.json
 415666c1ad7955cdc8467a285bd96a85452335be data/unnamedmod/tags/item/boreal_logs.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/unnamedmod/tags/item/cactus_repair.json

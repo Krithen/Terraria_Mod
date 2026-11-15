@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:pearlwood_button"
+        "recipes": "unnamedmod:pearlwood_button"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

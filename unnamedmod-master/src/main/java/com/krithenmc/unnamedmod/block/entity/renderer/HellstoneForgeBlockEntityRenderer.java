@@ -4,7 +4,6 @@ import com.krithenmc.unnamedmod.block.entity.custom.HellstoneForgeBlockEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import net.minecraft.client.renderer.SubmitNodeCollector;
-import net.minecraft.client.renderer.blockentity.BlockEntityRenderDispatcher;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.renderer.feature.ModelFeatureRenderer;
@@ -50,7 +49,7 @@ public class HellstoneForgeBlockEntityRenderer implements BlockEntityRenderer<He
 
         poseStack.translate(0.5f, 1.15f, 0.5f);
         poseStack.scale(0.5f, 0.5f, 0.5f);
-        poseStack.mulPose(Axis.YP.rotationDegrees(state.rotation));
+        poseStack.rotate(Axis.YP.rotationDegrees(state.rotation));
 
         state.itemStackRenderState.submit(poseStack, submitNodeCollector, state.lightCoords, OverlayTexture.NO_OVERLAY, 0);
 

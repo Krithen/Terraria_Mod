@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:wooden_hammer_shadewood"
+        "recipes": "unnamedmod:wooden_hammer_shadewood"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:crimtane_bar_from_smelting_crimtane_ore"
+        "recipes": "unnamedmod:crimtane_bar_from_smelting_crimtane_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -3,7 +3,7 @@ package com.krithenmc.unnamedmod;
 import com.krithenmc.unnamedmod.datagen.*;
 import com.krithenmc.unnamedmod.datagen.villager.ModVillagerTrades;
 import com.krithenmc.unnamedmod.datagen.villager.ModVillagerTradesTags;
-import com.krithenmc.unnamedmod.worldgen.ModConfiguredFeatures;
+import com.krithenmc.unnamedmod.worldgen.ModFeatures;
 import com.krithenmc.unnamedmod.worldgen.ModPlacedFeatures;
 import com.krithenmc.unnamedmod.worldgen.dimension.ModDimensions;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -35,7 +35,7 @@ public class UnnamedmodDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.add(Registries.PAINTING_VARIANT, ModPaintings::bootstrap);
 		registryBuilder.add(Registries.DAMAGE_TYPE, ModDamageTypes::bootstrap);
 		registryBuilder.add(Registries.VILLAGER_TRADE, ModVillagerTrades::bootstrap);
-		registryBuilder.add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.add(Registries.FEATURE, ModFeatures::bootstrap);
 		registryBuilder.add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 		registryBuilder.add(Registries.LEVEL_STEM, ModDimensions::bootstrapStem);
 		registryBuilder.add(Registries.DIMENSION_TYPE, ModDimensions::bootstrapType);

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "unnamedmod:adamantite_glaive"
+        "recipes": "unnamedmod:adamantite_glaive"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
